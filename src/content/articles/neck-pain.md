@@ -1,5 +1,5 @@
 ---
-title: Neck Pain: Symptoms, Causes and Treatment Options
+title: "Neck Pain: Symptoms, Causes and Treatment Options"
 description: Learn about common neck pain symptoms, contributing factors, treatment approaches and signs that warrant medical evaluation.
 excerpt: Neck pain can affect turning your head, working, sleeping and daily comfort. Learn about common patterns and when it is time to seek care.
 category: Pain Management

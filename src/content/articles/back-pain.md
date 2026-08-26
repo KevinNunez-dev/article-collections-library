@@ -1,5 +1,5 @@
 ---
-title: Back Pain: Symptoms, Causes and When to Seek Care
+title: "Back Pain: Symptoms, Causes and When to Seek Care"
 description: Learn about common back pain symptoms, possible causes, treatment approaches and when to contact a healthcare professional.
 excerpt: Back pain is common and can affect work, sleep and movement. Learn what to look for, what may help and when symptoms need medical evaluation.
 category: Pain Management
@@ -27,7 +27,7 @@ faq:
     answer: A qualified clinician can determine whether physical therapy or another treatment approach is appropriate for your symptoms and goals.
 related: [understanding-lower-back-pain, what-is-physical-therapy, sciatica]
 seo:
-  title: Back Pain Symptoms, Causes and Care | RPT Clinic
+  title: "Back Pain Symptoms, Causes and Care | RPT Clinic"
   description: Learn about common back pain symptoms, causes, treatment options and when to seek medical care.
 ---
 

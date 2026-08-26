@@ -1,5 +1,5 @@
 ---
-title: TMJ Disorders: Jaw Pain, Symptoms and Treatment
+title: "TMJ Disorders: Jaw Pain, Symptoms and Treatment"
 description: Learn about TMJ disorder symptoms, common contributing factors, treatment approaches and when jaw pain needs medical or dental evaluation.
 excerpt: TMJ symptoms can include jaw pain, clicking, headaches and difficulty chewing. Learn what to track and when professional evaluation may help.
 category: Pain Management
@@ -25,7 +25,7 @@ faq:
     answer: TMJ-related symptoms may include jaw or facial pain, clicking or popping, stiffness, headache, ear-area discomfort and pain with chewing.
 related: [migraines, neck-pain]
 seo:
-  title: TMJ Disorder Symptoms and Treatment | RPT Clinic
+  title: "TMJ Disorder Symptoms and Treatment | RPT Clinic"
   description: Learn about TMJ disorder symptoms, possible causes, treatment approaches and when to seek care.
 ---
 

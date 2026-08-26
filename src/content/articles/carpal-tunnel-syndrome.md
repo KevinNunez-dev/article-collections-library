@@ -1,5 +1,5 @@
 ---
-title: Carpal Tunnel Syndrome: Symptoms, Causes and Treatment
+title: "Carpal Tunnel Syndrome: Symptoms, Causes and Treatment"
 description: Learn about carpal tunnel syndrome symptoms, contributing factors, treatment options and when numbness or hand weakness needs evaluation.
 excerpt: Carpal tunnel syndrome can cause numbness, tingling and weakness in the hand. Learn what symptoms to notice and when to seek care.
 category: Bones, Joints & Muscles

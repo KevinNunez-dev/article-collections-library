@@ -1,5 +1,5 @@
 ---
-title: Scoliosis: Symptoms, Evaluation and Treatment Options
+title: "Scoliosis: Symptoms, Evaluation and Treatment Options"
 description: Learn about scoliosis, symptoms, evaluation, treatment approaches and when changes in posture or pain should be assessed.
 excerpt: Scoliosis is a sideways curve of the spine that can affect people of different ages. Learn about symptoms, evaluation and treatment planning.
 category: Bones, Joints & Muscles

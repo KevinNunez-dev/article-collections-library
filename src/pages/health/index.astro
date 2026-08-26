@@ -1,10 +1,10 @@
 ---
-import { getCollection } from 'astro:content';
+import { getAllArticles, getAllCategories } from '../../lib/content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import LibrarySearch from '../../components/LibrarySearch.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-const articles = (await getCollection('articles', ({ data }) => !data.seo.noindex)).sort((a, b) => b.data.updatedAt.valueOf() - a.data.updatedAt.valueOf());
-const categories = (await getCollection('categories', ({ data }) => !data.seo.noindex)).sort((a, b) => a.data.order - b.data.order);
+const articles = (await getAllArticles()).filter((a) => !a.data?.seo?.noindex).sort((a, b) => new Date(b.data.updatedAt).valueOf() - new Date(a.data.updatedAt).valueOf());
+const categories = (await getAllCategories()).filter((c) => !c.data?.seo?.noindex).sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
 ---
 <BaseLayout title="Health Library" description="Browse practical, medically reviewed health articles by topic."><div class="container section"><Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Health Library' }]} /><p class="eyebrow">Health Library</p><h1>Find health answers by topic.</h1><p class="lead">Search articles and filter by the health topic that matters to you.</p><LibrarySearch categories={categories.map((category) => category.data.title)} /><div class="article-grid archive-grid">{articles.map((article) => <div data-search-card data-category={article.data.category.toLowerCase()} data-search={`${article.data.title} ${article.data.excerpt} ${article.data.category} ${article.data.tags.join(' ')}`.toLowerCase()}><ArticleCard article={article} /></div>)}</div></div></BaseLayout>

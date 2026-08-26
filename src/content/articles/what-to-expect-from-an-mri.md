@@ -1,5 +1,5 @@
 ---
-title: What to Expect From an MRI
+title: "What to Expect From an MRI"
 description: Learn what an MRI is, how to prepare and practical questions to ask your healthcare team before your scan.
 excerpt: An MRI uses a strong magnetic field and radio waves to create detailed images. Preparation can vary based on the exam and your health history.
 category: Tests & Diagnostics
@@ -21,7 +21,7 @@ faq:
     answer: MRI uses magnetic fields and radio waves rather than ionizing radiation.
 related: [what-is-physical-therapy]
 seo:
-  title: What to Expect From an MRI | RPT Clinic
+  title: "What to Expect From an MRI | RPT Clinic"
   description: Learn what to expect from an MRI, including preparation questions and how the scan works.
 ---
 

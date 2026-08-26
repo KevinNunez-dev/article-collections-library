@@ -1,11 +1,11 @@
 ---
-import { getCollection } from 'astro:content';
+import { getAllCategories, getAllArticles } from '../../lib/content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import AppointmentCta from '../../components/AppointmentCta.astro';
-export async function getStaticPaths() { const categories = await getCollection('categories', ({ data }) => !data.seo.noindex); return categories.map((category) => ({ params: { slug: category. }, props: { category } })); }
+export async function getStaticPaths() { const categories = (await getAllCategories()).filter((c) => !c.data?.seo?.noindex); return categories.map((category) => ({ params: { slug: category.id }, props: { category } })); }
 const { category } = Astro.props;
-const articles = (await getCollection('articles', ({ data }) => !data.seo.noindex && data.categorySlug === category.id)).sort((a, b) => b.data.updatedAt.valueOf() - a.data.updatedAt.valueOf());
+const articles = (await getAllArticles()).filter((a) => !a.data?.seo?.noindex && a.data.categorySlug === category.id).sort((a, b) => new Date(b.data.updatedAt).valueOf() - new Date(a.data.updatedAt).valueOf());
 ---
-<BaseLayout title={category.data.seo.title || category.data.title} description={category.data.seo.description || category.data.description} noindex={category.data.seo.noindex} canonical={category.data.seo.canonical}><section class="topic-hero"><div class="container narrow"><Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Health Library', href: '/health' }, { label: category.data.title }]} /><p class="eyebrow">Health topic</p><h1>{category.data.title}</h1><p class="lead">{category.data.description}</p></div></section><section class="section container"><div class="article-grid">{articles.map((article) => <ArticleCard article={article} />)}</div>{articles.length === 0 && <p>No articles have been added to this topic yet.</p>}</section><div class="container"><AppointmentCta /></div></BaseLayout>
+<BaseLayout title={category.data.seo?.title || category.data.title} description={category.data.seo?.description || category.data.description} noindex={category.data.seo?.noindex} canonical={category.data.seo?.canonical}><section class="topic-hero"><div class="container narrow"><Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Health Library', href: '/health' }, { label: category.data.title }]} /><p class="eyebrow">Health topic</p><h1>{category.data.title}</h1><p class="lead">{category.data.description}</p></div></section><section class="section container"><div class="article-grid">{articles.map((article) => <ArticleCard article={article} />)}</div>{articles.length === 0 && <p>No articles have been added to this topic yet.</p>}</section><div class="container"><AppointmentCta /></div></BaseLayout>

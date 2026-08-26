@@ -1,5 +1,5 @@
 ---
-title: Shoulder Pain: Symptoms, Causes and Treatment
+title: "Shoulder Pain: Symptoms, Causes and Treatment"
 description: Learn about shoulder pain, common causes, symptoms that need evaluation and treatments that may help improve mobility and comfort.
 excerpt: Shoulder pain can limit lifting, reaching, sleeping and sports. Learn what may contribute to symptoms and when to seek professional care.
 category: Bones, Joints & Muscles

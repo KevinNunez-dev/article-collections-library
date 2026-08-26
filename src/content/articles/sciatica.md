@@ -1,5 +1,5 @@
 ---
-title: Sciatica: Symptoms, Causes and When to Seek Care
+title: "Sciatica: Symptoms, Causes and When to Seek Care"
 description: Learn about sciatica symptoms, common causes, treatment approaches and red flags that need prompt medical evaluation.
 excerpt: Sciatica describes pain that follows the path of the sciatic nerve, often from the low back into the leg. Learn when to seek medical advice.
 category: Pain Management

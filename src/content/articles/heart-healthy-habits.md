@@ -1,5 +1,5 @@
 ---
-title: Heart-Healthy Habits for Everyday Life
+title: "Heart-Healthy Habits for Everyday Life"
 description: Explore practical lifestyle habits to discuss with your care team as part of a heart-health plan.
 excerpt: Everyday choices can support overall heart health. Here are approachable topics to discuss with a qualified healthcare professional.
 category: Heart Health

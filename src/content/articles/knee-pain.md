@@ -1,5 +1,5 @@
 ---
-title: Knee Pain: Common Symptoms, Causes and Care
+title: "Knee Pain: Common Symptoms, Causes and Care"
 description: Learn about knee pain, common contributors, evaluation, treatment options and when to seek care for a knee injury or persistent pain.
 excerpt: Knee pain can make walking, stairs, sports and everyday movement difficult. Learn what symptoms to track and when an evaluation can help.
 category: Bones, Joints & Muscles

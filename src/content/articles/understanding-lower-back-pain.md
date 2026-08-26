@@ -1,5 +1,5 @@
 ---
-title: Understanding Lower Back Pain
+title: "Understanding Lower Back Pain"
 description: Lower back pain is common. Learn about typical patterns, self-care questions and when to seek medical evaluation.
 excerpt: Lower back pain can have many causes. Understanding symptom patterns and warning signs can help you decide what to do next.
 category: Pain Management
@@ -22,7 +22,7 @@ faq:
     answer: The timeline varies. A clinician can help assess pain that is severe, persistent, recurring or affecting daily function.
 related: [what-is-physical-therapy, when-to-see-a-doctor-for-joint-pain]
 seo:
-  title: Understanding Lower Back Pain | RPT Clinic
+  title: "Understanding Lower Back Pain | RPT Clinic"
   description: Learn about lower back pain, common symptom patterns and when to speak with a healthcare professional.
 ---
 

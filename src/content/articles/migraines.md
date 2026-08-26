@@ -1,5 +1,5 @@
 ---
-title: Migraines: Symptoms, Triggers and Treatment Options
+title: "Migraines: Symptoms, Triggers and Treatment Options"
 description: Learn about migraine symptoms, potential triggers, treatment options and warning signs that require urgent medical care.
 excerpt: Migraines can be more than a headache. Learn about common symptoms, possible triggers, care options and when to seek emergency help.
 category: Pain Management

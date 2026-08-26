@@ -1,5 +1,5 @@
 ---
-title: What Is Physical Therapy?
+title: "What Is Physical Therapy?"
 description: Learn what physical therapy is, what happens during a visit and how it may support recovery, mobility and daily function.
 excerpt: Physical therapy uses movement, education and individualized care plans to help people improve mobility, manage symptoms and return to everyday activities.
 category: Pain Management
@@ -23,7 +23,7 @@ faq:
     answer: Your therapist generally asks about your symptoms, health history and goals, then performs an evaluation and discusses an individualized plan.
 related: [understanding-lower-back-pain, when-to-see-a-doctor-for-joint-pain]
 seo:
-  title: What Is Physical Therapy? | RPT Clinic
+  title: "What Is Physical Therapy? | RPT Clinic"
   description: Learn what physical therapy is, what happens at a visit and how it can help improve mobility and daily function.
 ---
 

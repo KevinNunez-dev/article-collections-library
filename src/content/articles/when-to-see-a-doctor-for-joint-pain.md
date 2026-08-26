@@ -1,5 +1,5 @@
 ---
-title: When to See a Doctor for Joint Pain
+title: "When to See a Doctor for Joint Pain"
 description: Learn when joint pain may need evaluation, what to track before your visit and how a care team can help.
 excerpt: Joint pain may be temporary or ongoing. These practical questions can help you recognize when it is time to seek care.
 category: Bones, Joints & Muscles
@@ -22,7 +22,7 @@ faq:
     answer: Note when the pain began, what affects it, where it occurs, injuries and activities, medications and any other symptoms.
 related: [understanding-lower-back-pain, what-is-physical-therapy]
 seo:
-  title: When to See a Doctor for Joint Pain | RPT Clinic
+  title: "When to See a Doctor for Joint Pain | RPT Clinic"
   description: Learn signs that joint pain may need evaluation and how to prepare for a medical appointment.
 ---
 
