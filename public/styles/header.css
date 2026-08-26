@@ -1,0 +1,16 @@
+/* Header dropdown styles */
+.nav-dropdown{position:relative}
+.nav-dropdown .nav-link{background:none;border:0;padding:.5rem .6rem;font-weight:650;color:var(--brand-ink);cursor:pointer}
+.nav-dropdown-menu{display:none;position:absolute;left:0;top:calc(100% + .5rem);min-width:220px;background:#fff;border:1px solid #e6eef9;border-radius:.5rem;box-shadow:0 6px 20px rgba(18,45,85,.08);padding:.5rem 0;z-index:30}
+.nav-dropdown-menu li{list-style:none}
+.nav-dropdown-menu a{display:block;padding:.55rem .9rem;color:var(--brand-ink);text-decoration:none;font-weight:600}
+.nav-dropdown-menu a:hover{background:var(--brand-accent);color:var(--brand-primary)}
+
+/* Show on hover or keyboard focus */
+.nav-dropdown:hover .nav-dropdown-menu,.nav-dropdown:focus-within .nav-dropdown-menu{display:block}
+
+/* Responsive: stack nav on small screens */
+@media (max-width:900px){
+  .nav-list{flex-wrap:wrap}
+  .nav-dropdown-menu{position:static;box-shadow:none;border:0;padding:0}
+}
