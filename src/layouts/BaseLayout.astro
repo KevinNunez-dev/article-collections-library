@@ -1,0 +1,14 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import JsonLd from '../components/JsonLd.astro';
+import { brand } from '../config/brand';
+import { clinic } from '../config/clinic';
+export interface Props { title?: string; description?: string; image?: string; noindex?: boolean; canonical?: string }
+const { title, description = brand.tagline, image, noindex = false, canonical } = Astro.props;
+const pageTitle = title ? `${title} | ${brand.name}` : `${brand.name} Health Library`;
+const canonicalUrl = canonical || new URL(Astro.url.pathname, Astro.site).toString();
+const organizationSchema = { '@context': 'https://schema.org', '@type': 'MedicalClinic', name: brand.legalName, url: Astro.site?.toString(), logo: brand.logoUrl, telephone: brand.phone, address: { '@type': 'PostalAddress', streetAddress: clinic.address.street, addressLocality: clinic.address.city, addressRegion: clinic.address.region, postalCode: clinic.address.postalCode, addressCountry: clinic.address.country } };
+---
+<!doctype html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="icon" href={brand.faviconUrl} /><title>{pageTitle}</title><meta name="description" content={description} /><link rel="canonical" href={canonicalUrl} />{noindex && <meta name="robots" content="noindex,nofollow" />}<meta property="og:type" content="website" /><meta property="og:title" content={pageTitle} /><meta property="og:description" content={description} /><meta property="og:url" content={canonicalUrl} />{image && <meta property="og:image" content={image} />}<meta name="twitter:card" content="summary_large_image" /><JsonLd data={organizationSchema} /></head><body style={`--brand-primary:${brand.primaryColor};--brand-primary-dark:${brand.primaryDarkColor};--brand-accent:${brand.accentColor};--brand-ink:${brand.inkColor};--brand-muted:${brand.mutedColor};--brand-surface:${brand.surfaceColor};`}><Header /><main><slot /></main><Footer /></body></html>

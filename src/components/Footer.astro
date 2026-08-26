@@ -1,0 +1,6 @@
+---
+import { brand } from '../config/brand';
+import { clinic } from '../config/clinic';
+const year = new Date().getFullYear();
+---
+<footer class="site-footer"><div class="container footer-grid"><div><img src={brand.logoUrl} alt={brand.logoAlt} width="160" height="40" loading="lazy" /><p>{brand.tagline}</p><a href={`tel:${brand.phoneHref}`}>{brand.phone}</a></div><div><h2>Health Library</h2><ul>{brand.footerNav.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul></div><div><h2>Visit us</h2><p>{clinic.address.street}<br />{clinic.address.city}, {clinic.address.region} {clinic.address.postalCode}</p><p>{clinic.hours}</p></div></div><div class="container footer-bottom">© {year} {brand.legalName}. Health-library content is for education and is not a substitute for professional medical advice.</div></footer>

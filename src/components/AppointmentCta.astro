@@ -1,0 +1,7 @@
+---
+import { clinic } from '../config/clinic';
+import { brand } from '../config/brand';
+export interface Props { heading?: string }
+const { heading = 'Need help with a health concern?' } = Astro.props;
+---
+<section class="appointment-cta"><h2>{heading}</h2><p>Talk with a qualified member of our care team about the next step that is right for you.</p><a class="button button-light" href={brand.appointmentUrl}>{clinic.appointmentLabel}</a></section>
