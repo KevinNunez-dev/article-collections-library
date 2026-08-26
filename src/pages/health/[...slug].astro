@@ -9,11 +9,11 @@ import AppointmentCta from '../../components/AppointmentCta.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import JsonLd from '../../components/JsonLd.astro';
 import { brand } from '../../config/brand';
-export async function getStaticPaths() { const articles = await getCollection('articles', ({ data }) => !data.seo.noindex); return articles.map((article) => ({ params: { slug: article.slug }, props: { article } })); }
+export async function getStaticPaths() { const articles = await getCollection('articles', ({ data }) => !data.seo.noindex); return articles.map((article) => ({ params: { slug: article.id }, props: { article } })); }
 const { article } = Astro.props;
 const { Content } = await render(article);
-const relatedEntries = (await getCollection('articles')).filter((entry) => article.data.related.includes(entry.slug));
-const pageUrl = new URL(`/health/${article.slug}`, Astro.site).toString();
+const relatedEntries = (await getCollection('articles')).filter((entry) => article.data.related.includes(entry.id));
+const pageUrl = new URL(`/health/${article.id}`, Astro.site).toString();
 const articleSchema = { '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: article.data.title, description: article.data.description, url: pageUrl, datePublished: article.data.publishedAt.toISOString(), dateModified: article.data.updatedAt.toISOString(), author: { '@type': 'Organization', name: article.data.author }, reviewedBy: { '@type': 'Person', name: article.data.reviewedBy, jobTitle: article.data.reviewerCredential }, publisher: { '@type': 'Organization', name: brand.legalName, logo: { '@type': 'ImageObject', url: brand.logoUrl } } };
 const faqSchema = article.data.faq.length ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: article.data.faq.map((item) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) } : null;
 const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).toString() }, { '@type': 'ListItem', position: 2, name: 'Health Library', item: new URL('/health', Astro.site).toString() }, { '@type': 'ListItem', position: 3, name: article.data.title, item: pageUrl }] };
