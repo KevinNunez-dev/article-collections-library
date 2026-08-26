@@ -5,8 +5,9 @@ export const brand = {
   legalName: 'RPT Clinic',
   tagline: 'Clear, practical health information for everyday decisions.',
   domain: 'www.rptclinic.com',
-  logoUrl: 'https://placehold.co/320x80/0B5FFF/ffffff?text=RPT+Clinic',
-  logoAlt: 'RPT Clinic',
+  // Use the logo placed in `public/images/` (filename without spaces)
+  logoUrl: '/images/rpt-library-logo.png',
+  logoAlt: 'Library logo',
   faviconUrl: '/favicon.svg',
   phone: '(305) 555-0199',
   phoneHref: '+13055550199',

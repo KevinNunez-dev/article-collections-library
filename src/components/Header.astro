@@ -1,5 +1,18 @@
 ---
 import { brand } from '../config/brand';
+import { getAllCategories } from '../lib/content';
 const pathname = Astro.url.pathname;
+const categories = (await getAllCategories()).filter((c) => !c.data?.seo?.noindex).sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
 ---
-<header class="site-header"><div class="container header-row"><a class="brand" href="/" aria-label={`${brand.name} home`}><img src={brand.logoUrl} alt={brand.logoAlt} width="160" height="40" /></a><nav aria-label="Primary navigation"><ul class="nav-list">{brand.headerNav.map((item) => <li><a class:list={[{ active: pathname.startsWith(item.href) && item.href !== '/' }]} href={item.href}>{item.label}</a></li>)}</ul></nav><a class="button button-small" href={brand.appointmentUrl}>Make an appointment</a></div></header>
+<header class="site-header">
+	<div class="container header-row">
+		<a class="brand" href="/" aria-label="Home"><img src={brand.logoUrl} alt={brand.logoAlt} width="160" height="40" /></a>
+		<nav aria-label="Primary navigation">
+			<ul class="nav-list">
+				{brand.headerNav.map((item) => <li><a class:list={[{ active: pathname.startsWith(item.href) && item.href !== '/' }]} href={item.href}>{item.label}</a></li>)}
+				{categories.map((cat) => <li><a class:list={[{ active: pathname.startsWith(`/topics/${cat.id}`) }]} href={`/topics/${cat.id}`}>{cat.data.title}</a></li>)}
+			</ul>
+		</nav>
+		<a class="button button-small" href={brand.appointmentUrl}>Make an appointment</a>
+	</div>
+</header>
