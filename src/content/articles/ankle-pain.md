@@ -1,5 +1,5 @@
 ---
-title: Ankle Pain: Symptoms, Causes and When to Seek Care
+title: "Ankle Pain: Symptoms, Causes and When to Seek Care"
 description: Learn about common ankle pain symptoms, possible causes, treatment options and when an ankle injury needs medical evaluation.
 excerpt: Ankle pain can result from a sprain, overuse, tendon problems or other conditions. Learn what symptoms to watch and when to seek care.
 category: Bones, Joints & Muscles
