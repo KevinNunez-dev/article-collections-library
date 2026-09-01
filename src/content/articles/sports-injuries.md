@@ -27,7 +27,7 @@ faq:
     answer: Pain is not always a reliable guide. Stop activity and seek advice for sharp, worsening, swelling-related or function-limiting pain.
 related: [shin-splints, runners-knee, ankle-pain]
 seo:
-  title: Sports Injuries: Types, Prevention and Care | RPT Clinic
+  title: "Sports Injuries: Types, Prevention and Care | RPT Clinic"
   description: Learn about common sports injuries, prevention strategies and when athletes should seek medical care.
 ---
 

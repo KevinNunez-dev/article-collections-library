@@ -25,7 +25,7 @@ faq:
     answer: Flexibility refers to how much a muscle can lengthen, while mobility also involves joint movement, strength, coordination and control.
 related: [poor-posture, sports-performance, what-is-physical-therapy]
 seo:
-  title: How to Improve Mobility: Tips and Care | RPT Clinic
+  title: "How to Improve Mobility: Tips and Care | RPT Clinic"
   description: Learn practical mobility tips, what affects movement and when stiffness or limited mobility needs care.
 ---
 

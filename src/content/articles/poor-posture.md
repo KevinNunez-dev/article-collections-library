@@ -25,7 +25,7 @@ faq:
     answer: Prolonged positions can contribute to discomfort for some people, but pain has many possible causes and should be evaluated when persistent.
 related: [neck-pain, back-pain, improved-mobility]
 seo:
-  title: Poor Posture: Effects and Improvement Tips | RPT Clinic
+  title: "Poor Posture: Effects and Improvement Tips | RPT Clinic"
   description: Learn practical posture and ergonomic tips, plus when neck or back pain needs medical evaluation.
 ---
 

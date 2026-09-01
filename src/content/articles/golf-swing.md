@@ -25,7 +25,7 @@ faq:
     answer: Repeated rotation, loading, technique, conditioning and other health factors can contribute. An evaluation can help identify the right next step.
 related: [golfers-elbow, sports-performance, back-pain]
 seo:
-  title: Golf Swing Pain: Causes, Prevention and Care | RPT Clinic
+  title: "Golf Swing Pain: Causes, Prevention and Care | RPT Clinic"
   description: Learn common golf swing pain causes, prevention tips and when golfers should seek care.
 ---
 

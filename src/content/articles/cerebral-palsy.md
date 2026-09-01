@@ -25,7 +25,7 @@ faq:
     answer: The underlying brain injury does not progress, but needs and secondary symptoms can change over time. An individualized care team can help plan support.
 related: [improved-mobility, multiple-sclerosis]
 seo:
-  title: Cerebral Palsy: Symptoms and Supportive Care | RPT Clinic
+  title: "Cerebral Palsy: Symptoms and Supportive Care | RPT Clinic"
   description: Learn about cerebral palsy, movement symptoms, supportive care and individualized rehabilitation planning.
 ---
 
