@@ -1,5 +1,5 @@
 ---
-title: Bunions: Symptoms, Causes and Treatment Options
+title: "Bunions: Symptoms, Causes and Treatment Options"
 description: Learn about bunion symptoms, common causes, footwear considerations, treatment options and when foot pain needs evaluation.
 excerpt: Bunions can cause a painful bump at the base of the big toe. Learn about symptoms, contributing factors and when to seek foot care.
 category: Bones, Joints & Muscles

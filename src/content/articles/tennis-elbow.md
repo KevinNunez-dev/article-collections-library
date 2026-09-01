@@ -1,5 +1,5 @@
 ---
-title: Tennis Elbow: Symptoms, Causes and Treatment
+title: "Tennis Elbow: Symptoms, Causes and Treatment"
 description: Learn about tennis elbow symptoms, common causes, treatment approaches and when outer elbow pain needs medical evaluation.
 excerpt: Tennis elbow can cause pain on the outside of the elbow and forearm. Learn about symptoms, contributing factors and treatment options.
 category: Bones, Joints & Muscles

@@ -1,5 +1,5 @@
 ---
-title: Plantar Fasciitis: Heel Pain Symptoms, Causes and Treatment
+title: "Plantar Fasciitis: Heel Pain Symptoms, Causes and Treatment"
 description: Learn about plantar fasciitis symptoms, common causes, treatment options and when heel pain needs medical evaluation.
 excerpt: Plantar fasciitis is a common cause of heel pain, especially with first steps in the morning. Learn what may help and when to seek care.
 category: Bones, Joints & Muscles

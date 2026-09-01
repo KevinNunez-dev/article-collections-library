@@ -1,5 +1,5 @@
 ---
-title: How to Improve Mobility: Practical Movement Tips and Care Options
+title: "How to Improve Mobility: Practical Movement Tips and Care Options"
 description: Learn what mobility means, practical ways to improve everyday movement and when stiffness or limited movement needs clinical evaluation.
 excerpt: Mobility supports everyday activities such as walking, reaching and getting up from a chair. Learn practical ways to work on movement safely.
 category: Wellness & Prevention

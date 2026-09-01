@@ -1,5 +1,5 @@
 ---
-title: Multiple Sclerosis: Symptoms, Diagnosis and Care
+title: "Multiple Sclerosis: Symptoms, Diagnosis and Care"
 description: Learn about multiple sclerosis symptoms, diagnosis, treatment planning and when neurological changes need medical evaluation.
 excerpt: Multiple sclerosis is a condition that affects the central nervous system. Learn about possible symptoms, diagnosis and ongoing care.
 category: Wellness & Prevention

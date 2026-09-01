@@ -1,5 +1,5 @@
 ---
-title: Spinal Stenosis: Symptoms, Causes and Treatment
+title: "Spinal Stenosis: Symptoms, Causes and Treatment"
 description: Learn about spinal stenosis symptoms, common causes, care options and signs that need prompt medical evaluation.
 excerpt: Spinal stenosis is narrowing in the spine that can affect nearby nerves. Learn about common symptoms, evaluation and treatment options.
 category: Pain Management

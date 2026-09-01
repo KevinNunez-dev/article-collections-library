@@ -1,5 +1,5 @@
 ---
-title: Runner’s Knee: Symptoms, Causes and Treatment
+title: "Runner’s Knee: Symptoms, Causes and Treatment"
 description: Learn about runner's knee symptoms, common training-related causes, treatment approaches and when knee pain needs evaluation.
 excerpt: Runner’s knee is a common term for pain around the kneecap. Learn about symptoms, contributing factors and when to seek care.
 category: Bones, Joints & Muscles

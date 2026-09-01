@@ -1,5 +1,5 @@
 ---
-title: Shin Splints: Symptoms, Causes and Treatment
+title: "Shin Splints: Symptoms, Causes and Treatment"
 description: Learn about shin splint symptoms, common training-related causes, treatment approaches and when lower-leg pain needs evaluation.
 excerpt: Shin splints can cause pain along the inner lower leg during running or activity. Learn what can contribute and when to seek care.
 category: Bones, Joints & Muscles

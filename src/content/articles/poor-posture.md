@@ -1,5 +1,5 @@
 ---
-title: Poor Posture: Effects, Causes and How to Improve It
+title: "Poor Posture: Effects, Causes and How to Improve It"
 description: Learn how posture can affect comfort and movement, practical ways to change work habits and when pain needs medical evaluation.
 excerpt: Posture is not about holding one perfect position. Learn how movement variety, workspace setup and strength can support comfort.
 category: Wellness & Prevention

@@ -1,5 +1,5 @@
 ---
-title: Sports Injuries: Common Types, Prevention and When to Seek Care
+title: "Sports Injuries: Common Types, Prevention and When to Seek Care"
 description: Learn about common sports injuries, early warning signs, prevention basics and when an athlete needs medical evaluation.
 excerpt: Sports injuries can affect muscles, joints, bones and nerves. Learn common injury patterns and when it is time to seek professional care.
 category: Bones, Joints & Muscles

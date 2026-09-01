@@ -1,5 +1,5 @@
 ---
-title: Herniated Disc: Symptoms, Causes and Treatment Options
+title: "Herniated Disc: Symptoms, Causes and Treatment Options"
 description: Learn about herniated disc symptoms, possible causes, treatment approaches and red flags that need urgent medical evaluation.
 excerpt: A herniated disc can irritate nearby nerves and cause neck or back pain, tingling or weakness. Learn what symptoms mean and when to seek care.
 category: Pain Management

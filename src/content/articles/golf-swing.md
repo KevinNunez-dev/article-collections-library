@@ -1,5 +1,5 @@
 ---
-title: Golf Swing Pain: Common Causes, Prevention and Care
+title: "Golf Swing Pain: Common Causes, Prevention and Care"
 description: Learn common golf swing pain patterns, practical injury-prevention tips and when golfers should seek care for pain or movement changes.
 excerpt: Golf can stress the back, shoulders, elbows and wrists. Learn common pain patterns, prevention basics and when to seek professional care.
 category: Wellness & Prevention

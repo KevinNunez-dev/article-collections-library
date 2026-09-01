@@ -1,5 +1,5 @@
 ---
-title: Bulging Disc: Symptoms, Causes and When to Seek Care
+title: "Bulging Disc: Symptoms, Causes and When to Seek Care"
 description: Learn what a bulging disc is, possible symptoms, common causes, treatment approaches and warning signs that need prompt medical evaluation.
 excerpt: A bulging disc is a common imaging finding that may or may not cause symptoms. Learn about back and nerve symptoms and when to seek care.
 category: Pain Management

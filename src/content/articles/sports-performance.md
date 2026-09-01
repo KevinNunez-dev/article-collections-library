@@ -1,5 +1,5 @@
 ---
-title: Sports Performance: How to Improve Movement and Train Smarter
+title: "Sports Performance: How to Improve Movement and Train Smarter"
 description: Learn practical ways to support sports performance through training progression, recovery, movement quality and injury-risk awareness.
 excerpt: Sports performance depends on more than effort. Learn how training, recovery, movement and health habits can support athletic goals.
 category: Wellness & Prevention

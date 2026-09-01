@@ -1,5 +1,5 @@
 ---
-title: Golfer’s Elbow: Symptoms, Causes and Treatment
+title: "Golfer’s Elbow: Symptoms, Causes and Treatment"
 description: Learn about golfer’s elbow symptoms, common causes, treatment options and when inner elbow pain needs evaluation.
 excerpt: Golfer’s elbow can cause pain on the inside of the elbow and forearm. Learn about common symptoms, contributing factors and care options.
 category: Bones, Joints & Muscles

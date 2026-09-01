@@ -1,5 +1,5 @@
 ---
-title: Cerebral Palsy: Symptoms, Types and Supportive Care
+title: "Cerebral Palsy: Symptoms, Types and Supportive Care"
 description: Learn about cerebral palsy, possible symptoms, types of support and how individualized care can help with daily function and participation.
 excerpt: Cerebral palsy affects movement, muscle tone and coordination. Learn about symptoms, care planning and supportive services across life stages.
 category: Wellness & Prevention

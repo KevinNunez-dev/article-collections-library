@@ -1,5 +1,5 @@
 ---
-title: Fibromyalgia: Symptoms, Causes and Care Options
+title: "Fibromyalgia: Symptoms, Causes and Care Options"
 description: Learn about fibromyalgia symptoms, diagnosis, daily-management strategies and when to discuss widespread pain and fatigue with a clinician.
 excerpt: Fibromyalgia can involve widespread pain, fatigue, sleep changes and other symptoms. Learn how it is evaluated and what care may include.
 category: Pain Management
