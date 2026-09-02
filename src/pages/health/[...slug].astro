@@ -15,7 +15,10 @@ import RPTCtaBand from '../../components/RPTCtaBand.astro';
 import { brand } from '../../config/brand';
 export async function getStaticPaths() { const articles = (await getAllArticles()).filter((a) => !a.data?.seo?.noindex); return articles.map((article) => ({ params: { slug: article.id }, props: { article } })); }
 const { article } = Astro.props;
-const allArticles = (await getAllArticles()).filter((entry) => !entry.data?.seo?.noindex && entry.id !== article.id);
+const publishedArticles = (await getAllArticles()).filter((entry) => !entry.data?.seo?.noindex);
+const allArticles = publishedArticles.filter((entry) => entry.id !== article.id);
+const articlePosition = publishedArticles.findIndex((entry) => entry.id === article.id);
+const heroImage = articlePosition % 2 === 0 ? '/images/rpt-clinic-treatment.jpg' : '/images/rpt-clinic-treatment-2.jpg';
 const explicitRelatedIds = article.data.related || [];
 const articleTags = new Set((article.data.tags || []).map((tag: string) => tag.toLowerCase()));
 const articleBodySystems = new Set(article.data.bodySystems || []);
@@ -37,7 +40,7 @@ const articleSchema = { '@context': 'https://schema.org', '@type': 'MedicalWebPa
 const faqSchema = (article.data.faq || []).length ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: article.data.faq.map((item: any) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) } : null;
 const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).toString() }, { '@type': 'ListItem', position: 2, name: 'Health Library', item: new URL('/health', Astro.site).toString() }, { '@type': 'ListItem', position: 3, name: article.data.title, item: pageUrl }] };
 ---
-<BaseLayout title={article.data.seo?.title || article.data.title} description={article.data.seo?.description || article.data.description} image={article.data.seo?.image || article.data.image} noindex={article.data.seo?.noindex} canonical={article.data.seo?.canonical}>
+<BaseLayout title={article.data.seo?.title || article.data.title} description={article.data.seo?.description || article.data.description} image={heroImage} noindex={article.data.seo?.noindex} canonical={article.data.seo?.canonical}>
   <JsonLd data={[articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])]} />
   
   <!-- Hero Section -->
@@ -47,8 +50,8 @@ const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'Breadcrum
     description={article.data.description}
     ctaText="Schedule Your Assessment"
     ctaHref="#contact"
-    image={article.data.image}
-    imageAlt={article.data.imageAlt}
+    image={heroImage}
+    imageAlt="RPT Clinic clinician providing Robotic Precision Therapy treatment"
   />
   
   <article class="article-page">

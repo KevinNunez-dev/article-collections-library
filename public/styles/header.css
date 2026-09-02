@@ -6,6 +6,9 @@
 .nav-dropdown-menu a{display:block;padding:.55rem .9rem;color:var(--brand-ink);text-decoration:none;font-weight:600}
 .nav-dropdown-menu a:hover{background:var(--brand-accent);color:var(--brand-primary)}
 
+.header-row{min-height:100px}
+.brand img{width:auto;height:80px;max-height:80px}
+
 /* Show on hover or keyboard focus */
 .nav-dropdown:hover .nav-dropdown-menu,.nav-dropdown:focus-within .nav-dropdown-menu{display:block}
 
@@ -13,4 +16,6 @@
 @media (max-width:900px){
   .nav-list{flex-wrap:wrap}
   .nav-dropdown-menu{position:static;box-shadow:none;border:0;padding:0}
+  .header-row{min-height:76px}
+  .brand img{height:56px;max-height:56px}
 }
