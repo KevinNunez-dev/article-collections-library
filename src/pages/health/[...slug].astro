@@ -15,7 +15,23 @@ import RPTCtaBand from '../../components/RPTCtaBand.astro';
 import { brand } from '../../config/brand';
 export async function getStaticPaths() { const articles = (await getAllArticles()).filter((a) => !a.data?.seo?.noindex); return articles.map((article) => ({ params: { slug: article.id }, props: { article } })); }
 const { article } = Astro.props;
-const relatedEntries = (await getAllArticles()).filter((entry) => (article.data.related || []).includes(entry.id));
+const allArticles = (await getAllArticles()).filter((entry) => !entry.data?.seo?.noindex && entry.id !== article.id);
+const explicitRelatedIds = article.data.related || [];
+const articleTags = new Set((article.data.tags || []).map((tag: string) => tag.toLowerCase()));
+const articleBodySystems = new Set(article.data.bodySystems || []);
+const relatedEntries = allArticles
+  .map((entry) => {
+    const explicitIndex = explicitRelatedIds.indexOf(entry.id);
+    const sharedTags = (entry.data.tags || []).filter((tag: string) => articleTags.has(tag.toLowerCase())).length;
+    const sharedBodySystems = (entry.data.bodySystems || []).filter((system: string) => articleBodySystems.has(system)).length;
+    const sameCategory = entry.data.categorySlug === article.data.categorySlug ? 1 : 0;
+    const score = explicitIndex >= 0 ? 1_000 - explicitIndex : (sharedTags * 3) + sharedBodySystems + sameCategory;
+    return { entry, score };
+  })
+  .filter(({ score }) => score > 1)
+  .sort((first, second) => second.score - first.score)
+  .slice(0, 3)
+  .map(({ entry }) => entry);
 const pageUrl = new URL(`/health/${article.id}`, Astro.site).toString();
 const articleSchema = { '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: article.data.title, description: article.data.description, url: pageUrl, datePublished: new Date(article.data.publishedAt).toISOString(), dateModified: new Date(article.data.updatedAt).toISOString(), author: { '@type': 'Organization', name: article.data.author }, reviewedBy: { '@type': 'Person', name: article.data.reviewedBy, jobTitle: article.data.reviewerCredential }, publisher: { '@type': 'Organization', name: brand.legalName, logo: { '@type': 'ImageObject', url: brand.logoUrl } } };
 const faqSchema = (article.data.faq || []).length ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: article.data.faq.map((item: any) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) } : null;

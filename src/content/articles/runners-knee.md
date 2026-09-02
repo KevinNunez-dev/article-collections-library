@@ -14,8 +14,8 @@ reviewedBy: Clinical reviewer pending
 reviewerCredential: Credentials pending
 author: RPT Clinic Editorial Team
 readingTime: 7
-image: /images/articles/runners-knee-rpt-clinic.webp
-imageAlt: Knee movement assessment for running-related pain
+image: /images/Leg/calf-treatment.webp
+imageAlt: Robotic Precision Therapy treatment supporting lower-leg recovery
 keyTakeaways:
   - Runner’s knee commonly causes pain around or behind the kneecap.
   - Changes in training, strength, movement and footwear can contribute.
@@ -43,6 +43,8 @@ Runner’s knee is a general term often used for pain around the kneecap. It can
 ## What can contribute?
 
 Training changes, muscle strength, movement patterns, footwear, recovery and activity surfaces may all be relevant. A clinician can help identify causes of knee pain that need specific care.
+
+![Robotic Precision Therapy treatment supporting lower-leg recovery](/images/Leg/calf-treatment.webp)
 
 ## When should you get checked?
 

@@ -14,8 +14,8 @@ reviewedBy: RPT Clinic Clinical Team
 reviewerCredential: Robotic Precision Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 13
-image: /images/articles/plantar-fasciitis-rpt-clinic.webp
-imageAlt: Robotic Precision Therapy for plantar fasciitis heel pain relief
+image: /images/Leg/calf-treatment.webp
+imageAlt: Robotic Precision Therapy treatment targeting the calf muscles
 keyTakeaways:
   - Plantar fasciitis—sharp heel pain with first steps—affects millions annually and is driven by calf and foot muscle imbalance.
   - The real culprit: tight calf muscles (gastrocnemius/soleus) and weak posterior tibialis create excessive tension on the plantar fascia.
@@ -107,6 +107,8 @@ The **RX2600 Therapeutic Robot** addresses plantar fasciitis by systematically r
 
 ### Targeted Calf Muscle Release
 The robot applies controlled, sustained pressure to chronically tight calf muscles (gastrocnemius and soleus). This sustained pressure—impossible to achieve manually—lengthens the muscle and restores normal ankle dorsiflexion.
+
+![Robotic Precision Therapy treatment targeting the calf muscles](/images/Leg/calf-treatment.webp)
 
 ### Plantar Fascia Mobilization
 Deep pressure is applied to the plantar fascia itself, particularly at the medial calcaneal tubercle (heel origin) and along the fascial bands. This desensitizes irritated tissue and improves flexibility.

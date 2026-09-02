@@ -14,8 +14,8 @@ reviewedBy: RPT Clinic Clinical Team
 reviewerCredential: Robotic Precision Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 11
-image: /images/articles/ankle-pain-rpt-clinic.webp
-imageAlt: Robotic Precision Therapy for ankle pain and instability
+image: /images/Leg/lower-leg-treatment.webp
+imageAlt: Robotic Precision Therapy treatment for lower-leg mobility
 keyTakeaways:
   - Ankle pain can develop from acute sprains, overuse, or gradually from repetitive activities.
   - After a sprain, lingering pain often comes from muscle imbalance and weak stabilizers—not the ligament itself.
@@ -112,6 +112,8 @@ Hip weakness is a major factor in chronic ankle instability. A weak gluteus medi
 
 **Poor Proprioception**
 The nervous system loses refined awareness of ankle position in space. This proprioceptive deficit perpetuates instability and recurrent sprains.
+
+![Robotic Precision Therapy treatment for lower-leg mobility](/images/Leg/lower-leg-treatment.webp)
 
 ## The Cascade Effect: How Ankle Pain Spreads
 

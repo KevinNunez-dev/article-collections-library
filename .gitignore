@@ -3,3 +3,5 @@ dist/
 .astro/
 .env
 .DS_Store
+public/images/Leg/*.HEIC
+public/images/Leg/*.MOV

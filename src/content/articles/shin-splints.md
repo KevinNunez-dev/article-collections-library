@@ -14,8 +14,8 @@ reviewedBy: Clinical reviewer pending
 reviewerCredential: Credentials pending
 author: RPT Clinic Editorial Team
 readingTime: 7
-image: /images/articles/shin-splints-rpt-clinic.webp
-imageAlt: Lower leg assessment for running-related shin pain
+image: /images/Leg/lower-leg-treatment.webp
+imageAlt: Robotic Precision Therapy treatment on a patient's lower leg
 keyTakeaways:
   - Shin splints commonly cause tenderness or pain along the inner edge of the shinbone.
   - Sudden increases in training, running surfaces, footwear and movement mechanics can contribute.
@@ -47,6 +47,8 @@ Rapid training changes, running surfaces, footwear, muscle fatigue and movement 
 ## What may help?
 
 Care may include relative rest, a gradual return-to-activity plan, strength and mobility work, footwear review and rehabilitation based on your needs.
+
+![Robotic Precision Therapy treatment on a patient's lower leg](/images/Leg/lower-leg-treatment.webp)
 
 ## When should you get checked?
 
