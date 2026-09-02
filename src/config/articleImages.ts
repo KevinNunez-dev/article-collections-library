@@ -1,0 +1,38 @@
+const imageByArticleId: Record<string, string> = {
+  'back-pain': '/images/Back/backpain.jpg',
+  'lower-back-pain': '/images/Back/backpain.jpg',
+  'upper-back-pain': '/images/Back/backpain-1.jpg',
+  'left-side-back-pain': '/images/Back/backpain-1.jpg',
+  'right-side-back-pain': '/images/Back/backpain.jpg',
+  'how-to-relieve-back-pain-from-sitting': '/images/Back/backpain-1.jpg',
+  'top-5-ways-to-reduce-back-pain': '/images/Back/backpain.jpg',
+  'neck-pain': '/images/Shoulder/neckpain.jpg',
+  'base-of-neck-pain': '/images/Shoulder/lower neckpain.jpg',
+  'how-to-fix-neck-pain-from-sleeping': '/images/Shoulder/neckpain.jpg',
+  'shoulder-pain': '/images/Shoulder/shoulder pain.jpg',
+  'shoulder-blade-pain': '/images/Shoulder/shoulder pain.jpg',
+  'how-to-relieve-neck-and-shoulder-tension': '/images/Shoulder/lower neckpain.jpg',
+  'tennis-elbow': '/images/Sports/tennis.jpg',
+  'tennis-elbow-rpt': '/images/Sports/tennis-sports.jpg',
+  'sports-injuries': '/images/Sports/stretch.jpg',
+  'sports-injuries-rpt': '/images/Sports/stretch.jpg',
+  'sports-performance': '/images/Sports/mobility.jpg',
+  'golf-swing': '/images/Sports/mobility-2.jpg',
+  'golf-swing-rpt': '/images/Sports/mobility-2.jpg',
+  'runners-knee': '/images/Sports/runner stretching.jpg',
+  'runners-knee-rpt': '/images/Sports/runner stretching.jpg',
+  'how-to-reduce-knee-pain-when-running': '/images/Sports/runner stretching.jpg',
+  'knee-pain': '/images/Sports/runner stretching.jpg',
+  'shin-splints': '/images/Leg/lower-leg-treatment.webp',
+  'shin-splints-rpt': '/images/Leg/lower-leg-treatment.webp',
+  'calf-pain': '/images/Leg/calf-treatment.webp',
+  'achilles-tendon-pain': '/images/Leg/calf-treatment.webp',
+  'plantar-fasciitis': '/images/Leg/calf-treatment.webp',
+  'ankle-pain': '/images/Leg/lower-leg-treatment.webp',
+  'foot-pain': '/images/Leg/lower-leg-treatment.webp',
+  'heel-pain': '/images/Leg/calf-treatment.webp',
+};
+
+export function getArticleThumbnail(articleId: string, fallback?: string) {
+  return imageByArticleId[articleId] || fallback || '/images/rpt-clinic-treatment.jpg';
+}
