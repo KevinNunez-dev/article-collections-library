@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { locations } from '../../config/locations';
+
+export function getStaticPaths() {
+  return locations.map((location) => ({ params: { slug: location.slug }, props: { location } }));
+}
+
+const { location } = Astro.props;
+const mapQuery = encodeURIComponent(`${location.address}, ${location.city}, ${location.region} ${location.postalCode}`);
+---
+<BaseLayout title={`${location.name} | RX2600 Therapy`} description={`Location details and directions for ${location.name} in ${location.city}, ${location.region}.`}>
+  <section class="location-hero">
+    <div class="container">
+      <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Locations', href: '/locations' }, { label: location.name }]} />
+      <p class="eyebrow">RX2600 Therapy Location</p>
+      <h1>{location.name}</h1>
+      <p class="lead">Find location details, directions, and contact options for this participating RX2600 therapy clinic.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container location-detail-grid">
+      <div class="location-details">
+        <p class="label">Address</p>
+        <address>{location.address}<br />{location.city}, {location.region} {location.postalCode}</address>
+        <div class="detail-actions">
+          <a class="button" href={location.mapUrl}>Get directions</a>
+          {location.phone && <a class="button button-outline" href={`tel:${location.phoneHref}`}>Call {location.phone}</a>}
+          {location.website && <a class="text-link" href={location.website}>Visit clinic website</a>}
+        </div>
+        <h2>Care at this location</h2>
+        <p>Participating RX2600 clinics provide assessment-led care for pain, mobility, and muscular tension. Contact the clinic directly to ask about services, availability, and whether treatment is appropriate for your needs.</p>
+      </div>
+      <div class="location-map"><iframe title={`Map for ${location.name}`} src={`https://www.google.com/maps?output=embed&q=${mapQuery}`} loading="lazy"></iframe></div>
+    </div>
+  </section>
+</BaseLayout>
+<style>
+  .location-hero { padding: 4rem 0 3rem; background: linear-gradient(135deg, #e8f1ff, #fff 70%); }
+  .location-hero h1 { margin-bottom: .75rem; }
+  .location-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+  .location-details { padding: 1.5rem; border: 1px solid #dce2eb; border-radius: .4rem; }
+  .label { margin: 0 0 .35rem; color: var(--brand-primary); font-size: .8rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+  address { color: var(--brand-ink); font-size: 1.15rem; font-style: normal; line-height: 1.6; }
+  .detail-actions { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; margin: 1.5rem 0 2rem; }
+  .button-outline { background: #fff; color: var(--brand-primary); border: 1px solid var(--brand-primary); }
+  .location-map { height: 30rem; overflow: hidden; border: 1px solid #dce2eb; border-radius: .4rem; }
+  .location-map iframe { width: 100%; height: 100%; border: 0; }
+  @media (max-width: 760px) { .location-hero { padding: 3rem 0 2.5rem; } .location-detail-grid { grid-template-columns: 1fr; } .location-map { height: 22rem; } }
+</style>

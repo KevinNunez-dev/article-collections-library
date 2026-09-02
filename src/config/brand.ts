@@ -20,7 +20,6 @@ export const brand = {
   surfaceColor: '#F6F8FC',
   headerNav: [
     { label: 'Health Library', href: '/health' },
-    { label: 'Find Care', href: '/find-care' },
     { label: 'Locations', href: '/locations' },
     { label: 'About Us', href: '/about' },
   ] satisfies NavItem[],

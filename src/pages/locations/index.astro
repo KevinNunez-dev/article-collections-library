@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { locations } from '../../config/locations';
+---
+<BaseLayout title="RX2600 Therapy Locations" description="Find a participating clinic offering RX2600 Robotic Precision Therapy.">
+  <section class="locations-hero">
+    <div class="container">
+      <p class="eyebrow">Locations</p>
+      <h1>Find care with RX2600 therapy.</h1>
+      <p class="lead">Search participating clinics by name, city, or ZIP code. Each location offers its own appointment process and care team.</p>
+      <label class="locator-search" for="location-search">
+        <span>Search locations</span>
+        <input id="location-search" type="search" placeholder="City, clinic, or ZIP code" autocomplete="off" data-location-search />
+      </label>
+    </div>
+  </section>
+
+  <section class="section locator-section">
+    <div class="container">
+      <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Locations' }]} />
+      <div class="locator-layout">
+        <div class="location-list" data-location-list>
+          {locations.map((location, index) => (
+            <article class="location-card" data-location-card data-search={`${location.name} ${location.address} ${location.city} ${location.region} ${location.postalCode}`.toLowerCase()}>
+              <p class="location-number">{String(index + 1).padStart(2, '0')}</p>
+              <h2><a href={`/locations/${location.slug}`}>{location.name}</a></h2>
+              <address>{location.address}<br />{location.city}, {location.region} {location.postalCode}</address>
+              <div class="location-actions">
+                <a class="text-link" href={`/locations/${location.slug}`}>View location</a>
+                <a class="text-link" href={location.mapUrl}>Directions</a>
+              </div>
+            </article>
+          ))}
+          <p class="no-locations" data-no-locations hidden>No locations match that search.</p>
+        </div>
+        <div class="locator-map">
+          <iframe title="Map of RX2600 therapy locations" src="https://www.google.com/maps?output=embed&q=3250+W+Big+Beaver+Road+Troy+MI" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  const search = document.querySelector<HTMLInputElement>('[data-location-search]');
+  const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-location-card]'));
+  const empty = document.querySelector<HTMLElement>('[data-no-locations]');
+  search?.addEventListener('input', () => {
+    const term = search.value.trim().toLowerCase();
+    let matches = 0;
+    cards.forEach((card) => {
+      const visible = !term || (card.dataset.search || '').includes(term);
+      card.hidden = !visible;
+      if (visible) matches += 1;
+    });
+    if (empty) empty.hidden = matches > 0;
+  });
+</script>
+
+<style>
+  .locations-hero { padding: 5rem 0 4rem; background: linear-gradient(135deg, #e8f1ff 0%, #fff 66%); }
+  .locations-hero h1 { max-width: 16ch; }
+  .locator-search { display: grid; gap: .4rem; max-width: 40rem; margin-top: 2rem; color: var(--brand-ink); font-weight: 700; }
+  .locator-search input { width: 100%; padding: .9rem 1rem; border: 1px solid #b8c6dd; border-radius: .4rem; font: inherit; }
+  .locator-layout { display: grid; grid-template-columns: minmax(0, .9fr) minmax(24rem, 1.1fr); gap: 1.5rem; margin-top: 2rem; align-items: start; }
+  .location-list { display: grid; gap: .75rem; }
+  .location-card { position: relative; padding: 1.25rem 1.25rem 1.15rem 4rem; border: 1px solid #dce2eb; border-radius: .4rem; background: #fff; }
+  .location-number { position: absolute; top: 1.35rem; left: 1.25rem; margin: 0; color: var(--brand-primary); font-weight: 800; font-variant-numeric: tabular-nums; }
+  .location-card h2 { margin: 0 0 .55rem; font-size: 1.2rem; }
+  .location-card h2 a { color: var(--brand-ink); text-decoration: none; }
+  .location-card h2 a:hover { color: var(--brand-primary); }
+  address { color: var(--brand-muted); font-style: normal; line-height: 1.5; }
+  .location-actions { display: flex; gap: 1rem; margin-top: .8rem; font-weight: 700; }
+  .locator-map { position: sticky; top: 7.5rem; height: 38rem; overflow: hidden; border: 1px solid #dce2eb; border-radius: .4rem; background: #e8f1ff; }
+  .locator-map iframe { width: 100%; height: 100%; border: 0; }
+  .no-locations { color: var(--brand-muted); }
+  @media (max-width: 800px) { .locations-hero { padding: 3.5rem 0 3rem; } .locator-layout { grid-template-columns: 1fr; } .locator-map { position: static; height: 21rem; order: -1; } }
+</style>
