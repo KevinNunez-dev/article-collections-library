@@ -42,7 +42,7 @@ const articleSchema = { '@context': 'https://schema.org', '@type': 'MedicalWebPa
 const faqSchema = (article.data.faq || []).length ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: article.data.faq.map((item: any) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) } : null;
 const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).toString() }, { '@type': 'ListItem', position: 2, name: 'Health Library', item: new URL('/health', Astro.site).toString() }, { '@type': 'ListItem', position: 3, name: article.data.title, item: pageUrl }] };
 ---
-<BaseLayout title={article.data.seo?.title || article.data.title} description={article.data.seo?.description || article.data.description} image={heroImage} noindex={article.data.seo?.noindex} canonical={article.data.seo?.canonical}>
+<BaseLayout title={article.data.seo?.title || article.data.title} description={article.data.seo?.description || article.data.description} image={heroImage} noindex={article.data.seo?.noindex} canonical={article.data.seo?.canonical} publishedTime={article.data.publishedAt} modifiedTime={article.data.updatedAt}>
   <JsonLd data={[articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])]} />
   
   <!-- Hero Section -->

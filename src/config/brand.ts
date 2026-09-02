@@ -4,7 +4,7 @@ export const brand = {
   name: 'RPT Clinic',
   legalName: 'RPT Clinic',
   tagline: 'Clear, practical health information for everyday decisions.',
-  domain: 'www.rptclinic.com',
+  domain: 'rptclinic.com',
   // Use the logo placed in `public/images/` (filename without spaces)
   logoUrl: '/images/rpt-library-logo.png',
   logoAlt: 'Library logo',

@@ -20,11 +20,11 @@ const thumbnail = getArticleThumbnail(id, data.image);
 </article>
 
 <style>
-	.article-card { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); overflow: hidden; }
-	.article-card-thumbnail { align-self: start; display: block; aspect-ratio: 4 / 3; overflow: hidden; background: var(--brand-surface); }
+	.article-card { display: flex; flex-direction: column; overflow: hidden; }
+	.article-card-thumbnail { display: block; aspect-ratio: 16 / 7; overflow: hidden; background: var(--brand-surface); }
 	.article-card-thumbnail img { display: block; width: 100%; height: 100%; object-fit: cover; }
 	.article-card-content { min-width: 0; padding: 1.1rem; }
 	.article-card-content .eyebrow { margin-top: 0; }
 	.article-card-content h2 { margin-top: 0; }
-	@media (max-width: 560px) { .article-card { grid-template-columns: 6.5rem minmax(0, 1fr); } .article-card-content { padding: .9rem; } .article-card-content h2 { font-size: 1.12rem; } .article-card-content > p:not(.eyebrow) { display: none; } }
+	@media (max-width: 560px) { .article-card-thumbnail { aspect-ratio: 16 / 8; } .article-card-content { padding: .9rem; } .article-card-content h2 { font-size: 1.12rem; } }
 </style>
