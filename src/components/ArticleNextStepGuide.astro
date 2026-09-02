@@ -9,6 +9,11 @@ const { articleTitle } = Astro.props;
 ---
 
 <aside class="next-step-guide" data-next-step-guide aria-label={`Find your next step for ${articleTitle}`}>
+  <div class="guide-controls">
+    <button class="guide-control" type="button" data-guide-minimize aria-label="Minimize questionnaire" aria-expanded="true">_</button>
+    <button class="guide-control" type="button" data-guide-close aria-label="Close questionnaire">×</button>
+  </div>
+  <button class="guide-bubble" type="button" data-guide-reopen aria-label="Reopen questionnaire" hidden>?</button>
   <div class="guide-steps" data-guide-steps>
     <section class="guide-step" data-guide-step>
       <p class="guide-progress">Question 1 of 4</p>
@@ -62,6 +67,9 @@ const { articleTitle } = Astro.props;
 
 <script>
   const guide = document.querySelector<HTMLElement>('[data-next-step-guide]');
+  const closeButton = guide?.querySelector<HTMLButtonElement>('[data-guide-close]');
+  const minimizeButton = guide?.querySelector<HTMLButtonElement>('[data-guide-minimize]');
+  const reopenButton = guide?.querySelector<HTMLButtonElement>('[data-guide-reopen]');
   const restartButton = guide?.querySelector<HTMLButtonElement>('[data-guide-restart]');
   const steps = Array.from(guide?.querySelectorAll<HTMLElement>('[data-guide-step]') || []);
   let currentStep = 0;
@@ -79,6 +87,20 @@ const { articleTitle } = Astro.props;
 
   restartButton?.addEventListener('click', () => showStep(0));
 
+  closeButton?.addEventListener('click', () => guide?.setAttribute('hidden', ''));
+
+  minimizeButton?.addEventListener('click', () => {
+    guide?.classList.add('is-minimized');
+    minimizeButton.setAttribute('aria-expanded', 'false');
+    reopenButton?.removeAttribute('hidden');
+  });
+
+  reopenButton?.addEventListener('click', () => {
+    guide?.classList.remove('is-minimized');
+    minimizeButton?.setAttribute('aria-expanded', 'true');
+    reopenButton.setAttribute('hidden', '');
+  });
+
   const revealGuide = () => {
     if (window.scrollY > document.documentElement.scrollHeight * 0.4) {
       guide?.classList.add('is-visible');
@@ -91,7 +113,14 @@ const { articleTitle } = Astro.props;
 </script>
 
 <style>
-  .next-step-guide { width: min(20rem, calc(100vw - 2rem)); padding: 1rem; border: 1px solid #cbd8ef; border-radius: .5rem; background: #fff; box-shadow: 0 1rem 2.5rem rgba(23, 32, 51, .16); color: var(--brand-ink); }
+  .next-step-guide { position: relative; width: min(20rem, calc(100vw - 2rem)); padding: 1rem; border: 1px solid #cbd8ef; border-radius: .5rem; background: #fff; box-shadow: 0 1rem 2.5rem rgba(23, 32, 51, .16); color: var(--brand-ink); }
+  .guide-controls { position: absolute; top: .45rem; right: .45rem; display: flex; gap: .15rem; }
+  .guide-control { display: grid; width: 1.7rem; height: 1.7rem; place-items: center; padding: 0; border: 0; border-radius: .25rem; background: transparent; color: var(--brand-muted); cursor: pointer; font: 1.25rem/1 sans-serif; }
+  .guide-control:hover, .guide-control:focus-visible { background: #eef4ff; color: var(--brand-primary); outline: 2px solid transparent; }
+  .guide-bubble { display: grid; width: 3.25rem; height: 3.25rem; place-items: center; border: 0; border-radius: 50%; background: var(--brand-primary); box-shadow: 0 .6rem 1.5rem rgba(11, 95, 255, .28); color: #fff; cursor: pointer; font: 800 1.2rem/1 sans-serif; }
+  .guide-bubble:hover, .guide-bubble:focus-visible { background: var(--brand-primary-dark); outline: 2px solid #b8c6dd; outline-offset: 2px; }
+  .next-step-guide.is-minimized { width: auto; padding: 0; border: 0; background: transparent; box-shadow: none; }
+  .next-step-guide.is-minimized .guide-controls, .next-step-guide.is-minimized .guide-steps { display: none; }
   .guide-progress { margin: 0; color: var(--brand-primary); font-size: .75rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
   .guide-step h2 { margin: .55rem 0 1rem; font-size: 1.15rem; letter-spacing: 0; }
   .guide-options { display: grid; gap: .55rem; }
@@ -105,6 +134,7 @@ const { articleTitle } = Astro.props;
   @media (min-width: 1180px) {
     .next-step-guide { position: fixed; z-index: 9; top: 12rem; left: 1.25rem; transform: translateX(calc(-100% - 2rem)); opacity: 0; transition: transform .25s ease, opacity .25s ease; }
     .next-step-guide.is-visible { transform: translateX(0); opacity: 1; }
+    .next-step-guide.is-minimized { transform: translateX(0); }
   }
 
   @media (max-width: 1179px) {
