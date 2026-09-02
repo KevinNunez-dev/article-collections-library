@@ -3,8 +3,13 @@ import { getAllArticles, getAllCategories } from '../../lib/content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import LibrarySearch from '../../components/LibrarySearch.astro';
+import LibraryNavigator from '../../components/LibraryNavigator.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 const articles = (await getAllArticles()).filter((a) => !a.data?.seo?.noindex).sort((a, b) => new Date(b.data.updatedAt).valueOf() - new Date(a.data.updatedAt).valueOf());
 const categories = (await getAllCategories()).filter((c) => !c.data?.seo?.noindex).sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
 ---
-<BaseLayout title="Health Library" description="Browse practical health articles by topic from the RPT Clinic Editorial Team."><div class="container section"><Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Health Library' }]} /><p class="eyebrow">Health Library</p><h1>Find health answers by topic.</h1><p class="lead">Search articles and filter by the health topic that matters to you.</p><LibrarySearch articles={articles.map((article) => ({ id: article.id, title: article.data.title, excerpt: article.data.excerpt, category: article.data.category, tags: article.data.tags || [], readingTime: article.data.readingTime }))} categories={categories.map((category) => category.data.title)} /><div class="article-grid archive-grid">{articles.map((article) => <ArticleCard article={article} />)}</div></div></BaseLayout>
+<BaseLayout title="Health Library" description="Browse practical health articles by topic from the RPT Clinic Editorial Team."><div class="container section"><Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Health Library' }]} /><p class="eyebrow">Health Library</p><h1>Find health answers by topic.</h1><p class="lead">Search articles and filter by the health topic that matters to you.</p><LibrarySearch articles={articles.map((article) => ({ id: article.id, title: article.data.title, excerpt: article.data.excerpt, category: article.data.category, tags: article.data.tags || [], readingTime: article.data.readingTime }))} categories={categories.map((category) => category.data.title)} /><div class="library-archive"><LibraryNavigator articles={articles.map((article) => ({ id: article.id, title: article.data.title }))} categories={categories.map((category) => ({ id: category.id, title: category.data.title }))} /><div class="article-grid archive-grid">{articles.map((article) => <ArticleCard article={article} />)}</div></div></div></BaseLayout>
+<style>
+	.library-archive { display: grid; grid-template-columns: 17rem minmax(0, 1fr); gap: 2rem; align-items: start; margin-top: 2rem; }
+	@media (max-width: 900px) { .library-archive { grid-template-columns: 1fr; } }
+</style>

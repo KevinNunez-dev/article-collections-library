@@ -9,12 +9,6 @@ const { articleTitle } = Astro.props;
 ---
 
 <aside class="next-step-guide" data-next-step-guide aria-label={`Find your next step for ${articleTitle}`}>
-  <div class="guide-header">
-    <p class="guide-kicker">Find your next step</p>
-    <button class="guide-close" type="button" data-guide-close aria-label="Close guide">×</button>
-  </div>
-  <p class="guide-topic">A few questions about {articleTitle.toLowerCase()}</p>
-
   <div class="guide-steps" data-guide-steps>
     <section class="guide-step" data-guide-step>
       <p class="guide-progress">Question 1 of 4</p>
@@ -68,11 +62,9 @@ const { articleTitle } = Astro.props;
 
 <script>
   const guide = document.querySelector<HTMLElement>('[data-next-step-guide]');
-  const closeButton = guide?.querySelector<HTMLButtonElement>('[data-guide-close]');
   const restartButton = guide?.querySelector<HTMLButtonElement>('[data-guide-restart]');
   const steps = Array.from(guide?.querySelectorAll<HTMLElement>('[data-guide-step]') || []);
   let currentStep = 0;
-  let dismissed = false;
 
   const showStep = (stepIndex: number) => {
     currentStep = stepIndex;
@@ -85,15 +77,10 @@ const { articleTitle } = Astro.props;
     button.addEventListener('click', () => showStep(Math.min(currentStep + 1, steps.length - 1)));
   });
 
-  closeButton?.addEventListener('click', () => {
-    dismissed = true;
-    guide?.setAttribute('hidden', '');
-  });
-
   restartButton?.addEventListener('click', () => showStep(0));
 
   const revealGuide = () => {
-    if (!dismissed && window.scrollY > document.documentElement.scrollHeight * 0.4) {
+    if (window.scrollY > document.documentElement.scrollHeight * 0.4) {
       guide?.classList.add('is-visible');
       window.removeEventListener('scroll', revealGuide);
     }
@@ -105,11 +92,7 @@ const { articleTitle } = Astro.props;
 
 <style>
   .next-step-guide { width: min(20rem, calc(100vw - 2rem)); padding: 1rem; border: 1px solid #cbd8ef; border-radius: .5rem; background: #fff; box-shadow: 0 1rem 2.5rem rgba(23, 32, 51, .16); color: var(--brand-ink); }
-  .guide-header { display: flex; align-items: center; justify-content: space-between; gap: .75rem; }
-  .guide-kicker, .guide-progress { margin: 0; color: var(--brand-primary); font-size: .75rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
-  .guide-close { width: 2rem; height: 2rem; padding: 0; border: 0; background: transparent; color: var(--brand-muted); cursor: pointer; font-size: 1.4rem; line-height: 1; }
-  .guide-close:hover { color: var(--brand-ink); }
-  .guide-topic { margin: .45rem 0 1.1rem; color: var(--brand-muted); font-size: .9rem; line-height: 1.4; }
+  .guide-progress { margin: 0; color: var(--brand-primary); font-size: .75rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
   .guide-step h2 { margin: .55rem 0 1rem; font-size: 1.15rem; letter-spacing: 0; }
   .guide-options { display: grid; gap: .55rem; }
   .guide-options button { padding: .7rem .8rem; border: 1px solid #cbd8ef; border-radius: .3rem; background: #fff; color: var(--brand-ink); cursor: pointer; font: inherit; font-size: .9rem; text-align: left; }

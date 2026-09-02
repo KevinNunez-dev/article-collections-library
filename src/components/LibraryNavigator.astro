@@ -1,0 +1,99 @@
+---
+export interface NavigatorArticle {
+  id: string;
+  title: string;
+}
+
+export interface NavigatorCategory {
+  id: string;
+  title: string;
+}
+
+export interface Props {
+  articles: NavigatorArticle[];
+  categories: NavigatorCategory[];
+}
+
+const { articles, categories } = Astro.props;
+const alphabeticalArticles = [...articles].sort((first, second) => first.title.localeCompare(second.title));
+const letters = [...new Set(alphabeticalArticles.map((article) => article.title.charAt(0).toUpperCase()))];
+---
+
+<aside class="library-navigator" aria-label="Browse the health library">
+  <div class="navigator-heading">
+    <p class="navigator-kicker">Browse the library</p>
+    <h2>Find a topic</h2>
+  </div>
+
+  <label class="navigator-search" for="navigator-query">
+    <span>Filter article titles</span>
+    <input id="navigator-query" type="search" placeholder="Search A-Z" autocomplete="off" data-navigator-input />
+  </label>
+
+  <nav class="navigator-topics" aria-label="Health topics">
+    <p>Topics</p>
+    <ul>
+      {categories.map((category) => <li><a href={`/topics/${category.id}`}>{category.title}</a></li>)}
+    </ul>
+  </nav>
+
+  <nav class="navigator-directory" aria-label="Article directory">
+    <p>Article directory</p>
+    <div class="navigator-letters" aria-label="Jump to letter">
+      {letters.map((letter) => <a href={`#library-letter-${letter}`}>{letter}</a>)}
+    </div>
+    <div class="navigator-results" data-navigator-results>
+      {letters.map((letter) => (
+        <section data-navigator-group id={`library-letter-${letter}`}>
+          <h3>{letter}</h3>
+          <ul>
+            {alphabeticalArticles.filter((article) => article.title.startsWith(letter)).map((article) => (
+              <li data-navigator-article data-title={article.title.toLowerCase()}><a href={`/health/${article.id}`}>{article.title}</a></li>
+            ))}
+          </ul>
+        </section>
+      ))}
+      <p class="navigator-empty" data-navigator-empty hidden>No matching articles.</p>
+    </div>
+  </nav>
+</aside>
+
+<script>
+  const input = document.querySelector<HTMLInputElement>('[data-navigator-input]');
+  const entries = Array.from(document.querySelectorAll<HTMLElement>('[data-navigator-article]'));
+  const groups = Array.from(document.querySelectorAll<HTMLElement>('[data-navigator-group]'));
+  const empty = document.querySelector<HTMLElement>('[data-navigator-empty]');
+
+  input?.addEventListener('input', () => {
+    const query = input.value.trim().toLowerCase();
+    let matches = 0;
+    entries.forEach((entry) => {
+      const visible = !query || (entry.dataset.title || '').includes(query);
+      entry.hidden = !visible;
+      if (visible) matches += 1;
+    });
+    groups.forEach((group) => {
+      group.hidden = Array.from(group.querySelectorAll<HTMLElement>('[data-navigator-article]')).every((entry) => entry.hidden);
+    });
+    if (empty) empty.hidden = matches > 0;
+  });
+</script>
+
+<style>
+  .library-navigator { position: sticky; top: 7.5rem; max-height: calc(100vh - 9rem); padding: 1.25rem; overflow-y: auto; border: 1px solid #dce2eb; border-radius: .45rem; background: #fff; }
+  .navigator-heading h2 { margin: .2rem 0 1rem; font-size: 1.3rem; letter-spacing: 0; }
+  .navigator-kicker, .navigator-topics > p, .navigator-directory > p { margin: 0; color: var(--brand-primary); font-size: .75rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+  .navigator-search { display: grid; gap: .4rem; color: var(--brand-ink); font-size: .82rem; font-weight: 700; }
+  .navigator-search input { width: 100%; padding: .65rem .7rem; border: 1px solid #b8c6dd; border-radius: .3rem; font: inherit; }
+  .navigator-topics, .navigator-directory { margin-top: 1.25rem; }
+  .navigator-topics ul, .navigator-directory ul { display: grid; gap: .35rem; margin: .55rem 0 0; padding: 0; list-style: none; }
+  .navigator-topics a, .navigator-directory a { color: var(--brand-ink); font-size: .88rem; line-height: 1.35; text-decoration: none; }
+  .navigator-topics a:hover, .navigator-directory a:hover { color: var(--brand-primary); text-decoration: underline; }
+  .navigator-letters { display: flex; flex-wrap: wrap; gap: .35rem; margin: .65rem 0 .9rem; }
+  .navigator-letters a { display: grid; width: 1.55rem; height: 1.55rem; place-items: center; border-radius: .25rem; background: #eef4ff; color: var(--brand-primary); font-size: .75rem; font-weight: 800; text-decoration: none; }
+  .navigator-letters a:hover { background: var(--brand-primary); color: #fff; }
+  .navigator-results section + section { margin-top: .8rem; }
+  .navigator-results h3 { margin: 0; color: var(--brand-primary); font-size: .85rem; letter-spacing: 0; }
+  .navigator-empty { color: var(--brand-muted); font-size: .88rem; }
+  @media (max-width: 900px) { .library-navigator { position: static; max-height: none; } .navigator-results { max-height: 18rem; overflow-y: auto; padding-right: .5rem; } }
+</style>
