@@ -9,9 +9,6 @@ bodySystems: [nervous system, musculoskeletal]
 contentType: condition
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Neurological Physical Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 10
 image: /images/articles/multiple-sclerosis-therapy.jpg
@@ -130,4 +127,4 @@ MS therapy typically involves:
 
 Multiple sclerosis requires individualized care. We're here to help you maintain mobility, strength, and independence.
 
-[Schedule your MS assessment today](#contact)
+[Schedule your MS assessment today](https://rptclinic.com/contact/)

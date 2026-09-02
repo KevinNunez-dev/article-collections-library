@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: condition
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Robotic Precision Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 11
 image: /images/articles/tennis-elbow-rpt-clinic.jpg
@@ -160,4 +157,4 @@ Tennis elbow doesn't require months of limitation. RPT Clinic releases the forea
 
 **Most patients experience significant improvement within 4-6 sessions.**
 
-[Schedule your tennis elbow assessment today](#contact)
+[Schedule your tennis elbow assessment today](https://rptclinic.com/contact/)

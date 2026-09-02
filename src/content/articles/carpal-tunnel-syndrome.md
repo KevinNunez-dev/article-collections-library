@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal, nervous system]
 contentType: condition
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Robotic Precision Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 14
 image: /images/articles/carpal-tunnel-rpt-clinic.jpg
@@ -261,4 +258,4 @@ Carpal tunnel doesn't mean a life of splints, injections, or surgery. RPT Clinic
 
 **Many patients experience significant relief within 3-5 sessions. Full resolution typically occurs within 6-10 visits.**
 
-[Schedule your evaluation today](#contact) or call to discuss whether Robotic Precision Therapy is right for your carpal tunnel syndrome.
+[Schedule your evaluation today](https://rptclinic.com/contact/) or call to discuss whether Robotic Precision Therapy is right for your carpal tunnel syndrome.

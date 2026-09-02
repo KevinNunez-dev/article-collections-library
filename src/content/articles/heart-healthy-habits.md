@@ -9,9 +9,6 @@ bodySystems: [cardiovascular]
 contentType: wellness
 publishedAt: 2026-08-04
 updatedAt: 2026-08-20
-reviewedAt: 2026-08-20
-reviewedBy: Avery Patel
-reviewerCredential: MD
 readingTime: 5
 keyTakeaways:
   - A heart-health plan is most useful when it fits your life and medical needs.

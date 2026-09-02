@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: treatment
 publishedAt: 2026-08-01
 updatedAt: 2026-08-20
-reviewedAt: 2026-08-20
-reviewedBy: Jordan Lee
-reviewerCredential: PT, DPT
 author: RPT Clinic Editorial Team
 readingTime: 6
 keyTakeaways:

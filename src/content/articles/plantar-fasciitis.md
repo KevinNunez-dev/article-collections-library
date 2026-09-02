@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: condition
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Robotic Precision Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 13
 image: /images/Leg/calf-treatment.webp
@@ -197,4 +194,4 @@ Plantar fasciitis doesn't have to mean heel pain, injections, or surgery. RPT Cl
 
 **Most patients experience significant relief within 6-10 sessions. Many achieve full pain resolution and return to all activities.**
 
-[Schedule your evaluation today](#contact) or call to discuss whether Robotic Precision Therapy is right for your plantar fasciitis.
+[Schedule your evaluation today](https://rptclinic.com/contact/) or call to discuss whether Robotic Precision Therapy is right for your plantar fasciitis.

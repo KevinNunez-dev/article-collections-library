@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: condition
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Robotic Precision Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 12
 image: https://rptclinic.com/wp-content/uploads/2026/01/Neck3-980x654.jpg
@@ -220,4 +217,4 @@ Chronic neck pain doesn't have to limit your life. RPT Clinic combines advanced 
 
 **Many patients experience significant relief in just 1-3 sessions. Full resolution typically occurs within 5-8 visits.**
 
-[Schedule your evaluation today](#contact) or call to discuss whether Robotic Precision Therapy is right for your neck pain.
+[Schedule your evaluation today](https://rptclinic.com/contact/) or call to discuss whether Robotic Precision Therapy is right for your neck pain.

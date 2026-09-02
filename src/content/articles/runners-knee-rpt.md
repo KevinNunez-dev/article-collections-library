@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: condition
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Robotic Precision Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 11
 image: /images/articles/runners-knee-rpt-clinic.jpg
@@ -159,4 +156,4 @@ Runner's knee doesn't have to end your running career. RPT Clinic corrects the m
 
 **Most runners experience significant improvement within 6-8 sessions.**
 
-[Schedule your runner's knee assessment today](#contact)
+[Schedule your runner's knee assessment today](https://rptclinic.com/contact/)

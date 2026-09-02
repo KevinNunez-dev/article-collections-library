@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal, nervous system]
 contentType: condition
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Robotic Precision Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 12
 image: /images/articles/bulging-disc-rpt-clinic.webp
@@ -150,4 +147,4 @@ Bulging discs don't require injections or surgery. RPT Clinic releases the spina
 
 **Most patients achieve significant pain relief within 4-8 sessions.**
 
-[Schedule your spinal assessment today](#contact)
+[Schedule your spinal assessment today](https://rptclinic.com/contact/)

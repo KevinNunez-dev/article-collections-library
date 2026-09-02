@@ -9,9 +9,6 @@ bodySystems: [cardiovascular]
 contentType: wellness
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Wellness Specialist
 author: RPT Clinic Editorial Team
 readingTime: 10
 image: /images/articles/heart-healthy-habits.jpg
@@ -121,4 +118,4 @@ Education on heart-healthy exercise patterns
 
 Cardiovascular health is achievable through consistent, enjoyable movement. We're here to remove physical barriers enabling your exercise routine.
 
-[Schedule your heart health assessment today](#contact)
+[Schedule your heart health assessment today](https://rptclinic.com/contact/)

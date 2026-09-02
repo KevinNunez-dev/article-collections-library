@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: condition
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Robotic Precision Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 13
 image: /images/articles/tmj-rpt-clinic.jpg
@@ -153,4 +150,4 @@ TMJ dysfunction doesn't have to mean surgery, splints, or chronic pain. RPT Clin
 
 **Most patients experience significant relief within 1-2 sessions, with full results within 4-8 visits.**
 
-[Schedule your TMJ evaluation today](#contact)
+[Schedule your TMJ evaluation today](https://rptclinic.com/contact/)

@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: listicle
 publishedAt: 2026-08-03
 updatedAt: 2026-08-20
-reviewedAt: 2026-08-20
-reviewedBy: Taylor Morgan
-reviewerCredential: MD
 readingTime: 5
 keyTakeaways:
   - Pain that is persistent, severe or limiting activity deserves attention.

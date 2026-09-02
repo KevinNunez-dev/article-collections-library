@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: education
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Physical Therapy Expert
 author: RPT Clinic Editorial Team
 readingTime: 11
 image: /images/articles/what-is-physical-therapy.jpg
@@ -173,4 +170,4 @@ Transition to home management with maintenance exercises preventing re-injury.
 
 Physical therapy is investment in your health and function. We're here to guide your recovery and help you achieve your goals.
 
-[Schedule your physical therapy evaluation today](#contact)
+[Schedule your physical therapy evaluation today](https://rptclinic.com/contact/)

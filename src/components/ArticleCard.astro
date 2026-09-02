@@ -3,4 +3,4 @@ export interface Props { article: any; featured?: boolean }
 const { article, featured = false } = Astro.props;
 const { data, id } = article;
 ---
-<article class:list={['article-card', { featured }]}><p class="eyebrow"><a href={`/topics/${data.categorySlug}`}>{data.category}</a></p><h2><a href={`/health/${id}`}>{data.title}</a></h2><p>{data.excerpt}</p><div class="article-card-meta"><span>{data.readingTime} min read</span><span>Reviewed {new Date(data.reviewedAt).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}</span></div><a class="text-link" href={`/health/${id}`}>Read article <span aria-hidden="true">→</span></a></article>
+<article class:list={['article-card', { featured }]}><p class="eyebrow"><a href={`/topics/${data.categorySlug}`}>{data.category}</a></p><h2><a href={`/health/${id}`}>{data.title}</a></h2><p>{data.excerpt}</p><div class="article-card-meta"><span>{data.readingTime} min read</span><span>Updated {new Date(data.updatedAt).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}</span></div><a class="text-link" href={`/health/${id}`}>Read article <span aria-hidden="true">→</span></a></article>

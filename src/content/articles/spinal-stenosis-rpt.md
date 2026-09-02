@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal, nervous system]
 contentType: condition
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Robotic Precision Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 12
 image: /images/articles/spinal-stenosis-rpt-clinic.jpg
@@ -162,4 +159,4 @@ Spinal stenosis doesn't mean accepting limited mobility. RPT Clinic releases mus
 
 **Most stenosis patients experience significant improvement within 8-12 sessions.**
 
-[Schedule your stenosis assessment today](#contact)
+[Schedule your stenosis assessment today](https://rptclinic.com/contact/)

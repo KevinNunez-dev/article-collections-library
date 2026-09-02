@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: wellness
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Sports Performance Specialist
 author: RPT Clinic Editorial Team
 readingTime: 10
 image: /images/articles/golf-swing-performance.jpg
@@ -151,4 +148,4 @@ Golf performance improvement starts with proper muscle balance. RPT Clinic addre
 
 **Most golfers experience improved performance within 4-6 sessions.**
 
-[Schedule your golf performance assessment today](#contact)
+[Schedule your golf performance assessment today](https://rptclinic.com/contact/)

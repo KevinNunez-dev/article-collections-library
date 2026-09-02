@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: education
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Pain Management Specialist
 author: RPT Clinic Editorial Team
 readingTime: 11
 image: /images/articles/lower-back-pain-understanding.jpg
@@ -145,4 +142,4 @@ Seek immediate medical attention for:
 
 Back pain is treatable when you address root causes. We help you understand your pain and recover effectively.
 
-[Schedule your back pain assessment today](#contact)
+[Schedule your back pain assessment today](https://rptclinic.com/contact/)

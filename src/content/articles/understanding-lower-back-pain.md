@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: symptom
 publishedAt: 2026-08-02
 updatedAt: 2026-08-20
-reviewedAt: 2026-08-20
-reviewedBy: Jordan Lee
-reviewerCredential: PT, DPT
 readingTime: 7
 keyTakeaways:
   - Back pain often improves with time, movement and an appropriate care plan.

@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: wellness
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Robotic Precision Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 14
 image: /images/articles/sports-performance-rpt-clinic.webp
@@ -191,4 +188,4 @@ Peak athletic performance doesn't have to be limited by muscle restrictions and 
 
 **Most performance athletes experience noticeable improvements within 4-6 sessions, with many achieving breakthrough performance gains that training alone could not produce.**
 
-[Schedule your performance assessment today](#contact) or call to discuss how Robotic Precision Therapy can unlock your full athletic potential.
+[Schedule your performance assessment today](https://rptclinic.com/contact/) or call to discuss how Robotic Precision Therapy can unlock your full athletic potential.

@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: condition
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Robotic Precision Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 11
 image: /images/articles/sports-injuries-rpt-clinic.jpg
@@ -167,4 +164,4 @@ Sports injuries don't have to sideline you long. RPT Clinic accelerates recovery
 
 **Most athletes experience significant improvement within 4-8 sessions.**
 
-[Schedule your sports injury assessment today](#contact)
+[Schedule your sports injury assessment today](https://rptclinic.com/contact/)

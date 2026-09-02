@@ -36,7 +36,7 @@ const relatedEntries = allArticles
   .slice(0, 3)
   .map(({ entry }) => entry);
 const pageUrl = new URL(`/health/${article.id}`, Astro.site).toString();
-const articleSchema = { '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: article.data.title, description: article.data.description, url: pageUrl, datePublished: new Date(article.data.publishedAt).toISOString(), dateModified: new Date(article.data.updatedAt).toISOString(), author: { '@type': 'Organization', name: article.data.author }, reviewedBy: { '@type': 'Person', name: article.data.reviewedBy, jobTitle: article.data.reviewerCredential }, publisher: { '@type': 'Organization', name: brand.legalName, logo: { '@type': 'ImageObject', url: brand.logoUrl } } };
+const articleSchema = { '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: article.data.title, description: article.data.description, url: pageUrl, datePublished: new Date(article.data.publishedAt).toISOString(), dateModified: new Date(article.data.updatedAt).toISOString(), author: { '@type': 'Organization', name: article.data.author }, publisher: { '@type': 'Organization', name: brand.legalName, logo: { '@type': 'ImageObject', url: brand.logoUrl } } };
 const faqSchema = (article.data.faq || []).length ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: article.data.faq.map((item: any) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) } : null;
 const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).toString() }, { '@type': 'ListItem', position: 2, name: 'Health Library', item: new URL('/health', Astro.site).toString() }, { '@type': 'ListItem', position: 3, name: article.data.title, item: pageUrl }] };
 ---
@@ -49,7 +49,7 @@ const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'Breadcrum
     title={article.data.title}
     description={article.data.description}
     ctaText="Schedule Your Assessment"
-    ctaHref="#contact"
+    ctaHref="https://rptclinic.com/contact/"
     image={heroImage}
     imageAlt="RPT Clinic clinician providing Robotic Precision Therapy treatment"
   />
@@ -67,7 +67,7 @@ const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'Breadcrum
       <p class="eyebrow"><a href={`/topics/${article.data.categorySlug}`}>{article.data.category}</a></p>
       <h1>{article.data.title}</h1>
       <p class="lead">{article.data.description}</p>
-      <div class="byline">Written by {article.data.author} · Medically reviewed by {article.data.reviewedBy}, {article.data.reviewerCredential} · Updated {new Date(article.data.updatedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })} · {article.data.readingTime} min read</div>
+      <div class="byline">Written by {article.data.author} · Updated {new Date(article.data.updatedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })} · {article.data.readingTime} min read</div>
       <KeyTakeaways items={article.data.keyTakeaways} />
       <div class="prose">
         <div set:html={article.html} />
@@ -110,7 +110,7 @@ const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'Breadcrum
     heading="Ready to Start Your Recovery?"
     description="Join hundreds of patients who've found relief through Robotic Precision Therapy. Most patients experience significant improvement within 6-12 sessions."
     ctaText="Schedule Your Assessment Today"
-    ctaHref="#contact"
+    ctaHref="https://rptclinic.com/contact/"
     variant="primary"
   />
 

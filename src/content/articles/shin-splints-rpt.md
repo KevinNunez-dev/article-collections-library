@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: condition
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Robotic Precision Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 11
 image: /images/articles/shin-splints-rpt-clinic.jpg
@@ -159,4 +156,4 @@ Shin splints don't have to limit your running. RPT Clinic releases the tight cal
 
 **Most runners experience significant improvement within 4-6 sessions.**
 
-[Schedule your shin splints assessment today](#contact)
+[Schedule your shin splints assessment today](https://rptclinic.com/contact/)

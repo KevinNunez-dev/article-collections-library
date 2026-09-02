@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: condition
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Robotic Precision Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 13
 image: https://rptclinic.com/wp-content/uploads/2026/01/Knee2-1-980x503.jpg
@@ -247,4 +244,4 @@ Knee pain doesn't have to limit your life. RPT Clinic combines advanced robotic 
 
 **Most patients experience significant improvement within 5-10 sessions, often with relief after just 1-3 visits.**
 
-[Schedule your evaluation today](#contact) or call to discuss whether Robotic Precision Therapy is right for your knee pain.
+[Schedule your evaluation today](https://rptclinic.com/contact/) or call to discuss whether Robotic Precision Therapy is right for your knee pain.

@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: education
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Medical Decision Making Specialist
 author: RPT Clinic Editorial Team
 readingTime: 10
 image: /images/articles/joint-pain-decision-guide.jpg
@@ -205,4 +202,4 @@ Joint pain warrants attention, but not all pain requires emergency care. Use thi
 
 **When in doubt, contact us.** We're here to help you make appropriate care decisions.
 
-[Schedule your joint pain evaluation today](#contact)
+[Schedule your joint pain evaluation today](https://rptclinic.com/contact/)

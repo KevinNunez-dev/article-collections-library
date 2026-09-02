@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: wellness
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Physical Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 10
 image: /images/articles/improved-mobility.jpg
@@ -145,4 +142,4 @@ Successful movement builds confidence for continued activity.
 
 Improved mobility is achievable at any age. RPT Clinic restores the freedom to move fully and participate in the activities you value.
 
-[Schedule your mobility assessment today](#contact)
+[Schedule your mobility assessment today](https://rptclinic.com/contact/)

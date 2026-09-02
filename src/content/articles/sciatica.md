@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal, nervous system]
 contentType: condition
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Robotic Precision Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 14
 image: /images/articles/sciatica-rpt-clinic.jpg
@@ -200,4 +197,4 @@ Sciatic nerve pain doesn't have to be a permanent part of your life. RPT Clinic 
 
 **Most patients experience significant relief after just one session. Complete resolution typically occurs within 5-10 visits.**
 
-[Schedule your evaluation today](#contact) or call to discuss whether Robotic Precision Therapy is right for your sciatica.
+[Schedule your evaluation today](https://rptclinic.com/contact/) or call to discuss whether Robotic Precision Therapy is right for your sciatica.

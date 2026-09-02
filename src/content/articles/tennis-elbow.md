@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: condition
 publishedAt: 2026-08-26
 updatedAt: 2026-08-26
-reviewedAt: 2026-08-26
-reviewedBy: Clinical reviewer pending
-reviewerCredential: Credentials pending
 author: RPT Clinic Editorial Team
 readingTime: 6
 image: /images/articles/tennis-elbow-rpt-clinic.webp

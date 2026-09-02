@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: condition
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Robotic Precision Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 11
 image: /images/Leg/lower-leg-treatment.webp
@@ -226,4 +223,4 @@ Ankle pain doesn't have to mean chronic instability and recurrent injuries. RPT 
 
 **Most patients experience improved ankle stability within 4-8 sessions, preventing long-term problems and the cascade effect to knees, hips, and back.**
 
-[Schedule your evaluation today](#contact) or call to discuss whether Robotic Precision Therapy is right for your ankle pain.
+[Schedule your evaluation today](https://rptclinic.com/contact/) or call to discuss whether Robotic Precision Therapy is right for your ankle pain.

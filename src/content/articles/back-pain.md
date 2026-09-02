@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: condition
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Robotic Precision Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 12
 image: https://rptclinic.com/wp-content/uploads/2026/01/back-pain-treatment.jpg
@@ -216,4 +213,4 @@ Chronic back pain doesn't have to mean surgery, injections, or a lifetime of med
 
 **Most patients experience noticeable improvement in just 4–8 sessions.**
 
-[Schedule your evaluation today](#contact) or call to discuss whether Robotic Precision Therapy is right for your situation.
+[Schedule your evaluation today](https://rptclinic.com/contact/) or call to discuss whether Robotic Precision Therapy is right for your situation.

@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal, nervous system]
 contentType: condition
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Robotic Precision Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 13
 image: /images/articles/herniated-disc-rpt-clinic.webp
@@ -244,4 +241,4 @@ A herniated disc doesn't have to mean surgery and recovery. RPT Clinic combines 
 
 **Most patients experience significant relief within 4-8 sessions. Many avoid surgery entirely by addressing root muscle causes.**
 
-[Schedule your evaluation today](#contact) or call to discuss whether Robotic Precision Therapy is right for your herniated disc.
+[Schedule your evaluation today](https://rptclinic.com/contact/) or call to discuss whether Robotic Precision Therapy is right for your herniated disc.

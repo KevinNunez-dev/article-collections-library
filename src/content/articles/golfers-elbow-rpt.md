@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: condition
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Robotic Precision Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 11
 image: /images/articles/golfers-elbow-rpt-clinic.jpg
@@ -162,4 +159,4 @@ Golfer's elbow doesn't have to end your athletic career. RPT Clinic releases the
 
 **Most athletes experience significant improvement within 4-6 sessions.**
 
-[Schedule your golfer's elbow assessment today](#contact)
+[Schedule your golfer's elbow assessment today](https://rptclinic.com/contact/)

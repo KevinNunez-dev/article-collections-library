@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal, nervous system]
 contentType: condition
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Robotic Precision Therapy Specialist
 author: RPT Clinic Editorial Team
 readingTime: 12
 image: /images/articles/migraines-rpt-clinic.jpg
@@ -154,4 +151,4 @@ Migraines don't require lifelong medication. RPT Clinic releases the tight neck 
 
 **Many patients experience significant relief within 3-8 sessions.**
 
-[Schedule your migraine assessment today](#contact)
+[Schedule your migraine assessment today](https://rptclinic.com/contact/)

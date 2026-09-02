@@ -9,9 +9,6 @@ bodySystems: [musculoskeletal]
 contentType: condition
 publishedAt: 2026-08-26
 updatedAt: 2026-09-01
-reviewedAt: 2026-09-01
-reviewedBy: RPT Clinic Clinical Team
-reviewerCredential: Spinal Health Specialist
 author: RPT Clinic Editorial Team
 readingTime: 10
 image: /images/articles/scoliosis-therapy.jpg
@@ -132,4 +129,4 @@ Identifying beneficial, safe activities.
 
 Scoliosis management is a long-term process. We're here to support you throughout your journey.
 
-[Schedule your scoliosis assessment today](#contact)
+[Schedule your scoliosis assessment today](https://rptclinic.com/contact/)

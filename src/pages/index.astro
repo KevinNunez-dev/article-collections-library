@@ -13,7 +13,7 @@ const categories = (await getAllCategories()).filter((c) => !c.data?.seo?.noinde
 		<div class="container narrow">
 			<p class="eyebrow">{brand.name} Health Library</p>
 			<h1>Health information made easier to understand.</h1>
-			<p class="lead">Find practical answers about conditions, symptoms, tests, treatments and everyday wellness. Every article is clearly dated and medically reviewed.</p>
+			<p class="lead">Find practical answers about conditions, symptoms, tests, treatments and everyday wellness. Every article is clearly dated and written by the RPT Clinic Editorial Team.</p>
 			<LibrarySearch articles={articles.map((article) => ({ id: article.id, title: article.data.title, excerpt: article.data.excerpt, category: article.data.category, tags: article.data.tags || [], readingTime: article.data.readingTime }))} categories={categories.map((category) => category.data.title)} compact />
 		</div>
 	</section>
