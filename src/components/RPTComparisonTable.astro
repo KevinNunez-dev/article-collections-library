@@ -1,0 +1,202 @@
+---
+export interface ComparisonRow {
+  aspect: string;
+  traditional: string;
+  rpt: string;
+}
+
+export interface Props {
+  rows: ComparisonRow[];
+  heading?: string;
+  subtitle?: string;
+  traditionalLabel?: string;
+  rptLabel?: string;
+}
+
+const {
+  rows,
+  heading = "RPT vs Traditional Treatment",
+  subtitle = "Why Robotic Precision Therapy achieves results others cannot",
+  traditionalLabel = "Traditional Approach",
+  rptLabel = "Robotic Precision Therapy"
+} = Astro.props;
+---
+
+<section class="rpt-comparison">
+  <div class="container narrow">
+    <div class="comparison-header">
+      <h2>{heading}</h2>
+      {subtitle && <p class="subtitle">{subtitle}</p>}
+    </div>
+
+    <div class="table-wrapper">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th class="aspect-column">Treatment Aspect</th>
+            <th class="traditional-column">
+              <span class="column-label">{traditionalLabel}</span>
+            </th>
+            <th class="rpt-column">
+              <span class="column-label rpt-highlight">{rptLabel}</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row) => (
+            <tr>
+              <td class="aspect-label">{row.aspect}</td>
+              <td class="traditional-cell">{row.traditional}</td>
+              <td class="rpt-cell">{row.rpt}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<style>
+  .rpt-comparison {
+    padding: 4rem 0;
+    background: #f8f9fd;
+  }
+
+  .comparison-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .comparison-header h2 {
+    margin-bottom: 0.75rem;
+    color: var(--brand-primary);
+  }
+
+  .subtitle {
+    font-size: 1.05rem;
+    color: var(--brand-muted);
+    max-width: 70ch;
+    margin: 0 auto;
+  }
+
+  .table-wrapper {
+    overflow-x: auto;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(34, 34, 42, 0.08);
+  }
+
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    font-size: 0.95rem;
+  }
+
+  .comparison-table thead {
+    background: linear-gradient(90deg, var(--brand-primary) 0%, var(--brand-primary-dark) 100%);
+    color: #fff;
+  }
+
+  .comparison-table th {
+    padding: 1.5rem 1.25rem;
+    text-align: left;
+    font-weight: 700;
+    border: none;
+  }
+
+  .aspect-column {
+    width: 30%;
+  }
+
+  .traditional-column,
+  .rpt-column {
+    width: 35%;
+  }
+
+  .column-label {
+    display: block;
+  }
+
+  .rpt-highlight {
+    color: var(--brand-accent);
+    font-weight: 800;
+  }
+
+  .comparison-table tbody tr {
+    border-bottom: 1px solid #e5e9f2;
+    transition: background-color 0.2s ease;
+  }
+
+  .comparison-table tbody tr:hover {
+    background-color: #f8f9fd;
+  }
+
+  .comparison-table tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  .comparison-table td {
+    padding: 1.5rem 1.25rem;
+    line-height: 1.6;
+  }
+
+  .aspect-label {
+    font-weight: 600;
+    color: var(--brand-ink);
+    background: #f0f2f8;
+  }
+
+  .traditional-cell {
+    color: var(--brand-muted);
+  }
+
+  .rpt-cell {
+    color: var(--brand-ink);
+    font-weight: 500;
+    background: rgba(245, 179, 1, 0.03);
+  }
+
+  @media (max-width: 860px) {
+    .rpt-comparison {
+      padding: 3rem 0;
+    }
+
+    .comparison-table {
+      font-size: 0.88rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      padding: 1.25rem 1rem;
+    }
+
+    .aspect-column {
+      width: 25%;
+    }
+
+    .traditional-column,
+    .rpt-column {
+      width: 37.5%;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .table-wrapper {
+      border-radius: 0;
+      margin: 0 -1rem;
+    }
+
+    .comparison-table {
+      font-size: 0.8rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      padding: 1rem 0.75rem;
+    }
+
+    .column-label {
+      font-size: 0.85rem;
+    }
+  }
+</style>

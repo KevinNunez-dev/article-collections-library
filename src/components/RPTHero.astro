@@ -1,0 +1,149 @@
+---
+export interface Props {
+  badge?: string;
+  title: string;
+  description: string;
+  ctaText?: string;
+  ctaHref?: string;
+  image?: string;
+  imageAlt?: string;
+}
+
+const { 
+  badge = "RPT Clinic",
+  title,
+  description,
+  ctaText = "Book Consultation",
+  ctaHref = "#contact",
+  image,
+  imageAlt = "RPT Treatment"
+} = Astro.props;
+---
+
+<section class="rpt-hero">
+  <div class="container">
+    <div class="hero-content">
+      {badge && <p class="eyebrow">{badge}</p>}
+      <h1>{title}</h1>
+      <p class="lead">{description}</p>
+      <a href={ctaHref} class="button button-primary">
+        {ctaText}
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+    {image && (
+      <div class="hero-image">
+        <img src={image} alt={imageAlt} loading="eager" />
+      </div>
+    )}
+  </div>
+</section>
+
+<style>
+  .rpt-hero {
+    background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-accent) 100%);
+    color: #fff;
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .rpt-hero::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .rpt-hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .rpt-hero .eyebrow {
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+  }
+
+  .rpt-hero h1 {
+    color: #fff;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .rpt-hero .lead {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.1rem;
+    max-width: 60ch;
+  }
+
+  .button-primary {
+    align-self: flex-start;
+    background: #fff;
+    color: var(--brand-primary);
+    font-weight: 700;
+    padding: 0.85rem 1.5rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    transition: all 0.2s ease;
+  }
+
+  .button-primary:hover {
+    background: #f0f0f0;
+    transform: translateX(4px);
+  }
+
+  .hero-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    .rpt-hero .container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .rpt-hero {
+      padding: 3rem 0;
+    }
+
+    .hero-content {
+      text-align: center;
+    }
+
+    .button-primary {
+      align-self: center;
+    }
+  }
+</style>

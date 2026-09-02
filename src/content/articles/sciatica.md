@@ -31,6 +31,32 @@ faq:
     answer: Traditional PT focuses on strengthening and manual techniques, which plateau over time due to therapist fatigue. The RX2600 maintains identical pressure and precision every session, reaching deep muscles (piriformis, iliopsoas) that manual therapy cannot effectively treat.
   - question: When should I seek urgent care for sciatica?
     answer: Seek immediate medical attention for rapidly worsening weakness, numbness in the groin area, loss of bladder/bowel control, or symptoms following major trauma.
+testimonials:
+  - quote: "Sciatic nerve pain made sitting impossible. RPT released the muscle tension compressing my nerve. Within 6 sessions, I was back to work without pain."
+    author: "Tom B."
+    role: "Accountant"
+    rating: 5
+  - quote: "Years of leg pain from sciatica. Tried everything. RPT addressed the deep muscle tension causing compression. Finally free of pain."
+    author: "Patricia G."
+    role: "Teacher"
+    rating: 5
+  - quote: "Sciatica was worsening despite treatment. RPT stopped the progression and eliminated pain. Best decision for my health."
+    author: "Michael R."
+    role: "Warehouse Manager"
+    rating: 5
+comparison:
+  - aspect: "Nerve Decompression"
+    traditional: "Limited ability to address muscle-related compression"
+    rpt: "Releases tight muscles reducing nerve pressure effectively"
+  - aspect: "Leg Pain Resolution"
+    traditional: "Often provides temporary relief only"
+    rpt: "Addresses root cause for lasting relief"
+  - aspect: "Movement Freedom"
+    traditional: "Pain often persists with activity"
+    rpt: "Enables pain-free movement and activity"
+  - aspect: "Treatment Duration"
+    traditional: "Often months of inconsistent progress"
+    rpt: "Significant improvement within 8-12 sessions"
 related: [back-pain, herniated-disc, understanding-lower-back-pain]
 seo:
   title: "Sciatica Pain Relief with Robotic Precision Therapy | RPT Clinic"

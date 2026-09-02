@@ -8,6 +8,10 @@ import HealthDisclaimer from '../../components/HealthDisclaimer.astro';
 import AppointmentCta from '../../components/AppointmentCta.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import JsonLd from '../../components/JsonLd.astro';
+import RPTHero from '../../components/RPTHero.astro';
+import RPTTestimonials from '../../components/RPTTestimonials.astro';
+import RPTComparisonTable from '../../components/RPTComparisonTable.astro';
+import RPTCtaBand from '../../components/RPTCtaBand.astro';
 import { brand } from '../../config/brand';
 export async function getStaticPaths() { const articles = (await getAllArticles()).filter((a) => !a.data?.seo?.noindex); return articles.map((article) => ({ params: { slug: article.id }, props: { article } })); }
 const { article } = Astro.props;
@@ -17,4 +21,88 @@ const articleSchema = { '@context': 'https://schema.org', '@type': 'MedicalWebPa
 const faqSchema = (article.data.faq || []).length ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: article.data.faq.map((item: any) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) } : null;
 const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).toString() }, { '@type': 'ListItem', position: 2, name: 'Health Library', item: new URL('/health', Astro.site).toString() }, { '@type': 'ListItem', position: 3, name: article.data.title, item: pageUrl }] };
 ---
-<BaseLayout title={article.data.seo?.title || article.data.title} description={article.data.seo?.description || article.data.description} image={article.data.seo?.image || article.data.image} noindex={article.data.seo?.noindex} canonical={article.data.seo?.canonical}><JsonLd data={[articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])]} /><article class="article-page"><div class="container reading-width"><Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Health Library', href: '/health' }, { label: article.data.category, href: `/topics/${article.data.categorySlug}` }, { label: article.data.title }]} /><p class="eyebrow"><a href={`/topics/${article.data.categorySlug}`}>{article.data.category}</a></p><h1>{article.data.title}</h1><p class="lead">{article.data.description}</p><div class="byline">Written by {article.data.author} · Medically reviewed by {article.data.reviewedBy}, {article.data.reviewerCredential} · Updated {new Date(article.data.updatedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })} · {article.data.readingTime} min read</div><KeyTakeaways items={article.data.keyTakeaways} /><div class="prose"><div set:html={article.html} /></div><Faq items={article.data.faq} /><HealthDisclaimer /></div></article><div class="container reading-width"><AppointmentCta heading="Have questions about your symptoms or care?" /></div>{relatedEntries.length > 0 && <section class="section section-muted"><div class="container"><h2>Related health articles</h2><div class="article-grid">{relatedEntries.map((entry) => <ArticleCard article={entry} />)}</div></div></section>}</BaseLayout>
+<BaseLayout title={article.data.seo?.title || article.data.title} description={article.data.seo?.description || article.data.description} image={article.data.seo?.image || article.data.image} noindex={article.data.seo?.noindex} canonical={article.data.seo?.canonical}>
+  <JsonLd data={[articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])]} />
+  
+  <!-- Hero Section -->
+  <RPTHero
+    badge={article.data.category}
+    title={article.data.title}
+    description={article.data.description}
+    ctaText="Schedule Your Assessment"
+    ctaHref="#contact"
+    image={article.data.image}
+    imageAlt={article.data.imageAlt}
+  />
+  
+  <article class="article-page">
+    <div class="container reading-width">
+      <Breadcrumbs
+        items={[
+          { label: 'Home', href: '/' },
+          { label: 'Health Library', href: '/health' },
+          { label: article.data.category, href: `/topics/${article.data.categorySlug}` },
+          { label: article.data.title }
+        ]}
+      />
+      <p class="eyebrow"><a href={`/topics/${article.data.categorySlug}`}>{article.data.category}</a></p>
+      <h1>{article.data.title}</h1>
+      <p class="lead">{article.data.description}</p>
+      <div class="byline">Written by {article.data.author} · Medically reviewed by {article.data.reviewedBy}, {article.data.reviewerCredential} · Updated {new Date(article.data.updatedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })} · {article.data.readingTime} min read</div>
+      <KeyTakeaways items={article.data.keyTakeaways} />
+      <div class="prose">
+        <div set:html={article.html} />
+      </div>
+      <Faq items={article.data.faq} />
+      <HealthDisclaimer />
+    </div>
+  </article>
+
+  <!-- Testimonials Section -->
+  {article.data.testimonials && article.data.testimonials.length > 0 && (
+    <RPTTestimonials
+      testimonials={article.data.testimonials}
+      heading="What Our Patients Say"
+      subtitle="Real results from real patients treated for this condition"
+    />
+  )}
+
+  <!-- Comparison Table Section -->
+  {article.data.comparison && article.data.comparison.length > 0 && (
+    <section class="section">
+      <div class="container">
+        <RPTComparisonTable
+          rows={article.data.comparison}
+          heading="How Robotic Precision Therapy Compares"
+          subtitle="See why patients choose RPT over traditional treatment"
+          traditionalLabel="Traditional Treatment"
+          rptLabel="Robotic Precision Therapy"
+        />
+      </div>
+    </section>
+  )}
+
+  <div class="container reading-width">
+    <AppointmentCta heading="Have questions about your symptoms or care?" />
+  </div>
+
+  <!-- Call-to-Action Band -->
+  <RPTCtaBand
+    heading="Ready to Start Your Recovery?"
+    description="Join hundreds of patients who've found relief through Robotic Precision Therapy. Most patients experience significant improvement within 6-12 sessions."
+    ctaText="Schedule Your Assessment Today"
+    ctaHref="#contact"
+    variant="primary"
+  />
+
+  {relatedEntries.length > 0 && (
+    <section class="section section-muted">
+      <div class="container">
+        <h2>Related health articles</h2>
+        <div class="article-grid">
+          {relatedEntries.map((entry) => <ArticleCard article={entry} />)}
+        </div>
+      </div>
+    </section>
+  )}
+</BaseLayout>

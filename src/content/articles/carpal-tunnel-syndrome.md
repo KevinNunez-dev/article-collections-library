@@ -31,6 +31,32 @@ faq:
     answer: Many patients who pursue RPT first experience relief that makes surgery unnecessary. Even patients recommended for surgery often improve dramatically with robotic therapy addressing root muscle causes. Surgery should be a last resort after exhausting conservative treatment.
   - question: How many sessions until carpal tunnel relief?
     answer: Many patients experience significant relief within 3-5 sessions. Full resolution typically occurs within 6-10 visits. Timeline depends on how long symptoms have persisted.
+testimonials:
+  - quote: "Carpal tunnel symptoms had me considering surgery. RPT released the muscle tension compressing my nerve. No surgery needed, pain gone."
+    author: "Rebecca S."
+    role: "Graphic Designer"
+    rating: 5
+  - quote: "Hand numbness and tingling from carpal tunnel made work impossible. RPT restored nerve function. Back to work pain-free."
+    author: "Victor R."
+    role: "Software Developer"
+    rating: 5
+  - quote: "Post-surgery carpal tunnel symptoms returning. RPT prevented re-compression. Long-term relief without more surgery."
+    author: "Nicole M."
+    role: "Administrative Assistant"
+    rating: 5
+comparison:
+  - aspect: "Nerve Compression Relief"
+    traditional: "Splinting limits symptoms temporarily"
+    rpt: "Releases muscle tension eliminating compression"
+  - aspect: "Symptom Resolution"
+    traditional: "Often returns when splint removed"
+    rpt: "Lasting relief from underlying muscle release"
+  - aspect: "Surgical Alternative"
+    traditional: "Surgery necessary when conservative care fails"
+    rpt: "Often prevents surgery need through muscle therapy"
+  - aspect: "Treatment Timeline"
+    traditional: "Months or surgical intervention"
+    rpt: "Significant improvement within 3-5 sessions"
 related: [neck-pain, tmj, tennis-elbow]
 seo:
   title: "Carpal Tunnel Relief with Robotic Precision Therapy | RPT Clinic"

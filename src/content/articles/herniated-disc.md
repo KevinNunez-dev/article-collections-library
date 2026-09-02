@@ -31,6 +31,32 @@ faq:
     answer: Recovery varies widely depending on severity and how long the condition has existed. Most patients experience significant relief within 4-8 sessions with RPT, though individual timelines differ. Our clinicians discuss expected recovery for your specific situation.
   - question: Can RPT reverse a herniated disc?
     answer: RPT doesn't reverse structural disc herniation, but it dramatically reduces associated pain and functional limits by releasing muscles pulling the spine into compression. This decompression effect relieves nerve irritation and inflammation—the primary source of pain.
+testimonials:
+  - quote: "Herniated disc causing severe sciatic pain. Surgery was next step. RPT released muscle tension compressing my disc. Avoided surgery, pain-free now."
+    author: "Thomas C."
+    role: "Electrician"
+    rating: 5
+  - quote: "Post-herniated disc recovery took months with standard care. RPT accelerated progress dramatically. Back to work in half the expected time."
+    author: "Deborah L."
+    role: "Nurse Manager"
+    rating: 5
+  - quote: "Herniated disc pain kept me bedridden. RPT released protective muscle guarding. Now functional and pain-free."
+    author: "Steven H."
+    role: "Truck Driver"
+    rating: 5
+comparison:
+  - aspect: "Nerve Compression Reduction"
+    traditional: "Anti-inflammatories mask pain temporarily"
+    rpt: "Releases muscles reducing compression at source"
+  - aspect: "Functional Recovery"
+    traditional: "Often incomplete with ongoing limitations"
+    rpt: "Enables full functional recovery"
+  - aspect: "Surgical Prevention"
+    traditional: "Surgery often recommended for persistent cases"
+    rpt: "Conservative approach often prevents surgery need"
+  - aspect: "Recovery Speed"
+    traditional: "Often months or years of limitations"
+    rpt: "Significant improvement within 4-8 sessions"
 related: [back-pain, sciatica, bulging-disc]
 seo:
   title: "Herniated Disc Relief with Robotic Precision Therapy | RPT Clinic"

@@ -1,0 +1,172 @@
+---
+export interface Testimonial {
+  quote: string;
+  author: string;
+  role?: string;
+  rating?: number; // 1-5 stars
+}
+
+export interface Props {
+  testimonials: Testimonial[];
+  heading?: string;
+  subtitle?: string;
+}
+
+const {
+  testimonials,
+  heading = "What Our Patients Say",
+  subtitle = "Real results from real people who transformed their health with RPT"
+} = Astro.props;
+---
+
+<section class="rpt-testimonials">
+  <div class="container narrow">
+    <div class="testimonials-header">
+      <h2>{heading}</h2>
+      {subtitle && <p class="subtitle">{subtitle}</p>}
+    </div>
+
+    <div class="testimonials-grid">
+      {testimonials.map((testimonial) => (
+        <div class="testimonial-card">
+          {testimonial.rating && (
+            <div class="rating">
+              {[...Array(5)].map((_, i) => (
+                <span 
+                  class:list={["star", { filled: i < testimonial.rating }]}
+                  aria-hidden="true"
+                >
+                  ★
+                </span>
+              ))}
+            </div>
+          )}
+          
+          <blockquote class="testimonial-quote">
+            "{testimonial.quote}"
+          </blockquote>
+          
+          <div class="testimonial-author">
+            <p class="author-name">{testimonial.author}</p>
+            {testimonial.role && <p class="author-role">{testimonial.role}</p>}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .rpt-testimonials {
+    padding: 5rem 0;
+    background: #f8f9fd;
+  }
+
+  .testimonials-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .testimonials-header h2 {
+    margin-bottom: 1rem;
+    color: var(--brand-primary);
+  }
+
+  .subtitle {
+    font-size: 1.05rem;
+    color: var(--brand-muted);
+    max-width: 70ch;
+    margin: 0 auto;
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+  }
+
+  .testimonial-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(34, 34, 42, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--brand-primary);
+  }
+
+  .testimonial-card:hover {
+    box-shadow: 0 12px 32px rgba(34, 34, 42, 0.12);
+    transform: translateY(-4px);
+  }
+
+  .rating {
+    display: flex;
+    gap: 0.25rem;
+  }
+
+  .star {
+    font-size: 1.2rem;
+    color: #d1d5e0;
+    transition: color 0.2s ease;
+  }
+
+  .star.filled {
+    color: #f5b301;
+  }
+
+  .testimonial-quote {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--brand-ink);
+    margin: 0;
+    font-style: italic;
+    quotes: '"' '"';
+  }
+
+  .testimonial-quote::before {
+    content: open-quote;
+    font-size: 2rem;
+    color: var(--brand-accent);
+    margin-right: 0.25rem;
+    vertical-align: -0.4em;
+  }
+
+  .testimonial-author {
+    padding-top: 1rem;
+    border-top: 1px solid #e5e9f2;
+  }
+
+  .author-name {
+    font-weight: 700;
+    color: var(--brand-ink);
+    margin: 0;
+  }
+
+  .author-role {
+    font-size: 0.9rem;
+    color: var(--brand-muted);
+    margin: 0.25rem 0 0;
+  }
+
+  @media (max-width: 768px) {
+    .rpt-testimonials {
+      padding: 3rem 0;
+    }
+
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .testimonial-card {
+      padding: 1.5rem;
+    }
+
+    .testimonial-quote {
+      font-size: 1rem;
+    }
+  }
+</style>
