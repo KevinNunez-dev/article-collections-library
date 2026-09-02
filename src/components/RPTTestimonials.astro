@@ -33,7 +33,7 @@ const {
             <div class="rating">
               {[...Array(5)].map((_, i) => (
                 <span 
-                  class:list={["star", { filled: i < testimonial.rating }]}
+                    class:list={["star", { filled: i < (testimonial.rating ?? 0) }]}
                   aria-hidden="true"
                 >
                   ★
