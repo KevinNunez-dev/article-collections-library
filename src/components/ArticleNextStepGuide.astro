@@ -1,0 +1,130 @@
+---
+import { brand } from '../config/brand';
+
+export interface Props {
+  articleTitle: string;
+}
+
+const { articleTitle } = Astro.props;
+---
+
+<aside class="next-step-guide" data-next-step-guide aria-label={`Find your next step for ${articleTitle}`}>
+  <div class="guide-header">
+    <p class="guide-kicker">Find your next step</p>
+    <button class="guide-close" type="button" data-guide-close aria-label="Close guide">×</button>
+  </div>
+  <p class="guide-topic">A few questions about {articleTitle.toLowerCase()}</p>
+
+  <div class="guide-steps" data-guide-steps>
+    <section class="guide-step" data-guide-step>
+      <p class="guide-progress">Question 1 of 4</p>
+      <h2>How long have your symptoms been present?</h2>
+      <div class="guide-options">
+        <button type="button">Less than 2 weeks</button>
+        <button type="button">2 to 12 weeks</button>
+        <button type="button">More than 3 months</button>
+      </div>
+    </section>
+
+    <section class="guide-step" data-guide-step hidden>
+      <p class="guide-progress">Question 2 of 4</p>
+      <h2>How are symptoms affecting your routine?</h2>
+      <div class="guide-options">
+        <button type="button">A little, but I can stay active</button>
+        <button type="button">I am changing how I move or work</button>
+        <button type="button">They are limiting everyday activities</button>
+      </div>
+    </section>
+
+    <section class="guide-step" data-guide-step hidden>
+      <p class="guide-progress">Question 3 of 4</p>
+      <h2>What have you tried so far?</h2>
+      <div class="guide-options">
+        <button type="button">Rest or changing activity</button>
+        <button type="button">Stretching, exercise, or therapy</button>
+        <button type="button">I have not found relief yet</button>
+      </div>
+    </section>
+
+    <section class="guide-step" data-guide-step hidden>
+      <p class="guide-progress">Question 4 of 4</p>
+      <h2>What would you like to improve most?</h2>
+      <div class="guide-options">
+        <button type="button">Comfort during daily movement</button>
+        <button type="button">Mobility and flexibility</button>
+        <button type="button">Returning to work, exercise, or sport</button>
+      </div>
+    </section>
+
+    <section class="guide-step guide-result" data-guide-step hidden>
+      <p class="guide-progress">Your next step</p>
+      <h2>Talk with an RPT Clinic care team member.</h2>
+      <p>Your answers can help you start a focused conversation about your symptoms and whether an assessment is appropriate.</p>
+      <a class="guide-cta" href={brand.appointmentUrl}>Make an appointment <span aria-hidden="true">→</span></a>
+      <button class="guide-restart" type="button" data-guide-restart>Start over</button>
+    </section>
+  </div>
+</aside>
+
+<script>
+  const guide = document.querySelector<HTMLElement>('[data-next-step-guide]');
+  const closeButton = guide?.querySelector<HTMLButtonElement>('[data-guide-close]');
+  const restartButton = guide?.querySelector<HTMLButtonElement>('[data-guide-restart]');
+  const steps = Array.from(guide?.querySelectorAll<HTMLElement>('[data-guide-step]') || []);
+  let currentStep = 0;
+  let dismissed = false;
+
+  const showStep = (stepIndex: number) => {
+    currentStep = stepIndex;
+    steps.forEach((step, index) => {
+      step.hidden = index !== currentStep;
+    });
+  };
+
+  guide?.querySelectorAll<HTMLButtonElement>('.guide-options button').forEach((button) => {
+    button.addEventListener('click', () => showStep(Math.min(currentStep + 1, steps.length - 1)));
+  });
+
+  closeButton?.addEventListener('click', () => {
+    dismissed = true;
+    guide?.setAttribute('hidden', '');
+  });
+
+  restartButton?.addEventListener('click', () => showStep(0));
+
+  const revealGuide = () => {
+    if (!dismissed && window.scrollY > document.documentElement.scrollHeight * 0.4) {
+      guide?.classList.add('is-visible');
+      window.removeEventListener('scroll', revealGuide);
+    }
+  };
+
+  window.addEventListener('scroll', revealGuide, { passive: true });
+  revealGuide();
+</script>
+
+<style>
+  .next-step-guide { width: min(20rem, calc(100vw - 2rem)); padding: 1rem; border: 1px solid #cbd8ef; border-radius: .5rem; background: #fff; box-shadow: 0 1rem 2.5rem rgba(23, 32, 51, .16); color: var(--brand-ink); }
+  .guide-header { display: flex; align-items: center; justify-content: space-between; gap: .75rem; }
+  .guide-kicker, .guide-progress { margin: 0; color: var(--brand-primary); font-size: .75rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+  .guide-close { width: 2rem; height: 2rem; padding: 0; border: 0; background: transparent; color: var(--brand-muted); cursor: pointer; font-size: 1.4rem; line-height: 1; }
+  .guide-close:hover { color: var(--brand-ink); }
+  .guide-topic { margin: .45rem 0 1.1rem; color: var(--brand-muted); font-size: .9rem; line-height: 1.4; }
+  .guide-step h2 { margin: .55rem 0 1rem; font-size: 1.15rem; letter-spacing: 0; }
+  .guide-options { display: grid; gap: .55rem; }
+  .guide-options button { padding: .7rem .8rem; border: 1px solid #cbd8ef; border-radius: .3rem; background: #fff; color: var(--brand-ink); cursor: pointer; font: inherit; font-size: .9rem; text-align: left; }
+  .guide-options button:hover, .guide-options button:focus-visible { border-color: var(--brand-primary); background: #eef4ff; outline: 2px solid transparent; }
+  .guide-result p { margin: 0 0 1rem; color: var(--brand-muted); font-size: .92rem; line-height: 1.5; }
+  .guide-cta { display: flex; justify-content: space-between; align-items: center; padding: .75rem .9rem; border-radius: .3rem; background: var(--brand-primary); color: #fff; font-weight: 750; text-decoration: none; }
+  .guide-cta:hover { background: var(--brand-primary-dark); color: #fff; }
+  .guide-restart { display: block; margin: .8rem auto 0; border: 0; background: transparent; color: var(--brand-primary); cursor: pointer; font: inherit; font-size: .85rem; font-weight: 700; }
+
+  @media (min-width: 1180px) {
+    .next-step-guide { position: fixed; z-index: 9; top: 12rem; left: 1.25rem; transform: translateX(calc(-100% - 2rem)); opacity: 0; transition: transform .25s ease, opacity .25s ease; }
+    .next-step-guide.is-visible { transform: translateX(0); opacity: 1; }
+  }
+
+  @media (max-width: 1179px) {
+    .next-step-guide { width: 100%; margin: 1.5rem 0; }
+  }
+</style>

@@ -85,6 +85,57 @@ export function addContextualTopicLinks(html: string, sourceId: string, limit = 
   }).join('');
 }
 
+function normalizeArticleData<T>(data: T): T {
+  const normalizeValue = (value: unknown): unknown => {
+    if (typeof value === 'string') return value.replace(/\bRX2600\b(?!\s+Therapeutic Robot)/g, 'RX2600 Therapeutic Robot');
+    if (Array.isArray(value)) return value.map(normalizeValue);
+    if (value && typeof value === 'object' && !(value instanceof Date)) {
+      return Object.fromEntries(Object.entries(value).map(([key, nestedValue]) => [key, normalizeValue(nestedValue)]));
+    }
+    return value;
+  };
+
+  return normalizeValue(data) as T;
+}
+
+export function addBrandLinks(html: string, limitPerDomain = 2) {
+  const existingRptLinks = (html.match(/href=["'][^"']*rptclinic\.com/gi) || []).length;
+  const existingRxLinks = (html.match(/href=["'][^"']*rx2600\.com/gi) || []).length;
+  const excludedTags = new Set(['a', 'code', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'pre']);
+  const tokens = html.split(/(<[^>]+>)/g);
+  let excludedDepth = 0;
+  let rptLinksAdded = existingRptLinks;
+  let rxLinksAdded = existingRxLinks;
+
+  return tokens.map((token) => {
+    const tag = token.match(/^<\/?([a-z0-9]+)/i);
+    if (tag) {
+      const tagName = tag[1].toLowerCase();
+      if (excludedTags.has(tagName)) {
+        if (token.startsWith('</')) excludedDepth = Math.max(0, excludedDepth - 1);
+        else if (!token.endsWith('/>')) excludedDepth += 1;
+      }
+      return token;
+    }
+
+    if (excludedDepth) return token;
+    let linkedText = token.replace(/\bRX2600\b(?!\s+Therapeutic Robot)/g, 'RX2600 Therapeutic Robot');
+    if (rxLinksAdded < limitPerDomain) {
+      linkedText = linkedText.replace(/\bRX2600 Therapeutic Robot\b/, (match) => {
+        rxLinksAdded += 1;
+        return `<a href="https://rx2600.com/">${match}</a>`;
+      });
+    }
+    if (rptLinksAdded < limitPerDomain) {
+      linkedText = linkedText.replace(/\bRPT\s*Clinic\b/i, (match) => {
+        rptLinksAdded += 1;
+        return `<a href="https://rptclinic.com/">${match}</a>`;
+      });
+    }
+    return linkedText;
+  }).join('');
+}
+
 function readDirFiles(dir: string) {
   const full = path.join(CONTENT_DIR, dir);
   if (!fs.existsSync(full)) return [];
@@ -108,7 +159,7 @@ export async function getAllArticles() {
     const filePath = path.join(CONTENT_DIR, 'articles', file);
     const { data, content } = parseFrontmatter(filePath);
     const html = marked.parse(content) as string;
-    return { id: slug, data: { ...data }, html };
+    return { id: slug, data: normalizeArticleData(data), html };
   });
 }
 
@@ -127,7 +178,7 @@ export async function getArticleBySlug(slug: string) {
   if (!fs.existsSync(filePath)) return null;
   const { data, content } = parseFrontmatter(filePath);
   const html = marked.parse(content) as string;
-  return { id: slug, data: { ...data }, html };
+  return { id: slug, data: normalizeArticleData(data), html };
 }
 
 export async function getCategoryBySlug(slug: string) {

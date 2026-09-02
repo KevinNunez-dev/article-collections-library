@@ -1,5 +1,5 @@
 ---
-import { addContextualTopicLinks, getAllArticles } from '../../lib/content';
+import { addBrandLinks, addContextualTopicLinks, getAllArticles } from '../../lib/content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import KeyTakeaways from '../../components/KeyTakeaways.astro';
@@ -7,6 +7,7 @@ import Faq from '../../components/Faq.astro';
 import HealthDisclaimer from '../../components/HealthDisclaimer.astro';
 import AppointmentCta from '../../components/AppointmentCta.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
+import ArticleNextStepGuide from '../../components/ArticleNextStepGuide.astro';
 import JsonLd from '../../components/JsonLd.astro';
 import RPTHero from '../../components/RPTHero.astro';
 import RPTTestimonials from '../../components/RPTTestimonials.astro';
@@ -35,7 +36,7 @@ const relatedEntries = allArticles
   .sort((first, second) => second.score - first.score)
   .slice(0, 3)
   .map(({ entry }) => entry);
-const articleHtml = addContextualTopicLinks(article.html, article.id);
+const articleHtml = addBrandLinks(addContextualTopicLinks(article.html, article.id));
 const pageUrl = new URL(`/health/${article.id}`, Astro.site).toString();
 const articleSchema = { '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: article.data.title, description: article.data.description, url: pageUrl, datePublished: new Date(article.data.publishedAt).toISOString(), dateModified: new Date(article.data.updatedAt).toISOString(), author: { '@type': 'Organization', name: article.data.author }, publisher: { '@type': 'Organization', name: brand.legalName, logo: { '@type': 'ImageObject', url: brand.logoUrl } } };
 const faqSchema = (article.data.faq || []).length ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: article.data.faq.map((item: any) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) } : null;
@@ -70,6 +71,7 @@ const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'Breadcrum
       <p class="lead">{article.data.description}</p>
       <div class="byline">Written by {article.data.author} · Updated {new Date(article.data.updatedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })} · {article.data.readingTime} min read</div>
       <KeyTakeaways items={article.data.keyTakeaways} />
+      <ArticleNextStepGuide articleTitle={article.data.title} />
       <div class="prose">
         <div set:html={articleHtml} />
       </div>

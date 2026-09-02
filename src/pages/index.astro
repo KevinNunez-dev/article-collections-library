@@ -9,7 +9,7 @@ const articles = (await getAllArticles()).filter((a) => !a.data?.seo?.noindex).s
 const categories = (await getAllCategories()).filter((c) => !c.data?.seo?.noindex).sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
 ---
 <BaseLayout title="Health Library" description={`Explore easy-to-understand health articles, symptoms, treatments, tests and wellness guidance from ${brand.name}.`}>
-	<section class="hero">
+	<section class="hero homepage-hero">
 		<div class="container narrow">
 			<p class="eyebrow">{brand.name} Health Library</p>
 			<h1>Health information made easier to understand.</h1>
@@ -51,3 +51,11 @@ const categories = (await getAllCategories()).filter((c) => !c.data?.seo?.noinde
 		<AppointmentCta />
 	</div>
 </BaseLayout>
+
+<style>
+	@media (max-width: 820px) {
+		.homepage-hero .container.narrow {
+			width: calc(100% - 2rem);
+		}
+	}
+</style>
