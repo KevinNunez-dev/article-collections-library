@@ -25,10 +25,10 @@ const letters = [...new Set(alphabeticalArticles.map((article) => article.title.
     <h2>Find a topic</h2>
   </div>
 
-  <label class="navigator-search" for="navigator-query">
-    <span>Filter article titles</span>
-    <input id="navigator-query" type="search" placeholder="Search A-Z" autocomplete="off" data-navigator-input />
-  </label>
+  <form class="navigator-search" action="/health">
+    <label for="navigator-query">Search article titles</label>
+    <input id="navigator-query" name="q" type="search" placeholder="Search the library" autocomplete="off" />
+  </form>
 
   <nav class="navigator-topics" aria-label="Health topics">
     <p>Topics</p>
@@ -39,45 +39,21 @@ const letters = [...new Set(alphabeticalArticles.map((article) => article.title.
 
   <nav class="navigator-directory" aria-label="Article directory">
     <p>Article directory</p>
-    <div class="navigator-letters" aria-label="Jump to letter">
-      {letters.map((letter) => <a href={`#library-letter-${letter}`}>{letter}</a>)}
-    </div>
-    <div class="navigator-results" data-navigator-results>
+    <div class="navigator-results">
       {letters.map((letter) => (
-        <section data-navigator-group id={`library-letter-${letter}`}>
-          <h3>{letter}</h3>
+        <details id={`library-letter-${letter}`}>
+          <summary>{letter}<span>{alphabeticalArticles.filter((article) => article.title.startsWith(letter)).length}</span></summary>
           <ul>
-            {alphabeticalArticles.filter((article) => article.title.startsWith(letter)).map((article) => (
-              <li data-navigator-article data-title={article.title.toLowerCase()}><a href={`/health/${article.id}`}>{article.title}</a></li>
+            {alphabeticalArticles.filter((article) => article.title.startsWith(letter)).slice(0, 3).map((article) => (
+              <li><a href={`/health/${article.id}`}>{article.title}</a></li>
             ))}
           </ul>
-        </section>
+          <a class="navigator-more" href={`/health?letter=${letter}`}>View all {letter} articles</a>
+        </details>
       ))}
-      <p class="navigator-empty" data-navigator-empty hidden>No matching articles.</p>
     </div>
   </nav>
 </aside>
-
-<script>
-  const input = document.querySelector<HTMLInputElement>('[data-navigator-input]');
-  const entries = Array.from(document.querySelectorAll<HTMLElement>('[data-navigator-article]'));
-  const groups = Array.from(document.querySelectorAll<HTMLElement>('[data-navigator-group]'));
-  const empty = document.querySelector<HTMLElement>('[data-navigator-empty]');
-
-  input?.addEventListener('input', () => {
-    const query = input.value.trim().toLowerCase();
-    let matches = 0;
-    entries.forEach((entry) => {
-      const visible = !query || (entry.dataset.title || '').includes(query);
-      entry.hidden = !visible;
-      if (visible) matches += 1;
-    });
-    groups.forEach((group) => {
-      group.hidden = Array.from(group.querySelectorAll<HTMLElement>('[data-navigator-article]')).every((entry) => entry.hidden);
-    });
-    if (empty) empty.hidden = matches > 0;
-  });
-</script>
 
 <style>
   .library-navigator { position: sticky; top: 7.5rem; max-height: calc(100vh - 9rem); padding: 1.25rem; overflow-y: auto; border: 1px solid #dce2eb; border-radius: .45rem; background: #fff; }
@@ -89,11 +65,12 @@ const letters = [...new Set(alphabeticalArticles.map((article) => article.title.
   .navigator-topics ul, .navigator-directory ul { display: grid; gap: .35rem; margin: .55rem 0 0; padding: 0; list-style: none; }
   .navigator-topics a, .navigator-directory a { color: var(--brand-ink); font-size: .88rem; line-height: 1.35; text-decoration: none; }
   .navigator-topics a:hover, .navigator-directory a:hover { color: var(--brand-primary); text-decoration: underline; }
-  .navigator-letters { display: flex; flex-wrap: wrap; gap: .35rem; margin: .65rem 0 .9rem; }
-  .navigator-letters a { display: grid; width: 1.55rem; height: 1.55rem; place-items: center; border-radius: .25rem; background: #eef4ff; color: var(--brand-primary); font-size: .75rem; font-weight: 800; text-decoration: none; }
-  .navigator-letters a:hover { background: var(--brand-primary); color: #fff; }
-  .navigator-results section + section { margin-top: .8rem; }
-  .navigator-results h3 { margin: 0; color: var(--brand-primary); font-size: .85rem; letter-spacing: 0; }
-  .navigator-empty { color: var(--brand-muted); font-size: .88rem; }
+  .navigator-results { display: grid; gap: .4rem; margin-top: .55rem; }
+  .navigator-results details { border: 1px solid #dce2eb; border-radius: .3rem; }
+  .navigator-results summary { display: flex; align-items: center; justify-content: space-between; padding: .55rem .65rem; cursor: pointer; color: var(--brand-ink); font-size: .88rem; font-weight: 800; }
+  .navigator-results summary span { color: var(--brand-muted); font-size: .75rem; font-variant-numeric: tabular-nums; }
+  .navigator-results details[open] summary { border-bottom: 1px solid #dce2eb; color: var(--brand-primary); }
+  .navigator-results details ul { padding: 0 .65rem; }
+  .navigator-more { display: inline-block; padding: .35rem .65rem .65rem; color: var(--brand-primary) !important; font-size: .82rem !important; font-weight: 800; }
   @media (max-width: 900px) { .library-navigator { position: static; max-height: none; } .navigator-results { max-height: 18rem; overflow-y: auto; padding-right: .5rem; } }
 </style>

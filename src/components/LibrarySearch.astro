@@ -47,13 +47,18 @@ const { categories, articles, compact = false } = Astro.props;
   const results = shell?.querySelector<HTMLElement>('[data-search-results]');
   const cards = Array.from(shell?.querySelectorAll<HTMLElement>('[data-search-result]') || []);
   const status = shell?.querySelector<HTMLElement>('[data-search-status]');
+  const searchParams = new URLSearchParams(window.location.search);
+  const initialQuery = searchParams.get('q') || '';
+  const initialLetter = searchParams.get('letter') || '';
+  if (input && initialQuery) input.value = initialQuery;
   const runSearch = () => {
     const query = input?.value.toLowerCase().trim() || '';
     const category = filter?.value || '';
-    const active = Boolean(query || category);
+    const active = Boolean(query || category || initialLetter);
     let visible = 0;
     cards.forEach((card) => {
-      const show = active && (!query || (card.dataset.search || '').includes(query)) && (!category || card.dataset.category === category);
+      const title = card.querySelector('strong')?.textContent?.trim().toUpperCase() || '';
+      const show = active && (!query || (card.dataset.search || '').includes(query)) && (!category || card.dataset.category === category) && (!initialLetter || title.startsWith(initialLetter.toUpperCase()));
       card.hidden = !show;
       if (show) visible += 1;
     });
@@ -61,6 +66,7 @@ const { categories, articles, compact = false } = Astro.props;
     if (status) status.textContent = active ? `${visible} article${visible === 1 ? '' : 's'} found` : '';
   };
   input?.addEventListener('input', runSearch); filter?.addEventListener('change', runSearch);
+  runSearch();
 </script>
 <style>
   .search-results { margin-top: 1rem; background: #fff; border-radius: 0.5rem; box-shadow: 0 0.75rem 2rem rgba(20, 34, 76, 0.18); color: var(--brand-ink); overflow: hidden; text-align: left; }

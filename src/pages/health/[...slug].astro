@@ -108,15 +108,6 @@ const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'Breadcrum
     <AppointmentCta heading="Have questions about your symptoms or care?" />
   </div>
 
-  <!-- Call-to-Action Band -->
-  <RPTCtaBand
-    heading="Ready to Start Your Recovery?"
-    description="Join hundreds of patients who've found relief through Robotic Precision Therapy. Most patients experience significant improvement within 6-12 sessions."
-    ctaText="Schedule Your Assessment Today"
-    ctaHref="https://rptclinic.com/contact/"
-    variant="primary"
-  />
-
   {relatedEntries.length > 0 && (
     <section class="section section-muted">
       <div class="container">
@@ -127,4 +118,13 @@ const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'Breadcrum
       </div>
     </section>
   )}
+
+  <!-- Call-to-Action Band -->
+  <RPTCtaBand
+    heading="Ready to Start Your Recovery?"
+    description="Join hundreds of patients who've found relief through Robotic Precision Therapy. Most patients experience significant improvement within 6-12 sessions."
+    ctaText="Schedule Your Assessment Today"
+    ctaHref="https://rptclinic.com/contact/"
+    variant="primary"
+  />
 </BaseLayout>
