@@ -15,8 +15,8 @@ export interface Props {
 }
 
 const { articles, categories } = Astro.props;
-const alphabeticalArticles = [...articles].sort((first, second) => first.title.localeCompare(second.title));
-const letters = [...new Set(alphabeticalArticles.map((article) => article.title.charAt(0).toUpperCase()))];
+const alphabeticalArticles = [...articles].sort((first, second) => (first.title || '').localeCompare(second.title || ''));
+const letters = [...new Set(alphabeticalArticles.map((article) => (article.title || '').charAt(0).toUpperCase()).filter(Boolean))];
 ---
 
 <aside class="library-navigator" aria-label="Browse the health library">
@@ -41,15 +41,7 @@ const letters = [...new Set(alphabeticalArticles.map((article) => article.title.
     <p>Article directory</p>
     <div class="navigator-results">
       {letters.map((letter) => (
-        <details id={`library-letter-${letter}`}>
-          <summary>{letter}<span>{alphabeticalArticles.filter((article) => article.title.startsWith(letter)).length}</span></summary>
-          <ul>
-            {alphabeticalArticles.filter((article) => article.title.startsWith(letter)).slice(0, 3).map((article) => (
-              <li><a href={`/health/${article.id}`}>{article.title}</a></li>
-            ))}
-          </ul>
-          <a class="navigator-more" href={`/health?letter=${letter}`}>View all {letter} articles</a>
-        </details>
+        <a class="navigator-letter" href={`/health?letter=${letter}`} aria-label={letter === '5' ? 'View articles beginning with a number' : `View articles beginning with ${letter}`}>{letter === '5' ? ' 0-9' : letter}</a>
       ))}
     </div>
   </nav>
@@ -65,12 +57,9 @@ const letters = [...new Set(alphabeticalArticles.map((article) => article.title.
   .navigator-topics ul, .navigator-directory ul { display: grid; gap: .35rem; margin: .55rem 0 0; padding: 0; list-style: none; }
   .navigator-topics a, .navigator-directory a { color: var(--brand-ink); font-size: .88rem; line-height: 1.35; text-decoration: none; }
   .navigator-topics a:hover, .navigator-directory a:hover { color: var(--brand-primary); text-decoration: underline; }
-  .navigator-results { display: grid; gap: .4rem; margin-top: .55rem; }
-  .navigator-results details { border: 1px solid #dce2eb; border-radius: .3rem; }
-  .navigator-results summary { display: flex; align-items: center; justify-content: space-between; padding: .55rem .65rem; cursor: pointer; color: var(--brand-ink); font-size: .88rem; font-weight: 800; }
-  .navigator-results summary span { color: var(--brand-muted); font-size: .75rem; font-variant-numeric: tabular-nums; }
-  .navigator-results details[open] summary { border-bottom: 1px solid #dce2eb; color: var(--brand-primary); }
-  .navigator-results details ul { padding: 0 .65rem; }
-  .navigator-more { display: inline-block; padding: .35rem .65rem .65rem; color: var(--brand-primary) !important; font-size: .82rem !important; font-weight: 800; }
-  @media (max-width: 900px) { .library-navigator { position: static; max-height: none; } .navigator-results { max-height: 18rem; overflow-y: auto; padding-right: .5rem; } }
+  .navigator-results { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .4rem; margin-top: .55rem; }
+  .navigator-letter { display: block; padding: .55rem .65rem; border: 1px solid #dce2eb; border-radius: .3rem; color: var(--brand-ink) !important; font-size: .88rem !important; font-weight: 800; text-decoration: none; }
+  .navigator-letter:hover { border-color: var(--brand-primary); background: #f0f5fb; color: var(--brand-primary) !important; text-decoration: none !important; }
+  @media (max-width: 1100px) { .navigator-results { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 900px) { .library-navigator { position: static; max-height: none; } .navigator-results { grid-template-columns: repeat(4, minmax(0, 1fr)); max-height: 18rem; overflow-y: auto; padding-right: .5rem; } }
 </style>

@@ -13,6 +13,7 @@ import RPTHero from '../../components/RPTHero.astro';
 import RPTTestimonials from '../../components/RPTTestimonials.astro';
 import RPTComparisonTable from '../../components/RPTComparisonTable.astro';
 import RPTCtaBand from '../../components/RPTCtaBand.astro';
+import LocalServiceAreas from '../../components/LocalServiceAreas.astro';
 import { brand } from '../../config/brand';
 export async function getStaticPaths() { const articles = (await getAllArticles()).filter((a) => !a.data?.seo?.noindex); return articles.map((article) => ({ params: { slug: article.id }, props: { article } })); }
 const { article } = Astro.props;
@@ -70,6 +71,7 @@ const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'Breadcrum
       <h1>{article.data.title}</h1>
       <p class="lead">{article.data.description}</p>
       <div class="byline">Written by {article.data.author} · Updated {new Date(article.data.updatedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })} · {article.data.readingTime} min read</div>
+      <LocalServiceAreas />
       <KeyTakeaways items={article.data.keyTakeaways} />
       <ArticleNextStepGuide articleTitle={article.data.title} />
       <div class="prose">

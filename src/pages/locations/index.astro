@@ -22,7 +22,7 @@ import { locations } from '../../config/locations';
       <div class="locator-layout">
         <div class="location-list" data-location-list>
           {locations.map((location, index) => (
-            <article class="location-card" data-location-card data-search={`${location.name} ${location.address} ${location.city} ${location.region} ${location.postalCode}`.toLowerCase()}>
+            <article class="location-card" data-location-card data-postal-prefix={location.postalCode.slice(0, 3)} data-search={`${location.name} ${location.address} ${location.city} ${location.region} ${location.postalCode}`.toLowerCase()}>
               <p class="location-number">{String(index + 1).padStart(2, '0')}</p>
               <h2><a href={`/locations/${location.slug}`}>{location.name}</a></h2>
               <address>{location.address}<br />{location.city}, {location.region} {location.postalCode}</address>
@@ -48,9 +48,11 @@ import { locations } from '../../config/locations';
   const empty = document.querySelector<HTMLElement>('[data-no-locations]');
   search?.addEventListener('input', () => {
     const term = search.value.trim().toLowerCase();
+    const isZipSearch = /^\d{3,5}$/.test(term);
+    const zipPrefix = isZipSearch ? term.slice(0, 3) : '';
     let matches = 0;
     cards.forEach((card) => {
-      const visible = !term || (card.dataset.search || '').includes(term);
+      const visible = !term || (card.dataset.search || '').includes(term) || (isZipSearch && card.dataset.postalPrefix === zipPrefix);
       card.hidden = !visible;
       if (visible) matches += 1;
     });

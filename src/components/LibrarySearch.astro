@@ -29,11 +29,11 @@ const { categories, articles, compact = false } = Astro.props;
     <p class="search-status" data-search-status aria-live="polite"></p>
     <ul class="search-results-list">
       {articles.map((article) => (
-        <li data-search-result data-category={article.category.toLowerCase()} data-search={`${article.title} ${article.excerpt} ${article.category} ${article.tags.join(' ')}`.toLowerCase()}>
+        <li data-search-result data-category={(article.category || '').toLowerCase()} data-search={`${article.title || ''} ${article.excerpt || ''} ${article.category || ''} ${(article.tags || []).join(' ')}`.toLowerCase()}>
           <a href={`/health/${article.id}`}>
-            <span>{article.category}</span>
-            <strong>{article.title}</strong>
-            <small>{article.excerpt}</small>
+            <span>{article.category || 'Health'}</span>
+            <strong>{article.title || article.id}</strong>
+            <small>{article.excerpt || ''}</small>
           </a>
         </li>
       ))}

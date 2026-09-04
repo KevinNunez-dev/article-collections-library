@@ -60,6 +60,14 @@ const imageByArticleId: Record<string, string> = {
   'heel-pain': '/images/Leg/calf-treatment.webp',
 };
 
-export function getArticleThumbnail(articleId: string, fallback?: string) {
-  return imageByArticleId[articleId] || fallback || '/images/rpt-clinic-treatment.jpg';
+export function getArticleThumbnail(articleId: string, fallback?: string, title = '', category = '') {
+  const searchableText = `${articleId} ${title} ${category}`.toLowerCase();
+
+  if (imageByArticleId[articleId]) return imageByArticleId[articleId];
+  if (/\bback\b|spine|sciatica|disc/.test(searchableText)) return '/images/Back/backpain.jpg';
+  if (/\bneck\b|shoulder/.test(searchableText)) return '/images/Shoulder/neckpain.jpg';
+  if (/\bknee\b|calf|ankle|foot|heel|shin|achilles|plantar/.test(searchableText)) return '/images/Leg/lower-leg-treatment.webp';
+  if (/\bsport|elbow|wrist|hand|muscle|mobility|posture/.test(searchableText)) return '/images/Sports/mobility.jpg';
+
+  return fallback || '/images/rpt-clinic-treatment.jpg';
 }

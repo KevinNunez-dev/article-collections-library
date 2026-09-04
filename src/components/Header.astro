@@ -13,7 +13,7 @@ const categories = (await getAllCategories()).filter((c) => !c.data?.seo?.noinde
 				{brand.headerNav.map((item) => <li><a class:list={[{ active: pathname.startsWith(item.href) && item.href !== '/' }]} href={item.href}>{item.label}</a></li>)}
 
 				<li class="nav-dropdown">
-						<button class="nav-link" aria-haspopup="true" aria-expanded="false">Topics</button>
+						<button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">Topics</button>
 						<ul class="nav-dropdown-menu">
 							{categories.map((cat) => <li><a href={`/topics/${cat.id}`}>{cat.data.title}</a></li>)}
 						</ul>

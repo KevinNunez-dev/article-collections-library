@@ -1,14 +1,16 @@
 ---
 import '../styles/global.css';
+import '../styles/auros-theme.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import JsonLd from '../components/JsonLd.astro';
 import { brand } from '../config/brand';
 import { clinic } from '../config/clinic';
-export interface Props { title?: string; description?: string; image?: string; noindex?: boolean; canonical?: string; publishedTime?: string | Date; modifiedTime?: string | Date }
-const { title, description = brand.tagline, image, noindex = false, canonical, publishedTime, modifiedTime } = Astro.props;
-const pageTitle = title ? `${title} | ${brand.name}` : `${brand.name} Health Library`;
+export interface Props { title?: string; description?: string; image?: string; imageAlt?: string; fullTitle?: boolean; noindex?: boolean; canonical?: string; publishedTime?: string | Date; modifiedTime?: string | Date }
+const { title, description = brand.tagline, image = brand.socialImageUrl, imageAlt = brand.socialImageAlt, fullTitle = false, noindex = false, canonical, publishedTime, modifiedTime } = Astro.props;
+const pageTitle = title ? (fullTitle ? title : `${title} | ${brand.name}`) : `${brand.name} Health Library`;
 const canonicalUrl = canonical || new URL(Astro.url.pathname, Astro.site).toString();
+const socialImageUrl = new URL(image, Astro.site).toString();
 const organizationSchema = { '@context': 'https://schema.org', '@type': 'MedicalClinic', '@id': 'https://rptclinic.com/#organization', name: brand.legalName, url: 'https://rptclinic.com/', logo: 'https://rptclinic.com/wp-content/uploads/2025/07/logo.png', telephone: clinic.phone, email: clinic.email, address: { '@type': 'PostalAddress', streetAddress: clinic.address.street, addressLocality: clinic.address.city, addressRegion: clinic.address.region, postalCode: clinic.address.postalCode, addressCountry: clinic.address.country }, sameAs: ['https://www.facebook.com/RPTClinic', 'https://www.instagram.com/rptclinic/', 'https://www.youtube.com/@RPTclinictroy'] };
 const websiteSchema = { '@context': 'https://schema.org', '@type': 'WebSite', '@id': `${new URL('/', Astro.site)}#website`, url: new URL('/', Astro.site).toString(), name: `${brand.name} Health Library`, publisher: { '@id': 'https://rptclinic.com/#organization' }, potentialAction: { '@type': 'SearchAction', target: { '@type': 'EntryPoint', urlTemplate: `${new URL('/health?q={search_term_string}', Astro.site)}` }, 'query-input': 'required name=search_term_string' } };
 ---
