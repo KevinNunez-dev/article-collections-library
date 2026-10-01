@@ -1,4 +1,4 @@
-export type NavItem = { label: string; href: string };
+export type NavItem = { label: string; href: string; path?: string };
 
 export const brand = {
   name: 'RPT Clinic',
@@ -20,8 +20,8 @@ export const brand = {
   mutedColor: '#52657D',
   surfaceColor: '#F5F8FC',
   headerNav: [
-    { label: 'Health Library', href: '/health' },
-    { label: 'Locations', href: '/locations' },
+    { label: 'Health Library', href: 'https://rptclinic.com/health/', path: '/health' },
+    { label: 'Locations', href: 'https://rptclinic.com/health/locations/', path: '/locations' },
   ] satisfies NavItem[],
   footerNav: [
     { label: 'Health Library', href: '/health' },
