@@ -1,0 +1,273 @@
+---
+interface Props {
+  headlineMain: string;
+  subMain: string;
+  headline: string;
+  overview: string;
+  backgroundclass: string;
+  images?: string[];
+}
+
+const props = Astro.props;
+
+// Your 4 carousel images 
+const carouselImages = props.images || [
+  '/img/rpt process 1.jpg',
+  '/img/rpt process 2.jpg',
+  '/img/rpt process 3.jpg',  
+  '/img/rpt process 4.jpg',
+  '/img/rpt process 5.jpeg'     
+];
+---
+
+<div class={`${props.backgroundclass} relative overflow-hidden`}>
+  <!-- Dynamic headline script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const utmContent = urlParams.get('utm_content');
+      const headlineElement2 = document.getElementById('dynamic-subMain');
+
+      const headlines = {
+        'sciatica': 'Easiest & Most Comfortable Way To Resolve Your Sciatica Pain',
+        'lower_back': 'Easiest & Most Comfortable Way To Resolve Your Lower Back Pain',
+        'herniated_disc': 'Easiest & Most Comfortable Way To Resolve Your Herniated Disc',
+        'bulging_disc': 'Easiest & Most Comfortable Way To Resolve Your Bulging Disc',
+        'piriformis': 'Easiest & Most Comfortable Way To Resolve Your Piriformis Pain',
+        'trendel_gait': 'Easiest & Most Comfortable Way To Resolve Your Trendelenburg Gait',
+        'neck_pain': 'Easiest & Most Comfortable Way To Resolve Your Neck Pain',
+        'shoulder_pain': 'Easiest & Most Comfortable Way To Resolve Your Shoulder Pain',
+        'carpal_tunnel': 'Easiest & Most Comfortable Way To Resolve Your Carpal Tunnel Pain',
+        'foot_pain': 'Easiest & Most Comfortable Way To Resolve Your Foot Pain',
+        'plantar': 'Easiest & Most Comfortable Way To Resolve Your Plantar Fasciitis Pain',
+        'knee_pain': 'Easiest & Most Comfortable Way To Resolve Your Knee Pain',
+        'hip_pain': 'Easiest & Most Comfortable Way To Resolve Your Hip Pain',
+        'achilles': 'Easiest & Most Comfortable Way To Resolve Your Achilles Tendonitis Pain'
+      };
+
+      if (utmContent && headlines[utmContent] && headlineElement2) {
+        headlineElement2.textContent = headlines[utmContent];
+      }
+    });
+  </script>
+
+  <!-- Carousel functionality script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const carousel = document.getElementById('image-carousel');
+      if (!carousel) return;
+
+      const slides = carousel.querySelectorAll('[data-carousel-item]');
+      const dots = carousel.parentElement?.querySelectorAll('[data-carousel-dot]');
+      let currentIndex = 0;
+      let autoplayInterval;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          if (i === index) {
+            slide.classList.remove('opacity-0');
+            slide.classList.add('opacity-100');
+          } else {
+            slide.classList.remove('opacity-100');
+            slide.classList.add('opacity-0');
+          }
+        });
+
+        dots?.forEach((dot, i) => {
+          if (i === index) {
+            dot.classList.add('bg-blue-600');
+            dot.classList.remove('bg-gray-300');
+          } else {
+            dot.classList.remove('bg-blue-600');
+            dot.classList.add('bg-gray-300');
+          }
+        });
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      }
+
+      function goToSlide(index) {
+        currentIndex = index;
+        showSlide(currentIndex);
+        resetAutoplay();
+      }
+
+      function startAutoplay() {
+        autoplayInterval = setInterval(nextSlide, 4000);
+      }
+
+      function resetAutoplay() {
+        clearInterval(autoplayInterval);
+        startAutoplay();
+      }
+
+      dots?.forEach((dot, index) => {
+        dot.addEventListener('click', () => goToSlide(index));
+      });
+
+      showSlide(0);
+      startAutoplay();
+
+      carousel.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
+      carousel.addEventListener('mouseleave', startAutoplay);
+    });
+  </script>
+
+  <style>
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    li img {
+      margin-right: 10px;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+    
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      max-width: none;
+      margin: 0 auto;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    .carousel-slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .carousel-dots {
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      z-index: 10;
+    }
+
+    .carousel-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 2px solid white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .carousel-dot:hover {
+      transform: scale(1.2);
+    }
+  </style>
+
+      <div id="tech" class="container relative z-10 py-12 max-w-4xl md:max-w-5xl mx-auto px-4 md:px-0">
+    <!-- Main Headline -->
+    <h2 class="section-headline text-2xl md:text-3xl font-bold text-blue-950 mb-8">
+      {props.headlineMain}
+    </h2>
+    <h3 class="section-headline text-lg md:text-xl font-semibold mb-4 text-blue-950 whitespace-pre-line">
+          {props.headline}
+    </h3>
+
+
+    <!-- Two-column layout -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-stretch">
+
+      
+      <!-- Left Column: Copy -->
+      <div class="md:col-span-2 pr-0 md:pr-8 h-full flex flex-col justify-center pt-8 md:pt-16">
+
+        
+
+      
+        <!-- Benefits list -->
+        <ul class="mb-6 max-w-full">
+          <li>
+            <img src="/img/blue-checkmark.svg" alt="checkmark" style="width:20px; height:20px;"> 
+            <span>Non-Invasive and Pain-Free</span>
+          </li>
+          <li>
+            <img src="/img/blue-checkmark.svg" alt="checkmark" style="width:20px; height:20px;"> 
+            <span>Backed by 17+ Years of Advanced Research and Development</span>
+          </li>
+          <li>
+            <img src="/img/blue-checkmark.svg" alt="checkmark" style="width:20px; height:20px;"> 
+            <span>Outperforms Other Methods</span>
+          </li>
+          <li>
+            <img src="/img/blue-checkmark.svg" alt="checkmark" style="width:20px; height:20px;"> 
+            <span class="font-bold break-words">Especially Effective for Sciatica, Knee Pain, Back Pain, Shoulder Pain, Carpal Tunnel, Foot Pain, Hip Pain, Plantar Fasciitis, Piriformis, Herniated Disc, Bulging Disc</span>
+          </li>
+        </ul>
+
+        <!-- Subheading -->
+        {props.subMain && (
+          <p id="dynamic-subMain" class="section-headline text-base md:text-lg text-gray-700 mt-6">
+            {props.subMain}
+          </p>
+        )}
+      </div>
+
+      <!-- Right Column: Image Carousel -->
+      <div class="mt-8 md:mt-0 flex justify-center md:justify-end h-full relative">
+      <div class="carousel-container w-full h-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+
+          <!-- Carousel slides -->
+          <div id="image-carousel" class="w-full h-full">
+            {carouselImages.map((image, index) => (
+              <div 
+                class="carousel-slide opacity-0" 
+                data-carousel-item
+              >
+                <img 
+                  src={image} 
+                  alt={`Treatment image ${index + 1}`}
+                  loading={index === 0 ? 'eager' : 'lazy'}
+                />
+              </div>
+            ))}
+          </div>
+
+          <!-- Navigation dots -->
+          <div class="carousel-dots">
+            {carouselImages.map((_, index) => (
+              <button 
+                class="carousel-dot bg-gray-300" 
+                data-carousel-dot
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>

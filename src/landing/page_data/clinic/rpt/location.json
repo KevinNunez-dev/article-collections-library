@@ -1,0 +1,113 @@
+{
+  "locations": [
+    {
+      "name": "Rochester",
+      "photo": "/img/location-rochester.jpg",
+      "street": "251 Diversion Street",
+      "suite": "Suite 102",
+      "citystatezip": "Rochester, MI 48307",
+      "entranceinfo": "",
+      "phone": "(248) 817-8520",
+      "hours": [
+        { "day": "Monday", "time": "8:30am - 6:30pm" },
+        { "day": "Tuesday", "time": "7:30am - 6:30pm" },
+        { "day": "Wednesday", "time": "7:30am - 6:30pm" },
+        { "day": "Thursday", "time": "8:30am - 6:30pm" },
+        { "day": "Friday", "time": "8:30am - 5pm" },
+        { "day": "Saturday", "time": "Closed" },
+        { "day": "Sunday", "time": "Closed" }
+      ],
+      "website": "www.robotictherapymichigan.com",
+      "gmburl":"https://www.google.com/maps/place/Advanced+Robotic+Therapy/@42.6751692,-83.1341924,20.63z/data=!4m17!1m8!3m7!1s0x8824e9c635532701:0xe123c7902fe18f68!2s251+Diversion+St+suite+102,+Rochester+Hills,+MI+48307!3b1!8m2!3d42.6752707!4d-83.134043!16s%2Fg%2F11lnpxxz_q!3m7!1s0x88ef7dbf51e3bc47:0xf7c52d8419d5ec3b!8m2!3d42.6752707!4d-83.134043!9m1!1b1!16s%2Fg%2F11w8qmhlrr?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D",
+      "websiteurl": "https://robotictherapymichigan.com/?utm_source=google&utm_medium=cpc",
+      "gmapsembed": "!1m18!1m12!1m3!1d187777.26502070416!2d-83.41700183198475!3d42.660936529420496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ef7dbf51e3bc47%3A0xf7c52d8419d5ec3b!2sAdvanced%20Robotic%20Therapy!5e0!3m2!1sen!2sus!4v1759343626623!5m2!1sen!2sus"
+    },
+    {
+      "name": "Troy",
+      "photo": "/img/location.jpg",
+      "street": "3250 W Big Beaver Rd",
+      "suite": "Suite 426",
+      "citystatezip": "Troy, MI 48084",
+      "entranceinfo": "",
+      "phone": "(248) 817-8520",
+      "hours": [
+        { "day": "Monday", "time": "7am - 7pm" },
+        { "day": "Tuesday", "time": "7am - 7pm" },
+        { "day": "Wednesday", "time": "7am - 7pm" },
+        { "day": "Thursday", "time": "8:30am - 7pm" },
+        { "day": "Friday", "time": "8:30am - 5pm" },
+        { "day": "Saturday", "time": "Closed" },
+        { "day": "Sunday", "time": "Closed" }
+      ],
+      "website": "www.rptclinic.com",
+      "gmburl":"https://www.google.com/maps/place/Robotic+Precision+Therapy+Clinic/@42.5622418,-83.1964434,17z/data=!4m17!1m8!3m7!1s0x8824c6e9af200c3d:0xbb1cfe2ad5a8b3c6!2s3250+W+Big+Beaver+Rd+Ste+426,+Troy,+MI+48084!3b1!8m2!3d42.5622418!4d-83.1938685!16s%2Fg%2F11rgdgbgnl!3m7!1s0x8824c39c849cae1d:0xe165db13c65868d4!8m2!3d42.5614665!4d-83.1939814!9m1!1b1!16s%2Fg%2F11cmysk7r0?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D",
+      "websiteurl": "https://rptclinic.com/?utm_source=google&utm_medium=cpc&utm_campaign=BACK_MAIN",
+      "gmapsembed": "!1m18!1m12!1m3!1d6049.651999816983!2d-83.19726056198083!3d42.56134216754728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c39c849cae1d%3A0xe165db13c65868d4!2sRobotic%20Precision%20Therapy%20Clinic!5e0!3m2!1sen!2sus!4v1699125159834!5m2!1sen!2sus"
+    },
+        {
+      "name": "Clarkston",
+      "photo": "/img/location-clarkston.jpg",
+      "street": "7138 Sashabaw Road",
+      "suite": "",
+      "citystatezip": "Clarkston, MI 48348",
+      "entranceinfo": "",
+      "phone": "(248) 817-8520",
+      "hours": [
+        { "day": "Monday", "time": "9am - 5pm" },
+        { "day": "Tuesday", "time": "7:30am - 6pm" },
+        { "day": "Wednesday", "time": "9am - 5pm" },
+        { "day": "Thursday", "time": "9am - 7pm" },
+        { "day": "Friday", "time": "9am - 6pm" },
+        { "day": "Saturday", "time": "Closed" },
+        { "day": "Sunday", "time": "Closed" }
+      ],
+      "website": "www.livewellrtc.com",
+      "gmburl":"https://www.google.com/maps/place/Livewell+Robotic+Therapy+Center/@42.7413259,-83.3813322,17z/data=!4m17!1m8!3m7!1s0x882496d7fb58063f:0x4b83c925f95dacf6!2s7138+Sashabaw+Rd,+Village+of+Clarkston,+MI+48348!3b1!8m2!3d42.7413259!4d-83.3787573!16s%2Fg%2F11bw3yddw4!3m7!1s0x882497e735e0762d:0x7e20ade0db2bca74!8m2!3d42.7413259!4d-83.3787573!9m1!1b1!16s%2Fg%2F11wqd5j9cb?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D",
+      "websiteurl": "https://livewellrtc.com/?utm_source=google&utm_medium=cpc",
+      "gmapsembed": "!1m18!1m12!1m3!1d5860.446763184574!2d-83.38133222255804!3d42.741325871159994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882497e735e0762d%3A0x7e20ade0db2bca74!2sLivewell%20Robotic%20Therapy%20Center!5e0!3m2!1sen!2sus!4v1758664461639!5m2!1sen!2sus"
+    },
+    {
+      "name": "Rochester Hills",
+      "photo": "/img/location-rochester.jpg",
+      "street": "355 Barclay Cir",
+      "suite": "Suite A",
+      "citystatezip": "Rochester Hills, MI 48307",
+      "entranceinfo": "Located inside Michigan Center for Regenerative Medicine.",
+      "phone": "(248) 817-8520",
+      "hours": [
+        { "day": "Monday", "time": "9am - 4:30pm" },
+        { "day": "Tuesday", "time": "9am - 4:30pm" },
+        { "day": "Wednesday", "time": "9am - 4:30pm" },
+        { "day": "Thursday", "time": "9am - 4:30pm" },
+        { "day": "Friday", "time": "9am - 4:30pm" },
+        { "day": "Saturday", "time": "Closed" },
+        { "day": "Sunday", "time": "Closed" }
+      ],
+      "website": "www.regenerativemedicinemichigan.com",
+      "gmburl":"https://www.google.com/maps/place/Michigan+Center+for+Regenerative+Medicine/@42.6430987,-83.1282052,17z/data=!4m17!1m8!3m7!1s0x8824c26162120d09:0xf32a25b36039297c!2s355+Barclay+Cir,+Rochester+Hills,+MI+48307!3b1!8m2!3d42.6430987!4d-83.1256303!16s%2Fg%2F11bw3z2rs0!3m7!1s0x8824e9d76e1277b5:0x9e8334830cd23b0a!8m2!3d42.6430987!4d-83.1256303!9m1!1b1!16s%2Fg%2F11f_knxqtz?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D",
+      "websiteurl": "https://regenerativemedicinemichigan.com",
+      "gmapsembed": "!1m14!1m8!1m3!1d187831.12704270403!2d-83.12563!3d42.643099!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824e9d76e1277b5%3A0x9e8334830cd23b0a!2sMichigan%20Center%20for%20Regenerative%20Medicine!5e0!3m2!1sen!2sus!4v1765314289291!5m2!1sen!2sus"
+    },
+    {
+      "name": "Traverse City",
+      "photo": "/img/Location-Traverse.webp",
+      "street": "1414 Trade Centre Dr",
+      "suite": "Suite E",
+      "citystatezip": "Traverse City, MI 49696",
+      "entranceinfo": "Inside StrengthRx Gym",
+      "phone": "(248) 817-8520",
+      "hours": [
+        { "day": "Monday", "time": "5:30am - 7pm" },
+        { "day": "Tuesday", "time": "5:30am - 7pm" },
+        { "day": "Wednesday", "time": "5:30am - 7pm" },
+        { "day": "Thursday", "time": "5:30am - 7pm" },
+        { "day": "Friday", "time": "5:30am - 5pm" },
+        { "day": "Saturday", "time": "7am - 10am" },
+        { "day": "Sunday", "time": "Closed" }
+      ],
+      "website": "www.robotictherapymichigan.com",
+      "websiteurl": "https://robotictherapymichigan.com/strengthrxgym/?utm_source=google&utm_medium=cpc",
+      "gmapsembed": "!1m14!1m8!1m3!1d2835.2789586904228!2d-85.603348!3d44.713918!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x881e33f18ac05471%3A0xf13df6b4c3847062!2sStrengthRx%20Gym%20Traverse%20City!5e0!3m2!1sen!2sus!4v1764022771309!5m2!1sen!2sus"
+    }
+  ]
+}

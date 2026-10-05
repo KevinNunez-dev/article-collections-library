@@ -1,0 +1,375 @@
+/* ============================================
+   VIDEO TAB NAVIGATION & ANIMATIONS
+   ============================================ */
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Video Tab Panel Animations */
+.video-tab-panel {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Video Container Slide-in Animation */
+.slide-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.slide-in-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Video Tab Button Active Indicator */
+[data-video-tab-btn] {
+  position: relative;
+}
+
+[data-video-tab-btn]:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #06b6d4 0%, #0ea5e9 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+[data-video-tab-btn].border-cyan-400:after {
+  transform: scaleX(1);
+}
+
+/* Video Tab Button Hover Effects */
+[data-video-tab-btn]:hover {
+  transform: translateY(-2px);
+}
+
+[data-video-tab-btn].border-cyan-400 {
+  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
+}
+
+/* ============================================
+   ASPECT RATIO UTILITIES
+   ============================================ */
+
+.aspect-\[16\/9\] {
+  aspect-ratio: 16/9;
+}
+
+/* ============================================
+   VIDEO PLAYER STYLES
+   ============================================ */
+
+[data-treatment-video],
+.masthead-video,
+#treatment-video,
+#masthead-video-mobile,
+#masthead-video-desktop {
+  object-fit: cover;
+}
+
+[data-treatment-video]::-webkit-media-controls-enclosure,
+.masthead-video::-webkit-media-controls-enclosure,
+#treatment-video::-webkit-media-controls-enclosure {
+  background: transparent;
+}
+
+[data-treatment-video]::-webkit-media-controls-panel,
+.masthead-video::-webkit-media-controls-panel,
+#treatment-video::-webkit-media-controls-panel {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+[data-treatment-video]::-webkit-media-controls,
+.masthead-video::-webkit-media-controls,
+#treatment-video::-webkit-media-controls {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+[data-treatment-video]:hover::-webkit-media-controls,
+.masthead-video:hover::-webkit-media-controls,
+#treatment-video:hover::-webkit-media-controls {
+  opacity: 1;
+}
+
+/* ============================================
+   MASTHEAD SPECIFIC STYLES
+   ============================================ */
+
+/* Background Gradient */
+.animated-gradient-bg {
+  position: relative;
+  overflow: hidden;
+  background: #0a1628;
+}
+
+.animated-gradient-bg::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(14, 50, 109, 0.6) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(12, 126, 179, 0.5) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(6, 75, 87, 0.4) 0%, transparent 50%),
+    radial-gradient(circle at 60% 90%, rgba(12, 109, 98, 0.5) 0%, transparent 50%),
+    radial-gradient(circle at 90% 30%, rgba(8, 178, 164, 0.4) 0%, transparent 50%);
+  animation: meshMove 15s ease-in-out infinite;
+  filter: blur(60px);
+}
+
+.animated-gradient-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(10, 31, 78, 0.3) 0%, rgba(9, 90, 110, 0.2) 50%, rgba(12, 107, 96, 0.3) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes meshMove {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-5%, 5%) scale(1.1); }
+  66% { transform: translate(25%, -15%) scale(0.95); }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Review link styling */
+.review-link {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+}
+
+.review-link:hover {
+  transform: scale(1.05);
+  color: #fbbf24;
+  text-shadow: 0 0 8px rgba(251, 191, 36, 0.5);
+}
+
+.review-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 50%;
+  background: linear-gradient(90deg, #4285F4 0%, #EA4335 33%, #FBBC04 66%, #34A853 100%);
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+  box-shadow: 0 0 8px rgba(66, 133, 244, 0.4);
+}
+
+.review-link:hover::after {
+  width: 100%;
+  box-shadow: 0 0 12px rgba(66, 133, 244, 0.6);
+}
+
+/* ============================================
+   MODAL STYLES
+   ============================================ */
+
+/* Modal Overlay with Blur */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 9999;
+  overflow-y: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+/* Modal Container */
+.modal-container {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  background: linear-gradient(135deg, #0a1628 0%, #0b2a40 100%);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  animation: modalSlideIn 0.4s ease;
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+@keyframes modalSlideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Modal Close Button */
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: white;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+.modal-close:hover {
+  background: rgba(239, 68, 68, 0.8);
+  border-color: rgba(239, 68, 68, 1);
+  transform: rotate(90deg);
+}
+
+/* Modal Content */
+.modal-content {
+  padding: 24px;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.modal-title {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  background: linear-gradient(90deg, #4A9FE5 0%, #0ea5e9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.modal-iframe-wrapper {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   MEDIA COVERAGE TAB STYLES
+   ============================================ */
+
+/* Tab panel animations (media coverage) */
+.tab-panel {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Article slide-in animation */
+article.slide-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+article.slide-in-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Smooth hover effect on links */
+article a:hover svg {
+  transform: translateX(4px);
+}
+
+/* Tab button active indicator animation (media coverage) */
+[data-tab-btn] {
+  position: relative;
+}
+
+[data-tab-btn]:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+[data-tab-btn].border-cyan-600:after {
+  transform: scaleX(1);
+}
+
+/* ============================================
+   RESPONSIVE STYLES
+   ============================================ */
+
+@media (max-width: 768px) {
+  .modal-container {
+    width: 95%;
+    margin: 10px;
+  }
+  
+  .modal-content {
+    padding: 16px;
+  }
+  
+  .modal-title {
+    font-size: 22px;
+  }
+}

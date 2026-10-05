@@ -1,0 +1,56 @@
+---
+import Layout from "../../landing/layouts/LandingLayout.astro";
+import MobileContactBar from "../../landing/components/defaultPageSections/MobileContactBar.astro";
+import Logos from "../../landing/components/defaultPageSections/Logos.tsx";
+import Testimonials from "../../landing/components/defaultPageSections/Testimonials.tsx";
+import OurApproach from "../../landing/components/defaultPageSections/OurApproach.astro";
+import FAQ from "../../landing/components/defaultPageSections/FAQs.astro";
+import OurSpecialists from "../../landing/components/defaultPageSections/OurSpecialists.tsx";
+import Reviews from "../../landing/components/defaultPageSections/Reviews.tsx";
+import Location from "../../landing/components/defaultPageSections/Location.astro";
+import ContactForm from "../../landing/components/defaultPageSections/ContactForm.astro";
+import Footer from "../../landing/components/defaultPageSections/Footer.astro";
+import Treatment from "../../landing/components/defaultPageSections/Treatment.astro";
+import MediaCoverage from "../../landing/components/defaultPageSections/MediaCoverage.astro";
+import FloatingNav from "../../landing/components/FloatingNav.astro";
+import Masthead from "../../landing/components/defaultPageSections/Masthead.astro";
+import TreatPain from "../../landing/components/defaultPageSections/TreatPain.astro";
+
+import { existsSync, readFileSync } from "fs";
+import * as process from "process";
+
+// Landing-page data lives in src/landing/page_data/clinic/<slug>/*.json; "default" is the fallback.
+export async function getStaticPaths() {
+  const slugs = ["rpt"];
+  const sections = ["seo", "contactinfo", "masthead", "reviews", "treatpain", "logos", "treatment", "mediacoverage", "testimonials", "ourapproach", "faqs", "specialists", "location", "contactform", "footer"];
+  const base = process.cwd() + "/src/landing/page_data/clinic";
+  const getDataOrDefault = (fileName: string, folderName: string) => {
+    const own = `${base}/${folderName}/${fileName}.json`;
+    return JSON.parse(readFileSync(existsSync(own) ? own : `${base}/default/${fileName}.json`, "utf-8"));
+  };
+  return slugs.map((slug) => ({
+    params: { slug },
+    props: Object.fromEntries(sections.map((section) => [section, getDataOrDefault(section, slug)])),
+  }));
+}
+
+const { seo, contactinfo, masthead, treatpain, logos, treatment, mediacoverage, testimonials, ourapproach, faqs, specialists, reviews, location, contactform, footer } = Astro.props;
+---
+
+<Layout title={seo.title} desc={seo.desc}>
+  <FloatingNav />
+  <MobileContactBar {...contactinfo} />
+  <Masthead {...masthead} />
+  <Treatment {...treatment} />
+  <Reviews {...reviews} client:load />
+  <TreatPain {...treatpain} />
+  <MediaCoverage {...mediacoverage} />
+  <Logos {...logos} client:load />
+  <Testimonials {...testimonials} client:load />
+  <OurApproach {...ourapproach} />
+  <FAQ {...faqs} />
+  <OurSpecialists {...specialists} client:load />
+  <Location {...location} />
+  <ContactForm {...contactform} />
+  <Footer {...footer} />
+</Layout>

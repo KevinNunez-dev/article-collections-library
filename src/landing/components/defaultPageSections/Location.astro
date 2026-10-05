@@ -1,0 +1,307 @@
+---
+interface Props {
+  locations: LocationData[];
+}
+
+export interface LocationData {
+  name: string;
+  photo: string;
+  street: string;
+  suite: string;
+  citystatezip: string;
+  hours: Hours[];
+  website: string;
+  websiteurl: string;
+  gmapsembed: string;
+  entranceinfo?: string;
+  phone: string;
+  gmburl: string;
+}
+
+export interface Hours {
+  day: string;
+  time: string;
+}
+
+const props = Astro.props;
+const locationsList = (props.locations || []).sort((a, b) =>
+  a.name.localeCompare(b.name)
+);
+---
+
+<!-- Add Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<div
+  id="location"
+  class="bg-gradient-to-b from-[#071633] via-[#0b2a40] to-[#071633] text-white py-12 pb-16"
+  style="font-family: 'Roboto', sans-serif; isolation: isolate;"
+>
+  <div class="container max-w-[1600px] mx-auto px-4">
+
+    <!-- Section Header -->
+    <div class="text-center mb-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Locations Near You</h2>
+      <p class="text-lg text-gray-300">Find a clinic near you</p>
+    </div>
+
+    <!-- THREE COLUMN LAYOUT: List | Details | Map -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 min-h-[650px]">
+      
+      <!-- COLUMN 1: Location List -->
+      <div class="lg:col-span-3 space-y-2 overflow-y-auto custom-scrollbar pr-2 backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-4 shadow-2xl">
+        <h3 class="font-bold text-lg text-white mb-4 sticky top-0 bg-gradient-to-b from-[#0b2a40] to-transparent pb-3 backdrop-blur-sm">
+          Select Location
+        </h3>
+        {locationsList.map((location, index) => (
+          <button
+            type="button"
+            data-location-card
+            data-location-index={index}
+            class={`
+              w-full text-left p-4 rounded-xl border transition-all duration-300
+              ${
+                index === 0
+                  ? 'bg-blue-500/20 border-blue-400/50 shadow-lg shadow-blue-500/20 backdrop-blur-md'
+                  : 'bg-white/5 border-white/10 hover:bg-white/10 hover:border-blue-400/30 backdrop-blur-sm'
+              }
+            `}
+          >
+            <div class="flex items-start gap-3">
+              <div class={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors ${index === 0 ? 'bg-blue-500 shadow-lg shadow-blue-500/50' : 'bg-white/10'}`}>
+                <svg class={`w-4 h-4 ${index === 0 ? 'text-white' : 'text-gray-300'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                </svg>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h4 class="font-bold text-base text-white mb-0.5">{location.name}</h4>
+                <p class="text-xs text-gray-300 truncate">{location.street}</p>
+                <p class="text-xs text-gray-400">{location.citystatezip}</p>
+              </div>
+            </div>
+          </button>
+        ))}
+      </div>
+
+      <!-- COLUMN 2: Location Details -->
+      <div class="lg:col-span-5 overflow-hidden">
+        {locationsList.map((location, index) => (
+          <div
+            data-location-detail
+            data-location-index={index}
+            class={`${index === 0 ? 'flex' : 'hidden'} flex-col h-full animate-fadeIn`}
+          >
+            <!-- Location Image -->
+            <div class="mb-3 rounded-2xl overflow-hidden shadow-2xl border border-white/10 flex-shrink-0 bg-gray-900">
+              <img
+                src={location.photo}
+                alt={`${location.name} Clinic`}
+                class="w-full h-56 object-contain"
+                loading={index === 0 ? 'eager' : 'lazy'}
+              />
+            </div>
+
+            <!-- Details Card -->
+            <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-4 shadow-2xl flex-1 overflow-hidden flex flex-col">
+              <h3 class="text-xl font-bold text-white mb-3">{location.name}</h3>
+
+              <!-- Address + Google Reviews -->
+              <div class="flex items-start gap-2.5 mb-2.5 pb-2.5 border-b border-white/10">
+                <svg class="w-4 h-4 text-blue-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                <div class="flex-1 min-w-0">
+                  <p class="font-semibold text-white text-sm">
+                    {location.street}, {location.suite}
+                  </p>
+                  <p class="text-gray-300 text-xs">
+                    {location.citystatezip}
+                  </p>
+                </div>
+
+                {location.gmburl && (
+                  <a
+                    href={location.gmburl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 hover:bg-white/20 text-[11px] md:text-xs font-semibold text-blue-100 rounded-full whitespace-nowrap"
+                  >
+                    <img
+                      src="/img/google-reviews.svg"
+                      alt="Read Google Reviews"
+                      class="w-4 h-4"
+                      loading="lazy"
+                    />
+                    <span>Google Reviews</span>
+                  </a>
+                )}
+              </div>
+
+              <!-- Entrance info (unchanged, but without reviews button now) -->
+              {location.entranceinfo && location.entranceinfo !== "" && (
+                <div class="flex items-start gap-4 mb-4 pb-4 border-b border-white/10">
+                  <svg class="w-6 h-6 text-blue-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                  <p class="text-xs italic text-gray-300">{location.entranceinfo}</p>
+                </div>
+              )}
+
+              <!-- Hours -->
+              <div class="flex items-start gap-2.5 mb-3 pb-2.5 border-b border-white/10 flex-1 min-h-0">
+                <svg class="w-4 h-4 text-blue-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <div class="w-full">
+                  <p class="font-semibold text-white mb-1 text-sm">Hours:</p>
+                  <div class="space-y-0.5">
+                    {location.hours.map((hours) => (
+                      <div class="flex justify-between text-xs">
+                        <span class="font-medium text-gray-300">{hours.day}</span>
+                        <span class="text-gray-400">{hours.time}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+             
+              <a
+                href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${location.street}, ${location.suite}, ${location.citystatezip}`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center justify-center gap-2 w-full px-6 py-3.5 bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-bold transition-colors shadow-lg text-base tracking-wide uppercase mb-3"
+                style="letter-spacing: 0.5px; border-radius: 4px;"
+              >
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                </svg>
+                Get Directions
+              </a>
+
+              
+              <a
+                href={`tel:${location.phone.replace(/\D/g, '')}`}
+                class="call-button flex items-center justify-center gap-2 w-full px-6 py-3.5 bg-[#4A9FE5] hover:bg-[#3a8fd5] text-white font-bold transition-colors shadow-lg text-base tracking-wide uppercase"
+                style="letter-spacing: 0.5px; border-radius: 4px;"
+              >
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+                {location.phone}
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      
+      <div class="lg:col-span-4 rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+        {locationsList.map((location, index) => {
+          const completeEmbedURL = 'https://www.google.com/maps/embed?pb=' + location.gmapsembed;
+          return (
+            <iframe
+              data-location-map
+              data-location-index={index}
+              src={completeEmbedURL}
+              title={`${location.name} Map`}
+              class={`${index === 0 ? 'block' : 'hidden'} w-full h-[650px]`}
+              style="border:0;"
+              allowfullscreen=""
+              loading={index === 0 ? 'eager' : 'lazy'}
+              referrerpolicy="no-referrer-when-downgrade"
+            />
+          );
+        })}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .animate-fadeIn { animation: fadeIn 0.3s ease-in-out; }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+  .location-image-container { cursor: pointer; position: relative; }
+  .location-image {
+    transition: transform 0.5s ease, filter 0.3s ease;
+    transform: scale(1);
+    will-change: transform;
+  }
+  .location-image-container:hover .location-image {
+    transform: scale(0.95);
+    filter: brightness(1.1);
+  }
+  .location-image-container::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(74,159,229,0) 0%, rgba(14,165,233,0.1) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  .location-image-container:hover::after { opacity: 1; }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const locationCards = document.querySelectorAll('[data-location-card]');
+    const locationDetails = document.querySelectorAll('[data-location-detail]');
+    const locationMaps = document.querySelectorAll('[data-location-map]');
+
+    locationCards.forEach((card) => {
+      card.addEventListener('click', () => {
+        const index = card.getAttribute('data-location-index');
+
+        
+        locationCards.forEach((c) => {
+          const cardIndex = c.getAttribute('data-location-index');
+          const icon = c.querySelector('div[class*="rounded-full"]');
+          const svg = icon?.querySelector('svg');
+
+          if (cardIndex === index) {
+            c.classList.remove('bg-white/5', 'border-white/10', 'hover:bg-white/10', 'hover:border-blue-400/30', 'backdrop-blur-sm');
+            c.classList.add('bg-blue-500/20', 'border-blue-400/50', 'shadow-lg', 'shadow-blue-500/20', 'backdrop-blur-md');
+            icon?.classList.remove('bg-white/10', 'shadow-none');
+            icon?.classList.add('bg-blue-500', 'shadow-lg', 'shadow-blue-500/50');
+            svg?.classList.remove('text-gray-300');
+            svg?.classList.add('text-white');
+          } else {
+            c.classList.remove('bg-blue-500/20', 'border-blue-400/50', 'shadow-lg', 'shadow-blue-500/20', 'backdrop-blur-md');
+            c.classList.add('bg-white/5', 'border-white/10', 'hover:bg-white/10', 'hover:border-blue-400/30', 'backdrop-blur-sm');
+            icon?.classList.remove('bg-blue-500', 'shadow-lg', 'shadow-blue-500/50');
+            icon?.classList.add('bg-white/10', 'shadow-none');
+            svg?.classList.remove('text-white');
+            svg?.classList.add('text-gray-300');
+          }
+        });
+
+        
+        locationDetails.forEach((detail) => {
+          if (detail.getAttribute('data-location-index') === index) {
+            detail.classList.remove('hidden');
+            detail.classList.add('flex', 'animate-fadeIn');
+          } else {
+            detail.classList.add('hidden');
+            detail.classList.remove('flex');
+          }
+        });
+
+        
+        locationMaps.forEach((map) => {
+          if (map.getAttribute('data-location-index') === index) {
+            map.classList.remove('hidden');
+            map.classList.add('block');
+          } else {
+            map.classList.add('hidden');
+            map.classList.remove('block');
+          }
+        });
+      });
+    });
+  });
+</script>

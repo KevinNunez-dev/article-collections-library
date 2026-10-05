@@ -1,0 +1,569 @@
+---
+import ParticleBackground from '../effects/ParticleBackground';
+
+interface Props {
+  logo: string;
+  star: string;
+  contact: string;
+  headline: string;
+  subhead: string;
+  subhead2: string;
+  subhead3: string;
+  subhead4: string;
+  cta: string;
+  ctaurl: string;
+  ctabuttonclass: string;
+  ctabuttonclassMobile: string;
+  pillicon: string;
+  needleicon: string;
+  surgeryicon: string;
+  videourl?: string;
+  formsrc: string;
+}
+
+const props = Astro.props;
+---
+
+<div id="dynamicBackground" class="animated-gradient-bg">
+  <!-- Three.js Particle Background -->
+  <ParticleBackground 
+    client:load
+    particleCount={1000}
+    particleColor="#0ea5e9"
+    particleSize={1.5}
+    animationSpeed={0.00000001}
+  />
+
+  <!-- Combined dynamic script for headline, subheading, video, and modal -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const utmContent = urlParams.get('utm_content');
+      
+      // Dynamic headlines
+      const headlines = {
+        'sciatica': 'Sciatica Pain Relief',
+        'lower_back': 'Lower Back Pain Relief',
+        'herniated_disc': 'Herniated Disc Relief',
+        'bulging_disc': 'Bulging Disc Relief',
+        'piriformis': 'Piriformis Pain Relief',
+        'trendel_gait': 'Trendelenburg Gait Relief',
+        'neck_pain': 'Neck Pain Relief',
+        'carpal_tunnel': 'Carpal Tunnel Relief',
+        'shoulder_pain': 'Shoulder Pain Relief',
+        'plantar': 'Plantar Fasciitis Relief',
+        'foot_pain': 'Foot Pain Relief',
+        'knee_pain': 'Knee Pain Relief',
+        'hip_pain': 'Hip Pain Relief',
+        'achilles': 'Achilles Tendonitis Relief'
+      };
+
+      // Dynamic subheadings
+      const subheadings = {
+        'sciatica': 'Proven pain relief therapy to relieve sciatic nerve compression',
+        'lower_back': 'Proven pain relief therapy to relieve lower back pain and discomfort',
+        'herniated_disc': 'Proven pain relief therapy to treat herniated disc symptoms',
+        'bulging_disc': 'Proven pain relief therapy to address bulging disc pain',
+        'piriformis': 'Proven pain relief therapy to relieve piriformis syndrome',
+        'trendel_gait': 'Proven pain relief therapy to address trendelenburg gait issues',
+        'neck_pain': 'Proven pain relief therapy to relieve chronic neck pain',
+        'carpal_tunnel': 'Proven pain relief therapy to relieve carpal tunnel syndrome',
+        'shoulder_pain': 'Proven pain relief therapy to relieve shoulder pain',
+        'plantar': 'Proven pain relief therapy to relieve plantar fasciitis pain',
+        'foot_pain': 'Proven pain relief therapy to relieve foot pain',
+        'knee_pain': 'Proven pain relief therapy to relieve knee pain',
+        'hip_pain': 'Proven pain relief therapy to relieve hip pain',
+        'achilles': 'Proven pain relief therapy to relieve achilles tendonitis'
+      };
+      
+      // Update headlines and subheading
+      if (utmContent && headlines[utmContent]) {
+        const headline1 = document.getElementById('dynamicHeadline');
+        const headline2 = document.getElementById('dynamicHeadline2');
+        const subheading = document.getElementById('dynamicSubheading');
+        
+        if (headline1) headline1.textContent = headlines[utmContent];
+        if (headline2) headline2.textContent = headlines[utmContent];
+        if (subheading) subheading.textContent = subheadings[utmContent];
+      }
+
+      // Dynamic video swap
+      const vimPlayers = document.querySelectorAll('.vim-player');
+      if (utmContent) {
+        const videoMap = {
+          'lower_back': {
+            src: 'https://player.vimeo.com/video/1098293206',
+            title: 'Begin Backpain Relief Journey'
+          },
+          'sciatica': {
+            src: 'https://player.vimeo.com/video/1113325317',
+            title: 'Sciatica Pain Intro Video'
+          },
+          'herniated_disc': {
+            src: 'https://player.vimeo.com/video/1113718886',
+            title: 'Begin Herniated Disc Relief Journey'
+          },
+          'bulging_disc': {
+            src: 'https://player.vimeo.com/video/1113718977',
+            title: 'Begin Bulging Disc Relief Journey'
+          },
+          'piriformis': {
+            src: 'https://player.vimeo.com/video/1116252675',
+            title: 'Begin Piriformis Relief Journey'
+          },
+          'trendel_gait': {
+            src: 'https://player.vimeo.com/video/1113320231',
+            title: 'Begin Trendelenburg Gait Relief Journey'
+          },
+          'neck_pain': {
+            src: 'https://player.vimeo.com/video/1088080472',
+            title: 'Begin Neck Pain Relief Journey'
+          },
+          'carpal_tunnel': {
+            src: 'https://player.vimeo.com/video/1129941541',
+            title: 'Begin Carpal Tunnel Relief Journey'
+          },
+          'shoulder_pain': {
+            src: 'https://player.vimeo.com/video/1129941541',
+            title: 'Begin Shoulder Pain Relief Journey'
+          },
+          'plantar': {
+            src: 'https://player.vimeo.com/video/1129941424',
+            title: 'Begin Plantar Fasciitis Relief Journey'
+          },
+          'foot_pain': {
+            src: 'https://player.vimeo.com/video/1090599682',
+            title: 'Begin Foot Pain Relief Journey'
+          },
+          'knee_pain': {
+            src: 'https://player.vimeo.com/video/1094124482',
+            title: 'Begin Knee Pain Relief Journey'
+          },
+          'hip_pain': {
+            src: 'https://player.vimeo.com/video/1129021912',
+            title: 'Begin Hip Pain Relief Journey'
+          },
+          'achilles': {
+            src: 'https://player.vimeo.com/video/1094124895',
+            title: 'Begin Achilles Pain Relief Journey'
+          }
+        };
+
+        if (videoMap[utmContent]) {
+          vimPlayers.forEach(player => {
+            player.src = videoMap[utmContent].src;
+            player.title = videoMap[utmContent].title;
+          });
+        }
+      }
+
+      // Modal functionality
+      const modal = document.getElementById('appointmentModal');
+      const btnCTA3 = document.getElementById('btn-CTA3');
+      const btnCTA3Mobile = document.getElementById('btn-CTA3-mobile');
+      const closeModalBtn = document.querySelector('.modal-close');
+
+      // Open modal function
+      function openModal() {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+      }
+
+      // Close modal function
+      function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = ''; // Restore scrolling
+      }
+
+      // Event listeners
+      if (btnCTA3) {
+        btnCTA3.addEventListener('click', openModal);
+      }
+
+      if (btnCTA3Mobile) {
+        btnCTA3Mobile.addEventListener('click', openModal);
+      }
+
+      if (closeModalBtn) {
+        closeModalBtn.addEventListener('click', closeModal);
+      }
+
+      // Close modal when clicking outside
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+
+      // Close modal with Escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+          closeModal();
+        }
+      });
+    });
+  </script>
+
+  <!-- Header -->
+  <div class="flex justify-between items-center mb-8 bg-black relative z-10">
+    <img src={props.logo} alt="Clinic Logo" class="w-[200px] h-auto ml-3 mt-3 mb-3" />
+    <div class="text-xs text-brand-secondary font-bold text-right mt-4 mr-4">
+      <p>{props.contact}</p>
+      <p>3250 W. Big Beaver Rd. Troy, MI</p>
+      <p>Suite 426</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container min-h-[36rem] md:min-h-screen flex flex-col justify-stretch relative z-10" style="margin-top: -30px;">
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start md:items-center flex-grow">
+      
+      <!-- Left Column: Text -->
+      <div class="flex flex-col justify-center text-white space-y-4">
+
+        <!-- Mobile Rating - Added top spacing -->
+        <div class="md:hidden text-center text-sm mt-6">
+          <div class="flex items-center justify-center mb-2">
+            <span class="text-yellow-500 font-bold">4.9</span>
+            <img class="w-[15px] ml-1" src={props.star} alt="5-star reviews" />
+            <a href="#testimonials" class="ml-2 text-yellow-500 font-bold review-link">471+ 5-star Reviews Nationwide</a>
+          </div>
+          <span class="font-bold">Robotic Precision Therapy</span>
+        </div>
+        
+        <!-- Headline -->
+        <h1 id="dynamicHeadline" class="md:hidden text-left font-bold text-4xl px-4">{props.headline}</h1>
+        <h1 id="dynamicHeadline2" class="hidden md:block mt-8 md:mt-10 text-left font-bold text-4xl md:text-5xl">{props.headline}</h1>
+        
+        <!-- Mobile Video - Positioned after headline, before subheading -->
+        <div class="md:hidden flex items-center justify-center mt-6 px-4">
+          <div class="w-full max-w-md">
+            <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black" style="aspect-ratio: 16/9;">
+              <iframe 
+                src="https://player.vimeo.com/video/1113325317" 
+                title="Sciatica Pain Intro Video" 
+                class="vim-player w-full h-full absolute inset-0"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <p class="text-center text-white text-sm mt-3 font-semibold">
+              See How RPT Works in 60 Seconds
+            </p>
+          </div>
+        </div>
+
+        <!-- Mobile Subheading - Removed dark background box -->
+        <div class="md:hidden px-4 py-2 mt-6">
+          <h2 class="text-center text-base">
+            Pain Resolution 4 to 6 Sessions*<br />
+            No surgery. No Meds. No Injections.
+          </h2>
+        </div>
+
+        <!-- Desktop Rating -->
+        <div class="hidden md:block text-base">
+          <div class="flex items-center mb-2">
+            <span class="text-yellow-500 font-bold">4.9</span>
+            <img class="w-[15px] ml-1" src={props.star} alt="5-star reviews" />
+            <a href="#testimonials" class="ml-2 text-yellow-500 font-bold review-link">641+ 5-star Reviews</a>
+          </div>
+          <span id="dynamicSubheading" class="font-bold">From back pain to pinched nerves, shin splints to herniated discs.<br>We treat the root cause, not just the symptoms.</span>
+        </div>
+
+        <!-- Desktop CTA (unchanged from your original) -->
+        <button
+          type="button"
+          id="btn-CTA3"
+          class={props.ctabuttonclass + " inline-block w-fit px-6 py-3"}
+          style="padding-right: 1.5rem; padding-left: 1.5rem;"
+        >
+          {props.cta}
+        </button>
+
+        <!-- Mobile CTA only - Tightened padding -->
+        <button
+          type="button"
+          id="btn-CTA3-mobile"
+          class={
+            props.ctabuttonclassMobile +
+            " inline-block mx-auto mt-3 md:hidden px-6 py-3"
+          }
+        >
+          {props.cta}
+        </button>
+
+
+
+        <!-- Free Consultation -->
+        <p class="text-sm text-center md:text-left">
+          <span class="text-sky-400 font-bold">FREE</span>
+          <span class="font-bold"> 15 minute phone consultation</span>
+          <br />
+          <br>
+          <a href="#faq-insurance" class="font-bold underline">$150 per treatment hour. Payment due at time of service.</a>
+        </p>
+
+      </div>
+
+      <!-- Right Column: Desktop Video Only -->
+      <div class="hidden md:flex items-center justify-center md:justify-end mt-8 md:mt-0">
+        <div class="w-full max-w-md md:max-w-xl lg:max-w-2xl">
+          <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black" style="aspect-ratio: 16/9;">
+            <iframe 
+              src="https://player.vimeo.com/video/1113325317" 
+              title="Sciatica Pain Intro Video" 
+              class="vim-player w-full h-full absolute inset-0"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <p class="text-center text-white text-sm mt-3 font-semibold">
+            See How RPT Works in 60 Seconds
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="hidden md:flex justify-around text-white font-semibold text-4xl pb-2 mt-auto">
+      <h3>No Meds</h3>
+      <h3>No Needles</h3>
+      <h3>No Surgery</h3>
+    </div>
+
+    <!-- Disclaimer -->
+    <p class="hidden md:block text-center text-xs text-white mb-2 italic">
+      *Results may vary. Most patients experience lasting relief in just 6 sessions or less. Those suffering for many years may take longer.
+    </p>
+  </div>
+
+  <!-- Modal for CTA Form -->
+  <div id="appointmentModal" class="modal-overlay">
+    <div class="modal-container">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <div class="modal-content">
+        <h2 class="modal-title">Book Your Appointment</h2>
+        <div class="modal-iframe-wrapper">
+          <iframe 
+            id="ctm-form-section" 
+            class="ctm-call-widget" 
+            src={props.formsrc} 
+            style="width: 100%; min-height: 420px; border: none;" 
+            title="Book Appointment Form"
+          ></iframe>
+          <script defer async src="https://538296.tctm.co/formreactor.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<style>
+  /* Background Gradient */
+  .animated-gradient-bg {
+    position: relative;
+    overflow: hidden;
+    background: #0a1628;
+  }
+
+  .animated-gradient-bg::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: 
+      radial-gradient(circle at 20% 50%, rgba(14, 50, 109, 0.6) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(12, 126, 179, 0.5) 0%, transparent 50%),
+      radial-gradient(circle at 40% 20%, rgba(6, 75, 87, 0.4) 0%, transparent 50%),
+      radial-gradient(circle at 60% 90%, rgba(12, 109, 98, 0.5) 0%, transparent 50%),
+      radial-gradient(circle at 90% 30%, rgba(8, 178, 164, 0.4) 0%, transparent 50%);
+    animation: meshMove 15s ease-in-out infinite;
+    filter: blur(60px);
+  }
+
+  .animated-gradient-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(10, 31, 78, 0.3) 0%, rgba(9, 90, 110, 0.2) 50%, rgba(12, 107, 96, 0.3) 100%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  @keyframes meshMove {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(-5%, 5%) scale(1.1); }
+    66% { transform: translate(25%, -15%) scale(0.95); }
+  }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Review link styling with Google gradient */
+  .review-link {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .review-link:hover {
+    transform: scale(1.05);
+    color: #fbbf24;
+    text-shadow: 0 0 8px rgba(251, 191, 36, 0.5);
+  }
+
+  /* Google-branded gradient underline */
+  .review-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    background: linear-gradient(
+      90deg,
+      #4285F4 0%,      /* Google Blue */
+      #EA4335 33%,     /* Google Red */
+      #FBBC04 66%,     /* Google Yellow */
+      #34A853 100%     /* Google Green */
+    );
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+    box-shadow: 0 0 8px rgba(66, 133, 244, 0.4);
+  }
+
+  .review-link:hover::after {
+    width: 100%;
+    box-shadow: 0 0 12px rgba(66, 133, 244, 0.6);
+  }
+
+  /* Modal Overlay with Blur */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 9999;
+    overflow-y: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .modal-overlay.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+  }
+
+  /* Modal Container */
+  .modal-container {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    background: linear-gradient(135deg, #0a1628 0%, #0b2a40 100%);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    animation: modalSlideIn 0.4s ease;
+    max-height: 90vh;
+    overflow: hidden;
+  }
+
+  @keyframes modalSlideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Modal Close Button */
+  .modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: white;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+  }
+
+  .modal-close:hover {
+    background: rgba(239, 68, 68, 0.8);
+    border-color: rgba(239, 68, 68, 1);
+    transform: rotate(90deg);
+  }
+
+  /* Modal Content */
+  .modal-content {
+    padding: 24px;
+    overflow-y: auto;
+    max-height: 90vh;
+  }
+
+  .modal-title {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    background: linear-gradient(90deg, #4A9FE5 0%, #0ea5e9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .modal-iframe-wrapper {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .modal-container {
+      width: 95%;
+      margin: 10px;
+    }
+    
+    .modal-content {
+      padding: 16px;
+    }
+    
+    .modal-title {
+      font-size: 22px;
+    }
+  }
+</style>
