@@ -6,42 +6,42 @@
     {
       "embedURL": "https://player.vimeo.com/video/1069712620",
       "embedID": "vim_player_3",
-      "coverimg": "/img/testimonial-cover-a.png",
+      "coverimg": "/health/landing-assets/img/testimonial-cover-a.png",
       "buttonLabel": "Tony",
       "location": "Troy"
     },
     {
       "embedURL": "https://player.vimeo.com/video/1069712590",
       "embedID": "vim_player_5",
-      "coverimg": "/img/testimonial-cover-c.png",
+      "coverimg": "/health/landing-assets/img/testimonial-cover-c.png",
       "buttonLabel": "Michael",
       "location": "Troy"
     },
     {
       "embedURL": "https://player.vimeo.com/video/1069712559",
       "embedID": "vim_player_4",
-      "coverimg": "/img/testimonial-cover-b.png",
+      "coverimg": "/health/landing-assets/img/testimonial-cover-b.png",
       "buttonLabel": "Kim",
       "location": "Troy"
     },
     {
       "embedURL": "https://player.vimeo.com/video/1121311769",
       "embedID": "vim_player_3",
-      "coverimg": "/img/testimonial-cover-a.png",
+      "coverimg": "/health/landing-assets/img/testimonial-cover-a.png",
       "buttonLabel": "Bryan",
       "location": "Clarkston"
     },
     {
       "embedURL": "https://player.vimeo.com/video/1121311755",
       "embedID": "vim_player_5",
-      "coverimg": "/img/testimonial-cover-c.png",
+      "coverimg": "/health/landing-assets/img/testimonial-cover-c.png",
       "buttonLabel": "Anon",
       "location": "Clarkston"
     },
     {
       "embedURL": "https://player.vimeo.com/video/1121311789",
       "embedID": "vim_player_4",
-      "coverimg": "/img/testimonial-cover-b.png",
+      "coverimg": "/health/landing-assets/img/testimonial-cover-b.png",
       "buttonLabel": "Joe",
       "location": "Clarkston"      
     }

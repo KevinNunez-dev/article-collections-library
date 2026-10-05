@@ -1,6 +1,6 @@
 {
-  "logo": "/img/default-clinic-logo.png",
-  "star": "/img/one-star.png",
+  "logo": "/health/landing-assets/img/default-clinic-logo.png",
+  "star": "/health/landing-assets/img/one-star.png",
   "contact": "(248) 817-8520",
   "headline": "Pain Relief Treatment",
   "subhead": "Pain Resolution 4 to 6 Sessions*<br /> No surgery. No Meds. No Injections.",
@@ -11,8 +11,8 @@
   "ctaurl": "#ctm-form-section",
   "ctabuttonclass": "call-to-action hidden md:block",
   "ctabuttonclassMobile": "call-to-action md:hidden items-center text-base",
-  "pillicon": "/img/icon-nopills.png",
-  "needleicon": "/img/icon-noneedle.png",
-  "surgeryicon": "/img/icon-nosurgery.png",
+  "pillicon": "/health/landing-assets/img/icon-nopills.png",
+  "needleicon": "/health/landing-assets/img/icon-noneedle.png",
+  "surgeryicon": "/health/landing-assets/img/icon-nosurgery.png",
   "formsrc": "https://538296.tctm.co/form/FRT472ABB2C5B9B141A16C0B789EC5DD363F934F213A7E3C3A389C6BDD8BAA80978.html"
 }

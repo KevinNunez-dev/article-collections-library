@@ -38,7 +38,7 @@ export default function Reviews(props: ReviewsProps) {
             client:visible
           />
           <p className="">Based on <span className="font-bold">{props.totalreviews} reviews</span></p>
-          <a href={props.gmburl} target="_blank"><img src="/img/logo-google.svg" alt="Google" className="h-8 w-auto" /></a>
+          <a href={props.gmburl} target="_blank"><img src="/health/landing-assets/img/logo-google.svg" alt="Google" className="h-8 w-auto" /></a>
         </div>
 
         <div className="relative md:w-2/3 reviews-swiper px-4 md:px-12">
@@ -90,7 +90,7 @@ export default function Reviews(props: ReviewsProps) {
                             </div>
                           </div>
                           <a href={review.profileurl} target="_blank">
-                            <img src="/img/logo-g.svg" alt="Google" className="" />
+                            <img src="/health/landing-assets/img/logo-g.svg" alt="Google" className="" />
                           </a>
                         </div>
                         <RatingStars

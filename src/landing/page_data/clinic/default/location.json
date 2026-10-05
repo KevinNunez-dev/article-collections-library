@@ -2,7 +2,7 @@
   "locations": [
     {
       "name": "Rochester",
-      "photo": "/img/location-rochester.jpg",
+      "photo": "/health/landing-assets/img/location-rochester.jpg",
       "street": "251 Diversion Street",
       "suite": "Suite 102",
       "citystatezip": "Rochester, MI 48307",
@@ -23,7 +23,7 @@
     },
     {
       "name": "Troy",
-      "photo": "/img/location.jpg",
+      "photo": "/health/landing-assets/img/location.jpg",
       "street": "3250 W Big Beaver Rd",
       "suite": "Suite 426",
       "citystatezip": "Troy, MI 48084",
@@ -44,7 +44,7 @@
     },
         {
       "name": "Clarkston",
-      "photo": "/img/location-clarkston.jpg",
+      "photo": "/health/landing-assets/img/location-clarkston.jpg",
       "street": "7138 Sashabaw Road",
       "suite": "",
       "citystatezip": "Clarkston, MI 48348",

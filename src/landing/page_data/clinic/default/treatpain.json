@@ -4,8 +4,8 @@
   "headline": "Eliminate Pain With Our FDA-Registered Therapeutic Robot",
   "overview": "",
   "backgroundclass": "bg-#E9E9E9 py-10",
-  "pillicon": "/img/icon-nopills.png",
-  "needleicon": "/img/icon-noneedle.png",
-  "surgeryicon": "/img/icon-nosurgery.png",
-  "imageSrc": "/img/Psoas.jpg"
+  "pillicon": "/health/landing-assets/img/icon-nopills.png",
+  "needleicon": "/health/landing-assets/img/icon-noneedle.png",
+  "surgeryicon": "/health/landing-assets/img/icon-nosurgery.png",
+  "imageSrc": "/health/landing-assets/img/Psoas.jpg"
 }

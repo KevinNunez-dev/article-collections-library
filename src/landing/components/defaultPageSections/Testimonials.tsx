@@ -111,7 +111,7 @@ export default function Testimonials(props: TestimonialsProps) {
       <div className="md:container md:max-w-6xl mx-auto mb-12">
         <a href={props.gmburl} target="_blank" rel="noopener noreferrer">
           <img
-            src="/img/google-reviews.svg"
+            src="/health/landing-assets/img/google-reviews.svg"
             alt="Google Reviews"
             className="md:w-52 mx-auto"
           />

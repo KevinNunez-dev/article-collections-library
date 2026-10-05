@@ -1,14 +1,14 @@
 {
   "specialists": [
     {
-      "headshot": "/img/Jack.png",
+      "headshot": "/health/landing-assets/img/Jack.png",
       "name": "Dr. Jack Cygan",
       "cert": "BS, DC, RPT",
       "desc": "Jack earned his Bachelor of Science in Biology from the University of Illinois and his Doctorate of Physical Therapy from Rosalind Franklin University of Medicine. He is also trained in Integrative Dry Needling (IDN) and cupping.",
       "alt": "Dr. Jack Cygan - BS, DC, RPT"
     },
     {
-      "headshot": "/img/Dr. Dayne.jpg",
+      "headshot": "/health/landing-assets/img/Dr. Dayne.jpg",
       "name": "Dr. Dayne",
       "cert": "BS, DC, RPT",
       "desc": "Dr. Dayne Rogers earned his Bachelor of Science in Nutrition and Doctorate of Chiropractic from Life University in Atlanta, Georgia, graduating in 1992. With 32 years of chiropractic experience, as well as upper & slower body adjustments.",

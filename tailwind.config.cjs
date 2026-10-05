@@ -13,8 +13,8 @@ module.exports = {
       fontSize: { ss: '0.625rem' },
       minHeight: { mastheadmobile: '44rem' },
       backgroundImage: {
-        mastheadbg: "url('/img/mastheadGradient1-bg.jpg')",
-        'mastheadbg-mobile': "linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0)), url('/img/mastheadMobile-bg.png')",
+        mastheadbg: "url('/health/landing-assets/img/mastheadGradient1-bg.jpg')",
+        'mastheadbg-mobile': "linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0)), url('/health/landing-assets/img/mastheadMobile-bg.png')",
       },
       backgroundPosition: { 'custom-mobile-focus': 'center 10%' },
       backgroundSize: { 'desktop-custom': 'cover', 'mobile-custom': '100%' },
