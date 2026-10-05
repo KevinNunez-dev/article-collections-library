@@ -33,6 +33,12 @@ const articles = defineCollection({
 			answer: z.string(),
 		})),
 		related: z.array(z.string()).optional(),
+		reviewedBy: z.object({
+			name: z.string(),
+			credentials: z.string(),
+			reviewedAt: z.coerce.date(),
+			url: z.string().optional(),
+		}).optional(),
 		seo: z.object({
 			title: z.string(),
 			description: z.string(),
