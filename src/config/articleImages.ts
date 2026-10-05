@@ -60,7 +60,9 @@ const imageByArticleId: Record<string, string> = {
   'heel-pain': '/images/Leg/calf-treatment.webp',
 };
 
-export function getArticleThumbnail(articleId: string, fallback?: string, title = '', category = '') {
+const defaultImages = ['/images/rpt-clinic-treatment.jpg', '/images/rpt-clinic-treatment-2.jpg'];
+
+export function getArticleThumbnail(articleId: string, _fallback?: string, title = '', category = '') {
   const searchableText = `${articleId} ${title} ${category}`.toLowerCase();
 
   if (imageByArticleId[articleId]) return imageByArticleId[articleId];
@@ -69,5 +71,8 @@ export function getArticleThumbnail(articleId: string, fallback?: string, title 
   if (/\bknee\b|calf|ankle|foot|heel|shin|achilles|plantar/.test(searchableText)) return '/images/Leg/lower-leg-treatment.webp';
   if (/\bsport|elbow|wrist|hand|muscle|mobility|posture/.test(searchableText)) return '/images/Sports/mobility.jpg';
 
-  return fallback || '/images/rpt-clinic-treatment.jpg';
+  // Alternate the two therapist shots deterministically so cards never render blank.
+  let hash = 0;
+  for (const char of articleId) hash = (hash + char.charCodeAt(0)) % 2;
+  return defaultImages[hash];
 }
