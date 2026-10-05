@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" role="img" aria-labelledby="t d">
+<title id="t">Neck-friendly sleeping positions</title>
+<desc id="d">Three side-view diagrams: side sleeping with a pillow filling the gap between ear and shoulder, back sleeping with a low supportive pillow, and stomach sleeping with the neck rotated, which is the least neck-friendly.</desc>
+<rect width="720" height="320" fill="#f5f9ff" rx="12"/>
+<g font-family="Arial" text-anchor="middle">
+<text x="360" y="28" font-size="18" font-weight="700" fill="#17345c">Sleep Positions and the Neck</text>
+<g transform="translate(20,50)">
+<rect width="210" height="230" rx="10" fill="#fff" stroke="#d6e1ef"/>
+<rect x="15" y="170" width="180" height="14" rx="5" fill="#c7d6ea"/>
+<rect x="30" y="125" width="70" height="42" rx="10" fill="#9ec5f5" stroke="#1e63d6"/>
+<circle cx="65" cy="100" r="26" fill="#f0d9c0" stroke="#8a6d4b" stroke-width="2"/>
+<rect x="110" y="132" width="75" height="36" rx="14" fill="#f0d9c0" stroke="#8a6d4b" stroke-width="2"/>
+<line x1="65" y1="126" x2="65" y2="135" stroke="#1e8a3c" stroke-width="3"/>
+<text x="105" y="25" font-size="15" font-weight="700" fill="#17345c">Side</text>
+<text x="105" y="205" font-size="12" fill="#52657d">Pillow fills ear-to-shoulder gap</text>
+<text x="105" y="222" font-size="12" fill="#1e8a3c" font-weight="700">Neutral neck</text>
+</g>
+<g transform="translate(255,50)">
+<rect width="210" height="230" rx="10" fill="#fff" stroke="#d6e1ef"/>
+<rect x="15" y="170" width="180" height="14" rx="5" fill="#c7d6ea"/>
+<rect x="30" y="148" width="60" height="20" rx="10" fill="#9ec5f5" stroke="#1e63d6"/>
+<circle cx="60" cy="130" r="22" fill="#f0d9c0" stroke="#8a6d4b" stroke-width="2"/>
+<rect x="85" y="140" width="105" height="28" rx="12" fill="#f0d9c0" stroke="#8a6d4b" stroke-width="2"/>
+<text x="105" y="25" font-size="15" font-weight="700" fill="#17345c">Back</text>
+<text x="105" y="205" font-size="12" fill="#52657d">Low pillow supports the curve</text>
+<text x="105" y="222" font-size="12" fill="#1e8a3c" font-weight="700">Neutral neck</text>
+</g>
+<g transform="translate(490,50)">
+<rect width="210" height="230" rx="10" fill="#fff" stroke="#d6e1ef"/>
+<rect x="15" y="170" width="180" height="14" rx="5" fill="#c7d6ea"/>
+<circle cx="60" cy="140" r="22" fill="#f0d9c0" stroke="#8a6d4b" stroke-width="2"/>
+<rect x="85" y="146" width="105" height="22" rx="10" fill="#f0d9c0" stroke="#8a6d4b" stroke-width="2"/>
+<path d="M45 125 L75 115" stroke="#c0392b" stroke-width="3"/>
+<text x="105" y="25" font-size="15" font-weight="700" fill="#17345c">Stomach</text>
+<text x="105" y="205" font-size="12" fill="#52657d">Neck stays rotated for hours</text>
+<text x="105" y="222" font-size="12" fill="#c0392b" font-weight="700">Hardest on the neck</text>
+</g>
+</g>
+</svg>

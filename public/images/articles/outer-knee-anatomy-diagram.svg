@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" role="img" aria-labelledby="t d">
+<title id="t">Outer knee anatomy diagram</title>
+<desc id="d">Simplified side view of the outer knee showing the IT band, lateral meniscus, LCL, kneecap and the hip to foot movement chain.</desc>
+<rect width="600" height="420" fill="#f5f9ff" rx="12"/>
+<text x="300" y="30" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#17345c">Outside (Lateral) Knee: Key Structures</text>
+<path d="M255 55 Q300 45 345 55 L335 175 L265 175 Z" fill="#e3d3c0" stroke="#8a6d4b" stroke-width="2"/>
+<text x="300" y="120" text-anchor="middle" font-family="Arial" font-size="14" fill="#5a4630">Femur (thigh)</text>
+<path d="M265 215 L335 215 L328 385 L272 385 Z" fill="#e3d3c0" stroke="#8a6d4b" stroke-width="2"/>
+<text x="300" y="305" text-anchor="middle" font-family="Arial" font-size="14" fill="#5a4630">Tibia / fibula</text>
+<ellipse cx="300" cy="195" rx="48" ry="16" fill="#9ec5f5" stroke="#1e63d6" stroke-width="2"/>
+<text x="300" y="200" text-anchor="middle" font-family="Arial" font-size="12" fill="#17345c">Lateral meniscus</text>
+<path d="M352 60 Q372 130 366 200" fill="none" stroke="#e08a1e" stroke-width="8" stroke-linecap="round"/>
+<line x1="372" y1="110" x2="440" y2="95" stroke="#555"/>
+<text x="445" y="92" font-family="Arial" font-size="14" fill="#17345c" font-weight="700">IT band</text>
+<text x="445" y="110" font-family="Arial" font-size="12" fill="#52657d">Runs hip to outer knee</text>
+<path d="M342 178 L350 262" fill="none" stroke="#c0392b" stroke-width="6" stroke-linecap="round"/>
+<line x1="352" y1="235" x2="440" y2="235" stroke="#555"/>
+<text x="445" y="232" font-family="Arial" font-size="14" fill="#17345c" font-weight="700">LCL</text>
+<text x="445" y="250" font-family="Arial" font-size="12" fill="#52657d">Lateral collateral ligament</text>
+<circle cx="238" cy="190" r="26" fill="#fff" stroke="#1e63d6" stroke-width="2"/>
+<line x1="212" y1="190" x2="150" y2="190" stroke="#555"/>
+<text x="40" y="186" font-family="Arial" font-size="14" fill="#17345c" font-weight="700">Kneecap</text>
+<text x="40" y="204" font-family="Arial" font-size="12" fill="#52657d">Patellofemoral joint</text>
+<text x="300" y="408" text-anchor="middle" font-family="Arial" font-size="12" fill="#52657d">Hip control, thigh strength, ankle mobility and foot position all change load on the outer knee.</text>
+</svg>

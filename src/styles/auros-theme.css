@@ -49,6 +49,16 @@ h1 { font-size: clamp(2.8rem, 6vw, 5.8rem); line-height: 1.02; }
 .breadcrumbs li + li::before { color: var(--brand-primary); }
 .prose { color: var(--brand-silver); }
 .prose h1, .prose h2, .prose h3, .prose strong { color: var(--brand-ink); }
+.prose table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .95rem; }
+.prose th, .prose td { padding: .6rem .75rem; border: 1px solid #d6e1ef; text-align: left; vertical-align: top; }
+.prose th { background: #eaf3ff; color: var(--brand-ink); }
+.article-cta, .urgent-box { margin: 2rem 0; padding: 1.25rem 1.5rem; border-radius: 12px; }
+.article-cta { border: 1px solid rgba(30, 99, 214, .25); background: linear-gradient(120deg, #eaf3ff, #fff); }
+.urgent-box { border: 1px solid #f0b4b4; border-left: 5px solid #c0392b; background: #fff5f5; }
+.article-cta p, .urgent-box p { margin: .4rem 0; }
+.article-cta .cta-title, .urgent-box .cta-title { margin: 0 0 .4rem; font-size: 1.15rem; font-weight: 800; color: var(--brand-ink); }
+.urgent-box ul { margin: .5rem 0 0; }
+.article-cta a.cta-button { display: inline-block; margin-top: .5rem; padding: .6rem 1.1rem; border-radius: 6px; background: var(--brand-primary); color: #fff; font-weight: 700; text-decoration: none; }
 .library-search { border: 1px solid rgba(30, 99, 214, .2); border-radius: 16px; background: rgba(255, 255, 255, .76); box-shadow: 0 14px 35px rgba(28, 62, 105, .06); backdrop-filter: blur(14px); }
 .library-search label { color: var(--brand-ink); letter-spacing: .1em; }
 .search-controls input, .search-controls select, input, select { border-color: #cbd9ea; border-radius: 6px; background: #fff; color: var(--brand-ink); }
