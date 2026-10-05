@@ -106,6 +106,7 @@ export function addBrandLinks(html: string, limitPerDomain = 2) {
   let excludedDepth = 0;
   let rptLinksAdded = existingRptLinks;
   let rxLinksAdded = existingRxLinks;
+  let landingLinked = /href=["'][^"']*treatment\.rptclinic\.com/i.test(html);
 
   return tokens.map((token) => {
     const tag = token.match(/^<\/?([a-z0-9]+)/i);
@@ -120,6 +121,12 @@ export function addBrandLinks(html: string, limitPerDomain = 2) {
 
     if (excludedDepth) return token;
     let linkedText = token.replace(/\bRX2600\b(?!\s+Therapeutic Robot)/g, 'RX2600 Therapeutic Robot');
+    if (!landingLinked) {
+      linkedText = linkedText.replace(/\bRobotic Precision Therapy\b/, (match) => {
+        landingLinked = true;
+        return `<a href="https://treatment.rptclinic.com/clinic/rpt/">${match}</a>`;
+      });
+    }
     if (rxLinksAdded < limitPerDomain) {
       linkedText = linkedText.replace(/\bRX2600 Therapeutic Robot\b/, (match) => {
         rxLinksAdded += 1;

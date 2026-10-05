@@ -57,8 +57,8 @@ const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'Breadcrum
     badge={article.data.category}
     title={article.data.title}
     description={article.data.description}
-    ctaText="Schedule Your Assessment"
-    ctaHref="https://rptclinic.com/contact/"
+    ctaText="Explore Robotic Precision Therapy"
+    ctaHref={clinic.landingUrl}
     image={heroImage}
     imageAlt={`${article.data.title}: RPT Clinic clinician assessing a patient on the RX2600 Robotic Precision Therapy system`}
   />
@@ -130,8 +130,8 @@ const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'Breadcrum
   <RPTCtaBand
     heading="Ready to Start Your Recovery?"
     description="Schedule an assessment to see whether Robotic Precision Therapy is appropriate for your symptoms. Individual results vary."
-    ctaText="Schedule Your Assessment Today"
-    ctaHref="https://rptclinic.com/contact/"
+    ctaText="Learn How RPT Works"
+    ctaHref={clinic.landingUrl}
     variant="primary"
   />
 </BaseLayout>

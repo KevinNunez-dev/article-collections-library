@@ -7,6 +7,7 @@ export const clinic = {
   hours: 'Contact RPT Clinic for current appointment availability.',
   appointmentLabel: 'Schedule an appointment',
   serviceUrl: 'https://rptclinic.com/physical-therapy-troy-michigan/',
+  landingUrl: 'https://treatment.rptclinic.com/clinic/rpt/',
   serviceAreas: ['Troy', 'Rochester', 'Warren', 'Royal Oak', 'Sterling Heights', 'Bloomfield Hills', 'Clinton Township', 'Detroit'],
   // Add real clinicians here; the credentials block renders only when this has entries.
   providers: [] as Array<{ name: string; credentials: string; bio?: string }>,
