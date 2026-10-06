@@ -2,7 +2,8 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import react from '@astrojs/react';
 
-const site = process.env.PUBLIC_SITE_URL || 'https://rptclinic.com';
+// Fixed on purpose: a stray PUBLIC_SITE_URL in the deploy environment once made canonicals and the sitemap point at github.com.
+const site = 'https://rptclinic.com';
 
 export default defineConfig({
   site,
