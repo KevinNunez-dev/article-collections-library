@@ -105,7 +105,7 @@ The **RX2600 Therapeutic Robot** addresses plantar fasciitis by systematically r
 ### Targeted Calf Muscle Release
 The robot applies controlled, sustained pressure to chronically tight calf muscles (gastrocnemius and soleus). This sustained pressure—impossible to achieve manually—lengthens the muscle and restores normal ankle dorsiflexion.
 
-![Robotic Precision Therapy treatment targeting the calf muscles](/images/Leg/calf-treatment.webp)
+![Robotic Precision Therapy treatment targeting the calf muscles](/health/images/Leg/calf-treatment.webp)
 
 ### Plantar Fascia Mobilization
 Deep pressure is applied to the plantar fascia itself, particularly at the medial calcaneal tubercle (heel origin) and along the fascial bands. This desensitizes irritated tissue and improves flexibility.

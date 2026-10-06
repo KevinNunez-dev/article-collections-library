@@ -41,7 +41,7 @@ Runner’s knee is a general term often used for pain around the kneecap. It can
 
 Training changes, muscle strength, movement patterns, footwear, recovery and activity surfaces may all be relevant. A clinician can help identify causes of knee pain that need specific care.
 
-![Robotic Precision Therapy treatment supporting lower-leg recovery](/images/Leg/calf-treatment.webp)
+![Robotic Precision Therapy treatment supporting lower-leg recovery](/health/images/Leg/calf-treatment.webp)
 
 ## When should you get checked?
 

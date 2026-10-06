@@ -110,7 +110,7 @@ Hip weakness is a major factor in chronic ankle instability. A weak gluteus medi
 **Poor Proprioception**
 The nervous system loses refined awareness of ankle position in space. This proprioceptive deficit perpetuates instability and recurrent sprains.
 
-![Robotic Precision Therapy treatment for lower-leg mobility](/images/Leg/lower-leg-treatment.webp)
+![Robotic Precision Therapy treatment for lower-leg mobility](/health/images/Leg/lower-leg-treatment.webp)
 
 ## The Cascade Effect: How Ankle Pain Spreads
 

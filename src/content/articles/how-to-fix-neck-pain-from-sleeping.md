@@ -72,7 +72,7 @@ Common contributors:
 
 ## Best Sleep Positions for Your Neck
 
-<img src="/images/articles/neck-sleeping-positions-diagram.svg" alt="Diagrams comparing side, back, and stomach sleeping positions and how each affects neck alignment" width="720" height="320" loading="lazy" />
+<img src="/health/images/articles/neck-sleeping-positions-diagram.svg" alt="Diagrams comparing side, back, and stomach sleeping positions and how each affects neck alignment" width="720" height="320" loading="lazy" />
 
 ### Side Sleeping
 

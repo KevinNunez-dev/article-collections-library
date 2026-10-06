@@ -8,7 +8,7 @@ const thumbnail = getArticleThumbnail(id, data.image, data.title, data.category)
 ---
 <article class:list={['article-card', { featured }]}>
 	<a class="article-card-thumbnail" href={`/health/${id}`} tabindex="-1" aria-hidden="true">
-		<img src={thumbnail} alt="" loading="lazy" onerror="this.onerror=null; this.src='/images/rpt-clinic-treatment.jpg';" />
+		<img src={thumbnail} alt="" loading="lazy" onerror="this.onerror=null; this.src='/health/images/rpt-clinic-treatment.jpg';" />
 	</a>
 	<div class="article-card-content">
 		<p class="eyebrow"><a href={`/topics/${data.categorySlug}`}>{data.category}</a></p>

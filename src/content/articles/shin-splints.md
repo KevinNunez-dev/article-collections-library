@@ -45,7 +45,7 @@ Rapid training changes, running surfaces, footwear, muscle fatigue and movement 
 
 Care may include relative rest, a gradual return-to-activity plan, strength and mobility work, footwear review and rehabilitation based on your needs.
 
-![Robotic Precision Therapy treatment on a patient's lower leg](/images/Leg/lower-leg-treatment.webp)
+![Robotic Precision Therapy treatment on a patient's lower leg](/health/images/Leg/lower-leg-treatment.webp)
 
 ## When should you get checked?
 

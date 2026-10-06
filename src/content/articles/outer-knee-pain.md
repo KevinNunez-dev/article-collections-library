@@ -66,7 +66,7 @@ seo:
 
 Because several tissues share this small area, location alone cannot tell you the cause. The sections below explain the most common ones and how to tell when to try conservative care or get checked.
 
-<img src="/images/articles/outer-knee-anatomy-diagram.svg" alt="Simplified side-view diagram of the outer knee showing the IT band, lateral meniscus, LCL, kneecap, femur, and tibia" width="600" height="420" loading="lazy" />
+<img src="/health/images/articles/outer-knee-anatomy-diagram.svg" alt="Simplified side-view diagram of the outer knee showing the IT band, lateral meniscus, LCL, kneecap, femur, and tibia" width="600" height="420" loading="lazy" />
 
 ## Common Causes of Pain on the Outside of the Knee
 

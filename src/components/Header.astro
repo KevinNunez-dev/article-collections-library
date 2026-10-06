@@ -7,7 +7,7 @@ const categories = (await getAllCategories()).filter((c) => !c.data?.seo?.noinde
 <header class="site-header">
 	<div class="container header-row">
 		<a class="brand" href="https://rptclinic.com/health/" aria-label="Home"><img src={brand.logoUrl} alt={brand.logoAlt} width="80" height="80" /></a>
-		<link rel="stylesheet" href="/styles/header.css" />
+		<link rel="stylesheet" href="/health/styles/header.css" />
 		<nav aria-label="Primary navigation">
 			<ul class="nav-list">
 				{brand.headerNav.map((item) => <li><a class:list={[{ active: pathname.startsWith(item.path ?? item.href) && item.path !== '/' }]} href={item.href}>{item.label}</a></li>)}
@@ -23,4 +23,4 @@ const categories = (await getAllCategories()).filter((c) => !c.data?.seo?.noinde
 		<a class="button button-small" href={brand.appointmentUrl}>Make an appointment</a>
 	</div>
 </header>
-<script src="/scripts/header-dropdown.js" defer></script>
+<script src="/health/scripts/header-dropdown.js" defer></script>
