@@ -8,4 +8,6 @@ export default defineConfig({
   site,
   integrations: [sitemap(), react()],
   output: 'static',
+  // rptclinic.com proxies only /health/* to this site, so built JS/CSS must live under /health.
+  build: { assets: 'health/_astro' },
 });
