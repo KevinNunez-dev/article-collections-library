@@ -1,0 +1,13 @@
+---
+import TopicPage from '../../topics/[...slug].astro';
+import { getAllCategories } from '../../../lib/content';
+
+export async function getStaticPaths() {
+  const categories = (await getAllCategories()).filter((category) => !category.data?.seo?.noindex);
+  return categories.map((category) => ({
+    params: { slug: category.id },
+    props: { category },
+  }));
+}
+---
+<TopicPage {...Astro.props} />
