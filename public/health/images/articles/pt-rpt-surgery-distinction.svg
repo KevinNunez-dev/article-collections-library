@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" role="img" aria-labelledby="title desc">
+  <title id="title">Three distinct meanings in back care</title>
+  <desc id="desc">Physical therapy is a broad care profession; RX2600 Robotic Precision Therapy is described as a soft-tissue pressure approach; robotic spine surgery is a separate operating-room procedure category.</desc>
+  <rect width="900" height="440" rx="24" fill="#f2f6fb"/>
+  <g font-family="Arial,sans-serif">
+    <rect x="30" y="45" width="260" height="320" rx="18" fill="#fff" stroke="#355982" stroke-width="3"/>
+    <text x="160" y="92" text-anchor="middle" fill="#173b61" font-size="22" font-weight="700">Physical therapy</text>
+    <path d="M160 120v42m-34-21h68m-55 58h42" stroke="#4772a5" stroke-width="9" stroke-linecap="round"/>
+    <text x="160" y="249" text-anchor="middle" fill="#263b52" font-size="17">Broad profession and care</text>
+    <text x="160" y="276" text-anchor="middle" fill="#263b52" font-size="17">may include assessment,</text>
+    <text x="160" y="303" text-anchor="middle" fill="#263b52" font-size="17">education, movement,</text>
+    <text x="160" y="330" text-anchor="middle" fill="#263b52" font-size="17">and individualized goals</text>
+    <rect x="320" y="45" width="260" height="320" rx="18" fill="#e8f1fb" stroke="#355982" stroke-width="3"/>
+    <text x="450" y="92" text-anchor="middle" fill="#173b61" font-size="21" font-weight="700">RX2600 therapy</text>
+    <circle cx="450" cy="158" r="43" fill="#fff" stroke="#4772a5" stroke-width="7"/>
+    <path d="M421 158h58m-29-29v58" stroke="#4772a5" stroke-width="6" stroke-linecap="round"/>
+    <text x="450" y="249" text-anchor="middle" fill="#263b52" font-size="17">Clinic-described soft-tissue</text>
+    <text x="450" y="276" text-anchor="middle" fill="#263b52" font-size="17">pressure approach; not an</text>
+    <text x="450" y="303" text-anchor="middle" fill="#263b52" font-size="17">independent proof of</text>
+    <text x="450" y="330" text-anchor="middle" fill="#263b52" font-size="17">comparative benefit</text>
+    <rect x="610" y="45" width="260" height="320" rx="18" fill="#fff1ef" stroke="#a6382e" stroke-width="3"/>
+    <text x="740" y="92" text-anchor="middle" fill="#7f241d" font-size="21" font-weight="700">Robotic spine surgery</text>
+    <path d="M740 125v92m-28-61h56m-45 83h34" stroke="#a6382e" stroke-width="8" stroke-linecap="round"/>
+    <text x="740" y="276" text-anchor="middle" fill="#54201d" font-size="17">Separate surgical setting</text>
+    <text x="740" y="303" text-anchor="middle" fill="#54201d" font-size="17">and procedure category;</text>
+    <text x="740" y="330" text-anchor="middle" fill="#54201d" font-size="17">RX2600 does not operate</text>
+    <text x="450" y="405" text-anchor="middle" fill="#43566d" font-size="17">Ask a qualified clinician about evidence, alternatives, and fit.</text>
+  </g>
+</svg>

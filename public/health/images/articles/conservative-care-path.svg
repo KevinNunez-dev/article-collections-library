@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+  <title id="title">A non-surgical care discussion pathway</title>
+  <desc id="desc">Four connected steps: screen for urgent signs, set shared functional goals, choose suitable active care, and reassess or refer when appropriate.</desc>
+  <rect width="900" height="420" rx="24" fill="#f2f6fb"/>
+  <g font-family="Arial,sans-serif">
+    <g transform="translate(35 105)">
+      <rect width="190" height="210" rx="18" fill="#fff" stroke="#355982" stroke-width="3"/>
+      <circle cx="95" cy="48" r="26" fill="#173b61"/><text x="95" y="57" text-anchor="middle" fill="#fff" font-size="25" font-weight="700">1</text>
+      <text x="95" y="104" text-anchor="middle" fill="#173b61" font-size="20" font-weight="700">Safety screen</text>
+      <text x="95" y="138" text-anchor="middle" fill="#263b52" font-size="16">Urgent symptoms?</text>
+      <text x="95" y="164" text-anchor="middle" fill="#263b52" font-size="16">Medical review first</text>
+    </g>
+    <path d="M230 210h26" stroke="#355982" stroke-width="4"/>
+    <path d="M246 201l12 9-12 9" fill="none" stroke="#355982" stroke-width="4"/>
+    <g transform="translate(260 105)">
+      <rect width="190" height="210" rx="18" fill="#fff" stroke="#355982" stroke-width="3"/>
+      <circle cx="95" cy="48" r="26" fill="#173b61"/><text x="95" y="57" text-anchor="middle" fill="#fff" font-size="25" font-weight="700">2</text>
+      <text x="95" y="104" text-anchor="middle" fill="#173b61" font-size="20" font-weight="700">Set goals</text>
+      <text x="95" y="138" text-anchor="middle" fill="#263b52" font-size="16">Choose daily tasks</text>
+      <text x="95" y="164" text-anchor="middle" fill="#263b52" font-size="16">that matter to you</text>
+    </g>
+    <path d="M455 210h26" stroke="#355982" stroke-width="4"/>
+    <path d="M471 201l12 9-12 9" fill="none" stroke="#355982" stroke-width="4"/>
+    <g transform="translate(485 105)">
+      <rect width="190" height="210" rx="18" fill="#fff" stroke="#355982" stroke-width="3"/>
+      <circle cx="95" cy="48" r="26" fill="#173b61"/><text x="95" y="57" text-anchor="middle" fill="#fff" font-size="25" font-weight="700">3</text>
+      <text x="95" y="104" text-anchor="middle" fill="#173b61" font-size="20" font-weight="700">Choose care</text>
+      <text x="95" y="138" text-anchor="middle" fill="#263b52" font-size="16">Active options fit</text>
+      <text x="95" y="164" text-anchor="middle" fill="#263b52" font-size="16">to the situation</text>
+    </g>
+    <path d="M680 210h26" stroke="#355982" stroke-width="4"/>
+    <path d="M696 201l12 9-12 9" fill="none" stroke="#355982" stroke-width="4"/>
+    <g transform="translate(710 105)">
+      <rect width="155" height="210" rx="18" fill="#fff" stroke="#355982" stroke-width="3"/>
+      <circle cx="77" cy="48" r="26" fill="#173b61"/><text x="77" y="57" text-anchor="middle" fill="#fff" font-size="25" font-weight="700">4</text>
+      <text x="77" y="104" text-anchor="middle" fill="#173b61" font-size="19" font-weight="700">Reassess</text>
+      <text x="77" y="138" text-anchor="middle" fill="#263b52" font-size="16">Adjust or refer</text>
+      <text x="77" y="164" text-anchor="middle" fill="#263b52" font-size="16">when needed</text>
+    </g>
+    <text x="450" y="365" text-anchor="middle" fill="#43566d" font-size="17">Discussion framework only; not a prescribed sequence or treatment plan.</text>
+  </g>
+</svg>

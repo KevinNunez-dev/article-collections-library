@@ -159,7 +159,7 @@ function parseFrontmatter(filePath: string) {
   return { data: parsed.data || {}, content: parsed.content || '' };
 }
 
-export async function getAllArticles() {
+export async function getAllArticles({ includeDrafts = false }: { includeDrafts?: boolean } = {}) {
   const files = readDirFiles('articles');
   return files.map((file) => {
     const slug = fileSlug(file);
@@ -167,7 +167,7 @@ export async function getAllArticles() {
     const { data, content } = parseFrontmatter(filePath);
     const html = marked.parse(content) as string;
     return { id: slug, data: normalizeArticleData(data), html };
-  });
+  }).filter((article) => includeDrafts || !article.data?.draft);
 }
 
 export async function getAllCategories() {

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+  <title id="title">Questions for comparing a back pain provider</title>
+  <desc id="desc">Four checklist categories: assessment and credentials, goals and evidence, cost and coverage, and reassessment and referral.</desc>
+  <rect width="900" height="420" rx="24" fill="#f2f6fb"/>
+  <g font-family="Arial,sans-serif">
+    <g transform="translate(35 55)">
+      <rect width="395" height="135" rx="16" fill="#fff" stroke="#355982" stroke-width="3"/>
+      <circle cx="42" cy="44" r="22" fill="#e8f1fb" stroke="#355982" stroke-width="3"/>
+      <path d="m31 44 8 8 15-18" fill="none" stroke="#173b61" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="80" y="48" fill="#173b61" font-size="20" font-weight="700">Assessment and credentials</text>
+      <text x="80" y="83" fill="#263b52" font-size="17">Who evaluates me? What is in scope?</text>
+      <text x="80" y="111" fill="#263b52" font-size="17">What needs medical referral?</text>
+    </g>
+    <g transform="translate(470 55)">
+      <rect width="395" height="135" rx="16" fill="#fff" stroke="#355982" stroke-width="3"/>
+      <circle cx="42" cy="44" r="22" fill="#e8f1fb" stroke="#355982" stroke-width="3"/>
+      <path d="m31 44 8 8 15-18" fill="none" stroke="#173b61" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="80" y="48" fill="#173b61" font-size="20" font-weight="700">Goals and evidence</text>
+      <text x="80" y="83" fill="#263b52" font-size="17">What alternatives are reasonable?</text>
+      <text x="80" y="111" fill="#263b52" font-size="17">How will progress be checked?</text>
+    </g>
+    <g transform="translate(35 220)">
+      <rect width="395" height="135" rx="16" fill="#fff" stroke="#355982" stroke-width="3"/>
+      <circle cx="42" cy="44" r="22" fill="#e8f1fb" stroke="#355982" stroke-width="3"/>
+      <path d="m31 44 8 8 15-18" fill="none" stroke="#173b61" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="80" y="48" fill="#173b61" font-size="20" font-weight="700">Cost and coverage</text>
+      <text x="80" y="83" fill="#263b52" font-size="17">What is the total quote and duration?</text>
+      <text x="80" y="111" fill="#263b52" font-size="17">What will my plan actually cover?</text>
+    </g>
+    <g transform="translate(470 220)">
+      <rect width="395" height="135" rx="16" fill="#fff" stroke="#355982" stroke-width="3"/>
+      <circle cx="42" cy="44" r="22" fill="#e8f1fb" stroke="#355982" stroke-width="3"/>
+      <path d="m31 44 8 8 15-18" fill="none" stroke="#173b61" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="80" y="48" fill="#173b61" font-size="20" font-weight="700">Reassess and refer</text>
+      <text x="80" y="83" fill="#263b52" font-size="17">When will we review the plan?</text>
+      <text x="80" y="111" fill="#263b52" font-size="17">What would prompt a referral?</text>
+    </g>
+    <text x="450" y="395" text-anchor="middle" fill="#43566d" font-size="16">Compare the process—not guarantees or marketing slogans.</text>
+  </g>
+</svg>

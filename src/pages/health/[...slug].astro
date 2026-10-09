@@ -18,9 +18,10 @@ import { brand } from '../../config/brand';
 import { clinic } from '../../config/clinic';
 import { getPillar } from '../../config/pillars';
 import ArticleClinicPanel from '../../components/ArticleClinicPanel.astro';
-export async function getStaticPaths() { const articles = (await getAllArticles()).filter((a) => !a.data?.seo?.noindex); return articles.map((article) => ({ params: { slug: article.id }, props: { article } })); }
+import CostTimeCalculator from '../../components/CostTimeCalculator.astro';
+export async function getStaticPaths() { const articles = (await getAllArticles({ includeDrafts: import.meta.env.DEV })).filter((a) => !a.data?.seo?.noindex || (import.meta.env.DEV && a.data?.draft)); return articles.map((article) => ({ params: { slug: article.id }, props: { article } })); }
 const { article } = Astro.props;
-const publishedArticles = (await getAllArticles()).filter((entry) => !entry.data?.seo?.noindex);
+const publishedArticles = (await getAllArticles()).filter((entry) => !entry.data?.seo?.noindex && !entry.data?.draft);
 const allArticles = publishedArticles.filter((entry) => entry.id !== article.id);
 const articlePosition = publishedArticles.findIndex((entry) => entry.id === article.id);
 const heroImage = articlePosition % 2 === 0 ? '/health/images/rpt-clinic-treatment.jpg' : '/health/images/rpt-clinic-treatment-2.jpg';
@@ -82,6 +83,7 @@ const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'Breadcrum
       <div class="prose">
         <div set:html={articleHtml} />
       </div>
+      {article.data.costCalculator && <CostTimeCalculator />}
       <Faq items={article.data.faq} />
       <ArticleClinicPanel />
       <HealthDisclaimer />
