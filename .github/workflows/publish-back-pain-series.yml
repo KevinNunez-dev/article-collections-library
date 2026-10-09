@@ -1,0 +1,54 @@
+name: Publish five lower-back-pain articles
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/publish-back-pain-series.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Publish only the five approved articles
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          slugs = [
+              'lower-back-pain-treatment-michigan-troy',
+              'nonsurgical-lower-back-pain-treatment-metro-detroit',
+              'physical-therapy-vs-robotic-precision-therapy-lower-back-pain',
+              'lower-back-pain-treatment-costs-michigan',
+              'choose-lower-back-pain-provider-troy-michigan',
+          ]
+          updates = []
+          for slug in slugs:
+              path = Path('src/content/articles') / (slug + '.md')
+              original = path.read_text(encoding='utf-8')
+              parts = original.split('---', 2)
+              if len(parts) != 3 or parts[0].strip():
+                  raise SystemExit(f'Invalid frontmatter: {path}')
+              frontmatter = parts[1]
+              frontmatter, drafts = re.subn(r'(?m)^draft: (?:true|false)\s*$', 'draft: false', frontmatter)
+              frontmatter, indexes = re.subn(r'(?m)^  noindex: (?:true|false)\s*$', '  noindex: false', frontmatter)
+              if drafts != 1 or indexes != 1:
+                  raise SystemExit(f'Expected exactly one draft and noindex flag: {path}')
+              updates.append((path, '---'.join([parts[0], frontmatter, parts[2]])))
+          for path, content in updates:
+              path.write_text(content, encoding='utf-8')
+          PY
+          git add -- src/content/articles/lower-back-pain-treatment-michigan-troy.md src/content/articles/nonsurgical-lower-back-pain-treatment-metro-detroit.md src/content/articles/physical-therapy-vs-robotic-precision-therapy-lower-back-pain.md src/content/articles/lower-back-pain-treatment-costs-michigan.md src/content/articles/choose-lower-back-pain-provider-troy-michigan.md
+          if git diff --cached --quiet; then
+            echo 'The five articles are already published.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Publish five lower-back-pain articles in live library'
+          git push origin HEAD:main
