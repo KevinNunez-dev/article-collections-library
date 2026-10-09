@@ -86,4 +86,5 @@ Existing published links point only to existing library articles. Draft-to-draft
 - `npm run build` passed: Astro reported 0 errors and 107 hints (existing deprecation/unused-code hints), then generated 159 production pages. A separate assertion confirmed that all five draft routes are absent from the production health-library listing and sitemap.
 - Focused Prettier checks passed for the new components, article drafts, calculator module/tests, and this report. The repository-wide `npm run lint` does not pass: it reports formatting warnings across existing files and syntax errors in the pre-existing `testimonials-archived.json` files under `src/landing/page_data/clinic/{default,rpt}`. Those unrelated files were not changed.
 - The competitor script’s parser smoke test passed; all five live fetches remain unavailable due DNS failures.
+- Parallel code review returned no findings. The CodeQL tool reported zero alerts but failed analysis for both Python and JavaScript, so security scanning is inconclusive rather than a clean completed scan.
 - Live source retrieval and competitor audit are unavailable for the DNS reason above.
