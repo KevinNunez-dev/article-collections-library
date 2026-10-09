@@ -13,7 +13,7 @@ tags:
   ]
 bodySystems: [musculoskeletal]
 contentType: guide
-draft: true
+draft: false
 publishedAt: 2026-10-09
 updatedAt: 2026-10-09
 author: RPT Clinic Editorial Team
@@ -62,8 +62,7 @@ seo:
   title: "Choose a Lower Back Pain Provider in Troy, Michigan"
   description: "A practical Troy, Michigan checklist for comparing lower back pain providers, assessment, evidence, safety, referral, cost, and insurance."
   image: /health/images/articles/provider-checklist.svg
-  noindex: true
----
+  noindex: false---
 
 ## A useful provider makes the decision process clear
 

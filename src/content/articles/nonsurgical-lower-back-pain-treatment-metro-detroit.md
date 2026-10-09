@@ -13,7 +13,7 @@ tags:
   ]
 bodySystems: [musculoskeletal]
 contentType: guide
-draft: true
+draft: false
 publishedAt: 2026-10-09
 updatedAt: 2026-10-09
 author: RPT Clinic Editorial Team
@@ -62,8 +62,7 @@ seo:
   title: "Non-Surgical Lower Back Pain Treatment in Metro Detroit"
   description: "Where to start with non-surgical back pain care in Metro Detroit: safety, physical therapy, activity, insurance questions, and reassessment."
   image: /health/images/articles/conservative-care-path.svg
-  noindex: true
----
+  noindex: false---
 
 ## A non-surgical starting point around Metro Detroit
 

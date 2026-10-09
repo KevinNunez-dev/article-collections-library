@@ -14,7 +14,7 @@ tags:
   ]
 bodySystems: [musculoskeletal]
 contentType: guide
-draft: true
+draft: false
 costCalculator: true
 publishedAt: 2026-10-09
 updatedAt: 2026-10-09
@@ -64,8 +64,7 @@ seo:
   title: "Lower Back Pain Treatment Costs in Michigan: PT and Surgery"
   description: "Compare lower back pain costs without mixing charges, allowed amounts, cash surgery estimates, insurance responsibility, travel, and unpaid time."
   image: /health/images/articles/back-pain-cost-components.svg
-  noindex: true
----
+  noindex: false---
 
 ## Compare like with like—not one headline price
 

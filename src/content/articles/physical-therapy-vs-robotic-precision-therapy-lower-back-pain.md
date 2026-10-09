@@ -13,7 +13,7 @@ tags:
   ]
 bodySystems: [musculoskeletal]
 contentType: comparison
-draft: true
+draft: false
 publishedAt: 2026-10-09
 updatedAt: 2026-10-09
 author: RPT Clinic Editorial Team
@@ -62,8 +62,7 @@ seo:
   title: "Physical Therapy vs. Robotic Precision Therapy for Back Pain"
   description: "Compare physical therapy with RX2600 Robotic Precision Therapy for lower back pain, including device limits, evidence, safety, and costs."
   image: /health/images/articles/pt-rpt-surgery-distinction.svg
-  noindex: true
----
+  noindex: false---
 
 ## The short distinction
 
