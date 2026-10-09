@@ -62,7 +62,8 @@ seo:
   title: "Non-Surgical Lower Back Pain Treatment in Metro Detroit"
   description: "Where to start with non-surgical back pain care in Metro Detroit: safety, physical therapy, activity, insurance questions, and reassessment."
   image: /health/images/articles/conservative-care-path.svg
-  noindex: false---
+  noindex: false
+---
 
 ## A non-surgical starting point around Metro Detroit
 

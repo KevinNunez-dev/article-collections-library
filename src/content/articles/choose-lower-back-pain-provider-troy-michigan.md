@@ -62,7 +62,8 @@ seo:
   title: "Choose a Lower Back Pain Provider in Troy, Michigan"
   description: "A practical Troy, Michigan checklist for comparing lower back pain providers, assessment, evidence, safety, referral, cost, and insurance."
   image: /health/images/articles/provider-checklist.svg
-  noindex: false---
+  noindex: false
+---
 
 ## A useful provider makes the decision process clear
 

@@ -64,7 +64,8 @@ seo:
   title: "Best Lower Back Pain Treatment in Michigan Near Troy"
   description: "Compare lower back pain care options in Troy and Metro Detroit, including physical therapy, medical evaluation, evidence limits, cost, and safety."
   image: /health/images/articles/back-pain-options.svg
-  noindex: false---
+  noindex: false
+---
 
 ## A practical answer for people comparing care near Troy
 
