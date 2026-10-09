@@ -14,41 +14,56 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
-      - name: Publish only the five approved articles
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - name: Repair and publish only the five approved articles
         shell: bash
         run: |
-          python3 - <<'PY'
-          from pathlib import Path
-          import re
-          slugs = [
-              'lower-back-pain-treatment-michigan-troy',
-              'nonsurgical-lower-back-pain-treatment-metro-detroit',
-              'physical-therapy-vs-robotic-precision-therapy-lower-back-pain',
-              'lower-back-pain-treatment-costs-michigan',
-              'choose-lower-back-pain-provider-troy-michigan',
-          ]
-          updates = []
-          for slug in slugs:
-              path = Path('src/content/articles') / (slug + '.md')
-              original = path.read_text(encoding='utf-8')
-              parts = original.split('---', 2)
-              if len(parts) != 3 or parts[0].strip():
-                  raise SystemExit(f'Invalid frontmatter: {path}')
-              frontmatter = parts[1]
-              frontmatter, drafts = re.subn(r'(?m)^draft: (?:true|false)\s*$', 'draft: false', frontmatter)
-              frontmatter, indexes = re.subn(r'(?m)^  noindex: (?:true|false)\s*$', '  noindex: false', frontmatter)
-              if drafts != 1 or indexes != 1:
-                  raise SystemExit(f'Expected exactly one draft and noindex flag: {path}')
-              updates.append((path, '---'.join([parts[0], frontmatter, parts[2]])))
-          for path, content in updates:
-              path.write_text(content, encoding='utf-8')
-          PY
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import matter from 'gray-matter';
+          const slugs = [
+            'lower-back-pain-treatment-michigan-troy',
+            'nonsurgical-lower-back-pain-treatment-metro-detroit',
+            'physical-therapy-vs-robotic-precision-therapy-lower-back-pain',
+            'lower-back-pain-treatment-costs-michigan',
+            'choose-lower-back-pain-provider-troy-michigan',
+          ];
+          const updates = slugs.map(slug => {
+            const path = `src/content/articles/${slug}.md`;
+            const original = fs.readFileSync(path, 'utf8');
+            const repaired = original.replace(/^  noindex: false---[ \t]*$/m, '  noindex: false\n---');
+            const match = repaired.match(/^(---\r?\n)([\s\S]*?)(\r?\n---)(?=\r?\n|$)/);
+            if (!match) throw new Error(`Invalid frontmatter: ${path}`);
+            const frontmatter = match[2]
+              .replace(/^draft: (?:true|false)[ \t]*$/m, 'draft: false')
+              .replace(/^  noindex: (?:true|false)[ \t]*$/m, '  noindex: false');
+            const content = match[1] + frontmatter + match[3] + repaired.slice(match[0].length);
+            const parsed = matter(content);
+            if (parsed.data.draft !== false || parsed.data.seo?.noindex !== false || !parsed.content.trim()) {
+              throw new Error(`Publication validation failed: ${path}`);
+            }
+            if (parsed.content !== matter(repaired).content) throw new Error(`Article body changed: ${path}`);
+            return [path, content];
+          });
+          for (const [path, content] of updates) fs.writeFileSync(path, content);
+          JS
+      - name: Validate calculator and production build
+        run: |
+          npm run test:calculator
+          npm run build
+      - name: Commit repaired published articles to main
+        shell: bash
+        run: |
           git add -- src/content/articles/lower-back-pain-treatment-michigan-troy.md src/content/articles/nonsurgical-lower-back-pain-treatment-metro-detroit.md src/content/articles/physical-therapy-vs-robotic-precision-therapy-lower-back-pain.md src/content/articles/lower-back-pain-treatment-costs-michigan.md src/content/articles/choose-lower-back-pain-provider-troy-michigan.md
           if git diff --cached --quiet; then
-            echo 'The five articles are already published.'
+            echo 'The five articles are already published with valid frontmatter.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Publish five lower-back-pain articles in live library'
+          git commit -m 'Repair frontmatter for five published lower-back-pain articles'
           git push origin HEAD:main
