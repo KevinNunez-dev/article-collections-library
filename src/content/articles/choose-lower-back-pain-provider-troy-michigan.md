@@ -33,7 +33,7 @@ faq:
     answer: No treatment can responsibly guarantee an individual result. Ask what is known, what is uncertain, what alternatives exist, and what the provider will do if the plan is not helping.
     category: Evidence and claims
   - question: What questions should I ask at the first appointment?
-    answer: Ask what the assessment covers, what the clinician thinks may be contributing, what other options are reasonable, what goals will be tracked, how long visits last, what they cost, and when you should be referred.
+    answer: Ask what the initial assessment covers, what the clinician thinks may be contributing, what other options are reasonable, what goals will be tracked, how long visits last, what they cost, and when you should be referred.
     category: First visit
   - question: Should a back pain provider review imaging?
     answer: Imaging may be relevant when clinically indicated, but it should be interpreted alongside symptoms and examination. Ask how an imaging finding would change management rather than assuming that any abnormality is the cause of pain.
