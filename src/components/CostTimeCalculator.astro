@@ -1,0 +1,710 @@
+---
+
+---
+
+<section class="cost-tool" aria-labelledby="cost-tool-title" data-cost-tool>
+  <h2 id="cost-tool-title">Compare estimated visit costs and time</h2>
+  <p>
+    Use your own plan terms and quote. This planning tool does not recommend a
+    treatment or prescribe a number of visits.
+  </p>
+  <p class="privacy-note">
+    <strong>Private by design:</strong> amounts stay in this browser and are not submitted
+    or stored. Do not enter symptoms or other health information.
+  </p>
+  <div class="preset-row" aria-label="Visit-count examples">
+    <span>Example visit counts:</span>
+    {
+      [6, 12, 20, 30].map((count) => (
+        <button type="button" data-preset={count}>
+          {count}
+        </button>
+      ))
+    }
+  </div>
+  <div class="cost-grid">
+    <div class="cost-inputs">
+      <fieldset>
+        <legend>Care cost assumptions</legend>
+        <label for="cost-mode">Estimate type</label>
+        <select id="cost-mode" data-field="mode">
+          <option value="copay">Fixed copay</option>
+          <option value="cash">Cash-pay rate</option>
+          <option value="insurance">Deductible and coinsurance estimate</option>
+        </select>
+        <label for="visit-count"
+          >Planned visits <span>(scenario only)</span></label
+        >
+        <input
+          id="visit-count"
+          data-field="visits"
+          type="number"
+          min="1"
+          max="40"
+          step="1"
+          value="12"
+          inputmode="numeric"
+        />
+        <input
+          data-field="visits-range"
+          type="range"
+          min="1"
+          max="40"
+          step="1"
+          value="12"
+          aria-label="Planned visits slider"
+        />
+        <div class="mode-fields" data-mode-field="copay">
+          <label for="copay">Copay per visit ($)</label>
+          <input
+            id="copay"
+            data-field="copay"
+            type="number"
+            min="0"
+            step="0.01"
+            value="40"
+            inputmode="decimal"
+          />
+        </div>
+        <div class="mode-fields" data-mode-field="cash" hidden>
+          <label for="cash-rate">Cash rate per visit ($)</label>
+          <input
+            id="cash-rate"
+            data-field="cashPerVisit"
+            type="number"
+            min="0"
+            step="0.01"
+            value="150"
+            inputmode="decimal"
+          />
+        </div>
+        <div class="mode-fields" data-mode-field="insurance" hidden>
+          <p class="insurance-caveat">
+            Estimate only: assumes covered in-network care, the allowed amount
+            you enter, and one shared deductible and out-of-pocket accumulator.
+            It excludes copays, noncovered services, facility charges, and
+            visits above a stated limit. Confirm benefits with your insurer and
+            provider.
+          </p>
+          <label for="allowed-amount"
+            >Allowed amount per covered visit ($)</label
+          >
+          <input
+            id="allowed-amount"
+            data-field="allowedAmount"
+            type="number"
+            min="0"
+            step="0.01"
+            value="100"
+            inputmode="decimal"
+          />
+          <label for="deductible-remaining"
+            >Applicable deductible remaining ($)</label
+          >
+          <input
+            id="deductible-remaining"
+            data-field="deductibleRemaining"
+            type="number"
+            min="0"
+            step="0.01"
+            value="0"
+            inputmode="decimal"
+          />
+          <label for="coinsurance">Coinsurance after deductible (%)</label>
+          <input
+            id="coinsurance"
+            data-field="coinsurancePercent"
+            type="number"
+            min="0"
+            max="100"
+            step="1"
+            value="20"
+            inputmode="numeric"
+          />
+          <label for="oop-remaining"
+            >Applicable out-of-pocket maximum remaining ($) <span
+              >(optional)</span
+            ></label
+          >
+          <input
+            id="oop-remaining"
+            data-field="remainingOutOfPocketMax"
+            type="number"
+            min="0"
+            step="0.01"
+            placeholder="Leave blank to omit cap"
+            inputmode="decimal"
+          />
+          <label for="covered-visits"
+            >Covered visits remaining <span
+              >(optional; blank means all entered visits)</span
+            ></label
+          >
+          <input
+            id="covered-visits"
+            data-field="remainingCoveredVisits"
+            type="number"
+            min="0"
+            max="40"
+            step="1"
+            placeholder="No limit entered"
+            inputmode="numeric"
+          />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Travel and time assumptions</legend>
+        <label for="appointment-minutes">Appointment minutes per visit</label>
+        <input
+          id="appointment-minutes"
+          data-field="appointmentMinutes"
+          type="number"
+          min="0"
+          step="1"
+          value="45"
+          inputmode="numeric"
+        />
+        <label for="travel-minutes">Round-trip travel minutes per visit</label>
+        <input
+          id="travel-minutes"
+          data-field="travelMinutes"
+          type="number"
+          min="0"
+          step="1"
+          value="40"
+          inputmode="numeric"
+        />
+        <label for="wait-minutes">Waiting minutes per visit</label>
+        <input
+          id="wait-minutes"
+          data-field="waitMinutes"
+          type="number"
+          min="0"
+          step="1"
+          value="15"
+          inputmode="numeric"
+        />
+        <label for="transportation">Transportation expense per visit ($)</label>
+        <input
+          id="transportation"
+          data-field="transportationPerVisit"
+          type="number"
+          min="0"
+          step="0.01"
+          value="0"
+          inputmode="decimal"
+        />
+        <label for="unpaid-hours"
+          >Unpaid work hours per visit <span
+            >(separate from care/travel time)</span
+          ></label
+        >
+        <input
+          id="unpaid-hours"
+          data-field="unpaidWorkHoursPerVisit"
+          type="number"
+          min="0"
+          step="0.25"
+          value="0"
+          inputmode="decimal"
+        />
+        <label for="hourly-earnings">Hourly earnings ($)</label>
+        <input
+          id="hourly-earnings"
+          data-field="hourlyEarnings"
+          type="number"
+          min="0"
+          step="0.01"
+          value="0"
+          inputmode="decimal"
+        />
+      </fieldset>
+    </div>
+    <div class="cost-results">
+      <h3>Your estimate</h3>
+      <dl>
+        <div>
+          <dt>Estimated care responsibility</dt><dd data-output="service-cost">
+            $480.00
+          </dd>
+        </div>
+        <div>
+          <dt>Transportation expenses</dt><dd data-output="transportation-cost">
+            $0.00
+          </dd>
+        </div>
+        <div class="result-total">
+          <dt>Direct expenses (not lost earnings)</dt><dd
+            data-output="direct-expense"
+          >
+            $480.00
+          </dd>
+        </div>
+        <div>
+          <dt>Appointment, travel, and waiting time</dt><dd
+            data-output="care-time"
+          >
+            20.0 hours
+          </dd>
+        </div>
+        <div>
+          <dt>Potential unpaid earnings <span>(shown separately)</span></dt><dd
+            data-output="lost-earnings"
+          >
+            $0.00
+          </dd>
+        </div>
+      </dl>
+      <p data-output="coverage-note" aria-live="polite"></p>
+      <p class="reference-cost">
+        <strong>RPT standard-rate reference:</strong>
+        <span data-output="rpt-standard">$1,875.00</span> for the same visit count
+        using $225 for the first assessment/treatment and $150 per additional one-hour
+        treatment. Verify current terms; this is arithmetic, not an outcome comparison.
+      </p>
+      <button type="button" data-reset>Reset assumptions</button>
+      <button type="button" data-print>Print comparison</button>
+    </div>
+  </div>
+  <fieldset class="quote-fields">
+    <legend>Compare a separate quote you enter</legend>
+    <p>
+      Enter a total care quote and its planned visit count. Travel and unpaid
+      work remain separate from the quote amount.
+    </p>
+    <div class="quote-grid">
+      <label for="quote-amount"
+        >Quoted care total ($)<input
+          id="quote-amount"
+          data-field="quoteAmount"
+          type="number"
+          min="0"
+          step="0.01"
+          placeholder="Enter quote"
+          inputmode="decimal"
+        /></label
+      >
+      <label for="quote-visits"
+        >Visits in that quote<input
+          id="quote-visits"
+          data-field="quoteVisits"
+          type="number"
+          min="1"
+          max="40"
+          step="1"
+          value="12"
+          inputmode="numeric"
+        /></label
+      >
+      <label for="quote-appointment"
+        >Appointment minutes per visit<input
+          id="quote-appointment"
+          data-field="quoteAppointmentMinutes"
+          type="number"
+          min="0"
+          step="1"
+          value="45"
+          inputmode="numeric"
+        /></label
+      >
+      <label for="quote-travel"
+        >Round-trip travel minutes per visit<input
+          id="quote-travel"
+          data-field="quoteTravelMinutes"
+          type="number"
+          min="0"
+          step="1"
+          value="40"
+          inputmode="numeric"
+        /></label
+      >
+      <label for="quote-wait"
+        >Waiting minutes per visit<input
+          id="quote-wait"
+          data-field="quoteWaitMinutes"
+          type="number"
+          min="0"
+          step="1"
+          value="15"
+          inputmode="numeric"
+        /></label
+      >
+      <label for="quote-transport"
+        >Transportation expense per visit ($)<input
+          id="quote-transport"
+          data-field="quoteTransportationPerVisit"
+          type="number"
+          min="0"
+          step="0.01"
+          value="0"
+          inputmode="decimal"
+        /></label
+      >
+    </div>
+    <p class="quote-result" aria-live="polite" data-output="quote-result">
+      Enter a quote to calculate its separate cost and time scenario.
+    </p>
+  </fieldset>
+  <div class="package-reference">
+    <h3>Published package figures supplied for review</h3>
+    <ul>
+      <li>
+        Advanced: $1,500 for 11 follow-up treatments; $1,725 including the
+        separate $225 initial visit (12 appointments).
+      </li>
+      <li>
+        Premium: $2,250 for 17 follow-up treatments; $2,475 including the
+        separate $225 initial visit (18 appointments).
+      </li>
+    </ul>
+    <p>
+      These figures come from the approved brief and were not independently
+      verified on the live clinic pages on October 9, 2026 because those pages
+      were unreachable. Confirm inclusions and current terms with the clinic.
+      Package totals are not standard-rate totals or a recommended course.
+    </p>
+  </div>
+</section>
+<script>
+  import {
+    calculateScenario,
+    standardRPTCost,
+  } from "../lib/cost-calculator.js";
+
+  const currency = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  });
+  document.querySelectorAll<HTMLElement>("[data-cost-tool]").forEach((root) => {
+    const field = (name: string) =>
+      root.querySelector<HTMLInputElement | HTMLSelectElement>(
+        `[data-field="${name}"]`,
+      );
+    const value = (name: string) => field(name)?.value ?? "";
+    const number = (name: string, fallback = 0) => {
+      const parsed = Number(value(name));
+      return Number.isFinite(parsed) ? parsed : fallback;
+    };
+    const output = (name: string, text: string) => {
+      const target = root.querySelector<HTMLElement>(`[data-output="${name}"]`);
+      if (target) target.textContent = text;
+    };
+    const update = () => {
+      const mode = value("mode");
+      root
+        .querySelectorAll<HTMLElement>("[data-mode-field]")
+        .forEach((panel) => {
+          panel.hidden = panel.dataset.modeField !== mode;
+        });
+      const visits = Math.max(1, number("visits", 1));
+      const result = calculateScenario({
+        mode,
+        visits,
+        copay: number("copay"),
+        cashPerVisit: number("cashPerVisit"),
+        allowedAmount: number("allowedAmount"),
+        deductibleRemaining: number("deductibleRemaining"),
+        coinsurancePercent: number("coinsurancePercent"),
+        remainingOutOfPocketMax: value("remainingOutOfPocketMax"),
+        remainingCoveredVisits:
+          value("remainingCoveredVisits") === ""
+            ? visits
+            : number("remainingCoveredVisits"),
+        appointmentMinutes: number("appointmentMinutes"),
+        travelMinutes: number("travelMinutes"),
+        waitMinutes: number("waitMinutes"),
+        transportationPerVisit: number("transportationPerVisit"),
+        unpaidWorkHoursPerVisit: number("unpaidWorkHoursPerVisit"),
+        hourlyEarnings: number("hourlyEarnings"),
+      });
+      output("service-cost", currency.format(result.serviceCost));
+      output("transportation-cost", currency.format(result.transportationCost));
+      output("direct-expense", currency.format(result.directExpense));
+      output("care-time", `${result.careTimeHours.toFixed(1)} hours`);
+      output("lost-earnings", currency.format(result.potentialLostEarnings));
+      output("rpt-standard", currency.format(standardRPTCost(visits)));
+      output(
+        "coverage-note",
+        mode === "insurance" && result.excludedVisits
+          ? `${result.excludedVisits} visit(s) above the entered covered-visit limit are excluded from this estimate, not priced as covered care.`
+          : mode === "insurance"
+            ? `${result.modeledVisits} visit(s) modeled as covered in-network care. This is not a benefit determination.`
+            : "",
+      );
+      const range = field("visits-range") as HTMLInputElement | null;
+      const count = field("visits") as HTMLInputElement | null;
+      if (range && count && document.activeElement !== range)
+        range.value = count.value;
+      if (count && range && document.activeElement === range)
+        count.value = range.value;
+
+      const quoteAmount = value("quoteAmount");
+      if (quoteAmount === "") {
+        output(
+          "quote-result",
+          "Enter a quote to calculate its separate cost and time scenario.",
+        );
+      } else {
+        const quoteVisits = Math.max(1, number("quoteVisits", 1));
+        const quoteTotal =
+          number("quoteAmount") +
+          quoteVisits * number("quoteTransportationPerVisit");
+        const quoteTime =
+          (quoteVisits *
+            (number("quoteAppointmentMinutes") +
+              number("quoteTravelMinutes") +
+              number("quoteWaitMinutes"))) /
+          60;
+        output(
+          "quote-result",
+          `Quote plus entered transportation: ${currency.format(quoteTotal)} direct expenses; ${quoteTime.toFixed(1)} hours for visits, travel, and waiting. Potential unpaid earnings are not included.`,
+        );
+      }
+    };
+    root.addEventListener("input", update);
+    root.addEventListener("change", update);
+    root
+      .querySelectorAll<HTMLButtonElement>("[data-preset]")
+      .forEach((button) => {
+        button.addEventListener("click", () => {
+          const count = field("visits") as HTMLInputElement | null;
+          if (count) count.value = button.dataset.preset || "12";
+          update();
+        });
+      });
+    root.querySelector("[data-reset]")?.addEventListener("click", () => {
+      root
+        .querySelectorAll<HTMLInputElement | HTMLSelectElement>("[data-field]")
+        .forEach((input) => {
+          const original =
+            input.dataset.field === "mode"
+              ? "copay"
+              : ["visits", "visits-range", "quoteVisits"].includes(
+                    input.dataset.field || "",
+                  )
+                ? "12"
+                : input.dataset.field === "copay"
+                  ? "40"
+                  : input.dataset.field === "cashPerVisit"
+                    ? "150"
+                    : input.dataset.field === "allowedAmount"
+                      ? "100"
+                      : input.dataset.field === "coinsurancePercent"
+                        ? "20"
+                        : [
+                              "appointmentMinutes",
+                              "quoteAppointmentMinutes",
+                            ].includes(input.dataset.field || "")
+                          ? "45"
+                          : ["travelMinutes", "quoteTravelMinutes"].includes(
+                                input.dataset.field || "",
+                              )
+                            ? "40"
+                            : ["waitMinutes", "quoteWaitMinutes"].includes(
+                                  input.dataset.field || "",
+                                )
+                              ? "15"
+                              : [
+                                    "quoteAmount",
+                                    "remainingOutOfPocketMax",
+                                    "remainingCoveredVisits",
+                                  ].includes(input.dataset.field || "")
+                                ? ""
+                                : "0";
+          input.value = original;
+        });
+      update();
+    });
+    root
+      .querySelector("[data-print]")
+      ?.addEventListener("click", () => window.print());
+    update();
+  });
+</script>
+<style>
+  .cost-tool {
+    margin-block: 2rem;
+    padding: clamp(1rem, 3vw, 2rem);
+    border: 1px solid #cbd5e1;
+    border-radius: 0.8rem;
+    background: #f8fafc;
+    color: #172033;
+  }
+  .cost-tool h2,
+  .cost-tool h3 {
+    color: #14243b;
+  }
+  .privacy-note,
+  .insurance-caveat {
+    padding: 0.8rem;
+    border-left: 4px solid #4772a5;
+    background: #fff;
+  }
+  .preset-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-block: 1rem;
+  }
+  .cost-tool button {
+    min-height: 2.6rem;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #355982;
+    border-radius: 0.35rem;
+    background: #fff;
+    color: #173b61;
+    font: inherit;
+    font-weight: 650;
+    cursor: pointer;
+  }
+  .cost-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(16rem, 0.9fr);
+    gap: 1rem;
+    align-items: start;
+  }
+  .cost-inputs {
+    display: grid;
+    gap: 1rem;
+  }
+  .cost-tool fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.55rem;
+    background: #fff;
+  }
+  .cost-tool legend {
+    padding-inline: 0.35rem;
+    font-weight: 750;
+  }
+  .cost-tool label {
+    display: grid;
+    gap: 0.35rem;
+    margin-block: 0.7rem 0.25rem;
+    font-weight: 650;
+  }
+  .cost-tool label span,
+  .cost-tool dt span {
+    color: #526176;
+    font-size: 0.88em;
+    font-weight: 400;
+  }
+  .cost-tool input:not([type="range"]),
+  .cost-tool select {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 2.65rem;
+    padding: 0.55rem 0.65rem;
+    border: 1px solid #8793a3;
+    border-radius: 0.35rem;
+    background: #fff;
+    color: #172033;
+    font: inherit;
+  }
+  .cost-tool input[type="range"] {
+    width: 100%;
+    accent-color: #245789;
+  }
+  .mode-fields[hidden] {
+    display: none;
+  }
+  .cost-results {
+    position: sticky;
+    top: 1rem;
+    padding: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.55rem;
+    background: #fff;
+  }
+  .cost-results dl {
+    margin: 0;
+  }
+  .cost-results dl div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block: 0.55rem;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .cost-results dt {
+    font-weight: 600;
+  }
+  .cost-results dd {
+    margin: 0;
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    text-align: right;
+  }
+  .cost-results .result-total {
+    border-bottom: 2px solid #173b61;
+  }
+  .cost-results [data-output="coverage-note"] {
+    min-height: 1.3em;
+  }
+  .reference-cost {
+    padding: 0.75rem;
+    background: #f1f5f9;
+  }
+  .cost-results button {
+    margin: 0.35rem 0.35rem 0.35rem 0;
+  }
+  .quote-fields {
+    margin-top: 1rem !important;
+  }
+  .quote-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem 1rem;
+  }
+  .quote-result {
+    padding: 0.75rem;
+    border-radius: 0.4rem;
+    background: #f1f5f9;
+  }
+  .package-reference {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.55rem;
+    background: #fff;
+  }
+  @media (max-width: 760px) {
+    .cost-grid {
+      grid-template-columns: 1fr;
+    }
+    .cost-results {
+      position: static;
+    }
+    .quote-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 480px) {
+    .quote-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media print {
+    .cost-tool {
+      border: 0;
+      padding: 0;
+      background: #fff;
+    }
+    .preset-row,
+    .cost-inputs,
+    .quote-grid,
+    .cost-results button {
+      display: none !important;
+    }
+    .cost-grid {
+      display: block;
+    }
+    .cost-results {
+      position: static;
+      border: 1px solid #777;
+    }
+  }
+</style>

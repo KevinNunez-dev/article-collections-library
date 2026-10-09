@@ -1,5 +1,128 @@
 ---
-export interface Props { items: Array<{ question: string; answer: string }> }
+export interface Props {
+  items: Array<{ question: string; answer: string; category?: string }>;
+}
 const { items } = Astro.props;
+const categories = [
+  ...new Set(items.map((item) => item.category || "General")),
+];
 ---
-{items.length > 0 && <section class="faq" aria-labelledby="faq-title"><h2 id="faq-title">Frequently asked questions</h2>{items.map((item) => <details><summary>{item.question}</summary><p>{item.answer}</p></details>)}</section>}
+
+{
+  items.length > 0 && (
+    <section class="faq" aria-labelledby="faq-title" data-faq>
+      <h2 id="faq-title">Frequently asked questions</h2>
+      <div class="faq-tools">
+        <label>
+          Search questions and answers{" "}
+          <input
+            type="search"
+            data-faq-search
+            placeholder="For example: insurance or appointment"
+          />
+        </label>
+        <label>
+          Filter by topic{" "}
+          <select data-faq-category>
+            <option value="">All topics</option>
+            {categories.map((category) => (
+              <option value={category}>{category}</option>
+            ))}
+          </select>
+        </label>
+      </div>
+      <p class="faq-count" aria-live="polite">
+        {items.length} questions
+      </p>
+      <div class="faq-items">
+        {items.map((item) => (
+          <details
+            data-faq-item
+            data-category={item.category || "General"}
+            data-search={`${item.question} ${item.answer}`.toLowerCase()}
+          >
+            <summary>{item.question}</summary>
+            <p>{item.answer}</p>
+          </details>
+        ))}
+      </div>
+      <noscript>
+        <p>
+          All answers are shown above. Search and topic filters require
+          JavaScript.
+        </p>
+      </noscript>
+    </section>
+  )
+}
+<script>
+  document.querySelectorAll<HTMLElement>("[data-faq]").forEach((faq) => {
+    const search = faq.querySelector<HTMLInputElement>("[data-faq-search]");
+    const category = faq.querySelector<HTMLSelectElement>(
+      "[data-faq-category]",
+    );
+    const count = faq.querySelector<HTMLElement>(".faq-count");
+    const items = [...faq.querySelectorAll<HTMLElement>("[data-faq-item]")];
+    const filter = () => {
+      const query = search?.value.trim().toLowerCase() || "";
+      const selectedCategory = category?.value || "";
+      let visible = 0;
+      items.forEach((item) => {
+        const matches =
+          (!query || item.dataset.search?.includes(query)) &&
+          (!selectedCategory || item.dataset.category === selectedCategory);
+        item.hidden = !matches;
+        if (matches) visible += 1;
+      });
+      if (count)
+        count.textContent = `${visible} ${visible === 1 ? "question" : "questions"}`;
+    };
+    search?.addEventListener("input", filter);
+    category?.addEventListener("change", filter);
+  });
+</script>
+<style>
+  .faq-tools {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-block: 1rem;
+  }
+  .faq-tools label {
+    display: grid;
+    gap: 0.4rem;
+    font-weight: 650;
+  }
+  .faq-tools input,
+  .faq-tools select {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #8793a3;
+    border-radius: 0.4rem;
+    background: #fff;
+    color: #172033;
+    font: inherit;
+  }
+  .faq-count {
+    font-size: 0.9rem;
+  }
+  .faq-items details {
+    margin-block: 0.65rem;
+    border: 1px solid #d7deea;
+    border-radius: 0.5rem;
+    padding: 0.8rem 1rem;
+  }
+  .faq-items summary {
+    cursor: pointer;
+    font-weight: 700;
+  }
+  .faq-items details[hidden] {
+    display: none;
+  }
+  @media (max-width: 600px) {
+    .faq-tools {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

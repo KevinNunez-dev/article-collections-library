@@ -10,6 +10,8 @@ const articles = defineCollection({
 		tags: z.array(z.string()),
 		bodySystems: z.array(z.string()),
 		contentType: z.string(),
+		draft: z.boolean().optional(),
+		costCalculator: z.boolean().optional(),
 		publishedAt: z.coerce.date(),
 		updatedAt: z.coerce.date(),
 		author: z.string(),
@@ -31,6 +33,7 @@ const articles = defineCollection({
 		faq: z.array(z.object({
 			question: z.string(),
 			answer: z.string(),
+			category: z.string().optional(),
 		})),
 		related: z.array(z.string()).optional(),
 		reviewedBy: z.object({
