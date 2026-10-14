@@ -10,7 +10,7 @@ export const brand = {
   socialImageUrl: 'https://rptclinic.com/health/social/rpt-clinic-treatment-2.jpg',
   socialImageAlt: 'RPT Clinic robotic precision therapy treatment',
   faviconUrl: '/health/favicon.svg',
-  phone: '(305) 555-0199',
+  phone: '(248) 250-9387',
   phoneHref: '+12482509387',
   appointmentUrl: 'https://rptclinic.com/contact/',
   primaryColor: '#1E63D6',

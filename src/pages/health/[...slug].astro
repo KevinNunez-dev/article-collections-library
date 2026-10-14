@@ -17,6 +17,7 @@ import LocalServiceAreas from '../../components/LocalServiceAreas.astro';
 import { brand } from '../../config/brand';
 import { clinic } from '../../config/clinic';
 import { getPillar } from '../../config/pillars';
+import { getArticlePhoto } from '../../config/articleImages';
 import ArticleClinicPanel from '../../components/ArticleClinicPanel.astro';
 import CostTimeCalculator from '../../components/CostTimeCalculator.astro';
 export async function getStaticPaths() { const articles = (await getAllArticles({ includeDrafts: import.meta.env.DEV })).filter((a) => !a.data?.seo?.noindex || (import.meta.env.DEV && a.data?.draft)); return articles.map((article) => ({ params: { slug: article.id }, props: { article } })); }
@@ -24,8 +25,10 @@ const { article } = Astro.props;
 const publishedArticles = (await getAllArticles()).filter((entry) => !entry.data?.seo?.noindex && !entry.data?.draft);
 const allArticles = publishedArticles.filter((entry) => entry.id !== article.id);
 const articlePosition = publishedArticles.findIndex((entry) => entry.id === article.id);
-const heroImage = articlePosition % 2 === 0 ? '/health/images/rpt-clinic-treatment.jpg' : '/health/images/rpt-clinic-treatment-2.jpg';
-const socialImage = heroImage.replace('/health/images/', '/health/social/');
+const photo = getArticlePhoto(article.id);
+const heroImage = photo?.src ?? (articlePosition % 2 === 0 ? '/health/images/rpt-clinic-treatment.jpg' : '/health/images/rpt-clinic-treatment-2.jpg');
+const heroAlt = photo?.alt ?? `${article.data.title}: RPT Clinic clinician assessing a patient on the RX2600 Robotic Precision Therapy system`;
+const socialImage = photo ? heroImage : heroImage.replace('/health/images/', '/health/social/');
 const explicitRelatedIds = article.data.related || [];
 const articleTags = new Set((article.data.tags || []).map((tag: string) => tag.toLowerCase()));
 const articleBodySystems = new Set(article.data.bodySystems || []);
@@ -51,7 +54,7 @@ const articleSchema = { '@context': 'https://schema.org', '@type': 'MedicalWebPa
 const faqSchema = (article.data.faq || []).length ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: article.data.faq.map((item: any) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) } : null;
 const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).toString() }, { '@type': 'ListItem', position: 2, name: 'Health Library', item: new URL('/health', Astro.site).toString() }, { '@type': 'ListItem', position: 3, name: article.data.title, item: pageUrl }] };
 ---
-<BaseLayout title={article.data.seo?.title || article.data.title} description={article.data.seo?.description || article.data.description} image={socialImage} imageAlt={`${article.data.title}: RPT Clinic clinician assessing a patient on the RX2600 Robotic Precision Therapy system`} noindex={article.data.seo?.noindex} canonical={article.data.seo?.canonical} publishedTime={article.data.publishedAt} modifiedTime={article.data.updatedAt}>
+<BaseLayout title={article.data.seo?.title || article.data.title} description={article.data.seo?.description || article.data.description} image={socialImage} imageAlt={heroAlt} noindex={article.data.seo?.noindex} canonical={article.data.seo?.canonical} publishedTime={article.data.publishedAt} modifiedTime={article.data.updatedAt}>
   <JsonLd data={[articleSchema, clinicSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])]} />
   
   <!-- Hero Section -->
@@ -62,7 +65,7 @@ const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'Breadcrum
     ctaText="Explore Robotic Precision Therapy"
     ctaHref={clinic.landingUrl}
     image={heroImage}
-    imageAlt={`${article.data.title}: RPT Clinic clinician assessing a patient on the RX2600 Robotic Precision Therapy system`}
+    imageAlt={heroAlt}
   />
   
   <article class="article-page">

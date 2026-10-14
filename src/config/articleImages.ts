@@ -60,11 +60,44 @@ const imageByArticleId: Record<string, string> = {
   'heel-pain': '/health/images/Leg/calf-treatment.webp',
 };
 
+const arm = (n: number) => `/health/images/Arm/carpal-tunnel-${n}.jpg`;
+const knee = (n: number) => `/health/images/Leg/knee-pain-${n}.jpg`;
+const foot = (n: number) => `/health/images/Leg/foot-${n}.jpg`;
+
+// Condition-specific photos, spread across matching articles.
+const photoByArticleId: Record<string, { src: string; alt: string }> = {
+  'carpal-tunnel-syndrome': { src: arm(1), alt: 'Person holding their wrist with an open palm, showing carpal tunnel discomfort' },
+  'best-carpal-tunnel-treatment-near-detroit': { src: arm(2), alt: 'Person with hand and wrist pain from carpal tunnel syndrome' },
+  'wrist-pain': { src: arm(3), alt: 'Person gripping a painful wrist' },
+  'hand-pain': { src: arm(1), alt: 'Person holding a sore wrist and hand' },
+  'forearm-pain': { src: arm(2), alt: 'Person with forearm and wrist discomfort' },
+  'knee-pain': { src: knee(1), alt: 'Person holding their knee with both hands' },
+  'knee-pain-treatment-near-detroit-rpt': { src: knee(2), alt: 'Person with knee pain during activity' },
+  'runners-knee': { src: knee(3), alt: 'Runner pausing with knee pain' },
+  'runners-knee-rpt': { src: knee(1), alt: 'Runner holding a painful knee' },
+  'inner-knee-pain': { src: knee(2), alt: 'Person with inner knee pain' },
+  'outer-knee-pain': { src: knee(3), alt: 'Person with outer knee pain' },
+  'how-to-reduce-knee-pain-when-running': { src: knee(1), alt: 'Runner holding a sore knee' },
+  'top-5-ways-to-reduce-knee-pain': { src: knee(2), alt: 'Person easing knee pain' },
+  'foot-pain': { src: foot(1), alt: 'Person massaging the sole and toes of a sore foot' },
+  'bunions': { src: foot(2), alt: 'Person with bunion and big toe pain' },
+  'bunions-rpt': { src: foot(3), alt: 'Person with bunion and forefoot pain' },
+  'bunion-pain-treatment-near-detroit-rpt': { src: foot(1), alt: 'Person holding a painful foot and big toe' },
+  'heel-pain': { src: foot(2), alt: 'Person with heel and foot pain' },
+  'plantar-fasciitis': { src: foot(3), alt: 'Person with plantar foot pain' },
+  'ankle-pain': { src: foot(1), alt: 'Person with ankle and foot pain' },
+};
+
+export function getArticlePhoto(articleId: string) {
+  return photoByArticleId[articleId];
+}
+
 const defaultImages = ['/health/images/rpt-clinic-treatment.jpg', '/health/images/rpt-clinic-treatment-2.jpg'];
 
 export function getArticleThumbnail(articleId: string, _fallback?: string, title = '', category = '') {
   const searchableText = `${articleId} ${title} ${category}`.toLowerCase();
 
+  if (photoByArticleId[articleId]) return photoByArticleId[articleId].src;
   if (imageByArticleId[articleId]) return imageByArticleId[articleId];
   if (/\bback\b|spine|sciatica|disc/.test(searchableText)) return '/health/images/Back/backpain.jpg';
   if (/\bneck\b|shoulder/.test(searchableText)) return '/health/images/Shoulder/neckpain.jpg';
