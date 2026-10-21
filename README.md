@@ -14,6 +14,12 @@ npm run build
 
 Use Node 20.18 or later. Set `PUBLIC_SITE_URL` to the final production domain before building so canonicals, the sitemap and `robots.txt` use the live domain.
 
+## Deploy to GitHub Pages
+
+The `Deploy Astro site to GitHub Pages` workflow builds the site with `npm run build` and publishes the generated `dist` directory. It runs on pushes to `main` and can also be started manually from the Actions tab.
+
+In the repository settings, set **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. Do not use branch deployment: GitHub's default Jekyll builder cannot build this Astro project, and publishing the repository root does not publish the generated Astro site. The deployment workflow requires the repository's Actions permissions to allow Pages deployments.
+
 ## Brand a duplicate
 
 For each clinic, copy or clone this repository. Then edit:

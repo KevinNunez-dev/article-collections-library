@@ -7,7 +7,7 @@ categorySlug: pain-management
 tags: [why back pain keeps coming back, recurring back pain, daily back pain, weak back muscles, low back, sciatica, sciatic nerve pain, pain relief, back pain specialist, Troy Michigan, Detroit Michigan, Clarkston Michigan]
 bodySystems: [musculoskeletal, nervous system]
 contentType: guide
-draft: false
+
 publishedAt: 2026-10-21
 updatedAt: 2026-10-21
 author: RPT Clinic Editorial Team
@@ -30,7 +30,7 @@ faq:
     answer: No. RPT Clinic may address muscular contributors after assessment, but no treatment can guarantee that future episodes will not occur.
 related: [when-to-see-a-doctor-for-back-pain, lower-back-pain, muscle-weakness]
 seo:
-  title: "Why Does My Back Pain Keep Coming Back? | RPT Clinic"
+  title: "Why Does My Back Pain Keep Coming Back?"
   description: "Understand recurring back pain, the limits of temporary relief, and when an assessment may help you build a more useful plan."
   image: /health/images/Back/backpain-1.jpg
   noindex: false

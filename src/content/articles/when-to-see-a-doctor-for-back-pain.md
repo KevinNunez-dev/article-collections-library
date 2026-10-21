@@ -7,7 +7,7 @@ categorySlug: pain-management
 tags: [when to see a doctor for back pain, back pain, low back pain, sciatica, sciatic nerve pain, pain relief, daily back pain, weak back muscles, back pain specialist, Troy Michigan, Detroit Michigan, Clarkston Michigan]
 bodySystems: [musculoskeletal, nervous system]
 contentType: guide
-draft: false
+
 publishedAt: 2026-10-21
 updatedAt: 2026-10-21
 author: RPT Clinic Editorial Team
@@ -30,7 +30,7 @@ faq:
     answer: No. RPT Clinic may use clinician-guided soft-tissue treatment for appropriate muscular contributors after assessment. Some causes require a different type of medical care.
 related: [when-to-see-a-doctor-for-sciatic-nerve-pain, why-does-my-back-pain-keep-coming-back, lower-back-pain]
 seo:
-  title: "When to See a Doctor for Back Pain | RPT Clinic"
+  title: "When to See a Doctor for Back Pain"
   description: "Persistent back pain or new warning signs? Learn when to book an evaluation, when to seek urgent care, and where RPT Clinic fits."
   image: /health/images/Back/backpain.jpg
   noindex: false

@@ -32,7 +32,7 @@ faq:
     answer: RPT Clinic may address identified muscular contributors after assessment. Suitability depends on the findings, and treatment does not replace necessary medical evaluation.
 related: [piriformis-syndrome-vs-sciatica, what-to-do-for-sciatic-nerve-pain-flare-up, when-to-see-a-doctor-for-sciatic-nerve-pain]
 seo:
-  title: "Sciatica or Piriformis Pain? How to Tell | RPT Clinic"
+  title: "Sciatica or Piriformis Pain? How to Tell"
   description: "Learn how sciatic and piriformis-related symptoms overlap, what to tell a clinician, and why an assessment matters more than a self-test."
   image: /health/images/Back/backpain-1.jpg
   noindex: false

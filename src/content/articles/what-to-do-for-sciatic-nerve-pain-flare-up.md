@@ -7,7 +7,7 @@ categorySlug: pain-management
 tags: [sciatic nerve pain flare up, sciatica, sciatic nerve pain, pain relief, release sciatic nerve, back pain, low back, daily back pain, weak back muscles, back pain specialist, Troy Michigan, Detroit Michigan, Clarkston Michigan]
 bodySystems: [musculoskeletal, nervous system]
 contentType: guide
-draft: false
+
 publishedAt: 2026-10-21
 updatedAt: 2026-10-21
 author: RPT Clinic Editorial Team
@@ -30,7 +30,7 @@ faq:
     answer: RPT Clinic may use it for selected muscular contributors after assessment. It should not be described as a guaranteed way to release a trapped nerve or correct spinal compression.
 related: [how-to-relieve-sciatica-pain, when-to-see-a-doctor-for-sciatic-nerve-pain, how-to-tell-sciatica-from-piriformis-pain]
 seo:
-  title: "Sciatic Nerve Pain Flare-Up: What to Do | RPT Clinic"
+  title: "Sciatic Nerve Pain Flare-Up: What to Do"
   description: "Learn what to do when sciatic nerve pain flares up, why forceful stretching can be unhelpful, and when to seek medical attention."
   image: /health/images/Back/backpain-1.jpg
   noindex: false

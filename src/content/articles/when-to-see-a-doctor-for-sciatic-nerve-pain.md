@@ -21,7 +21,7 @@ tags:
   ]
 bodySystems: [musculoskeletal, nervous system]
 contentType: guide
-draft: false
+
 publishedAt: 2026-10-21
 updatedAt: 2026-10-21
 author: RPT Clinic Editorial Team
@@ -51,7 +51,7 @@ related:
     sciatica-specialist-detroit,
   ]
 seo:
-  title: "When to See a Doctor for Sciatic Nerve Pain | RPT Clinic"
+  title: "When to See a Doctor for Sciatic Nerve Pain"
   description: "Learn when sciatic nerve pain needs an evaluation, which symptoms require immediate care, and how RPT Clinic in Troy approaches non-emergency symptoms."
   image: /health/images/Back/backpain.jpg
   noindex: false
