@@ -2,6 +2,66 @@
 
 This is the maintenance reference for the Astro health-library project.
 
+## Adding an Article
+
+Before editing:
+
+1. Read this manual and inspect a recent, working article in `src/content/articles/`.
+2. Use its Markdown and frontmatter structure as the starting point.
+3. Write the article copy, metadata, FAQs, key takeaways, and relevant internal and external links.
+4. Verify city, location, service-area, and treatment references against current project information. Describe RPT and the RX2600 Therapeutic Robot conservatively: they may address appropriate muscular contributors after assessment; do not promise diagnosis, cure, or guaranteed results.
+5. Validate the content and run `npm run build`. Review the generated route and sitemap entry.
+6. Review `git status` and `git diff`; stage and commit only the files intended for this change.
+7. Check the relevant deployment workflow and its result. After deployment, request the intended public URL and verify the page there.
+
+These are separate statuses: **committed**, **build passed**, **deployed**, and **live verified**. Report only the statuses actually confirmed. If a build or deployment tool is unavailable, say so. Do not use a different hosting workflow as a substitute or imply that a commit or successful build means the public site has been updated.
+
+### Copy-ready article example
+
+Create a file such as `src/content/articles/example-sciatica-guide.md`. The filename becomes the article slug. Replace the example copy, dates, image, and links before publishing.
+
+```markdown
+---
+title: "Example Sciatica Guide: What to Know"
+description: "A concise, plain-language summary of the article for search results."
+excerpt: "A short description shown on health-library cards."
+category: Pain Management
+categorySlug: pain-management
+tags: [sciatica, sciatic nerve pain, back pain]
+bodySystems: [musculoskeletal, nervous system]
+contentType: guide
+publishedAt: 2026-10-21
+updatedAt: 2026-10-21
+author: RPT Clinic Editorial Team
+readingTime: 4
+image: /health/images/Back/backpain-1.jpg
+imageAlt: Person managing back and leg discomfort
+keyTakeaways:
+  - Summarize one useful point from the article.
+  - Explain when a reader should seek professional assessment.
+  - State what treatment can and cannot be expected to address.
+faq:
+  - question: When should I seek help?
+    answer: Arrange an assessment when symptoms persist, worsen, or limit daily activities. Seek urgent care for emergency warning signs.
+related: [when-to-see-a-doctor-for-sciatic-nerve-pain, lower-back-pain]
+seo:
+  title: "Example Sciatica Guide: What to Know"
+  description: "A search-focused summary that is accurate and distinct from the article description."
+  image: /health/images/Back/backpain-1.jpg
+  noindex: false
+---
+
+## Start with the reader's question
+
+Answer the main question directly, then explain the useful details in clear language.
+
+## What to consider next
+
+Use practical lists and relevant links. Describe RPT Clinic and the RX2600 Therapeutic Robot accurately, without unsupported treatment promises.
+```
+
+The shared page layout appends `| RPT Clinic` to `seo.title`; do not add the brand suffix yourself. `reviewedBy`, `related`, and `draft` are supported optional fields. Follow the current brief for keyword requirements rather than carrying a keyword list over from another article batch.
+
 ## Local Development
 
 Install dependencies once:
@@ -32,7 +92,7 @@ The canonical site is configured as:
 https://rptclinic.com
 ```
 
-The setting lives in `astro.config.mjs`. Cloudflare should provide `PUBLIC_SITE_URL=https://rptclinic.com` in production so the sitemap and canonical URLs always use the final domain.
+The `site` constant in `astro.config.mjs` sets Astro's canonical site and sitemap domain. It is intentionally fixed to `https://rptclinic.com`; `PUBLIC_SITE_URL` does not override it. Do not change this domain or the `/health` asset prefix for an article-only task.
 
 Important indexable URLs:
 
@@ -54,7 +114,7 @@ Article files are Markdown files in:
 src/content/articles/
 ```
 
-Create a file named from the desired URL, such as:
+Create a filename from the desired slug, such as:
 
 ```text
 src/content/articles/hamstring-pain.md
@@ -66,47 +126,22 @@ The URL becomes:
 https://rptclinic.com/health/hamstring-pain/
 ```
 
-Use this frontmatter structure:
-
-```yaml
----
-title: "Hamstring Pain: Causes, Symptoms and RPT Care"
-description: "A concise Google meta description."
-excerpt: "A short card description for the library."
-category: Musculoskeletal
-categorySlug: musculoskeletal
-tags: [hamstring pain, pulled hamstring, thigh pain, muscle strain]
-bodySystems: [musculoskeletal]
-contentType: condition
-publishedAt: 2026-09-02
-updatedAt: 2026-09-02
-author: RPT Clinic Editorial Team
-readingTime: 6
-image: /images/rpt-clinic-treatment.jpg
-imageAlt: RPT Clinic treatment session
-keyTakeaways:
-  - Key point one.
-  - Key point two.
-faq:
-  - question: A useful question?
-    answer: A clear, conservative answer.
-related: [muscle-strain, calf-pain, sports-injuries]
-seo:
-  title: "Hamstring Pain: Causes and Care | RPT Clinic"
-  description: "A second, search-focused description."
----
-```
-
-Then write the Markdown content below the closing `---`.
+Follow the [Adding an Article workflow](#adding-an-article) above for the copy-ready frontmatter and article example. The required and optional fields are defined in `src/content.config.ts`.
 
 Content standards:
 
-- Use clear headings and plain language.
-- Add meaningful `tags` and `related` article IDs.
+- Read this manual and inspect a recent article before drafting; reuse the established Markdown and frontmatter conventions.
+- Give the article a useful substance and a clear angle. Expand topic clusters: overlapping keywords are allowed, and similar topics are not by themselves a reason to merge or replace existing articles.
+- Follow the keyword requirements in the current brief; do not assume another article's keyword list applies.
+- Use direct answers, plain language, useful lists, and meaningful `tags` and `related` article IDs.
 - Include a section on when urgent medical assessment is needed.
-- Use conservative wording: RPT may address muscular contributors after assessment. Do not claim a diagnosis, cure, or guaranteed outcome.
+- Check location references and treatment descriptions against current project information. RPT Clinic and the RX2600 Therapeutic Robot may address appropriate muscular contributors after assessment; do not claim diagnosis, cure, or guaranteed outcomes.
 - Use `https://rptclinic.com/contact/` for any appointment CTA.
 - Do not add medical-review names or credentials. Articles display only the RPT Clinic Editorial Team attribution.
+- `reviewedBy` is an optional schema field, not a required article field.
+- The shared layout appends `| RPT Clinic` to the SEO title; do not repeat the suffix in article frontmatter.
+
+After editing, run `npm run build` and inspect the generated article route and sitemap. Review `git diff --check`, `git status`, and the exact diff; stage only intended files.
 
 ## Internal and External Links
 
@@ -268,7 +303,7 @@ https://rptclinic.com/contact/
 ## SEO Checklist Before Deployment
 
 1. Run `npm run build` with no errors.
-2. Confirm `PUBLIC_SITE_URL` is `https://rptclinic.com`.
+2. Confirm the `site` constant in `astro.config.mjs` is the intended canonical domain (`https://rptclinic.com` for this project).
 3. Visit `/robots.txt` and confirm it points to `/sitemap-index.xml`.
 4. Visit `/sitemap-index.xml` and confirm URLs use `https://rptclinic.com`.
 5. In Google Search Console, add and verify `rptclinic.com`, then submit the sitemap.
@@ -278,22 +313,32 @@ https://rptclinic.com/contact/
 
 ## Deployment
 
-Cloudflare uses the build command in `package.json`:
+The production build command in `package.json` is:
 
 ```text
 npm run build
 ```
 
-The generated static site is in `dist/`. Do not manually edit `dist`; edit files in `src/` or `public/`, then rebuild.
+The generated static site is in `dist/`. Do not manually edit `dist`; edit files in `src/` or `public/`, then rebuild. The repository also contains a GitHub Pages workflow that publishes `dist` to its configured Pages target. A successful run confirms that target received a deployment; it does not, by itself, prove that the intended public `rptclinic.com` URL is serving the change. Confirm the configured production host and verify the public URL separately. The presence of `wrangler.jsonc` is not proof that a Cloudflare deployment was performed.
 
-Typical workflow:
+Typical source-control workflow:
 
 ```powershell
 npm run build
+git diff --check
 git status
-git add .
+git add src/content/articles/example-sciatica-guide.md
 git commit -m "Describe the change"
 git push origin main
 ```
 
-Review `git status` before staging to ensure no raw HEIC/MOV assets or unintended files are included.
+Replace the example path with the exact intended files. Review `git status` before staging to ensure no raw HEIC/MOV assets or unrelated changes are included.
+
+After pushing, inspect the relevant Actions run and its deployment result. Treat these as separate confirmations:
+
+1. **Committed:** the intended change is in the repository.
+2. **Build passed:** the production build completed successfully.
+3. **Deployed:** the intended hosting workflow reports a successful deployment to its target.
+4. **Live verified:** the requested public URL was fetched and the expected content was confirmed.
+
+Report only the stages actually verified. If the relevant deployment tool or access is unavailable, state that limitation; do not substitute an unrelated host or workflow or imply the site is live.
