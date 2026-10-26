@@ -12,7 +12,7 @@ publishedAt: 2026-10-26
 updatedAt: 2026-10-26
 author: RPT Clinic Editorial Team
 readingTime: 6
-image: /health/images/Sports/skiing%20down%20the%20mountain.jpg
+image: /health/images/Sports/skiing-down-the-mountain.jpg
 imageAlt: Skier resting on a slope with lower back discomfort
 keyTakeaways:
   - Skiing combines sustained crouching, bumps, turns, and fatigue, which can load the lower back and hips.
@@ -37,7 +37,7 @@ related: [lower-back-pain, when-to-see-a-doctor-for-back-pain, why-does-my-back-
 seo:
   title: "How to Avoid Lower Back Pain When Skiing"
   description: "Practical guide on how to avoid lower back pain when skiing: causes, symptoms, pre-season prep, FAQs, and how RPT Clinic supports muscular recovery."
-  image: /health/images/Sports/skiing%20down%20the%20mountain.jpg
+  image: /health/images/Sports/skiing-down-the-mountain.jpg
   noindex: false
 ---
 
@@ -47,7 +47,7 @@ Skiing asks a lot of your body: a sustained athletic crouch, constant small corr
 
 This guide explains what a low back flare-up looks like, what skiers commonly notice, how to prepare and recover, and where RPT Clinic fits.
 
-![Woman skiing down the hill in a sustained crouch](/health/images/Sports/skiing%20woman%20down%20the%20hill.jpg)
+![Woman skiing down the hill in a sustained crouch](/health/images/Sports/skiing-woman-down-the-hill.jpg)
 
 ## What is a low back flare-up?
 
@@ -55,7 +55,7 @@ A low back flare-up is a period of increased pain, tightness, or stiffness in th
 
 A flare-up does not by itself prove serious damage, but it is a signal worth responding to. See our overview of [lower back pain](/health/lower-back-pain/).
 
-![Skiers enjoying a day together in the snow](/health/images/Sports/skiing%20together%20in%20the%20snow.jpg)
+![Skiers enjoying a day together in the snow](/health/images/Sports/skiing-together-in-the-snow.jpg)
 
 ## Symptoms skiers often notice
 
@@ -68,7 +68,7 @@ A flare-up does not by itself prove serious damage, but it is a signal worth res
 
 Pain after a fall, leg numbness, weakness, or bladder or bowel changes need urgent attention. See [when to see a doctor for back pain](/health/when-to-see-a-doctor-for-back-pain/).
 
-![Skier at the bottom of the slope after a run](/health/images/Sports/skiing%20at%20the%20bottom%20protrait.jpg)
+![Skier at the bottom of the slope after a run](/health/images/Sports/skiing-at-the-bottom-protrait.jpg)
 
 ## Why skiing can irritate the lower back
 
@@ -79,7 +79,7 @@ Pain after a fall, leg numbness, weakness, or bladder or bowel changes need urge
 - **Cold muscles.** Starting aggressive runs without warming up can leave tissues unprepared.
 - **Travel and sitting.** Long drives before and after skiing can stiffen the hips. See [back pain from sitting](/health/how-to-relieve-back-pain-from-sitting/).
 
-![Young skier on the slope, building skills gradually](/health/images/Sports/skiing%20kid%20alone.jpg)
+![Young skier on the slope, building skills gradually](/health/images/Sports/skiing-kid-alone.jpg)
 
 ## How to avoid lower back pain when skiing: practical steps
 
@@ -93,7 +93,7 @@ Pain after a fall, leg numbness, weakness, or bladder or bowel changes need urge
 8. **Stop for sharp pain.** Do not ski through worsening pain.
 9. **Reassess recurring pain.** See [why back pain keeps coming back](/health/why-does-my-back-pain-keep-coming-back/).
 
-![Friends skiing together and happy after a day on the mountain](/health/images/Sports/skiing%20together%20friends%20happy.jpg)
+![Friends skiing together and happy after a day on the mountain](/health/images/Sports/skiing-together-friends-happy.jpg)
 
 ## How RPT Clinic helps skiers recover and train smarter
 

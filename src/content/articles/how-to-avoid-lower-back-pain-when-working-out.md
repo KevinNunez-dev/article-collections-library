@@ -12,7 +12,7 @@ publishedAt: 2026-10-26
 updatedAt: 2026-10-26
 author: RPT Clinic Editorial Team
 readingTime: 6
-image: /health/images/Sports/working%20out%20on%20the%20bench%20arms.jpg
+image: /health/images/Sports/working-out-on-the-bench-arms.jpg
 imageAlt: Person pausing during a gym workout with lower back discomfort
 keyTakeaways:
   - Workouts can irritate the lower back when load, volume, technique, or recovery do not match what your body is ready for.
@@ -37,7 +37,7 @@ related: [lower-back-pain, when-to-see-a-doctor-for-back-pain, why-does-my-back-
 seo:
   title: "How to Avoid Lower Back Pain When Working Out"
   description: "Practical guide on how to avoid lower back pain when working out and training: causes, symptoms, programming tips, FAQs, and RPT Clinic support."
-  image: /health/images/Sports/working%20out%20on%20the%20bench%20arms.jpg
+  image: /health/images/Sports/working-out-on-the-bench-arms.jpg
   noindex: false
 ---
 
@@ -47,7 +47,7 @@ Strength sessions, classes, and conditioning are good for you, but the lower bac
 
 This guide explains what a low back flare-up looks like, what people commonly notice after training, how to reduce flare-ups, and how RPT Clinic helps you retrain and manage pain.
 
-![Couple working out together in the gym](/health/images/Sports/working%20out%20couple.jpg)
+![Couple working out together in the gym](/health/images/Sports/working-out-couple.jpg)
 
 ## What is a low back flare-up?
 
@@ -55,7 +55,7 @@ A low back flare-up is a period of increased pain, tightness, or stiffness in th
 
 A flare-up does not by itself prove serious damage. See our overview of [lower back pain](/health/lower-back-pain/).
 
-![Woman training with bar weights](/health/images/Sports/working%20out%20woman%20with%20bar%20weights.jpg)
+![Woman training with bar weights](/health/images/Sports/working-out-woman-with-bar-weights.jpg)
 
 ## Symptoms people often notice after training
 
@@ -68,7 +68,7 @@ A flare-up does not by itself prove serious damage. See our overview of [lower b
 
 Sharp pain, leg symptoms, numbness, tingling, or weakness need assessment. See [when to see a doctor for back pain](/health/when-to-see-a-doctor-for-back-pain/).
 
-![Training on the lat pulldown machine](/health/images/Sports/working%20out%20on%20lat%20pull%20downs.jpg)
+![Training on the lat pulldown machine](/health/images/Sports/working-out-on-lat-pull-downs.jpg)
 
 ## Why workouts can irritate the lower back
 
@@ -79,7 +79,7 @@ Sharp pain, leg symptoms, numbness, tingling, or weakness need assessment. See [
 - **Poor recovery.** Limited sleep and back-to-back hard days leave muscles fatigued.
 - **Desk-bound days.** Long sitting before workouts can leave you stiff. See [back pain from sitting](/health/how-to-relieve-back-pain-from-sitting/).
 
-![Single-leg exercise building balance and hip strength](/health/images/Sports/working%20out%20with%20one%20leg.jpg)
+![Single-leg exercise building balance and hip strength](/health/images/Sports/working-out-with-one-leg.jpg)
 
 ## How to avoid lower back pain when working out: practical steps
 
@@ -93,7 +93,7 @@ Sharp pain, leg symptoms, numbness, tingling, or weakness need assessment. See [
 8. **Modify, don't quit.** Swap painful movements for comfortable variations instead of stopping all training.
 9. **Reassess recurrence.** See [why back pain keeps coming back](/health/why-does-my-back-pain-keep-coming-back/).
 
-![Rope training for conditioning](/health/images/Sports/working%20out%20with%20ropes.jpg)
+![Rope training for conditioning](/health/images/Sports/working-out-with-ropes.jpg)
 
 ## How RPT Clinic helps people who train recover and manage pain
 
@@ -103,7 +103,7 @@ The team also helps retrain the body and mind: how to move, how to progress trai
 
 RPT does not diagnose conditions, cure back pain, or guarantee outcomes. Results vary, and a clinician should determine whether treatment suits you.
 
-![Cycling workout for low-impact conditioning](/health/images/Sports/working%20out%20on%20the%20cycling%20bike.jpg)
+![Cycling workout for low-impact conditioning](/health/images/Sports/working-out-on-the-cycling-bike.jpg)
 
 ## Finding care in Metro Detroit
 

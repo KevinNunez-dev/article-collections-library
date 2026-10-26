@@ -12,7 +12,7 @@ publishedAt: 2026-10-26
 updatedAt: 2026-10-26
 author: RPT Clinic Editorial Team
 readingTime: 6
-image: /health/images/Sports/running%20man%20-%20morning%20run.jpg
+image: /health/images/Sports/running-man-morning-run.jpg
 imageAlt: Runner pausing on a path with lower back discomfort
 keyTakeaways:
   - Running places repeated impact through the hips, pelvis, and lower back, so load that rises too quickly can trigger a flare-up.
@@ -38,7 +38,7 @@ related: [lower-back-pain, when-to-see-a-doctor-for-back-pain, why-does-my-back-
 seo:
   title: "How to Avoid Lower Back Pain When Running"
   description: "Practical guide on how to avoid lower back pain when running: causes, symptoms, training changes, FAQs, and how RPT Clinic helps muscular recovery."
-  image: /health/images/Sports/running%20man%20-%20morning%20run.jpg
+  image: /health/images/Sports/running-man-morning-run.jpg
   noindex: false
 ---
 
@@ -50,7 +50,7 @@ Cleveland Clinic physical therapist Justin Nessel notes in [Cleveland Clinic's g
 
 This guide explains what a low back flare-up looks like, what symptoms runners commonly notice, how to reduce the chance of repeat flare-ups, and how RPT Clinic fits in.
 
-![Runner on a morning run, a common time for back stiffness to show up](/health/images/Sports/running%20woman%20-%20park.jpg)
+![Runner on a morning run, a common time for back stiffness to show up](/health/images/Sports/running-woman-park.jpg)
 
 ## What is a low back flare-up?
 
@@ -58,7 +58,7 @@ A low back flare-up is a period when pain, tightness, or stiffness in the lower 
 
 A flare-up does not by itself show that something is seriously damaged. It does show that the demand on your back temporarily exceeded what it was ready to handle. Learn more in our guide to [lower back pain](/health/lower-back-pain/).
 
-![Woman running a long-distance training session](/health/images/Sports/running%20woman%20-%20long%20distance.jpg)
+![Woman running a long-distance training session](/health/images/Sports/running-woman-long-distance.jpg)
 
 ## Symptoms runners often notice
 
@@ -73,7 +73,7 @@ Patterns that commonly match running-related low back pain include:
 
 Pain that travels down the leg, numbness, tingling, or weakness should be assessed rather than trained through. See [when to see a doctor for back pain](/health/when-to-see-a-doctor-for-back-pain/).
 
-![Runner in black and white mid-stride](/health/images/Sports/running%20man%20-%20bw%201.jpg)
+![Runner in black and white mid-stride](/health/images/Sports/running-man-bw-1.jpg)
 
 ## Why runners get lower back pain
 
@@ -86,7 +86,7 @@ Several contributors can overlap:
 - **Sitting time.** Long workdays can leave hips stiff before you ever lace up. See [back pain from sitting](/health/how-to-relieve-back-pain-from-sitting/).
 - **Surface and footwear.** Hard surfaces and worn shoes may add to the load, though individual responses vary.
 
-![Runner stretching before a run](/health/images/Sports/runner%20stretching.jpg)
+![Runner stretching before a run](/health/images/Sports/runner-stretching.jpg)
 
 ## How to avoid lower back pain when running: practical steps
 
@@ -99,7 +99,7 @@ Several contributors can overlap:
 7. **Track your pattern.** Note mileage, surface, shoes, and symptoms. Patterns often show what is driving your flare-ups.
 8. **Get assessed if it keeps returning.** Repeated episodes deserve a closer look. Read [why back pain keeps coming back](/health/why-does-my-back-pain-keep-coming-back/).
 
-![Marathon runner building endurance gradually](/health/images/Sports/running%20man%20-%20marathoner.jpg)
+![Marathon runner building endurance gradually](/health/images/Sports/running-man-marathoner.jpg)
 
 ## How RPT Clinic helps runners recover and train smarter
 
@@ -109,7 +109,7 @@ Alongside treatment, the team helps you retrain movement habits, understand how 
 
 RPT does not diagnose conditions, cure back pain, or guarantee outcomes. Results vary, and a clinician should determine whether treatment is suitable for you.
 
-![Couple running together on a training day](/health/images/Sports/running%20couple.jpg)
+![Couple running together on a training day](/health/images/Sports/running-couple.jpg)
 
 ## Finding care in Metro Detroit
 

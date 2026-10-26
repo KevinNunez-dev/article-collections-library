@@ -12,7 +12,7 @@ publishedAt: 2026-10-26
 updatedAt: 2026-10-26
 author: RPT Clinic Editorial Team
 readingTime: 6
-image: /health/images/Sports/snowboarding%20down%20the%20mountain.jpg
+image: /health/images/Sports/snowboarding-down-the-mountain.jpg
 imageAlt: Snowboarder sitting in the snow holding the lower back
 keyTakeaways:
   - Snowboarding involves repeated twisting, edge changes, jumps, and falls that can load or jar the lower back.
@@ -37,7 +37,7 @@ related: [lower-back-pain, when-to-see-a-doctor-for-back-pain, why-does-my-back-
 seo:
   title: "How to Avoid Lower Back Pain When Snowboarding"
   description: "Practical guide on how to avoid lower back pain when snowboarding: symptoms, causes, prevention tips, FAQs, and how RPT Clinic supports recovery."
-  image: /health/images/Sports/snowboarding%20down%20the%20mountain.jpg
+  image: /health/images/Sports/snowboarding-down-the-mountain.jpg
   noindex: false
 ---
 
@@ -47,7 +47,7 @@ Snowboarding is a twisting, crouching, edge-to-edge sport. Even skilled riders f
 
 This guide explains what a low back flare-up looks like, what riders commonly notice, how to prepare and recover, and how RPT Clinic can help.
 
-![Snowboarder heading to the lift](/health/images/Sports/snow%20boarding%20to%20the%20lift.jpg)
+![Snowboarder heading to the lift](/health/images/Sports/snow-boarding-to-the-lift.jpg)
 
 ## What is a low back flare-up?
 
@@ -66,7 +66,7 @@ A flare-up does not by itself prove serious damage, but it should not be ignored
 
 Severe pain after a hard fall, numbness, weakness, or bladder or bowel changes need urgent attention. See [when to see a doctor for back pain](/health/when-to-see-a-doctor-for-back-pain/).
 
-![Snowboarder on flat ground in the sun](/health/images/Sports/snowboarding%20on%20flat%20in%20the%20sun.jpg)
+![Snowboarder on flat ground in the sun](/health/images/Sports/snowboarding-on-flat-in-the-sun.jpg)
 
 ## Why snowboarding can irritate the lower back
 
@@ -77,7 +77,7 @@ Severe pain after a hard fall, numbness, weakness, or bladder or bowel changes n
 - **Deconditioning.** A seasonal sport can mean a big jump in demand.
 - **Travel sitting.** Long drives to the mountain can stiffen the hips. See [back pain from sitting](/health/how-to-relieve-back-pain-from-sitting/).
 
-![Family snowboarding together](/health/images/Sports/snowboarding%20as%20a%20family%20photo.jpg)
+![Family snowboarding together](/health/images/Sports/snowboarding-as-a-family-photo.jpg)
 
 ## How to avoid lower back pain when snowboarding: practical steps
 

@@ -12,7 +12,7 @@ publishedAt: 2026-10-26
 updatedAt: 2026-10-26
 author: RPT Clinic Editorial Team
 readingTime: 6
-image: /health/images/Sports/walking%20in%20the%20morning.jpg
+image: /health/images/Sports/walking-in-the-morning.jpg
 imageAlt: Person walking and pausing with lower back discomfort
 keyTakeaways:
   - Walking is generally a back-friendly activity, but tight hips, fatigue, long distances, and prior inactivity can trigger pain.
@@ -37,7 +37,7 @@ related: [lower-back-pain, when-to-see-a-doctor-for-back-pain, why-does-my-back-
 seo:
   title: "How to Avoid Lower Back Pain When Walking"
   description: "Practical guide on how to avoid lower back pain when walking: causes, symptoms, pacing tips, FAQs, and how RPT Clinic supports muscular recovery."
-  image: /health/images/Sports/walking%20in%20the%20morning.jpg
+  image: /health/images/Sports/walking-in-the-morning.jpg
   noindex: false
 ---
 
@@ -47,7 +47,7 @@ Walking is one of the simplest ways to stay active, so it is frustrating when it
 
 This guide explains what a low back flare-up looks like, what walkers commonly notice, how to reduce flare-ups, and how RPT Clinic can help.
 
-![Person walking in the park in the morning](/health/images/Sports/walking%20in%20the%20park%20in%20the%20morning.jpg)
+![Person walking in the park in the morning](/health/images/Sports/walking-in-the-park-in-the-morning.jpg)
 
 ## What is a low back flare-up?
 
@@ -55,7 +55,7 @@ A low back flare-up is a period of increased pain, tightness, or stiffness in th
 
 A flare-up does not by itself prove serious damage. See our overview of [lower back pain](/health/lower-back-pain/).
 
-![Walking alone on the way home](/health/images/Sports/walking%20alone%20home.jpg)
+![Walking alone on the way home](/health/images/Sports/walking-alone-home.jpg)
 
 ## Symptoms walkers often notice
 
@@ -68,7 +68,7 @@ A flare-up does not by itself prove serious damage. See our overview of [lower b
 
 Leg pain, numbness, tingling, or weakness when walking should be assessed. See [when to see a doctor for sciatic nerve pain](/health/when-to-see-a-doctor-for-sciatic-nerve-pain/) and [when to see a doctor for back pain](/health/when-to-see-a-doctor-for-back-pain/).
 
-![Walking to the gym](/health/images/Sports/walking%20to%20the%20gym.jpg)
+![Walking to the gym](/health/images/Sports/walking-to-the-gym.jpg)
 
 ## Why walking can bring on back pain
 
@@ -79,7 +79,7 @@ Leg pain, numbness, tingling, or weakness when walking should be assessed. See [
 - **Footwear and surfaces.** Worn shoes or hard surfaces may add to the load.
 - **Other conditions.** Pain that travels into the leg can involve nerves. See [sciatic nerve pain in the leg](/health/sciatic-nerve-pain-in-leg/).
 
-![Friends walking together in the park](/health/images/Sports/walking%20as%20a%20group%20of%20friends%20in%20the%20park.jpg)
+![Friends walking together in the park](/health/images/Sports/walking-as-a-group-of-friends-in-the-park.jpg)
 
 ## How to avoid lower back pain when walking: practical steps
 
@@ -93,7 +93,7 @@ Leg pain, numbness, tingling, or weakness when walking should be assessed. See [
 8. **Track patterns.** Note distance, time of day, and what eases symptoms.
 9. **Reassess if it persists.** See [why back pain keeps coming back](/health/why-does-my-back-pain-keep-coming-back/).
 
-![Walking or hiking alone](/health/images/Sports/walking%20or%20hiking%20alone.jpg)
+![Walking or hiking alone](/health/images/Sports/walking-or-hiking-alone.jpg)
 
 ## How RPT Clinic helps walkers recover and move better
 
@@ -103,7 +103,7 @@ The team also helps you retrain movement, plan how to build your walking, and ma
 
 RPT does not diagnose conditions, cure back pain, or guarantee outcomes. Results vary, and a clinician should determine whether treatment suits you.
 
-![Walking the dog as part of a daily routine](/health/images/Sports/walking%20dog.jpg)
+![Walking the dog as part of a daily routine](/health/images/Sports/walking-dog.jpg)
 
 ## Finding care in Metro Detroit
 

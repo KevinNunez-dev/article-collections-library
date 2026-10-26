@@ -12,7 +12,7 @@ publishedAt: 2026-10-26
 updatedAt: 2026-10-26
 author: RPT Clinic Editorial Team
 readingTime: 6
-image: /health/images/Sports/golfer%20swing.jpg
+image: /health/images/Sports/golfer-swing.jpg
 imageAlt: Golfer holding the lower back after a swing
 keyTakeaways:
   - The golf swing repeats a rotating, side-bending motion that can load the lower back, especially when hips and trunk are tight.
@@ -36,7 +36,7 @@ related: [lower-back-pain, when-to-see-a-doctor-for-back-pain, why-does-my-back-
 seo:
   title: "How to Avoid Lower Back Pain When Playing Golf"
   description: "Practical guide on how to avoid lower back pain when playing golf: symptoms, swing-related causes, prevention tips, FAQs, and RPT Clinic support."
-  image: /health/images/Sports/golfer%20swing.jpg
+  image: /health/images/Sports/golfer-swing.jpg
   noindex: false
 ---
 
@@ -46,7 +46,7 @@ Golf looks gentle, but the swing is a fast, repeated rotation that asks the hips
 
 If your back aches during or after a round, you are not alone. This guide explains what a low back flare-up looks like, what golfers commonly notice, how to reduce the chance of repeat flare-ups, and how RPT Clinic can help.
 
-![Golfer setting a tee, a bend that can load the lower back](/health/images/Sports/golfer%20setting%20up%20tee.jpg)
+![Golfer setting a tee, a bend that can load the lower back](/health/images/Sports/golfer-setting-up-tee.jpg)
 
 ## What is a low back flare-up?
 
@@ -54,7 +54,7 @@ A low back flare-up is a period when pain, tightness, or stiffness in the lower 
 
 A flare-up does not by itself show serious damage. It signals that demand briefly exceeded what your back was ready for. See our overview of [lower back pain](/health/lower-back-pain/).
 
-![Golfer finishing a long swing](/health/images/Sports/golfer%20long%20swing.jpg)
+![Golfer finishing a long swing](/health/images/Sports/golfer-long-swing.jpg)
 
 ## Symptoms golfers often notice
 
@@ -67,7 +67,7 @@ A flare-up does not by itself show serious damage. It signals that demand briefl
 
 Pain that travels down the leg, numbness, tingling, or weakness needs assessment. See [when to see a doctor for back pain](/health/when-to-see-a-doctor-for-back-pain/).
 
-![Golfer leaning over the ball at address](/health/images/Sports/golfer%20ball.jpg)
+![Golfer leaning over the ball at address](/health/images/Sports/golfer-ball.jpg)
 
 ## Why golf can irritate the lower back
 
@@ -78,7 +78,7 @@ Pain that travels down the leg, numbness, tingling, or weakness needs assessment
 - **Long sitting before play.** Driving to the course can stiffen the hips. See [back pain from sitting](/health/how-to-relieve-back-pain-from-sitting/).
 - **Sudden increases.** Practice binges or a first round of the season can spike load quickly.
 
-![Golfer reading a putt](/health/images/Sports/golfer%20reading%20put.jpg)
+![Golfer reading a putt](/health/images/Sports/golfer-reading-put.jpg)
 
 ## How to avoid lower back pain when playing golf: practical steps
 
@@ -92,7 +92,7 @@ Pain that travels down the leg, numbness, tingling, or weakness needs assessment
 8. **Ask about your swing.** A coach can check whether your setup or sequencing adds avoidable strain.
 9. **Reassess if it recurs.** See [why back pain keeps coming back](/health/why-does-my-back-pain-keep-coming-back/).
 
-![Golfer putting with a bent posture](/health/images/Sports/golfer%20putting.jpg)
+![Golfer putting with a bent posture](/health/images/Sports/golfer-putting.jpg)
 
 ## How RPT Clinic helps golfers recover and train smarter
 
@@ -102,7 +102,7 @@ The team also helps you retrain movement patterns, understand how to build your 
 
 RPT does not diagnose conditions, cure back pain, or guarantee outcomes. Results vary, and a clinician should determine whether treatment suits you.
 
-![Golfer lining up a putt on the green](/health/images/Sports/golfer%20putting%202.jpg)
+![Golfer lining up a putt on the green](/health/images/Sports/golfer-putting-2.jpg)
 
 ## Finding care in Metro Detroit
 
