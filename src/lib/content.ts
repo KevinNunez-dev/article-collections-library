@@ -106,7 +106,7 @@ export function addBrandLinks(html: string, limitPerDomain = 2) {
   let excludedDepth = 0;
   let rptLinksAdded = existingRptLinks;
   let rxLinksAdded = existingRxLinks;
-  let landingLinked = /href=["'][^"']*treatment\.rptclinic\.com/i.test(html);
+  let landingLinked = /href=["'][^"']*(treatment\.rptclinic\.com|\/\/rptclinic\.com\/?["'])/i.test(html);
 
   return tokens.map((token) => {
     const tag = token.match(/^<\/?([a-z0-9]+)/i);
@@ -121,22 +121,23 @@ export function addBrandLinks(html: string, limitPerDomain = 2) {
 
     if (excludedDepth) return token;
     let linkedText = token.replace(/\bRX2600\b(?!\s+Therapeutic Robot)/g, 'RX2600 Therapeutic Robot');
+    // Run before inserting other links so this pattern cannot match inside an href.
+    if (rptLinksAdded < limitPerDomain) {
+      linkedText = linkedText.replace(/\bRPT\s*Clinic\b/i, (match) => {
+        rptLinksAdded += 1;
+        return `<a href="https://rptclinic.com/">${match}</a>`;
+      });
+    }
     if (!landingLinked) {
       linkedText = linkedText.replace(/\bRobotic Precision Therapy\b/, (match) => {
         landingLinked = true;
-        return `<a href="https://treatment.rptclinic.com/clinic/rpt/">${match}</a>`;
+        return `<a href="https://rptclinic.com/">${match}</a>`;
       });
     }
     if (rxLinksAdded < limitPerDomain) {
       linkedText = linkedText.replace(/\bRX2600 Therapeutic Robot\b/, (match) => {
         rxLinksAdded += 1;
         return `<a href="https://rx2600.com/">${match}</a>`;
-      });
-    }
-    if (rptLinksAdded < limitPerDomain) {
-      linkedText = linkedText.replace(/\bRPT\s*Clinic\b/i, (match) => {
-        rptLinksAdded += 1;
-        return `<a href="https://rptclinic.com/">${match}</a>`;
       });
     }
     return linkedText;

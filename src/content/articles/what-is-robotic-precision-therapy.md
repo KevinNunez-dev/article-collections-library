@@ -1,5 +1,5 @@
 ---
-title: "What Is Robotic Precision Therapy? A Plain-Language Guide"
+title: "What Is Robotic Precision Therapy?"
 description: "Robotic Precision Therapy (RPT) uses the RX2600 Therapeutic Robot to apply controlled, repeatable pressure to muscles after a clinician's assessment. Here is how it works."
 excerpt: "A plain-language explanation of Robotic Precision Therapy, how the RX2600 Therapeutic Robot is used, who it may suit, and what questions to ask first."
 category: Wellness & Prevention
@@ -35,7 +35,7 @@ faq:
     answer: Not necessarily. Your health history, medications, and current symptoms matter, and some people should be assessed by a physician first.
 related: [what-is-physical-therapy-rpt, first-robotic-precision-therapy-appointment, how-robotic-precision-therapy-evaluation-works, robotic-precision-therapy-cost-insurance-questions]
 seo:
-  title: "What Is Robotic Precision Therapy? Plain-Language Guide"
+  title: "What Is Robotic Precision Therapy?"
   description: "Learn what Robotic Precision Therapy is, how the RX2600 Therapeutic Robot is used after assessment, and what to ask before booking."
   image: /images/rpt-clinic-treatment.jpg
   noindex: false
