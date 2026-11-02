@@ -46,6 +46,8 @@ const relatedEntries = allArticles
   .slice(0, 3)
   .map(({ entry }) => entry);
 const articleHtml = addBrandLinks(addContextualTopicLinks(article.html, article.id));
+const campaignText = `${article.id} ${(article.data.tags || []).join(' ')}`.toLowerCase();
+const campaignUrl = campaignText.includes('sciatica') ? clinic.campaignLinks.sciatica : campaignText.includes('back pain') ? clinic.campaignLinks.back : clinic.campaignLinks.default;
 const pageUrl = new URL(`/health/${article.id}`, Astro.site).toString();
 const reviewer = article.data.reviewedBy;
 const pillar = getPillar(article.id, article.data.tags);
@@ -64,6 +66,8 @@ const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'Breadcrum
     description={article.data.description}
     ctaText="Explore Robotic Precision Therapy"
     ctaHref={clinic.landingUrl}
+    learnMoreHref={campaignUrl}
+    learnMoreText={clinic.campaignLinks.label}
     image={heroImage}
     imageAlt={heroAlt}
   />

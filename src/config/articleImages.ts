@@ -9,6 +9,8 @@ const imageByArticleId: Record<string, string> = {
   'top-10-fastest-ways-to-relieve-back-pain': '/health/images/Back/backpain-1.jpg',
   'top-10-fastest-ways-to-relieve-back-pain-troy-mi': '/health/images/Back/backpain.jpg',
   'top-10-fastest-ways-to-relieve-back-pain-detroit-mi': '/health/images/Back/backpain-1.jpg',
+  'top-10-fastest-ways-to-relieve-back-pain-rochester-mi': '/health/images/Back/backpain.jpg',
+  'top-10-fastest-ways-to-relieve-back-pain-rochester-hills-mi': '/health/images/Back/backpain-1.jpg',
   'top-10-fastest-ways-to-relieve-back-pain-clarkston-mi': '/health/images/Back/backpain.jpg',
   'bulging-disc': '/health/images/Back/backpain-1.jpg',
   'bulging-disc-rpt': '/health/images/Back/backpain-1.jpg',
