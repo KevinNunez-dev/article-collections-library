@@ -158,6 +158,21 @@ const photoByArticleId: Record<string, { src: string; alt: string }> = {
     (
       [
         [
+          "non-surgical-disc-nerve-pain-relief-michigan",
+          "Back/backpain-clinician-assessing-lower-back",
+          "Clinician assessing a person's lower back",
+        ],
+        [
+          "non-surgical-sciatica-pain-relief-michigan",
+          "Back/backpain-clinician-hand-on-hip",
+          "Clinician placing a hand on a person's hip and lower back",
+        ],
+        [
+          "non-surgical-back-pain-relief-michigan",
+          "Back/backpain-hand-on-lower-back-after-workout",
+          "Person resting a hand on their lower back",
+        ],
+        [
           "lower-back-pain-specialist-detroit",
           "Back/backpain-clinician-evaluating-seated-patient",
           "Clinician assessing a seated person's back",

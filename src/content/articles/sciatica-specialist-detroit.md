@@ -99,6 +99,8 @@ For background on treatment choices, read [sciatica pain treatment options](/art
 
 For related provider questions, see our guides to choosing a [lower back pain specialist](/health/lower-back-pain-specialist-detroit), [herniated disc specialist](/health/herniated-disc-specialist-detroit), and [piriformis syndrome specialist](/health/piriformis-syndrome-specialist-detroit) near Detroit.
 
+For treatment options and warning signs, read [non-surgical sciatica pain relief in Michigan](/health/non-surgical-sciatica-pain-relief-michigan).
+
 ## Signs of a Thorough Visit
 
 A thorough visit should connect the examination to your daily problem. If sitting is the main limitation, the clinician should ask about sitting duration and transitions, not only test a stretch. If walking is affected, gait, balance, and leg strength deserve attention. You should leave with a short list of priorities, a way to monitor response, and clear instructions for escalation. That clarity is more useful than a long menu of procedures.

@@ -56,6 +56,8 @@ Describe where the pain starts, whether it travels into a leg, and what happens 
 
 Pain can have different contributors. A scan is not automatically needed for every episode, and an image finding alone does not establish the cause. See our [lower back pain guide](/health/lower-back-pain) and [sciatica specialist guide](/health/sciatica-specialist-detroit) for leg symptoms.
 
+For treatment options and practical goals, read [non-surgical back pain relief in Michigan](/health/non-surgical-back-pain-relief-michigan).
+
 ## When to seek medical care urgently
 
 Seek urgent medical care for new loss of bladder or bowel control, numbness in the saddle or groin area, rapidly worsening leg weakness, or severe pain after a major injury. Fever with significant back pain also needs prompt medical attention. Do not wait for a routine therapy visit.

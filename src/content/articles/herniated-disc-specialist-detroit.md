@@ -65,6 +65,8 @@ Seek urgent medical care for new loss of bladder or bowel control, numbness arou
 
 Surgery is not automatic, but it can be important for selected situations. Discuss your options with an appropriate physician rather than relying on a guaranteed non-surgical claim.
 
+For an overview of options and warning signs, see [non-surgical disc and nerve pain relief in Michigan](/health/non-surgical-disc-nerve-pain-relief-michigan).
+
 ## How RPT Clinic fits
 
 RPT Clinic is in Troy and serves Metro Detroit. Its clinical team are DPTs trained in the RPT methodology. After assessment, the RX2600 Therapeutic Robot may address appropriate muscular contributors; it does not repair or reposition a disc. [Contact the clinic](https://rptclinic.com/contact/) and continue any necessary physician-directed care.
