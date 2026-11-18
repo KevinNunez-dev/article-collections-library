@@ -158,6 +158,76 @@ const photoByArticleId: Record<string, { src: string; alt: string }> = {
     (
       [
         [
+          "lower-back-pain-specialist-detroit",
+          "Back/backpain-clinician-evaluating-seated-patient",
+          "Clinician assessing a seated person's back",
+        ],
+        [
+          "carpal-tunnel-specialist-detroit",
+          "Arm/carpal-tunnel-2",
+          "Person holding a painful wrist",
+        ],
+        [
+          "knee-pain-specialist-detroit",
+          "Leg/knee-pain-1",
+          "Person experiencing knee discomfort",
+        ],
+        [
+          "neck-pain-specialist-detroit",
+          "Shoulder/neckpain",
+          "Person experiencing neck discomfort",
+        ],
+        [
+          "shoulder-pain-specialist-detroit",
+          "Shoulder/shoulder pain",
+          "Person experiencing shoulder discomfort",
+        ],
+        [
+          "hip-pain-specialist-detroit",
+          "Back/backpain-sciatica-hand-on-hip",
+          "Person holding their hip and lower back",
+        ],
+        [
+          "herniated-disc-specialist-detroit",
+          "Back/backpain-clinician-assessing-lower-back",
+          "Clinician assessing a person's lower back",
+        ],
+        [
+          "spinal-stenosis-specialist-detroit",
+          "Back/backpain-hands-on-lower-back-outdoors-1",
+          "Person holding their lower back outdoors",
+        ],
+        [
+          "piriformis-syndrome-specialist-detroit",
+          "Back/backpain-knees-to-chest-stretch",
+          "Person lying on their back with knees drawn toward their chest",
+        ],
+        [
+          "plantar-fasciitis-specialist-detroit",
+          "Leg/foot-1",
+          "Person holding the sole of their foot",
+        ],
+        [
+          "foot-heel-pain-specialist-detroit",
+          "Leg/foot-2",
+          "Clinician holding a person's foot",
+        ],
+        [
+          "tennis-elbow-specialist-detroit",
+          "Sports/tennis-2",
+          "Person holding a tennis racket and ball",
+        ],
+        [
+          "golfers-elbow-specialist-detroit",
+          "Sports/golfer-swing",
+          "Person swinging a golf club",
+        ],
+        [
+          "tmj-specialist-detroit",
+          "rpt-clinic-treatment",
+          "RPT Clinic treatment session",
+        ],
+        [
           "lower-back-pain-physical-therapy-cost",
           "Back/backpain-therapist-hands-assessing-back",
           "Hands assessing a person's lower back",

@@ -8,7 +8,7 @@ tags: [sciatica specialist, sciatica specialist Detroit, sciatic nerve pain, bac
 bodySystems: [musculoskeletal, nervous system]
 contentType: condition
 publishedAt: 2026-09-04
-updatedAt: 2026-09-04
+updatedAt: 2026-11-18
 author: RPT Clinic Editorial Team
 readingTime: 6
 image: /images/Back/backpain.jpg
@@ -96,6 +96,8 @@ The answers should be understandable and specific to your situation. A plan can 
 RPT Clinic may review the relationship between the spine, hip, gait, and guarded soft tissue before discussing Robotic Precision Therapy. The purpose is to decide whether targeted care is appropriate, not to assume that it is. Treatment can be coordinated with other medical care when a broader evaluation is indicated.
 
 For background on treatment choices, read [sciatica pain treatment options](/articles/sciatica-pain-treatment/) and [when to see a doctor for sciatica](/articles/when-to-see-doctor-sciatica/). Local availability is useful, but the quality and safety of the evaluation should remain the priority.
+
+For related provider questions, see our guides to choosing a [lower back pain specialist](/health/lower-back-pain-specialist-detroit), [herniated disc specialist](/health/herniated-disc-specialist-detroit), and [piriformis syndrome specialist](/health/piriformis-syndrome-specialist-detroit) near Detroit.
 
 ## Signs of a Thorough Visit
 
