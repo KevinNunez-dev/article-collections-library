@@ -1,14 +1,14 @@
 ---
 title: "Robotic Precision Therapy Cost: Pricing, Insurance, and Why RPT Clinic Is Out-of-Pocket"
 description: "RPT Clinic pricing explained: $225 first visit, $150 per hour after, packages, why the clinic is out-of-pocket, and how to request an invoice for insurance reimbursement."
-excerpt: "What Robotic Precision Therapy costs at RPT Clinic, why the clinic does not bill insurance, and how session length differs from insurance-limited manual therapy."
+excerpt: "What Robotic Precision Therapy costs at RPT Clinic, why the clinic is out-of-pocket, and how to compare its visit with other care."
 category: Wellness & Prevention
 categorySlug: wellness
 tags: [robotic precision therapy cost, robotic precision therapy insurance, RPT cost, out-of-pocket physical therapy, HSA FSA physical therapy, RX2600, RPT Clinic]
 bodySystems: [musculoskeletal]
 contentType: guide
 publishedAt: 2026-10-28
-updatedAt: 2026-10-28
+updatedAt: 2026-11-18
 author: RPT Clinic Editorial Team
 readingTime: 10
 image: /images/rpt-clinic-treatment-2.jpg
@@ -16,7 +16,7 @@ imageAlt: Reviewing Robotic Precision Therapy cost and payment options
 keyTakeaways:
   - "RPT Clinic prices listed on its booking page: $225 for the 90-minute new-client evaluation plus treatment, and $150 for each 60-minute session after that."
   - RPT Clinic is an out-of-pocket clinic. It accepts cash, credit, FSA, HSA, and CareCredit, and can provide an invoice with medical codes for you to file for reimbursement.
-  - The clinic says insurance stipulates the amount and duration of therapy sessions, and that being out-of-pocket lets session length be set around the client rather than a payer limit.
+  - RPT Clinic says its out-of-pocket model lets it set appointment length; insurance rules vary by plan and service.
   - Reimbursement depends on your plan and is not guaranteed, so ask your insurer before you rely on it.
   - Prices can change. Confirm current terms on the clinic's FAQ and booking pages.
 faq:
@@ -25,7 +25,7 @@ faq:
   - question: Does RPT Clinic take insurance?
     answer: No. It is an out-of-pocket clinic. It can provide an invoice with medical codes that you can use to file for reimbursement from your insurance, but whether you are reimbursed depends on your plan.
   - question: Why doesn't the clinic bill insurance?
-    answer: The clinic states that insurance stipulates the amount and duration of therapy sessions, and that it believes clients should get the therapy that helps them reach wellness without those restrictions.
+    answer: RPT Clinic says it chose an out-of-pocket model so it can set appointment length without billing through an insurer. Coverage and visit rules vary by plan and service; ask your insurer about your own benefits.
   - question: What payment methods are accepted?
     answer: Cash, credit, FSA, HSA, and CareCredit, according to the clinic's FAQ.
   - question: Are there packages?
@@ -33,9 +33,9 @@ faq:
   - question: Can new clients book a one-hour session?
     answer: The one-hour and 75-minute sessions are listed for existing clients only. New clients start with the 90-minute evaluation plus treatment.
   - question: Is Robotic Precision Therapy faster than traditional physical therapy?
-    answer: The clinic's approach is built around sustained, focused treatment time rather than many short, repeated sessions. Results vary by person, and no number of visits can be promised. Your evaluation will say what is reasonable for you.
+    answer: There is no basis here to promise faster results or fewer visits than another type of care. Visit length and treatment plans vary. Ask what each provider recommends, what a visit includes, and how progress will be reviewed.
   - question: What if I need to be seen urgently?
-    answer: The booking page lists a waiting-list line for last-minute openings at 248-250-9387. For emergency symptoms, seek urgent medical care instead.
+    answer: For emergency symptoms, seek urgent medical care rather than waiting for a therapy appointment. For non-emergency scheduling questions, contact the clinic to ask about current availability.
 related: [lower-back-pain-treatment-costs-michigan, what-is-robotic-precision-therapy, first-robotic-precision-therapy-appointment, how-robotic-precision-therapy-evaluation-works, physical-therapy-vs-robotic-precision-therapy-lower-back-pain]
 seo:
   title: "Robotic Precision Therapy Cost, Insurance, and Pricing"
@@ -48,7 +48,7 @@ seo:
 
 **At RPT Clinic, the first visit is $225 for 90 minutes, and each one-hour session after that is $150.** The clinic does not bill insurance. It accepts cash, credit, FSA, HSA, and CareCredit, and it can give you an invoice with medical codes so you can file for reimbursement yourself.
 
-The rest of this guide explains what that price includes, why the clinic works this way, and how to compare it fairly with insurance-based care. Pricing below comes from the clinic's FAQ and booking pages as of October 28, 2026. Confirm current terms before you book.
+The rest of this guide explains what that price includes and how to compare it with other care. The clinic confirmed these listed rates and payment details for this update on November 18, 2026. Confirm the current terms directly before booking.
 
 ## Quick answers
 
@@ -92,6 +92,12 @@ Packages lower the average cost per session. See the package math below.
 
 Source: the clinic's [FAQ](https://rptclinic.com/faqs/) and [booking page](https://rptclinic.com/booking/).
 
+<!-- Clinic confirmation required before publication: add the current deposit amount, when it is collected, whether it is applied to the visit, and the cancellation/refund terms. Do not infer these policies from a prospect's lead outcome. -->
+
+### Ask about any deposit before confirming an appointment
+
+The clinic's current deposit amount and cancellation or refund rules are not listed here. Before you confirm a time, ask whether a deposit is required, when it is due, whether it is applied to your visit, and what happens if you need to cancel or reschedule. Ask for the terms in writing so you can decide with the full cost in view.
+
 ### What the package math works out to
 
 | Package | Sessions received | Price | Average per session |
@@ -112,30 +118,30 @@ These are arithmetic examples using the listed prices, not predictions. Your eva
 | 6 | $225 + 5 × $150 | $975 |
 | 12 | $225 + 11 × $150 | $1,875 |
 
-## Why RPT Clinic is priced this way
+## Why RPT Clinic uses an out-of-pocket model
 
 The price reflects how the clinic is set up, not a promise about outcomes. Based on the clinic's own explanation:
 
 - **Time is part of what you pay for.** The first visit runs 90 minutes so there is room for a full assessment and a full treatment in the same appointment. Later sessions are a full treatment hour.
-- **Treatment time is not shortened to fit a payer limit.** The clinic is out-of-pocket so that session length is set around the client's needs.
+- **The clinic sets its appointment length.** RPT Clinic says its out-of-pocket model lets it set session length without billing through an insurer. This does not mean every insurance-based visit is shorter or less suitable.
 - **One clear price.** The price is listed up front rather than depending on a plan's allowed amount, deductible, or copay.
 
 Is that a better value for you? It depends on your plan, your deductible, how many visits you need, and how much the length of each session matters to you. The comparison worksheet below helps you work it out.
 
-## Why insurance isn't accepted
+## Insurance and out-of-pocket care
 
-RPT Clinic describes itself as an out-of-pocket clinic. Its stated reason is that **insurance stipulates the amount and duration of therapy sessions**. The clinic believes clients should receive the therapy that helps them reach a place of wellness without restriction.
+RPT Clinic describes itself as an out-of-pocket clinic. It says this model gives it more control over appointment length. Insurance coverage, authorization, visit limits, and cost sharing vary by plan and service, so ask your insurer about your own benefits.
 
-### How insurance limits manual therapy
+### Questions about your insurance plan
 
-Insurance plans commonly set rules about covered care. These vary by plan, but typically include:
+Depending on your plan and the care you seek, rules may include:
 
 - A limit on the number of covered visits per year
 - Limits on how long a visit or a treatment type is reimbursed
 - Requirements for referrals, authorizations, or documentation
 - Cost sharing such as a deductible, copay, or coinsurance
 
-When a plan only pays for a set amount of hands-on time, a manual session is built around that limit. That is the restriction the clinic is stepping away from. Your own plan may differ, so check your plan documents rather than assuming.
+Do not assume how a particular provider or service is affected by your plan. Check your plan documents and ask the insurer to explain the rules that apply to the service.
 
 ### Getting reimbursed anyway
 
@@ -148,15 +154,11 @@ The clinic can provide an **invoice with medical codes** to file for reimburseme
 
 You can also pay with a **Health Savings Account (HSA)** or **Flexible Spending Account (FSA)**. Confirm eligibility with your plan administrator.
 
-## Why RPT is built differently from slow, repetitive sessions
+## Compare the actual visit, not a generalization
 
-Traditional physical therapy often runs as a series of shorter visits repeated over weeks, with the length and number of visits shaped by what a plan will pay for. RPT Clinic takes a different approach, and it is worth being precise about what that means.
+Visit length, coverage, and treatment plans vary by provider and insurance plan. Do not assume every insurance-based visit is short or that one approach is better for everyone. Compare the services actually offered, time spent with the clinician, expected number of visits, total price, and your own plan benefits.
 
-- **Focused, sustained pressure.** The RX2600 Therapeutic Robot applies controlled, repeatable pressure to muscles that the clinician identifies during assessment, for the length of the treatment.
-- **A full treatment hour.** Rather than splitting a short visit between several activities, sessions are built around time on the treatment itself.
-- **Assessment first.** Treatment is planned around what the evaluation finds.
-
-The clinic's position is that this focus can get to muscular contributors more directly than slower, repeated visits. That is the clinic's approach, not a guarantee. Results vary, the number of visits depends on your condition and how you respond, and RPT may not suit everyone. See [physical therapy vs. Robotic Precision Therapy for lower back pain](/health/physical-therapy-vs-robotic-precision-therapy-lower-back-pain) for a closer comparison.
+RPT Clinic describes its service as clinician-directed pressure applied to selected muscles after an assessment. That is different from a diagnosis or a promise to treat every cause of pain. Read [physical therapy vs. Robotic Precision Therapy for lower back pain](/health/physical-therapy-vs-robotic-precision-therapy-lower-back-pain) for a condition-specific comparison, and ask both providers what a visit includes.
 
 ## Questions to ask the clinic
 
@@ -187,6 +189,18 @@ The clinic's position is that this focus can get to muscular contributors more d
 
 Compare totals and session length, not just one price. For help separating charges, allowed amounts, and your own responsibility, see [lower back pain treatment costs in Michigan](/health/lower-back-pain-treatment-costs-michigan).
 
+## Back pain and sciatica cost and insurance series
+
+- [Lower back pain physical therapy cost](/health/lower-back-pain-physical-therapy-cost): estimate the first visit, follow-ups, and other expenses.
+- [Does insurance cover physical therapy for sciatica?](/health/sciatica-physical-therapy-insurance): understand coverage and possible reimbursement.
+- [Sciatica treatment costs: copay vs. out-of-pocket care](/health/sciatica-treatment-cost-copay-vs-cash): compare estimates using a worksheet.
+- [The cost of waiting with lower back pain](/health/cost-of-waiting-lower-back-pain): consider effects on work, sleep, and daily life.
+- [Massage vs. physical therapy for lower back pain](/health/massage-vs-physical-therapy-lower-back-pain): compare goals, costs, and assessment.
+- [Sciatica therapy vs. surgery: costs and recovery](/health/sciatica-therapy-vs-surgery-cost-recovery): questions for a discussion with your medical team.
+- [How many physical therapy visits for lower back pain?](/health/how-many-physical-therapy-visits-lower-back-pain): plan a budget and review progress.
+- [Questions before paying for sciatica treatment](/health/questions-before-paying-for-sciatica-treatment): check service fit and payment terms.
+- [Lower back pain therapy insurance questions](/health/lower-back-pain-therapy-insurance-questions): prepare for a call to your insurer.
+
 ## Warning signs in any cost conversation
 
 - Pressure to buy a large package before an assessment
@@ -196,8 +210,8 @@ Compare totals and session length, not just one price. For help separating charg
 
 ## When cost should not delay care
 
-If you have severe pain after trauma, new weakness, numbness in the groin or saddle area, loss of bladder or bowel control, or a painful, swollen leg, seek urgent medical care first. If you have severe pain and cannot wait a few days, the booking page lists a waiting-list line for last-minute openings at 248-250-9387.
+If you have severe pain after trauma, new weakness, numbness in the groin or saddle area, loss of bladder or bowel control, or a painful, swollen leg, seek urgent medical care first. For non-emergency scheduling questions, contact the clinic to ask about current availability.
 
 ## Next step
 
-You can book through the [booking page](https://rptclinic.com/booking/) or [contact RPT Clinic](https://rptclinic.com/contact/) to ask about current pricing, packages, and reimbursement paperwork.
+For current pricing, packages, reimbursement paperwork, or deposit and cancellation terms, [contact RPT Clinic](https://rptclinic.com/contact/). Ask when the appointment will be confirmed; submitting a request does not itself confirm a booking.

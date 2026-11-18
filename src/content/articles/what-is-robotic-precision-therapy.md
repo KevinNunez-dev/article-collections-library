@@ -8,7 +8,7 @@ tags: [robotic precision therapy, what is robotic precision therapy, RX2600, rob
 bodySystems: [musculoskeletal]
 contentType: guide
 publishedAt: 2026-10-28
-updatedAt: 2026-10-28
+updatedAt: 2026-11-18
 author: RPT Clinic Editorial Team
 readingTime: 9
 image: /images/rpt-clinic-treatment.jpg
@@ -40,6 +40,8 @@ seo:
   image: /images/rpt-clinic-treatment.jpg
   noindex: false
 ---
+
+<!-- Clinic review required before publication: add an approved video showing the actual equipment and visit environment; verify provider credentials and the clinic's exact list of services offered and not offered. -->
 
 ## The short answer
 
@@ -78,16 +80,21 @@ You talk through your history, the clinician assesses how you move, and you disc
 4. **The robot applies pressure to chosen areas.** The clinician sets the location and pressure and can change them during the session.
 5. **Your response is reviewed.** What changed, what did not, and what to do next.
 
-## What the RX2600 does differently from hands-on work
+## How RPT differs from hands-on care
 
 | Feature | Hands-on therapy | Robotic Precision Therapy |
 |---|---|---|
-| Who applies pressure | A therapist's hands | The RX2600, directed by a clinician |
-| Consistency | Varies with the person and the day | Pressure can be set and repeated |
-| Therapist fatigue | Can limit long sustained pressure | Not a limiting factor for the device |
-| Assessment | Required | Required before treatment |
+| How pressure is applied | By a clinician using their hands | By the RX2600 under clinician direction |
+| How pressure is delivered | Depends on the clinician and service | The device can apply controlled, repeatable pressure |
+| Assessment | The provider determines what is appropriate | A clinician assesses suitability and directs use |
 
-Neither approach is automatically better for everyone. The right choice depends on your symptoms and what the assessment finds.
+These are different ways of delivering care, not proof that one is more effective for every person. The right option depends on your needs, the provider's assessment, and what each visit includes.
+
+## What RPT is—and is not
+
+RPT is a treatment approach that uses the RX2600 Therapeutic Robot to apply pressure to selected muscles under clinician direction. It does not diagnose the cause of pain, repair a disc or joint, or replace emergency care, medical evaluation, surgery, injections, or other services when those are needed. A clinician should explain whether RPT appears suitable and recommend medical assessment when appropriate.
+
+<!-- Clinical review required before publication: confirm any specific services the clinic does not provide and approve comparisons with physical therapy, chiropractic care, injections, and surgery. -->
 
 ## Who may want to ask about RPT
 
@@ -116,6 +123,10 @@ RPT is not a replacement for emergency or medical care. Get urgent help for:
 - How long is the first appointment?
 - What will it cost, and what is and is not covered? See [cost and insurance questions](/health/robotic-precision-therapy-cost-insurance-questions).
 - How will we know whether it is helping?
+
+## Cost and insurance at RPT Clinic
+
+RPT Clinic confirmed a $225 first visit lasting 90 minutes, which includes an assessment and treatment, and $150 for each subsequent 60-minute session. The clinic is out-of-pocket and does not bill insurance. It says it can provide an invoice with medical codes to submit to an insurer, but reimbursement depends on the plan and is not guaranteed. Review [cost, insurance, and payment questions](/health/robotic-precision-therapy-cost-insurance-questions) and ask the clinic about any deposit or cancellation terms before confirming a time.
 
 ## Next step
 

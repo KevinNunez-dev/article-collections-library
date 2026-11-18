@@ -8,7 +8,7 @@ tags: [first robotic precision therapy appointment, what to expect, RX2600, RPT 
 bodySystems: [musculoskeletal]
 contentType: guide
 publishedAt: 2026-10-28
-updatedAt: 2026-10-28
+updatedAt: 2026-11-18
 author: RPT Clinic Editorial Team
 readingTime: 8
 image: /images/rpt-clinic-treatment-2.jpg
@@ -24,7 +24,7 @@ faq:
   - question: Should I eat before my appointment?
     answer: Eating normally is usually fine. Ask the clinic if you have specific health considerations.
   - question: How long is the first visit?
-    answer: Duration is set by the clinic and can differ by location. Confirm it when you book.
+    answer: RPT Clinic confirmed a 90-minute first visit for this update on November 18, 2026. Confirm the current duration and appointment details directly when you contact the clinic.
   - question: Will I be treated on the first day?
     answer: That depends on your assessment. If treatment is appropriate, it may start at the first visit; if not, you should be told why.
   - question: Will I be sore afterward?
@@ -40,6 +40,8 @@ seo:
   image: /images/rpt-clinic-treatment-2.jpg
   noindex: false
 ---
+
+<!-- Clinic confirmation required before publication: verify current appointment duration, deposit timing and amount, cancellation/refund terms, and whether a support person may attend. The $225/90-minute first-visit detail was confirmed for this update. -->
 
 ## The short answer
 
@@ -91,13 +93,29 @@ The clinician asks about your symptoms, history, and goals. Expect questions abo
 You may be asked to stand, walk, bend, or move the painful area while the clinician observes. They may also feel for muscle tightness. Our guide to [how the evaluation works](/health/how-robotic-precision-therapy-evaluation-works) covers this in detail.
 
 ### 4. The decision
-The clinician explains what they found, whether RPT appears appropriate, and what a plan might look like. This is the moment to ask about cost. See [cost, insurance, and common questions](/health/robotic-precision-therapy-cost-insurance-questions).
+The clinician explains what they found, whether RPT appears appropriate, and what a plan might look like. You can ask what the recommendation includes, what would prompt a different kind of care, and how progress will be reviewed. You do not have to decide on a longer plan during the appointment.
 
 ### 5. Treatment, if appropriate
 The RX2600 Therapeutic Robot applies pressure to the areas the clinician selects. You can speak up at any time to change pressure or stop.
 
 ### 6. Wrap-up
 You should leave knowing what was done, what to watch for, and what the next step is.
+
+## Cost, deposits, and questions before you confirm
+
+RPT Clinic confirmed that the first visit is $225 for 90 minutes, including an assessment and treatment. Later 60-minute sessions are $150. The clinic is out-of-pocket and does not bill insurance; any reimbursement depends on your plan and is not guaranteed. Read the full [cost and insurance guide](/health/robotic-precision-therapy-cost-insurance-questions).
+
+Before confirming a time, ask whether a deposit is required, when it is due, whether it applies to the visit, and what the cancellation or refund terms are. Those policy details are not stated here. Ask the clinic what happens after you submit a request; a request is not a confirmed appointment until the clinic confirms it.
+
+If you are considering care for leg pain, use [questions before paying for sciatica treatment](/health/questions-before-paying-for-sciatica-treatment) to prepare for the conversation.
+
+<!-- Clinic confirmation required before publication: replace the deposit-policy note with approved terms, if available. Confirm that an appointment request is not presented as a booked appointment. -->
+
+## If you want to discuss the visit with someone
+
+It is reasonable to talk with a family member or your existing clinician before deciding. You can share this guide and the [plain-language RPT overview](/health/what-is-robotic-precision-therapy), then write down questions about suitability, costs, and other care options. Do not stop or change an existing treatment plan based on this article; discuss changes with the clinician who manages that care.
+
+Ask the clinic whether a support person may attend, and whether it can share visit information with another clinician—with your permission—before you arrive.
 
 ## After the appointment
 
