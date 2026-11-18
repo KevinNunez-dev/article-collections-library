@@ -6,6 +6,7 @@ export const brand = {
   tagline: 'Clear, practical health information for everyday decisions.',
   domain: 'rptclinic.com',
   logoUrl: 'https://rptclinic.com/wp-content/uploads/2026/01/Logo-Hexagon-128x128-1.png',
+  footerLogoUrl: 'https://rptclinic.com/wp-content/uploads/2025/07/logo.png',
   logoAlt: 'RPT Clinic logo',
   socialImageUrl: 'https://rptclinic.com/health/social/rpt-clinic-treatment-2.jpg',
   socialImageAlt: 'RPT Clinic robotic precision therapy treatment',

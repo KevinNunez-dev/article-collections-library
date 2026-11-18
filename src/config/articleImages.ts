@@ -158,6 +158,51 @@ const photoByArticleId: Record<string, { src: string; alt: string }> = {
     (
       [
         [
+          "lower-back-pain-physical-therapy-cost",
+          "Back/backpain-therapist-hands-assessing-back",
+          "Hands assessing a person's lower back",
+        ],
+        [
+          "sciatica-physical-therapy-insurance",
+          "Back/backpain-sciatica-hand-on-hip",
+          "Person holding their hip and lower back",
+        ],
+        [
+          "sciatica-treatment-cost-copay-vs-cash",
+          "Back/backpain-hand-on-lower-back-after-workout",
+          "Person resting a hand on their lower back",
+        ],
+        [
+          "cost-of-waiting-lower-back-pain",
+          "Back/backpain-hands-on-lower-back-outdoors-1",
+          "Person holding their lower back outdoors",
+        ],
+        [
+          "massage-vs-physical-therapy-lower-back-pain",
+          "Back/backpain-therapist-treating-lower-back",
+          "Hands-on treatment for a person's lower back",
+        ],
+        [
+          "sciatica-therapy-vs-surgery-cost-recovery",
+          "Back/backpain-clinician-hand-on-hip",
+          "Clinician placing a hand on a person's hip and lower back",
+        ],
+        [
+          "how-many-physical-therapy-visits-lower-back-pain",
+          "Back/backpain-clinician-evaluating-seated-patient",
+          "Clinician assessing a seated person's back",
+        ],
+        [
+          "questions-before-paying-for-sciatica-treatment",
+          "Back/backpain-clinician-assessing-lower-back",
+          "Clinician assessing a person's lower back",
+        ],
+        [
+          "lower-back-pain-therapy-insurance-questions",
+          "Back/backpain-arching-back-on-sofa",
+          "Person stretching their back on a sofa",
+        ],
+        [
           "back-pain",
           "Back/backpain-hand-on-lower-back-after-workout",
           "Hand resting on the lower back after exercise",
