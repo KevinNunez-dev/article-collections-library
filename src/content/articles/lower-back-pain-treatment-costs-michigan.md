@@ -17,7 +17,7 @@ contentType: guide
 draft: false
 costCalculator: true
 publishedAt: 2026-10-09
-updatedAt: 2026-10-09
+updatedAt: 2026-11-23
 author: RPT Clinic Editorial Team
 readingTime: 10
 image: /health/images/articles/back-pain-cost-components.svg
@@ -26,7 +26,7 @@ keyTakeaways:
   - There is no single price that represents every Michigan lower back pain episode; quotes depend on service, setting, coverage, and what is included.
   - Charges, cash prices, allowed amounts, deductible, copay, coinsurance, and the patient’s final responsibility are different figures.
   - Surgery estimates should identify facility, professional, anesthesia, implant, and follow-up scope and should not be confused with insured patient responsibility.
-  - RPT pricing in this draft comes from the approved brief, not a successful live-page verification; confirm it and the package terms directly.
+  - RPT prices shown here are examples, not a current quote; confirm rates, visit lengths, and package terms with the clinic.
 faq:
   - question: Can an annual plan-year reset change what I pay for back pain care?
     answer: It may. Deductible and out-of-pocket accumulators can reset under a plan’s own benefit year, while therapy visit limits or authorizations may follow different terms. Ask your insurer when each benefit resets and whether any authorization or visit count carries over; do not assume calendar-year timing.
@@ -41,10 +41,10 @@ faq:
     answer: Ask for the initial evaluation charge, follow-up charge and duration, expected services, whether the provider is in network, any referral or authorization requirement, applicable visit limit, and your plan’s estimated patient responsibility.
     category: Physical therapy
   - question: What does the RPT Clinic initial assessment cost?
-    answer: The approved brief lists $225 for an initial assessment plus treatment lasting about 1.5 hours. Live booking and intake pages could not be fetched on October 9, 2026, so this is not independently verified current pricing; confirm directly before booking.
+    answer: The example rates in this article use $225 for an initial assessment and treatment lasting about 1.5 hours, then $150 per additional treatment hour. These may not reflect current prices or visit lengths. Confirm the current rates and payment terms with the clinic before booking.
     category: RPT Clinic
   - question: How are RPT package prices different from the initial appointment?
-    answer: "The approved brief says the initial appointment is separate: Advanced is $1,500 for 11 follow-ups, or $1,725 with the initial appointment for 12 total; Premium is $2,250 for 17 follow-ups, or $2,475 with the initial for 18 total. Confirm package inclusions and current terms with the clinic."
+    answer: "The example package amounts in this article list the initial appointment separately: Advanced is $1,500 for 11 follow-ups, or $1,725 with the initial appointment for 12 total; Premium is $2,250 for 17 follow-ups, or $2,475 with the initial for 18 total. These may not reflect current prices. Confirm package inclusions and terms with the clinic."
     category: RPT Clinic
   - question: Does a surgery cash price show what an insured patient will owe?
     answer: No. A cash estimate, hospital charge, facility quote, and insurance patient responsibility are not interchangeable. Request an estimate for the specific procedure and setting, including surgeon, facility, anesthesia, implants, and follow-up, then ask the insurer for benefit-specific cost sharing.
@@ -77,9 +77,9 @@ Lower back pain treatment costs in Michigan cannot be reduced to one reliable nu
 
 For a physical therapy estimate, request the initial evaluation charge, follow-up rate and duration, expected services, and whether the quote assumes a particular number of appointments. Ask whether the provider is in your plan’s network, whether a referral or authorization is needed, what visit limits apply, and whether your plan has a separate deductible or copay for therapy.
 
-The approved pricing brief for this draft lists RPT Clinic’s initial assessment plus treatment at $225 for 1.5 hours and follow-ups at $150 per treatment hour. The brief also notes that intake material describes follow-ups as 50–60 minutes. Standard-rate arithmetic is $225 + $150 × (_n_ − 1) for _n_ appointments (at least one). These details have not been independently checked against the live [booking](https://rptclinic.com/booking/) or [intake pages](https://rptclinic.com/intake-form/), which could not be retrieved on October 9, 2026. Confirm the current rates, session duration, and payment terms before relying on them.
+For a simple comparison, the examples below use $225 for an initial assessment and treatment lasting about 1.5 hours, then $150 per additional treatment hour. At those sample rates, the total for _n_ appointments is $225 + $150 × (_n_ − 1), where _n_ is at least one. Follow-up length and prices may change, so confirm the current rates, session duration, and payment terms with RPT Clinic before booking.
 
-The brief says the initial visit is separate from packages: Advanced is $1,500 for 11 follow-ups ($1,725 including the initial visit, 12 appointments); Premium is $2,250 for 17 follow-ups ($2,475 including the initial visit, 18 appointments). Verify the clinic’s [package page](https://rptclinic.com/rpt-packages/) for current inclusion, eligibility, expiration, refund, and cancellation terms; none of those policies is assumed here.
+The package examples list the initial visit separately: Advanced is $1,500 for 11 follow-ups ($1,725 including the initial visit, 12 appointments); Premium is $2,250 for 17 follow-ups ($2,475 including the initial visit, 18 appointments). These amounts and package terms may change. Check the clinic’s [package page](https://rptclinic.com/rpt-packages/) and confirm current pricing, eligibility, expiration, refund, and cancellation terms directly.
 
 ## Insurance: estimate your responsibility, not the provider’s charge
 
@@ -91,7 +91,7 @@ Ask the insurer to confirm: Is this exact clinician and service in network? What
 
 A spinal procedure quote may contain separate facility, surgeon, anesthesia, imaging, implant, medication, and follow-up charges. A hospital’s cash estimate is not necessarily the full episode price; nor does a provider’s charge equal what an insured patient owes. Ask for a written, procedure-specific estimate that identifies the facility and professional components and expected post-operative services. Give the codes and provider details to your insurer to request an estimate of your cost sharing.
 
-This article does not publish a Michigan surgery average: no consistent, comparable source was verified for that figure. It also does not quote a national surgery-cost website, since the scope and exclusions could not be verified.
+A statewide surgery average can be misleading unless it identifies the procedure, facility, included services, and whether it describes a cash price or an insured patient’s responsibility. Compare written estimates with the same scope rather than relying on a headline figure.
 
 ## Include transportation and time without double counting
 
@@ -99,11 +99,11 @@ Count transportation expense per visit separately. Estimate appointment, round-t
 
 Related reading: [compare lower back options near Troy](/health/lower-back-pain-treatment-michigan-troy), [physical therapy versus RPT](/health/physical-therapy-vs-robotic-precision-therapy-lower-back-pain), and [non-surgical Metro Detroit care](/health/nonsurgical-lower-back-pain-treatment-metro-detroit).
 
-<div class="article-cta"><p class="cta-title">Need a current written clinic quote?</p><p>Confirm assessment, follow-up, package, and payment terms directly with the provider.</p><a class="cta-button" href="https://rptclinic.com/booking/">Contact RPT Clinic about costs</a></div>
+<div class="article-cta"><p class="cta-title">Before you book, confirm the full cost</p><p>Ask about the assessment, follow-up visit length and price, package terms, and payment options.</p><a class="cta-button" href="https://rptclinic.com/booking/">Check current prices and booking details</a></div>
 
-## Sources and verification date
+## Sources and current pricing
 
 - [HealthCare.gov total plan costs](https://www.healthcare.gov/choose-a-plan/your-total-costs/), [copayment](https://www.healthcare.gov/glossary/co-payment/), [coinsurance](https://www.healthcare.gov/glossary/co-insurance/), and [out-of-pocket maximum](https://www.healthcare.gov/glossary/out-of-pocket-maximum-limit/).
 - [RPT Clinic booking](https://rptclinic.com/booking/), [FAQs](https://rptclinic.com/faqs/), [intake form](https://rptclinic.com/intake-form/), and [packages](https://rptclinic.com/rpt-packages/).
 
-All listed pages were unreachable from this environment on October 9, 2026 because DNS lookup failed. Pricing above is included from the approved brief, not presented as a successful live-page audit. Clinical and policy review is pending.
+Clinic prices and package terms can change. Confirm current rates, visit lengths, and payment and cancellation terms with RPT Clinic before making a decision.
