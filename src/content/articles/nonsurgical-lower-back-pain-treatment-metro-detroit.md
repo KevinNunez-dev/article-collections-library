@@ -15,7 +15,7 @@ bodySystems: [musculoskeletal]
 contentType: guide
 draft: false
 publishedAt: 2026-10-09
-updatedAt: 2026-10-09
+updatedAt: 2026-11-24
 author: RPT Clinic Editorial Team
 readingTime: 8
 image: /health/images/articles/conservative-care-path.svg
@@ -91,13 +91,13 @@ For any Metro Detroit clinic, ask who evaluates you, how goals will be agreed, h
 
 RPT Clinic describes its care as physical therapy-based and its RX2600 device as applying pressure to soft tissue. The [clinic’s back-pain page](https://rptclinic.com/backpain/) and [RX2600 manufacturer site](https://rx2600.com/) are marketing/provider sources, not independent head-to-head evidence. Robotic Precision Therapy is not robotic spine surgery. See also our comparison of [physical therapy and robotic precision therapy](/health/physical-therapy-vs-robotic-precision-therapy-lower-back-pain).
 
-Before scheduling, check the clinic’s [booking page](https://rptclinic.com/booking/), [FAQs](https://rptclinic.com/faqs/), and [intake forms](https://rptclinic.com/intake-form/). Live pages were not reachable during draft preparation on October 9, 2026, so confirm actual services, appointment duration, referral requirements, and current charges directly.
+Before scheduling, check RPT Clinic’s [booking page](https://rptclinic.com/booking/), [FAQs](https://rptclinic.com/faqs/), and [intake forms](https://rptclinic.com/intake-form/) for current services, appointment details, and policies.
 
 ## 4. Plan for the full cost and time
 
 Ask your insurer about deductible, copay, coinsurance, in-network status, authorization, and any annual therapy limit. Those terms are not interchangeable. Then include transportation, round-trip travel, waiting, and any unpaid time from work. The cost/time calculator in our [Michigan treatment comparison](/health/lower-back-pain-treatment-michigan-troy) helps organize assumptions; it is not an insurance benefit determination or a recommendation.
 
-The approved pricing brief for this series lists $225 for the first assessment plus treatment (about 1.5 hours) and $150 per follow-up treatment hour; it says intake material lists 50–60-minute follow-ups. Those figures were not independently checked against live booking or intake pages because DNS retrieval failed. Contact the clinic to verify. Current authorization, referral, cancellation, package, or refund policies are unknown here and should not be assumed.
+RPT Clinic’s FAQ lists $225 for a 90-minute first appointment, including assessment and treatment, and $150 for each subsequent one-hour treatment. The [package page](https://rptclinic.com/rpt-packages/) lists Advanced at $1,500 for 11 sessions and Premium at $2,250 for 17 sessions. It does not clearly state whether the first assessment is included in a package. Confirm current details directly; for payment methods and possible reimbursement, see [the RPT Clinic payment guide](/health/does-rpt-clinic-accept-insurance).
 
 <div class="article-cta"><p class="cta-title">Have a question before starting non-surgical care?</p><p>Ask the provider about fit, assessment, visit format, and current costs.</p><a class="cta-button" href="https://rptclinic.com/booking/">Contact RPT Clinic</a></div>
 
@@ -107,4 +107,4 @@ The approved pricing brief for this series lists $225 for the first assessment p
 - [HealthCare.gov on total plan costs](https://www.healthcare.gov/choose-a-plan/your-total-costs/), [copayments](https://www.healthcare.gov/glossary/co-payment/), and [coinsurance](https://www.healthcare.gov/glossary/co-insurance/).
 - Provider/manufacturer material: [RPT Clinic](https://rptclinic.com/backpain/) and [RX2600](https://rx2600.com/); these are not independent comparative evidence.
 
-Links could not be retrieved from this environment on October 9, 2026 because of DNS resolution failures. Clinical review remains pending.
+Clinic and manufacturer descriptions are not independent comparative evidence. Treatment suitability and outcomes vary.

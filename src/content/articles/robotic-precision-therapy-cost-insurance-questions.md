@@ -1,56 +1,58 @@
 ---
-title: "Robotic Precision Therapy Cost: Pricing, Insurance, and Why RPT Clinic Is Out-of-Pocket"
-description: "RPT Clinic pricing explained: $225 first visit, $150 per hour after, packages, why the clinic is out-of-pocket, and how to request an invoice for insurance reimbursement."
-excerpt: "What Robotic Precision Therapy costs at RPT Clinic, why the clinic is out-of-pocket, and how to compare its visit with other care."
+title: "How Much Does Robotic Precision Therapy Cost in Michigan?"
+description: "See RPT Clinic's first-visit and follow-up prices, package totals, and questions to ask before paying for Robotic Precision Therapy in Troy, Michigan."
+excerpt: "RPT Clinic's current published visit prices and packages, what the first appointment includes, and how to confirm payment terms."
 category: Wellness & Prevention
 categorySlug: wellness
 tags: [robotic precision therapy cost, robotic precision therapy insurance, RPT cost, out-of-pocket physical therapy, HSA FSA physical therapy, RX2600, RPT Clinic]
 bodySystems: [musculoskeletal]
 contentType: guide
 publishedAt: 2026-10-28
-updatedAt: 2026-11-18
+updatedAt: 2026-11-24
 author: RPT Clinic Editorial Team
 readingTime: 10
 image: /images/rpt-clinic-treatment-2.jpg
 imageAlt: Reviewing Robotic Precision Therapy cost and payment options
 keyTakeaways:
-  - "RPT Clinic prices listed on its booking page: $225 for the 90-minute new-client evaluation plus treatment, and $150 for each 60-minute session after that."
-  - RPT Clinic is an out-of-pocket clinic. It accepts cash, credit, FSA, HSA, and CareCredit, and can provide an invoice with medical codes for you to file for reimbursement.
-  - RPT Clinic says its out-of-pocket model lets it set appointment length; insurance rules vary by plan and service.
-  - Reimbursement depends on your plan and is not guaranteed, so ask your insurer before you rely on it.
-  - Prices can change. Confirm current terms on the clinic's FAQ and booking pages.
+  - RPT Clinic's FAQ lists $225 for a 90-minute first appointment with assessment and treatment, and $150 for each subsequent one-hour treatment.
+  - The clinic's package page lists Advanced at $1,500 for 11 sessions and Premium at $2,250 for 17 sessions.
+  - RPT Clinic is out-of-pocket and does not bill insurance; reimbursement from an insurer is not guaranteed.
+  - Cash, credit cards, HSA, and FSA are listed payment options; CareCredit is listed for package treatments.
+  - Confirm current prices, package terms, and payment eligibility with the clinic before booking.
 faq:
   - question: How much does Robotic Precision Therapy cost at RPT Clinic?
-    answer: "According to the clinic's FAQ and booking page, the first session is 1.5 hours and costs $225, covering a full assessment and a full treatment. Each later one-hour session is $150. A 75-minute session combining robotic therapy with 15 minutes of dry needling or cupping is $187.50 for existing clients."
+    answer: "RPT Clinic's FAQ lists $225 for a 90-minute first appointment that includes assessment and treatment. Subsequent one-hour treatments are listed at $150. Prices can change, so confirm the current rate before booking."
   - question: Does RPT Clinic take insurance?
     answer: No. It is an out-of-pocket clinic. It can provide an invoice with medical codes that you can use to file for reimbursement from your insurance, but whether you are reimbursed depends on your plan.
   - question: Why doesn't the clinic bill insurance?
     answer: RPT Clinic says it chose an out-of-pocket model so it can set appointment length without billing through an insurer. Coverage and visit rules vary by plan and service; ask your insurer about your own benefits.
   - question: What payment methods are accepted?
-    answer: Cash, credit, FSA, HSA, and CareCredit, according to the clinic's FAQ.
+    answer: "The clinic's FAQ lists cash, credit cards, FSA, and HSA. Its package page says CareCredit is available for package treatments. Confirm whether your intended purchase qualifies and review financing terms before using CareCredit."
   - question: Are there packages?
-    answer: The booking page lists an Advanced Package at $1,500 (10 sessions plus 1 free, saving $150) and a Premium Package at $2,250 (15 sessions plus 2 free, saving $300), both with no expiration. Confirm what each includes before buying.
+    answer: "The clinic's package page lists Advanced at $1,500 for 11 sessions (10 paid plus 1 free) and Premium at $2,250 for 17 sessions (15 paid plus 2 free). The page says the packages do not expire. Ask whether a new-client assessment is included and confirm all terms before purchasing."
+  - question: Can I use CareCredit for a single RPT visit?
+    answer: "The clinic's package page identifies CareCredit for package treatments, but does not clearly say whether single visits qualify. Ask RPT Clinic about the specific service and review CareCredit's financing terms."
   - question: Can new clients book a one-hour session?
-    answer: The one-hour and 75-minute sessions are listed for existing clients only. New clients start with the 90-minute evaluation plus treatment.
+    answer: RPT Clinic's FAQ lists a 90-minute first appointment with assessment and treatment. Ask the clinic what appointment types are currently available after the first visit.
   - question: Is Robotic Precision Therapy faster than traditional physical therapy?
     answer: There is no basis here to promise faster results or fewer visits than another type of care. Visit length and treatment plans vary. Ask what each provider recommends, what a visit includes, and how progress will be reviewed.
   - question: What if I need to be seen urgently?
     answer: For emergency symptoms, seek urgent medical care rather than waiting for a therapy appointment. For non-emergency scheduling questions, contact the clinic to ask about current availability.
-related: [lower-back-pain-treatment-costs-michigan, what-is-robotic-precision-therapy, first-robotic-precision-therapy-appointment, how-robotic-precision-therapy-evaluation-works, physical-therapy-vs-robotic-precision-therapy-lower-back-pain]
+related: [does-rpt-clinic-accept-insurance, lower-back-pain-treatment-costs-michigan, what-is-robotic-precision-therapy, first-robotic-precision-therapy-appointment, how-robotic-precision-therapy-evaluation-works, physical-therapy-vs-robotic-precision-therapy-lower-back-pain]
 seo:
-  title: "Robotic Precision Therapy Cost, Insurance, and Pricing"
-  description: "RPT Clinic charges $225 for the first visit and $150 per hour after. Learn why it is out-of-pocket, which payments it accepts, and how reimbursement works."
+  title: "How Much Does Robotic Precision Therapy Cost in Michigan?"
+  description: "Compare RPT Clinic's $225 first appointment, $150 follow-up sessions, and package prices in Troy, Michigan."
   image: /images/rpt-clinic-treatment-2.jpg
   noindex: false
 ---
 
-## The short answer
+## How much does Robotic Precision Therapy cost?
 
-**At RPT Clinic, the first visit is $225 for 90 minutes, and each one-hour session after that is $150.** The clinic does not bill insurance. It accepts cash, credit, FSA, HSA, and CareCredit, and it can give you an invoice with medical codes so you can file for reimbursement yourself.
+**RPT Clinic's FAQ lists $225 for the first 90-minute appointment and $150 for each subsequent one-hour treatment.** The clinic is based in Troy, Michigan. Rates and terms can change, so confirm the total with the clinic before booking.
 
-The rest of this guide explains what that price includes and how to compare it with other care. The clinic confirmed these listed rates and payment details for this update on November 18, 2026. Confirm the current terms directly before booking.
+The first appointment includes an assessment and treatment. This guide explains the listed rates, package math, and what to confirm before paying.
 
-## Quick answers
+## What are the quick answers to common RPT cost questions?
 
 <details style="border:1px solid #d7dee6;border-radius:8px;padding:.75rem 1rem;margin:.6rem 0">
 <summary style="cursor:pointer;font-weight:600">What do I pay for my first visit?</summary>
@@ -74,31 +76,28 @@ Possibly. The clinic can provide an invoice with medical codes to file. Reimburs
 </details>
 
 <details style="border:1px solid #d7dee6;border-radius:8px;padding:.75rem 1rem;margin:.6rem 0">
-<summary style="cursor:pointer;font-weight:600">How can I lower the per-session price?</summary>
+<summary style="cursor:pointer;font-weight:600">Do RPT packages lower the average per-session price?</summary>
 
-Packages lower the average cost per session. See the package math below.
+Yes. The listed package totals work out to a lower average price per session than paying $150 for each one-hour treatment. See the calculations below and confirm what is included before purchasing.
 
 </details>
 
-## Current pricing
+## How much does RPT cost per visit without insurance?
 
 | Option | Length | Price | Notes |
 |---|---|---|---|
-| New client evaluation + robotic therapy session | 90 min | $225 | Full assessment and full treatment |
-| Robotic Precision Therapy session | 60 min | $150 | Existing clients only |
-| Robotic therapy + dry needling or cupping | 75 min | $187.50 | 60 minutes robotic therapy plus 15 minutes dry needling or cupping. Existing clients only |
-| Advanced Package | 11 sessions | $1,500 | Buy 10, get 1 free. Saves $150. No expiration |
-| Premium Package | 17 sessions | $2,250 | Buy 15, get 2 free. Saves $300. No expiration |
+| New-client assessment and treatment | 90 min | $225 | First appointment |
+| Subsequent treatment | 60 min | $150 | Confirm availability and current terms |
+| Advanced Package | 11 sessions | $1,500 | Package page lists 10 paid sessions plus 1 free session |
+| Premium Package | 17 sessions | $2,250 | Package page lists 15 paid sessions plus 2 free sessions |
 
-Source: the clinic's [FAQ](https://rptclinic.com/faqs/) and [booking page](https://rptclinic.com/booking/).
+Source: RPT Clinic's [FAQ](https://rptclinic.com/faqs/) and [package page](https://rptclinic.com/rpt-packages/). The package page says packages do not expire and are shareable and transferable. Confirm the current terms directly.
 
-<!-- Clinic confirmation required before publication: add the current deposit amount, when it is collected, whether it is applied to the visit, and the cancellation/refund terms. Do not infer these policies from a prospect's lead outcome. -->
+### What should you ask about deposits and cancellations?
 
-### Ask about any deposit before confirming an appointment
+Before you confirm an appointment or buy a package, ask whether a deposit is required and what cancellation, rescheduling, transfer, and refund terms apply. Get any terms that affect your expected cost in writing.
 
-The clinic's current deposit amount and cancellation or refund rules are not listed here. Before you confirm a time, ask whether a deposit is required, when it is due, whether it is applied to your visit, and what happens if you need to cancel or reschedule. Ask for the terms in writing so you can decide with the full cost in view.
-
-### What the package math works out to
+### How much does each package cost per session?
 
 | Package | Sessions received | Price | Average per session |
 |---|---|---|---|
@@ -106,11 +105,11 @@ The clinic's current deposit amount and cancellation or refund rules are not lis
 | Advanced | 11 | $1,500 | about $136 |
 | Premium | 17 | $2,250 | about $132 |
 
-The booking page does not say whether the evaluation visit counts toward a package. Ask before you buy.
+These averages divide the package price by the number of sessions listed on the package page. The page does not say whether the new-client assessment is included, so ask before you buy.
 
-### What a plan might cost
+### What might several individual visits cost?
 
-These are arithmetic examples using the listed prices, not predictions. Your evaluation determines how many visits are reasonable for you.
+These are arithmetic examples using the listed single-visit prices, not a recommended number of visits. Your clinician should discuss whether the service is appropriate and when to reassess.
 
 | Total visits | Calculation | Total |
 |---|---|---|
@@ -118,21 +117,23 @@ These are arithmetic examples using the listed prices, not predictions. Your eva
 | 6 | $225 + 5 × $150 | $975 |
 | 12 | $225 + 11 × $150 | $1,875 |
 
-## Why RPT Clinic uses an out-of-pocket model
+## Does RPT Clinic accept insurance?
 
-The price reflects how the clinic is set up, not a promise about outcomes. Based on the clinic's own explanation:
+No. RPT Clinic is out-of-pocket and does not bill insurance. The clinic says this model lets it set appointment length without billing through an insurer. This does not mean every insurance-based visit is shorter or less suitable.
 
-- **Time is part of what you pay for.** The first visit runs 90 minutes so there is room for a full assessment and a full treatment in the same appointment. Later sessions are a full treatment hour.
-- **The clinic sets its appointment length.** RPT Clinic says its out-of-pocket model lets it set session length without billing through an insurer. This does not mean every insurance-based visit is shorter or less suitable.
-- **One clear price.** The price is listed up front rather than depending on a plan's allowed amount, deductible, or copay.
+The first appointment is listed as 90 minutes; subsequent treatments are listed as one hour. Ask what each visit includes and whether any charges are separate.
 
-Is that a better value for you? It depends on your plan, your deductible, how many visits you need, and how much the length of each session matters to you. The comparison worksheet below helps you work it out.
+Whether the out-of-pocket price fits your budget depends on your circumstances and the total number of visits. Use the comparison worksheet below to compare the full visit cost, travel, and any reimbursement your insurer confirms.
 
-## Insurance and out-of-pocket care
+## Which payment methods can you use at RPT Clinic?
 
-RPT Clinic describes itself as an out-of-pocket clinic. It says this model gives it more control over appointment length. Insurance coverage, authorization, visit limits, and cost sharing vary by plan and service, so ask your insurer about your own benefits.
+The clinic's FAQ lists cash, credit cards, HSA, and FSA. Its package page identifies CareCredit for package treatments. Confirm whether the method applies to your purchase and whether an HSA or FSA administrator considers your service eligible. See the [payment and reimbursement guide](/health/does-rpt-clinic-accept-insurance) for more details.
 
-### Questions about your insurance plan
+## Can an insurer reimburse an RPT visit?
+
+RPT Clinic describes itself as an out-of-pocket clinic and does not bill insurance. Coverage, authorization, visit limits, and cost sharing vary by plan and service. For questions about invoices and payment methods, see [Does RPT Clinic accept insurance?](/health/does-rpt-clinic-accept-insurance/).
+
+### What should you ask your insurance plan?
 
 Depending on your plan and the care you seek, rules may include:
 
@@ -143,7 +144,7 @@ Depending on your plan and the care you seek, rules may include:
 
 Do not assume how a particular provider or service is affected by your plan. Check your plan documents and ask the insurer to explain the rules that apply to the service.
 
-### Getting reimbursed anyway
+### How can you request reimbursement?
 
 The clinic can provide an **invoice with medical codes** to file for reimbursement. Before you do:
 
@@ -154,13 +155,13 @@ The clinic can provide an **invoice with medical codes** to file for reimburseme
 
 You can also pay with a **Health Savings Account (HSA)** or **Flexible Spending Account (FSA)**. Confirm eligibility with your plan administrator.
 
-## Compare the actual visit, not a generalization
+## What should you compare between providers?
 
 Visit length, coverage, and treatment plans vary by provider and insurance plan. Do not assume every insurance-based visit is short or that one approach is better for everyone. Compare the services actually offered, time spent with the clinician, expected number of visits, total price, and your own plan benefits.
 
 RPT Clinic describes its service as clinician-directed pressure applied to selected muscles after an assessment. That is different from a diagnosis or a promise to treat every cause of pain. Read [physical therapy vs. Robotic Precision Therapy for lower back pain](/health/physical-therapy-vs-robotic-precision-therapy-lower-back-pain) for a condition-specific comparison, and ask both providers what a visit includes.
 
-## Questions to ask the clinic
+## What should you ask RPT Clinic before booking?
 
 1. What does the first visit include, and what does it cost?
 2. Does my evaluation count toward a package?
@@ -168,14 +169,14 @@ RPT Clinic describes its service as clinician-directed pressure applied to selec
 4. What documentation will you give me for reimbursement or HSA/FSA use?
 5. How many visits does my evaluation suggest, and how will we decide whether to continue?
 
-## Questions to ask your insurer
+## What should you ask your insurer?
 
 1. Do I have out-of-network benefits for physical therapy or similar services?
 2. What documentation do you need to reimburse an out-of-pocket claim?
 3. What is my remaining deductible, and what are my coinsurance or copay amounts?
 4. Is there a visit limit or a prior authorization requirement?
 
-## A simple comparison worksheet
+## How can you compare the total cost of care?
 
 | Item | RPT Clinic | Insurance-based option |
 |---|---|---|
@@ -189,7 +190,7 @@ RPT Clinic describes its service as clinician-directed pressure applied to selec
 
 Compare totals and session length, not just one price. For help separating charges, allowed amounts, and your own responsibility, see [lower back pain treatment costs in Michigan](/health/lower-back-pain-treatment-costs-michigan).
 
-## Back pain and sciatica cost and insurance series
+## Which back pain and sciatica cost guides may help?
 
 - [Lower back pain physical therapy cost](/health/lower-back-pain-physical-therapy-cost): estimate the first visit, follow-ups, and other expenses.
 - [Does insurance cover physical therapy for sciatica?](/health/sciatica-physical-therapy-insurance): understand coverage and possible reimbursement.
@@ -201,17 +202,17 @@ Compare totals and session length, not just one price. For help separating charg
 - [Questions before paying for sciatica treatment](/health/questions-before-paying-for-sciatica-treatment): check service fit and payment terms.
 - [Lower back pain therapy insurance questions](/health/lower-back-pain-therapy-insurance-questions): prepare for a call to your insurer.
 
-## Warning signs in any cost conversation
+## Which pricing practices should prompt more questions?
 
 - Pressure to buy a large package before an assessment
 - No clear answer on refunds or cancellations
 - Promises of guaranteed results or a set number of visits
 - Unwillingness to put the estimate in writing
 
-## When cost should not delay care
+## When should symptoms take priority over a price comparison?
 
 If you have severe pain after trauma, new weakness, numbness in the groin or saddle area, loss of bladder or bowel control, or a painful, swollen leg, seek urgent medical care first. For non-emergency scheduling questions, contact the clinic to ask about current availability.
 
-## Next step
+## Where can you confirm current prices?
 
-For current pricing, packages, reimbursement paperwork, or deposit and cancellation terms, [contact RPT Clinic](https://rptclinic.com/contact/). Ask when the appointment will be confirmed; submitting a request does not itself confirm a booking.
+For current rates, package details, payment methods, and booking terms, [contact RPT Clinic](https://rptclinic.com/contact/). See also the separate guide to [payment options and insurance reimbursement](/health/does-rpt-clinic-accept-insurance/).

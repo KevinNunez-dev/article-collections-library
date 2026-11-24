@@ -15,7 +15,7 @@ bodySystems: [musculoskeletal]
 contentType: comparison
 draft: false
 publishedAt: 2026-10-09
-updatedAt: 2026-10-09
+updatedAt: 2026-11-24
 author: RPT Clinic Editorial Team
 readingTime: 8
 image: /health/images/articles/pt-rpt-surgery-distinction.svg
@@ -45,7 +45,7 @@ faq:
     answer: Patient testimonials and provider marketing may describe individual experiences, but they are not controlled comparative research and cannot predict an individual result. Review guidelines and independent studies separately.
     category: Evidence
   - question: How much does a robotic precision therapy visit cost?
-    answer: Pricing can change and may depend on visit length and package selection. The approved brief lists $225 for the initial assessment plus treatment and $150 per follow-up treatment hour, but those current public terms could not be verified on October 9, 2026. Contact the clinic for a written quote.
+    answer: RPT Clinic's FAQ lists $225 for a 90-minute first appointment, including assessment and treatment, and $150 for each subsequent one-hour treatment. Confirm current rates and package terms with the clinic.
     category: Cost
   - question: How can I compare PT and RPT financially?
     answer: Compare the total episode quote, visit duration and count, copay or deductible, allowed amount, visit limits, travel, and time away from work. The estimate is not a prediction that the treatments produce equal outcomes.
@@ -93,9 +93,9 @@ The [RX2600 manufacturer site](https://rx2600.com/) and [RPT Clinic back-pain pa
 
 If the answer is a guaranteed result, a universal “correct” number of visits, or a claim that a soft-tissue device repairs the spine, ask for independent evidence and a clearer explanation. A device can be an adjunct without being the only treatment or a treatment winner.
 
-## Cost and logistics are part of an informed comparison
+## How do cost and logistics affect your comparison?
 
-The approved pricing brief for this draft gives an initial assessment plus treatment as $225 for 1.5 hours and follow-ups at $150 per treatment hour, while the intake materials reportedly describe follow-ups as 50–60 minutes. These details were not independently retrievable from the clinic’s live pages on October 9, 2026. Ask the clinic to confirm current rates, duration, package inclusions, and payment terms in writing. A package should not be assumed to include the separate initial assessment.
+RPT Clinic's [FAQ](https://rptclinic.com/faqs/) lists $225 for a 90-minute first appointment and $150 for each subsequent one-hour treatment. Its [package page](https://rptclinic.com/rpt-packages/) lists Advanced at $1,500 for 11 sessions and Premium at $2,250 for 17 sessions. The package page does not clearly say whether the first assessment is included, so confirm that detail and current terms before purchasing. For cost and payment details, read [RPT visit prices](/health/robotic-precision-therapy-cost-insurance-questions) and [insurance and payment options](/health/does-rpt-clinic-accept-insurance).
 
 Insurance may involve a deductible, copay, coinsurance, visit limit, authorization, or network restriction. The [HealthCare.gov total-cost guide](https://www.healthcare.gov/choose-a-plan/your-total-costs/) explains why premiums alone do not show total cost. Its glossary also defines [copayment](https://www.healthcare.gov/glossary/co-payment/), [coinsurance](https://www.healthcare.gov/glossary/co-insurance/), and [out-of-pocket maximum](https://www.healthcare.gov/glossary/out-of-pocket-maximum-limit/). Check your actual plan. Compare travel and unpaid work separately from the care price.
 
@@ -109,6 +109,6 @@ See [lower back pain treatment options near Troy](/health/lower-back-pain-treatm
 
 - ACP and JOSPT sources linked above are independent clinical guidance; their scope does not constitute RX2600-specific validation.
 - RPT Clinic and RX2600 links are provider/manufacturer material, not independent comparative evidence.
-- Clinic page content and price details were not retrievable in this environment on October 9, 2026 because DNS lookup failed.
+- Clinic pages describe their own services; they are not independent comparative evidence.
 
-This article is an editorial draft pending clinician review. It does not establish treatment equivalence, superiority, or guaranteed benefit.
+This article is general education. It does not establish treatment equivalence, superiority, or guaranteed benefit.

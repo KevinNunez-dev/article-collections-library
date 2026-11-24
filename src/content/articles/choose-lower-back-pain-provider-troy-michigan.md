@@ -15,7 +15,7 @@ bodySystems: [musculoskeletal]
 contentType: guide
 draft: false
 publishedAt: 2026-10-09
-updatedAt: 2026-10-09
+updatedAt: 2026-11-24
 author: RPT Clinic Editorial Team
 readingTime: 8
 image: /health/images/articles/provider-checklist.svg
@@ -48,7 +48,7 @@ faq:
     answer: Request itemized or written estimates that state the initial and follow-up charges, duration, expected services, whether the quote is cash or insurance-based, and what may be billed separately. Add plan cost sharing and travel.
     category: Cost and insurance
   - question: How do I ask about booking a lower back pain assessment in Troy?
-    answer: Use the clinic’s booking page or contact the clinic to confirm the current Troy-area location, appointment availability, service, price, and any referral or insurance requirements. The live booking page could not be verified on October 9, 2026.
+    answer: Use the clinic's booking or contact page to confirm current availability, services, and prices. RPT Clinic lists its address as 3250 W. Big Beaver Road, Suite 426, Troy, MI 48084.
     category: Booking
 related:
   [
@@ -95,7 +95,7 @@ ACP and JOSPT guidelines discuss conservative and physical therapy care for low 
 
 Ask for the initial assessment price, follow-up price and minutes, what services are included, whether charges may be separate, and whether a package has restrictions. For insurance, verify in-network status, allowed amount, deductible, copay or coinsurance, referral or authorization rules, and visit limits with the insurer. Add commute, waiting, transportation, and missed work to your own comparison.
 
-The approved pricing brief for this draft lists $225 for an initial assessment plus treatment lasting about 1.5 hours and $150 per follow-up treatment hour; intake material reportedly gives 50–60 minutes for follow-ups. It also lists Advanced at $1,500 for 11 follow-ups (plus a separate $225 initial appointment, $1,725 for 12 total) and Premium at $2,250 for 17 follow-ups (plus the initial, $2,475 for 18 total). These values were not verified on the current live [booking](https://rptclinic.com/booking/), [intake](https://rptclinic.com/intake-form/), or [package page](https://rptclinic.com/rpt-packages/) because DNS lookup failed on October 9, 2026. Confirm current prices and terms directly; refund, cancellation, and expiration policies remain unknown.
+RPT Clinic's [FAQ](https://rptclinic.com/faqs/) lists $225 for the 90-minute first appointment and $150 for each subsequent one-hour treatment. Its [package page](https://rptclinic.com/rpt-packages/) lists Advanced at $1,500 for 11 sessions and Premium at $2,250 for 17 sessions. The page says the packages do not expire; confirm whether the initial assessment is included and ask about current cancellation and refund terms. For more detail, see [RPT pricing](/health/robotic-precision-therapy-cost-insurance-questions) and [payment options](/health/does-rpt-clinic-accept-insurance).
 
 ## Compare locally without confusing convenience with clinical fit
 
@@ -109,4 +109,4 @@ For Troy and neighboring Metro Detroit communities, practical factors can includ
 - Clinical guidance: [ACP](https://www.acponline.org/acp-newsroom/american-college-of-physicians-issues-guideline-for-treating-nonradicular-low-back-pain) and [JOSPT](https://www.jospt.org/doi/10.2519/jospt.2021.0508).
 - Clinic and manufacturer materials are linked for service descriptions, not as independent evidence.
 
-All requested source pages were unreachable from this environment on October 9, 2026 because DNS lookup failed. This remains an unpublished editorial draft awaiting clinician and policy review.
+The clinic and manufacturer links above describe their own services; they are not independent comparative evidence.

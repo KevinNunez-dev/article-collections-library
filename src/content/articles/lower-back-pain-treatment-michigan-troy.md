@@ -17,7 +17,7 @@ contentType: guide
 draft: false
 costCalculator: true
 publishedAt: 2026-10-09
-updatedAt: 2026-10-09
+updatedAt: 2026-11-24
 author: RPT Clinic Editorial Team
 readingTime: 9
 image: /health/images/articles/back-pain-options.svg
@@ -47,7 +47,7 @@ faq:
     answer: No universal coverage rule applies. Benefits can depend on network status, referral or authorization, deductible, copay or coinsurance, diagnosis, and visit limits. Ask your insurer and clinic to confirm your specific plan before scheduling.
     category: Costs and coverage
   - question: How much does RPT Clinic charge for the initial appointment?
-    answer: The approved pricing information for this draft lists $225 for an initial assessment plus treatment lasting about 1.5 hours. Live booking and intake pages could not be retrieved on October 9, 2026, so confirm the current price and appointment details with the clinic.
+    answer: RPT Clinic's FAQ lists $225 for a 90-minute first appointment that includes assessment and treatment, then $150 for each subsequent one-hour treatment. Confirm current prices and terms with the clinic.
     category: Costs and coverage
   - question: How do I compare treatment options near Troy?
     answer: Ask what the assessment includes, how progress will be checked, what alternatives exist, what each visit costs, whether benefits were verified, and when the provider would refer you elsewhere. Location and convenience matter, but they do not replace clinical fit.
@@ -87,17 +87,17 @@ This guide is for people comparing options around Troy, Oakland County, and Metr
 
 The American College of Physicians guideline for nonradicular low back pain discusses non-drug options—including exercise and multidisciplinary rehabilitation—based on the duration and context of symptoms. The 2021 JOSPT low-back-pain clinical practice guideline addresses physical therapy interventions. Neither guideline evaluates every newer commercial device, and neither establishes that a branded treatment is superior to other care. Read the [ACP guideline summary](https://www.acponline.org/acp-newsroom/american-college-of-physicians-issues-guideline-for-treating-nonradicular-low-back-pain) and [JOSPT guideline](https://www.jospt.org/doi/10.2519/jospt.2021.0508).
 
-## Where RPT Clinic may fit
+## Is RPT Clinic an option for lower back pain in Troy?
 
 RPT Clinic describes Robotic Precision Therapy as physical therapy-based care that can use the RX2600 to apply controlled pressure to soft tissue. The clinic’s [back-pain page](https://rptclinic.com/backpain/) and the [RX2600 manufacturer site](https://rx2600.com/) are first-party descriptions, not independent comparative research. This is not robotic spine surgery. Ask whether the approach is appropriate for your findings, what other options are available, and how your response will be reviewed.
 
-Before booking in Troy, request current written information about the assessment, follow-up duration, self-pay prices, insurance participation, referral needs, and any visit packages. A clinic’s [booking page](https://rptclinic.com/booking/), [FAQs](https://rptclinic.com/faqs/), [intake information](https://rptclinic.com/intake-form/), and [package page](https://rptclinic.com/rpt-packages/) are places to check; their live contents could not be retrieved while preparing this draft, so this page does not claim to verify current policy.
+RPT Clinic does not bill insurance. Check its [FAQ](https://rptclinic.com/faqs/) and [package page](https://rptclinic.com/rpt-packages/) for current details, and see the separate guides to [RPT prices](/health/robotic-precision-therapy-cost-insurance-questions) and [payment options](/health/does-rpt-clinic-accept-insurance).
 
-## Compare the total commitment, not just a per-visit price
+## How should you compare total cost, not just the price per visit?
 
 A copay is not the same as the full allowed charge; a deductible and coinsurance can change what you owe. Visit limits and authorizations can also matter. Add travel, waiting, transportation, and time away from work when comparing options. The calculator below keeps direct expenses separate from potential unpaid earnings and offers a clearly qualified insurance estimate.
 
-For this draft, the approved pricing brief states an initial RPT assessment plus treatment is $225 for about 1.5 hours, then $150 per follow-up treatment hour; the intake material reportedly says follow-ups last 50–60 minutes. Standard-rate arithmetic for _n_ appointments is $225 + $150 × (_n_ − 1), where _n_ is at least one. This is not verified against the live site and does not imply equivalent outcomes or a recommended course. Packages are separate: Advanced is $1,500 for 11 follow-ups ($1,725 including the initial appointment, 12 total); Premium is $2,250 for 17 follow-ups ($2,475 including the initial appointment, 18 total). Confirm current terms directly.
+RPT Clinic's FAQ lists $225 for a 90-minute first appointment that includes assessment and treatment, followed by $150 for each one-hour treatment. Its [package page](https://rptclinic.com/rpt-packages/) lists Advanced at $1,500 for 11 sessions and Premium at $2,250 for 17 sessions. The package page does not clearly state whether a new-client assessment is included. Confirm current prices and package terms directly; these figures do not suggest a recommended number of visits or predict outcomes. For payment options and possible insurance reimbursement, see [the RPT Clinic insurance and payment guide](/health/does-rpt-clinic-accept-insurance).
 
 <div class="article-cta"><p class="cta-title">Want to ask whether an assessment is a fit?</p><p>Contact the clinic about current services, appointment details, and costs before deciding.</p><a class="cta-button" href="https://rptclinic.com/booking/">Ask RPT Clinic about booking</a></div>
 
@@ -112,4 +112,4 @@ Compare [non-surgical lower back pain treatment in Metro Detroit](/health/nonsur
 - RPT Clinic and RX2600 pages linked above are provider/manufacturer materials. They are not independent evidence.
 - Insurance terms: [HealthCare.gov total costs](https://www.healthcare.gov/choose-a-plan/your-total-costs/), [coinsurance](https://www.healthcare.gov/glossary/co-insurance/), [copayment](https://www.healthcare.gov/glossary/co-payment/), and [out-of-pocket maximum](https://www.healthcare.gov/glossary/out-of-pocket-maximum-limit/).
 
-Source-page retrieval and price verification were unavailable on October 9, 2026 due to DNS resolution failures. Clinical and policy review is pending; see the accompanying review document.
+RPT Clinic's published [FAQ](https://rptclinic.com/faqs/) and [package page](https://rptclinic.com/rpt-packages/) list the prices and package terms above. Confirm current details directly before making a decision.

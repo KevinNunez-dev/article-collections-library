@@ -5,6 +5,11 @@ const imageByArticleId: Record<string, string> = {
   "left-side-back-pain": "/health/images/Back/backpain-1.jpg",
   "right-side-back-pain": "/health/images/Back/backpain.jpg",
   "how-to-relieve-back-pain-from-sitting": "/health/images/Back/backpain-1.jpg",
+  "robotic-precision-therapy-cost-insurance-questions":
+    "/health/images/rpt-clinic-treatment-2.jpg",
+  "does-rpt-clinic-accept-insurance":
+    "/health/images/rpt-clinic-treatment-2.jpg",
+  "nerve-pain-treatment-troy-mi": "/health/images/Back/backpain-1.jpg",
   "top-5-ways-to-reduce-back-pain": "/health/images/Back/backpain.jpg",
   "top-10-fastest-ways-to-relieve-back-pain":
     "/health/images/Back/backpain-1.jpg",
