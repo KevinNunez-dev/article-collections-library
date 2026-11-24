@@ -44,7 +44,7 @@ faq:
     answer: The example rates in this article use $225 for an initial assessment and treatment lasting about 1.5 hours, then $150 per additional treatment hour. These may not reflect current prices or visit lengths. Confirm the current rates and payment terms with the clinic before booking.
     category: RPT Clinic
   - question: How are RPT package prices different from the initial appointment?
-    answer: "The example package amounts in this article list the initial appointment separately: Advanced is $1,500 for 11 follow-ups, or $1,725 with the initial appointment for 12 total; Premium is $2,250 for 17 follow-ups, or $2,475 with the initial for 18 total. These may not reflect current prices. Confirm package inclusions and terms with the clinic."
+    answer: "In these examples, the initial appointment is separate: Advanced is $1,500 for 11 follow-ups, or $1,725 with the initial appointment for 12 total; Premium is $2,250 for 17 follow-ups, or $2,475 with the initial for 18 total. These may not reflect current prices. Confirm package inclusions and terms with the clinic."
     category: RPT Clinic
   - question: Does a surgery cash price show what an insured patient will owe?
     answer: No. A cash estimate, hospital charge, facility quote, and insurance patient responsibility are not interchangeable. Request an estimate for the specific procedure and setting, including surgeon, facility, anesthesia, implants, and follow-up, then ask the insurer for benefit-specific cost sharing.
