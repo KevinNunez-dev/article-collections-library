@@ -1,4 +1,4 @@
----
+sipn---
 title: "What Is Robotic Precision Therapy and What Is It Not?"
 description: "Understand how RPT differs from injections, laser therapy, braces, and surgery, and when other medical care may be needed."
 excerpt: "RPT uses clinician-directed soft-tissue pressure. It is not an injection, laser, brace, or surgery."
