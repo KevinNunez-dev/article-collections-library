@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import GoogleReviewCarousel from '../../components/GoogleReviewCarousel.astro';
+import MediaProof from '../../components/MediaProof.astro';
 import { locations } from '../../config/locations';
 ---
 <BaseLayout title="RX2600 Therapy Locations" description="Find a participating clinic offering RX2600 Robotic Precision Therapy.">
@@ -15,6 +17,8 @@ import { locations } from '../../config/locations';
       </label>
     </div>
   </section>
+
+  <MediaProof />
 
   <section class="section locator-section">
     <div class="container">
@@ -40,6 +44,7 @@ import { locations } from '../../config/locations';
       </div>
     </div>
   </section>
+  <GoogleReviewCarousel />
 </BaseLayout>
 
 <script>
@@ -61,20 +66,21 @@ import { locations } from '../../config/locations';
 </script>
 
 <style>
-  .locations-hero { padding: 5rem 0 4rem; background: linear-gradient(135deg, #e8f1ff 0%, #fff 66%); }
+  .locations-hero { padding: 5rem 0 4rem; background: radial-gradient(circle at 85% 20%, #3479b7, transparent 35%), linear-gradient(120deg, #102d54, #173f72); }
+  .locations-hero h1, .locations-hero .eyebrow, .locations-hero .lead, .locator-search { color: #fff; }
   .locations-hero h1 { max-width: 16ch; }
-  .locator-search { display: grid; gap: .4rem; max-width: 40rem; margin-top: 2rem; color: var(--brand-ink); font-weight: 700; }
+  .locator-search { display: grid; gap: .4rem; max-width: 40rem; margin-top: 2rem; font-weight: 700; }
   .locator-search input { width: 100%; padding: .9rem 1rem; border: 1px solid #b8c6dd; border-radius: .4rem; font: inherit; }
   .locator-layout { display: grid; grid-template-columns: minmax(0, .9fr) minmax(24rem, 1.1fr); gap: 1.5rem; margin-top: 2rem; align-items: start; }
   .location-list { display: grid; gap: .75rem; }
-  .location-card { position: relative; padding: 1.25rem 1.25rem 1.15rem 4rem; border: 1px solid #dce2eb; border-radius: .4rem; background: #fff; }
+  .location-card { position: relative; padding: 1.5rem 1.5rem 1.35rem 4rem; border: 1px solid #dce2eb; border-radius: 1rem; background: #fff; box-shadow: 0 8px 24px rgba(28,62,105,.05); }
   .location-number { position: absolute; top: 1.35rem; left: 1.25rem; margin: 0; color: var(--brand-primary); font-weight: 800; font-variant-numeric: tabular-nums; }
   .location-card h2 { margin: 0 0 .55rem; font-size: 1.2rem; }
   .location-card h2 a { color: var(--brand-ink); text-decoration: none; }
   .location-card h2 a:hover { color: var(--brand-primary); }
   address { color: var(--brand-muted); font-style: normal; line-height: 1.5; }
   .location-actions { display: flex; gap: 1rem; margin-top: .8rem; font-weight: 700; }
-  .locator-map { position: sticky; top: 7.5rem; height: 38rem; overflow: hidden; border: 1px solid #dce2eb; border-radius: .4rem; background: #e8f1ff; }
+  .locator-map { position: sticky; top: 7.5rem; height: 38rem; overflow: hidden; border: 1px solid #dce2eb; border-radius: 1rem; background: #e8f1ff; }
   .locator-map iframe { width: 100%; height: 100%; border: 0; }
   .no-locations { color: var(--brand-muted); }
   @media (max-width: 800px) { .locations-hero { padding: 3.5rem 0 3rem; } .locator-layout { grid-template-columns: 1fr; } .locator-map { position: static; height: 21rem; order: -1; } }

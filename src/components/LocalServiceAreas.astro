@@ -1,14 +1,32 @@
-<p class="local-service-areas"><span>Serving patients near Detroit:</span> Detroit, Troy, Warren, Royal Oak, Rochester, Sterling Heights, and nearby communities.</p>
+---
+interface Props { topic?: string }
+const { topic = '' } = Astro.props;
+const guides = topic.includes('sciatica')
+  ? [
+      ['Troy sciatica guide', '/health/sciatica-treatment-troy-mi'],
+      ['Detroit sciatica guide', '/health/sciatica-treatment-detroit-mi'],
+      ['Rochester Hills sciatica guide', '/health/sciatica-treatment-rochester-hills-mi'],
+      ['Clarkston sciatica guide', '/health/sciatica-treatment-clarkston-mi'],
+    ]
+  : topic.includes('back pain')
+    ? [
+        ['Troy back pain guide', '/health/lower-back-pain-treatment-michigan-troy'],
+        ['Detroit back pain guide', '/health/back-pain-treatment-near-detroit-rpt'],
+      ]
+    : [];
+---
+
+<div class="local-service-areas">
+  <p><strong>RPT Clinic in Troy</strong> serves patients from Detroit and nearby communities. <a href="/locations/rpt-clinic-troy-mi">Explore the Troy clinic</a> · <a href="/locations">Find participating RX2600 locations</a></p>
+  {guides.length > 0 && (
+    <p class="local-guides"><span>Local guides:</span> {guides.map(([label, href]) => <a href={href}>{label}</a>)}</p>
+  )}
+</div>
 
 <style>
-  .local-service-areas {
-    margin: 1rem 0 0;
-    color: var(--brand-muted);
-    font-size: .88rem;
-  }
-
-  .local-service-areas span {
-    color: var(--brand-ink);
-    font-weight: 700;
-  }
+  .local-service-areas { margin: 1.5rem 0; padding: 1rem 1.2rem; border: 1px solid #d6e4f4; border-radius: .75rem; background: #f5f9ff; color: var(--brand-muted); font-size: .9rem; }
+  p { margin: 0; }
+  strong, .local-guides span { color: var(--brand-ink); }
+  .local-guides { display: flex; gap: .4rem 1rem; flex-wrap: wrap; margin-top: .6rem; }
+  a { font-weight: 650; }
 </style>

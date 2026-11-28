@@ -11,6 +11,9 @@ import ArticleNextStepGuide from '../../components/ArticleNextStepGuide.astro';
 import JsonLd from '../../components/JsonLd.astro';
 import RPTHero from '../../components/RPTHero.astro';
 import RPTTestimonials from '../../components/RPTTestimonials.astro';
+import GoogleReviewCarousel from '../../components/GoogleReviewCarousel.astro';
+import MediaProof from '../../components/MediaProof.astro';
+import MeetClinicTeam from '../../components/MeetClinicTeam.astro';
 import RPTComparisonTable from '../../components/RPTComparisonTable.astro';
 import RPTCtaBand from '../../components/RPTCtaBand.astro';
 import LocalServiceAreas from '../../components/LocalServiceAreas.astro';
@@ -71,6 +74,7 @@ const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'Breadcrum
     image={heroImage}
     imageAlt={heroAlt}
   />
+  <MediaProof />
   
   <article class="article-page">
     <div class="container article-wide">
@@ -84,14 +88,16 @@ const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'Breadcrum
       />
       <p class="byline">Written by {article.data.author} · Updated {new Date(article.data.updatedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })} · {article.data.readingTime} min read{reviewer && <> · Medically reviewed by {reviewer.url ? <a href={reviewer.url}>{reviewer.name}</a> : reviewer.name}, {reviewer.credentials} on {new Date(reviewer.reviewedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</>} · <a href="/medical-review-policy">Review policy</a></p>
       {pillar && <p class="pillar-link">Part of our guide to <a href={`/health/${pillar.id}`}>{pillar.label}</a>. Explore the full overview for causes, symptoms, and care options.</p>}
-      <LocalServiceAreas />
+      <LocalServiceAreas topic={campaignText} />
       <KeyTakeaways items={article.data.keyTakeaways} />
       <ArticleNextStepGuide articleTitle={article.data.title} />
-      <div class="prose">
-        <div set:html={articleHtml} />
+      <div class="prose" data-article-prose>
+        <div data-article-copy set:html={articleHtml} />
       </div>
+      <GoogleReviewCarousel />
       {article.data.costCalculator && <CostTimeCalculator />}
       <Faq items={article.data.faq} />
+      <MeetClinicTeam />
       <ArticleClinicPanel />
       <HealthDisclaimer />
     </div>
@@ -145,3 +151,46 @@ const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'Breadcrum
     variant="primary"
   />
 </BaseLayout>
+
+<script>
+  const prose = document.querySelector<HTMLElement>('[data-article-prose]');
+  const copy = prose?.querySelector<HTMLElement>('[data-article-copy]');
+  const reviews = document.querySelector<HTMLElement>('[data-shared-google-reviews]');
+
+  if (prose && copy && reviews) {
+    const blocks = Array.from(copy.children);
+    const boundaries = blocks.filter((block, index) => {
+      if (index === 0) return false;
+      const previous = blocks[index - 1];
+      return !/^H[1-6]$/.test(previous.tagName)
+        && !(['UL', 'OL'].includes(block.tagName) && previous.textContent?.trim().endsWith(':'));
+    });
+    const followingSections = Array.from(reviews.parentElement?.children || [])
+      .filter((element) => element.matches('.faq, .meet-clinic-team, .clinic-panel, .disclaimer'));
+    const heading = reviews.querySelector<HTMLElement>('#google-reviews-heading');
+    const headingOffset = heading
+      ? heading.getBoundingClientRect().top - reviews.getBoundingClientRect().top
+      : 0;
+    const reviewsHeight = reviews.getBoundingClientRect().height;
+    const target = (document.documentElement.scrollHeight - window.innerHeight) * 0.375
+      + window.innerHeight * 0.5 - headingOffset;
+    const candidates = [
+      ...boundaries.map((element) => ({ element, inProse: true, top: element.getBoundingClientRect().top + window.scrollY })),
+      ...followingSections.map((element) => ({ element, inProse: false, top: element.getBoundingClientRect().top + window.scrollY - reviewsHeight })),
+    ];
+    const boundary = candidates.reduce<typeof candidates[number] | null>((nearest, candidate) =>
+      !nearest || Math.abs(candidate.top - target) < Math.abs(nearest.top - target) ? candidate : nearest, null);
+
+    if (boundary?.inProse) {
+      const remainder = document.createElement('div');
+      remainder.className = 'prose';
+      const remainderCopy = document.createElement('div');
+      remainder.append(remainderCopy);
+      while (boundary.element.nextSibling) remainderCopy.append(boundary.element.nextSibling);
+      remainderCopy.prepend(boundary.element);
+      prose.after(reviews, remainder);
+    } else if (boundary) {
+      boundary.element.before(reviews);
+    }
+  }
+</script>

@@ -1,0 +1,120 @@
+---
+import { googleReviews } from '../config/googleReviews';
+---
+
+<section class="google-reviews" data-shared-google-reviews aria-labelledby="google-reviews-heading">
+  <div class="container">
+    <div class="reviews-header">
+      <div>
+        <p class="eyebrow">RPT Clinic in Troy</p>
+        <h2 id="google-reviews-heading">What Our Patients Say</h2>
+        <p class="intro">Experiences shared by patients and families at RPT Clinic in Troy.</p>
+      </div>
+      <a class="rating-summary" href={googleReviews.profileUrl} target="_blank" rel="noopener noreferrer">
+        <span class="rating-number">{googleReviews.rating}</span>
+        <span>
+          <span class="summary-stars" aria-hidden="true">★★★★★</span>
+          <span class="rating-label">Google rating snapshot · {googleReviews.count} reviews</span>
+        </span>
+      </a>
+    </div>
+
+    <div class="carousel" data-review-carousel>
+      <div class="controls" hidden>
+        <button type="button" data-previous aria-label="Previous reviews" aria-controls="google-review-list">←</button>
+        <button type="button" data-next aria-label="Next reviews" aria-controls="google-review-list">→</button>
+      </div>
+      <ul class="review-list" id="google-review-list" tabindex="0" aria-label="Patient review excerpts">
+        {googleReviews.reviews.map((review) => (
+          <li class="review-card">
+            <div class="review-top">
+              <span class="avatar" aria-hidden="true">{review.author.charAt(0).toUpperCase()}</span>
+              <div>
+                <p class="review-author">{review.author}</p>
+                <span class="review-source">Google review excerpt</span>
+              </div>
+            </div>
+            <div class="review-stars" aria-label={`${review.rating} out of 5 stars`}>
+              <span aria-hidden="true">{'★'.repeat(review.rating)}</span>
+            </div>
+            <blockquote>{review.excerpt}</blockquote>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <div class="reviews-footer">
+      <p>These are individual experiences; results vary. Excerpts may be shortened.</p>
+      <a href={googleReviews.profileUrl} target="_blank" rel="noopener noreferrer">Read reviews on Google <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-review-carousel]').forEach((carousel) => {
+    const list = carousel.querySelector<HTMLElement>('.review-list');
+    const controls = carousel.querySelector<HTMLElement>('.controls');
+    const previous = carousel.querySelector<HTMLButtonElement>('[data-previous]');
+    const next = carousel.querySelector<HTMLButtonElement>('[data-next]');
+    if (!list || !controls || !previous || !next) return;
+
+    const updateControls = () => {
+      previous.disabled = list.scrollLeft <= 1;
+      next.disabled = list.scrollLeft + list.clientWidth >= list.scrollWidth - 1;
+    };
+    const move = (direction: number) => {
+      const card = list.querySelector<HTMLElement>('.review-card');
+      if (!card) return;
+      const gap = Number.parseFloat(getComputedStyle(list).columnGap) || 0;
+      list.scrollBy({ left: direction * (card.offsetWidth + gap), behavior: 'auto' });
+    };
+
+    previous.addEventListener('click', () => move(-1));
+    next.addEventListener('click', () => move(1));
+    list.addEventListener('scroll', updateControls, { passive: true });
+    window.addEventListener('resize', updateControls);
+    controls.hidden = false;
+    updateControls();
+  });
+</script>
+
+<style>
+  .google-reviews { padding: 4.5rem 0; background: #f5f8fc; }
+  .reviews-header { display: flex; justify-content: space-between; align-items: center; gap: 2rem; margin-bottom: 2rem; }
+  h2 { margin: 0 0 .6rem; }
+  .intro { color: var(--brand-muted); margin: 0; }
+  .rating-summary { display: flex; gap: .9rem; align-items: center; border-radius: .9rem; padding: 1.1rem 1.4rem; background: var(--brand-primary-dark); color: #fff; text-decoration: none; flex-shrink: 0; }
+  .rating-summary:hover { color: #fff; }
+  .rating-number { font-size: 2.4rem; font-weight: 800; line-height: 1; }
+  .summary-stars, .rating-label { display: block; }
+  .summary-stars, .review-stars { color: #e6a400; letter-spacing: .08em; }
+  .rating-label { font-size: .85rem; font-weight: 700; }
+  .controls { display: flex; justify-content: flex-end; gap: .5rem; margin-bottom: .75rem; }
+  .controls[hidden] { display: none; }
+  .controls button { width: 2.75rem; height: 2.75rem; border: 1px solid #cbd6e5; border-radius: 50%; background: #fff; color: var(--brand-primary-dark); font-size: 1.2rem; cursor: pointer; }
+  .controls button:disabled { opacity: .4; cursor: default; }
+  .controls button:focus-visible, .review-list:focus-visible, a:focus-visible { outline: 3px solid #1e63d6; outline-offset: 3px; }
+  .review-list { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 2rem) / 3); gap: 1rem; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-behavior: smooth; margin: 0; padding: .25rem 0 1rem; list-style: none; }
+  .review-card { scroll-snap-align: start; padding: 1.35rem; background: #fff; border: 1px solid #dce2eb; border-radius: .75rem; }
+  .review-top { display: flex; align-items: center; gap: .75rem; }
+  .avatar { display: grid; place-items: center; flex: none; width: 2.6rem; height: 2.6rem; border-radius: 50%; background: #e5efff; color: var(--brand-primary-dark); font-weight: 800; }
+  .review-author { margin: 0; font-weight: 750; line-height: 1.3; }
+  .review-source { color: var(--brand-muted); font-size: .8rem; }
+  .review-stars { margin: .9rem 0 .5rem; }
+  blockquote { margin: 0; font-size: .95rem; line-height: 1.6; overflow-wrap: anywhere; }
+  .reviews-footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .75rem; align-items: center; margin-top: .75rem; }
+  .reviews-footer p { margin: 0; color: var(--brand-muted); font-size: .85rem; }
+  .reviews-footer a { font-weight: 700; }
+  @media (max-width: 800px) {
+    .google-reviews { padding: 3rem 0; }
+    .reviews-header { align-items: flex-start; flex-direction: column; gap: 1.25rem; }
+    .review-list { grid-auto-columns: calc((100% - 1rem) / 2); }
+  }
+  @media (max-width: 540px) {
+    .rating-summary { width: 100%; }
+    .review-list { grid-auto-columns: 90%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .review-list { scroll-behavior: auto; }
+  }
+</style>

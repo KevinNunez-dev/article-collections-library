@@ -246,6 +246,12 @@ The question guide is `ArticleNextStepGuide.astro`.
 
 Desktop behavior: appears after approximately 40% scroll as a left-side panel. It can be minimized to a `?` bubble or closed for that page view. Mobile behavior: appears in the article flow after key takeaways.
 
+Every article also displays the shared Google review carousel. JavaScript places it near 35-40% of page scroll at a suitable article-block or section boundary; the exact position varies with article length and screen size. Without JavaScript it remains after the article body. Its curated excerpts, profile link, and rating snapshot are maintained in `src/config/googleReviews.ts`; they do not update automatically. Use authorized review excerpts, preserve their meaning, and periodically verify the rating and count.
+
+The shared media strip in `src/components/MediaProof.astro` links to RPT Clinic's coverage and identifies sponsored content. The location directory identifies the reviews as belonging to RPT Clinic in Troy; individual partner-location pages must not present them as that location's own reviews.
+
+The shared team section in `src/components/MeetClinicTeam.astro` introduces members of RPT Clinic's Troy team, not article reviewers. Verify names and credentials against the clinic's current team page when updating it; do not attribute those clinicians to partner locations.
+
 ## Add a Location
 
 All RX2600 locations come from:

@@ -1,0 +1,45 @@
+---
+const media = [
+  { name: 'FOX 2 Detroit', logo: '/health/landing-assets/img/logo-fox.png', href: 'https://www.youtube.com/watch?v=60EuoVb8ekg', label: 'Watch the FOX 2 segment' },
+  { name: 'WXYZ Channel 7 Detroit', logo: '/health/landing-assets/img/logo-abc.png', href: 'https://www.youtube.com/watch?v=CYvqk5u6xeE', label: 'Watch the Channel 7 segment' },
+  { name: 'TV 20 Detroit', logo: '/health/landing-assets/img/logo-wmyd-tv.png', href: 'https://www.youtube.com/watch?v=gPAx-iMBO7w', label: 'Watch the TV 20 segment' },
+  { name: "Crain's Detroit Business", logo: '/health/landing-assets/img/logo-crains.png', href: 'https://www.crainsdetroit.com/small-business/podcast-factors-consider-when-choosing-space-your-small-business', label: "Listen to the Crain's podcast" },
+  { name: 'Hour Detroit', logo: '/health/landing-assets/img/logo-hour.png', href: 'https://www.hourdetroit.com/sponsor-content/tried-everything-and-still-in-pain/', label: 'Read the sponsored Hour Detroit article', sponsored: true },
+];
+---
+
+<section class="media-proof" aria-label="RPT Clinic media coverage">
+  <div class="container media-inner">
+    <div class="media-heading">
+      <p class="eyebrow">RPT Clinic in the media</p>
+      <p>Explore stories and coverage</p>
+    </div>
+    <div class="media-links">
+      {media.map((item) => (
+        <a href={item.href} target="_blank" rel="noopener noreferrer" aria-label={item.label}>
+          <img src={item.logo} alt={item.name} loading="lazy" />
+          {item.sponsored && <span>Sponsored</span>}
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .media-proof { background: #fff; border-bottom: 1px solid #e0e9f3; padding: 1.4rem 0; }
+  .media-inner { display: flex; align-items: center; gap: 2rem; }
+  .media-heading { flex: 0 0 13rem; }
+  .media-heading p { margin: 0; }
+  .media-heading p + p { color: var(--brand-muted); font-size: .85rem; }
+  .media-links { flex: 1; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 1.5rem; }
+  .media-links a { display: flex; flex-direction: column; align-items: center; gap: .2rem; text-decoration: none; }
+  .media-links a:focus-visible { outline: 3px solid #1e63d6; outline-offset: 4px; }
+  .media-links img { display: block; width: auto; max-width: 105px; height: 35px; object-fit: contain; }
+  .media-links span { color: var(--brand-muted); font-size: .7rem; }
+  @media (max-width: 760px) {
+    .media-inner { flex-direction: column; align-items: flex-start; gap: 1rem; }
+    .media-heading { flex: auto; }
+    .media-links { justify-content: flex-start; }
+    .media-links img { max-width: 80px; height: 30px; }
+  }
+</style>

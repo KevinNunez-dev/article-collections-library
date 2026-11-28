@@ -110,6 +110,18 @@ const { articleTitle } = Astro.props;
 
   window.addEventListener('scroll', revealGuide, { passive: true });
   revealGuide();
+
+  if (guide && 'IntersectionObserver' in window) {
+    const visibleProof = new Set<Element>();
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) visibleProof.add(entry.target);
+        else visibleProof.delete(entry.target);
+      });
+      guide.classList.toggle('proof-in-view', visibleProof.size > 0);
+    });
+    document.querySelectorAll('[data-shared-google-reviews], .meet-clinic-team').forEach((section) => observer.observe(section));
+  }
 </script>
 
 <style>
@@ -136,6 +148,7 @@ const { articleTitle } = Astro.props;
   @media (min-width: 1180px) {
     .next-step-guide { position: fixed; z-index: 9; top: 12rem; left: 1.25rem; transform: translateX(calc(-100% - 2rem)); opacity: 0; transition: transform .25s ease, opacity .25s ease; }
     .next-step-guide.is-visible { transform: translateX(0); opacity: 1; }
+    .next-step-guide.is-visible.proof-in-view:not(.is-minimized):not(:focus-within) { visibility: hidden; opacity: 0; pointer-events: none; }
     .next-step-guide.is-minimized { transform: translateX(0); }
   }
 
