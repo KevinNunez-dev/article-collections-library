@@ -33,7 +33,7 @@ faq:
     answer: Requirements vary by plan and location. Ask when you book through the clinic contact page.
   - question: Is it suitable for everyone?
     answer: Not necessarily. Your health history, medications, and current symptoms matter, and some people should be assessed by a physician first.
-related: [what-is-physical-therapy-rpt, first-robotic-precision-therapy-appointment, how-robotic-precision-therapy-evaluation-works, robotic-precision-therapy-cost-insurance-questions]
+related: [what-is-physical-therapy-rpt, first-robotic-precision-therapy-appointment, how-robotic-precision-therapy-evaluation-works, robotic-precision-therapy-cost-insurance-questions, what-robotic-precision-therapy-is-and-is-not, robotic-massage-vs-massage-therapy, spinal-decompression-vs-robotic-precision-therapy]
 seo:
   title: "What Is Robotic Precision Therapy?"
   description: "Learn what Robotic Precision Therapy is, how the RX2600 Therapeutic Robot is used after assessment, and what to ask before booking."
@@ -93,6 +93,8 @@ These are different ways of delivering care, not proof that one is more effectiv
 ## What RPT is—and is not
 
 RPT is a treatment approach that uses the RX2600 Therapeutic Robot to apply pressure to selected muscles under clinician direction. It does not diagnose the cause of pain, repair a disc or joint, or replace emergency care, medical evaluation, surgery, injections, or other services when those are needed. A clinician should explain whether RPT appears suitable and recommend medical assessment when appropriate.
+
+Compare [what RPT is and is not](/health/what-robotic-precision-therapy-is-and-is-not/), [robotic massage and massage therapy](/health/robotic-massage-vs-massage-therapy/), and [spinal decompression and RPT](/health/spinal-decompression-vs-robotic-precision-therapy/).
 
 <!-- Clinical review required before publication: confirm any specific services the clinic does not provide and approve comparisons with physical therapy, chiropractic care, injections, and surgery. -->
 

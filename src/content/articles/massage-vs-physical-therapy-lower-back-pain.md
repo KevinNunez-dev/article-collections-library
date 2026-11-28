@@ -33,7 +33,7 @@ faq:
     answer: Ask about initial and follow-up prices, what each visit includes, insurance eligibility, cancellation terms, and how progress will be reviewed. A price alone does not establish clinical value.
   - question: Is Robotic Precision Therapy the same as massage?
     answer: RPT Clinic describes RPT as clinician-directed pressure applied to selected muscles using the RX2600 Therapeutic Robot after assessment. Massage approaches vary; ask each provider what its service includes.
-related: [lower-back-pain-physical-therapy-cost, cost-of-waiting-lower-back-pain, physical-therapy-vs-robotic-precision-therapy-lower-back-pain, when-to-see-a-doctor-for-back-pain]
+related: [lower-back-pain-physical-therapy-cost, cost-of-waiting-lower-back-pain, physical-therapy-vs-robotic-precision-therapy-lower-back-pain, when-to-see-a-doctor-for-back-pain, robotic-massage-vs-massage-therapy]
 seo:
   title: "Massage vs. Physical Therapy for Lower Back Pain"
   description: "Compare massage and physical therapy for recurring lower back pain, including assessment, cost, and when to seek medical care."
@@ -64,6 +64,8 @@ Massage is not necessarily just "masking" symptoms, and physical therapy is not 
 RPT Clinic's clinical team are DPTs trained in the RPT methodology. After assessment, a clinician may use the RX2600 Therapeutic Robot to apply controlled, repeatable pressure to appropriate muscles. RPT is not a diagnosis, does not repair a disc, and is not a replacement for necessary medical care. This page does not establish that RPT is more effective or longer lasting than massage or other physical therapy.
 
 Read [what Robotic Precision Therapy is](/health/what-is-robotic-precision-therapy) and [physical therapy versus RPT for lower back pain](/health/physical-therapy-vs-robotic-precision-therapy-lower-back-pain) for the distinction between the profession and the device-assisted approach.
+
+For a closer look at the experience of each visit, see [robotic massage vs. massage therapy](/health/robotic-massage-vs-massage-therapy/).
 
 ## Compare the total cost
 

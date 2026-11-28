@@ -57,6 +57,7 @@ related:
     lower-back-pain-treatment-costs-michigan,
     lower-back-pain,
     best-physical-therapy-near-me-detroit,
+    spinal-decompression-vs-robotic-precision-therapy,
   ]
 seo:
   title: "Physical Therapy vs. Robotic Precision Therapy for Back Pain"
@@ -103,7 +104,7 @@ Insurance may involve a deductible, copay, coinsurance, visit limit, authorizati
 
 ## Related reading
 
-See [lower back pain treatment options near Troy](/health/lower-back-pain-treatment-michigan-troy), [non-surgical options in Metro Detroit](/health/nonsurgical-lower-back-pain-treatment-metro-detroit), and [Michigan treatment costs](/health/lower-back-pain-treatment-costs-michigan). For broader background, read about [physical therapy](/health/what-is-physical-therapy) and [lower back pain](/health/lower-back-pain).
+See [lower back pain treatment options near Troy](/health/lower-back-pain-treatment-michigan-troy), [non-surgical options in Metro Detroit](/health/nonsurgical-lower-back-pain-treatment-metro-detroit), and [Michigan treatment costs](/health/lower-back-pain-treatment-costs-michigan). For broader background, read about [physical therapy](/health/what-is-physical-therapy), [lower back pain](/health/lower-back-pain), and [spinal decompression versus RPT](/health/spinal-decompression-vs-robotic-precision-therapy/).
 
 ## Sources and limitations
 

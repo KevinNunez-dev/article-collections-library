@@ -8,7 +8,7 @@ tags: [robotic precision therapy cost, robotic precision therapy insurance, RPT 
 bodySystems: [musculoskeletal]
 contentType: guide
 publishedAt: 2026-10-28
-updatedAt: 2026-11-24
+updatedAt: 2026-11-27
 author: RPT Clinic Editorial Team
 readingTime: 10
 image: /images/rpt-clinic-treatment-2.jpg
@@ -22,6 +22,8 @@ keyTakeaways:
 faq:
   - question: How much does Robotic Precision Therapy cost at RPT Clinic?
     answer: "RPT Clinic's FAQ lists $225 for a 90-minute first appointment that includes assessment and treatment. Subsequent one-hour treatments are listed at $150. Prices can change, so confirm the current rate before booking."
+  - question: Do new and existing clients pay the same price?
+    answer: "The clinic lists $225 for a new client's 90-minute first appointment, including assessment and treatment, and $150 for each subsequent one-hour treatment. Confirm current rates and whether the first assessment is included in a package before purchasing."
   - question: Does RPT Clinic take insurance?
     answer: No. It is an out-of-pocket clinic. It can provide an invoice with medical codes that you can use to file for reimbursement from your insurance, but whether you are reimbursed depends on your plan.
   - question: Why doesn't the clinic bill insurance?
@@ -51,6 +53,10 @@ seo:
 **RPT Clinic's FAQ lists $225 for the first 90-minute appointment and $150 for each subsequent one-hour treatment.** The clinic is based in Troy, Michigan. Rates and terms can change, so confirm the total with the clinic before booking.
 
 The first appointment includes an assessment and treatment. This guide explains the listed rates, package math, and what to confirm before paying.
+
+## What is the difference between new and existing client pricing?
+
+New clients are listed at **$225 for the first 90-minute appointment**, which includes assessment and treatment. Existing clients' subsequent one-hour treatments are listed at **$150 each**. Confirm current rates before booking; the package page does not clearly say whether the first assessment is included, so ask before purchasing.
 
 ## What are the quick answers to common RPT cost questions?
 
@@ -113,7 +119,7 @@ These are arithmetic examples using the listed single-visit prices, not a recomm
 
 | Total visits | Calculation | Total |
 |---|---|---|
-| 1 (evaluation only) | $225 | $225 |
+| 1 (assessment and treatment) | $225 | $225 |
 | 6 | $225 + 5 × $150 | $975 |
 | 12 | $225 + 11 × $150 | $1,875 |
 

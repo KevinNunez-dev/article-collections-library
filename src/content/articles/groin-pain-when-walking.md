@@ -8,7 +8,7 @@ tags: [groin pain when walking, groin pain male, pain in groin when walking, hip
 bodySystems: [musculoskeletal]
 contentType: guide
 publishedAt: 2026-10-28
-updatedAt: 2026-10-28
+updatedAt: 2026-11-27
 author: RPT Clinic Editorial Team
 readingTime: 9
 image: /images/rpt-clinic-treatment.jpg
@@ -22,7 +22,7 @@ faq:
   - question: Why does my groin hurt when I walk?
     answer: Common contributors include a strained adductor or hip flexor muscle, hip joint irritation, and sometimes hernia or spine-related pain. A clinician needs to assess which applies.
   - question: Is groin pain when walking in men different?
-    answer: Some causes, such as inguinal hernia or testicular conditions, are specific to men, so a persistent or unusual pattern is worth an evaluation. See our guide to [groin pain in men](/health/groin-pain-in-men).
+    answer: Testicular conditions can cause groin pain in men. Hernias can affect people of any sex. A persistent or unusual pattern is worth an evaluation. See our guide to [groin pain in men](/health/groin-pain-in-men).
   - question: Should I rest or keep walking?
     answer: Mild strain-type discomfort often settles with reduced activity, but do not push through sharp or worsening pain.
   - question: When is it an emergency?
@@ -31,7 +31,7 @@ faq:
     answer: Yes, irritation of nerves in the lower back can refer pain to the groin in some people.
   - question: Can Robotic Precision Therapy help?
     answer: It may address muscular contributors after an assessment. It does not diagnose the cause, and results vary.
-related: [groin-pain, groin-pain-in-men, hip-pain, hip-pain-vs-groin-pain, muscle-strain, lower-back-pain]
+related: [groin-pain-in-men, hip-pain-vs-groin-pain, groin-pain, hip-pain, muscle-strain, lower-back-pain]
 seo:
   title: "Groin Pain When Walking: Questions and When to Seek Care"
   description: "Common causes of groin pain when walking, how to describe it to a clinician, and the warning signs that need prompt medical care."
@@ -39,9 +39,9 @@ seo:
   noindex: false
 ---
 
-## The short answer
+## Why does my groin hurt when I walk?
 
-Groin pain when walking can come from **muscles, the hip joint, a hernia, or the lower back**. The pattern, such as where it is and what triggers it, helps narrow the possibilities, but only a clinician can sort out the cause.
+Groin pain when walking can come from **muscles, the hip joint, a hernia, or the lower back**. Notice whether it starts with the first step, after a certain distance, or when lifting the knee. These clues help a clinician assess the cause but cannot confirm it. See [groin pain in men](/health/groin-pain-in-men/) for hernia and testicular concerns and [hip pain vs. groin pain](/health/hip-pain-vs-groin-pain/) for overlapping locations.
 
 ## Quick answers
 
