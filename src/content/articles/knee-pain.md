@@ -47,6 +47,8 @@ After assessment, RPT Clinic may use the RX2600 Therapeutic Robot to apply press
 
 See [ankle pain](/health/ankle-pain/) and [sports injuries](/health/sports-injuries/) for related questions.
 
+For seasonal stiffness, read [cold weather joint and muscle pain in Michigan](/health/cold-weather-joint-muscle-pain-michigan/).
+
 ## When should you seek urgent care?
 
 Seek urgent medical care for inability to bear weight after injury, major deformity, or a hot, swollen knee with fever. A swollen painful calf also warrants urgent assessment. Seek assessment for a locking knee or symptoms that worsen or do not improve.

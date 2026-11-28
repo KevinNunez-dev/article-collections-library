@@ -49,6 +49,8 @@ After assessment, RPT Clinic may use the RX2600 Therapeutic Robot to apply press
 
 For another distinction, see [spinal decompression versus RPT](/health/spinal-decompression-vs-robotic-precision-therapy/).
 
+For seasonal questions, see [lower back pain after shoveling snow](/health/lower-back-pain-after-shoveling-snow/) and [back and neck pain after holiday travel](/health/back-neck-pain-after-holiday-travel/).
+
 ## What does a visit cost?
 
 RPT Clinic's FAQ lists $225 for a 90-minute first appointment including assessment and treatment, and $150 for each subsequent one-hour treatment; confirm current rates before booking. See the [pricing and payment guide](/health/robotic-precision-therapy-cost-insurance-questions/).

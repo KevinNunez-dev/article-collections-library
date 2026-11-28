@@ -47,6 +47,8 @@ Following an assessment, RPT Clinic may use the RX2600 Therapeutic Robot to appl
 
 Share when symptoms began, any injury, movements that affect them, and previous care. Read about [shoulder pain](/health/shoulder-pain/) and [what RPT is and is not](/health/what-robotic-precision-therapy-is-and-is-not/).
 
+For long drives, flights, and unfamiliar sleeping arrangements, see [back and neck pain after holiday travel](/health/back-neck-pain-after-holiday-travel/).
+
 ## What does a visit cost?
 
 RPT Clinic's FAQ lists $225 for a 90-minute first appointment including assessment and treatment, and $150 for each subsequent one-hour treatment; confirm current rates before booking. See the [pricing and payment guide](/health/robotic-precision-therapy-cost-insurance-questions/).
